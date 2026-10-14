@@ -1,0 +1,13 @@
+{
+  "name": "server-test-api",
+  "version": "1.0.0",
+  "description": "간단한 테스트용 POST API 서버",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
