@@ -1,6 +1,7 @@
 # 서버용 — 테스트 API
 
-요청을 받으면 고정 JSON을 그대로 반환하는 간단한 POST API입니다. 요청 본문은 처리하지 않습니다.
+요청을 받으면 고정 JSON을 그대로 반환하는 간단한 테스트 API입니다. 요청 본문은 처리하지 않습니다.
+브라우저에서 열어 확인할 수 있도록 `GET`과 `POST` 모두 지원합니다.
 
 ## 실행
 
@@ -16,10 +17,12 @@ npm start
 
 | 항목 | 값 |
 |------|-----|
-| Method | `POST` |
+| Method | `GET` 또는 `POST` |
 | URL | `/api/test` |
-| Request 예 | `{"message":"test"}` |
+| Request 예 (POST) | `{"message":"test"}` |
 | Response | `{"ok":true,"message":"success"}` |
+
+브라우저에서 `http://127.0.0.1:3847/` 또는 `http://127.0.0.1:3847/api/test` 를 열면 바로 확인할 수 있습니다.
 
 ### curl 예시
 
