@@ -32,6 +32,21 @@ curl -X POST http://127.0.0.1:3847/api/test \
   -d '{"message":"test"}'
 ```
 
+## 외부에서 접속 테스트
+
+1. 터미널 1: `npm start`
+2. 터미널 2에서 아래 한 줄만 실행:
+
+```bash
+npx --yes cloudflared tunnel --url http://127.0.0.1:3847
+```
+
+3. 출력에 나오는 `https://….trycloudflare.com` 주소를 다른 기기 브라우저에서 열고 뒤에 `/api/test`를 붙입니다.
+
+예: `https://xxxx.trycloudflare.com/api/test` → `{"ok":true,"message":"success"}`
+
+가입/설정 없이 바로 됩니다. 터미널을 닫으면 외부 주소는 사라집니다.
+
 ## 수정 방법
 
 `server.js` 상단의 설정만 바꾸면 됩니다.
