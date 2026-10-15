@@ -70,7 +70,13 @@ export function Dashboard() {
   const [preview, setPreview] = useState<PreviewState>(null);
   const [log, setLog] = useState("준비됨. HIL 연결이 안 되면 mock 데이터로 동작합니다.");
   const [busy, setBusy] = useState(false);
-  const [health, setHealth] = useState<{ hilBaseUrl: string; hilMode: string } | null>(null);
+  const [health, setHealth] = useState<{
+    hilBaseUrl: string;
+    hilMode: string;
+    publicBaseUrl?: string;
+    notifyUrl?: string;
+    port?: number;
+  } | null>(null);
 
   const appendLog = useCallback((message: string) => {
     setLog((prev) => `${new Date().toLocaleTimeString()}  ${message}\n${prev}`);
@@ -87,6 +93,9 @@ export function Dashboard() {
     setHealth({
       hilBaseUrl: healthRes.hilBaseUrl,
       hilMode: healthRes.hilMode,
+      publicBaseUrl: healthRes.publicBaseUrl,
+      notifyUrl: healthRes.notifyUrl,
+      port: healthRes.port,
     });
   }, []);
 
@@ -214,9 +223,17 @@ export function Dashboard() {
         </p>
         {health && (
           <div className="flex flex-wrap gap-2 pt-1 text-xs text-stone-500">
-            <Badge variant="outline">HIL {health.hilBaseUrl}</Badge>
+            <Badge variant="outline">port {health.port ?? 3847}</Badge>
+            <Badge variant="outline">공개 {health.publicBaseUrl}</Badge>
             <Badge variant="secondary">mode: {health.hilMode}</Badge>
+            <Badge variant="outline">HIL {health.hilBaseUrl}</Badge>
           </div>
+        )}
+        {health?.notifyUrl && (
+          <p className="rounded-lg border border-teal-700/20 bg-white/70 px-3 py-2 text-xs text-slate-700">
+            HIL 알림 URL:{" "}
+            <code className="break-all font-mono text-[11px]">{health.notifyUrl}</code>
+          </p>
         )}
       </header>
 

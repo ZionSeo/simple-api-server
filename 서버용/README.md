@@ -10,7 +10,10 @@ npm install
 npm run dev
 ```
 
-주소: [http://127.0.0.1:3847](http://127.0.0.1:3847)
+- 로컬: [http://127.0.0.1:3847](http://127.0.0.1:3847)
+- 외부(현재 터널): [https://locations-attribute-fee-karaoke.trycloudflare.com](https://locations-attribute-fee-karaoke.trycloudflare.com)
+
+HIL 연동 API 사양: [`API_SPEC.md`](./API_SPEC.md)
 
 ## 환경 변수
 
