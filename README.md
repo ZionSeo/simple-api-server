@@ -1,15 +1,15 @@
-# 테스트 API 서버
+# 악력 분석 / 테스트 서버
 
-바탕화면의 **서버용** 폴더에 있는 간단한 POST 테스트 API입니다.
+`서버용` 폴더의 Next.js 앱이 AI 분석 서버 역할입니다.
 
-자세한 실행 방법은 [`서버용/README.md`](./서버용/README.md)를 참고하세요.
+- HIL 저장 완료 알림 수신: `POST /api/calibration/complete`
+- HIL raw 데이터 조회/다운로드 UI 포함
+- HIL 연결 실패 시 mock `ndjson.gz`로 로컬 테스트 가능
 
 ```bash
 cd 서버용
 npm install
-npm start
+npm run dev
 ```
 
-- **POST** `/api/test`
-- Request: `{"message":"test"}`
-- Response: `{"ok":true,"message":"success"}`
+자세한 내용은 [`서버용/README.md`](./서버용/README.md)를 참고하세요.

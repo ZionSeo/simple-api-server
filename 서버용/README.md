@@ -1,56 +1,55 @@
-# 서버용 — 테스트 API
+# 악력 분석 서버 (AI Analysis Server)
 
-요청을 받으면 고정 JSON을 그대로 반환하는 간단한 테스트 API입니다. 요청 본문은 처리하지 않습니다.
-브라우저에서 열어 확인할 수 있도록 `GET`과 `POST` 모두 지원합니다.
+HIL 서버의 캘리브레이션 저장 알림을 받고, raw `ndjson.gz`를 조회·저장·미리보는 분석 서버입니다.
 
 ## 실행
 
 ```bash
 cd 서버용
 npm install
-npm start
+npm run dev
 ```
 
-기본 주소: `http://127.0.0.1:3847`
+주소: [http://127.0.0.1:3847](http://127.0.0.1:3847)
 
-## API
+## 환경 변수
 
-| 항목 | 값 |
-|------|-----|
-| Method | `GET` 또는 `POST` |
-| URL | `/api/test` |
-| Request 예 (POST) | `{"message":"test"}` |
-| Response | `{"ok":true,"message":"success"}` |
+| 변수 | 기본값 | 설명 |
+|------|--------|------|
+| `HIL_BASE_URL` | `http://221.162.67.121:91` | HIL 서버 주소 |
+| `HIL_MODE` | `auto` | `auto`(실패 시 mock) / `mock` / `live` |
 
-브라우저에서 `http://127.0.0.1:3847/` 또는 `http://127.0.0.1:3847/api/test` 를 열면 바로 확인할 수 있습니다.
+## 우리 서버 API
 
-### curl 예시
+### 1) 저장 완료 알림 (HIL → 분석서버)
 
-```bash
-curl -X POST http://127.0.0.1:3847/api/test \
-  -H "Content-Type: application/json" \
-  -d '{"message":"test"}'
+`POST /api/calibration/complete`
+
+```json
+{ "individual_seq": 15, "calibration_seq": 101 }
 ```
 
-## 외부에서 접속 테스트
+Query(선택): `body_part`, `kind`
 
-1. 터미널 1: `npm start`
-2. 터미널 2에서 아래 한 줄만 실행:
+응답(즉시 200):
 
-```bash
-npx --yes cloudflared tunnel --url http://127.0.0.1:3847
+```json
+{ "ok": true, "response": "success", "calibration_seq": 101, "job_id": "..." }
 ```
 
-3. 출력에 나오는 `https://….trycloudflare.com` 주소를 다른 기기 브라우저에서 열고 뒤에 `/api/test`를 붙입니다.
+이후 백그라운드에서 HIL 데이터를 다운로드합니다.
 
-예: `https://xxxx.trycloudflare.com/api/test` → `{"ok":true,"message":"success"}`
+### 2) HIL 프록시 조회
 
-가입/설정 없이 바로 됩니다. 터미널을 닫으면 외부 주소는 사라집니다.
+- `GET /api/hil/latest/{individual_seq}`
+- `GET /api/hil/data?calibration_seq=101&body_part=arm_r&kind=imu`
 
-## 수정 방법
+### 3) 작업/데이터셋
 
-`server.js` 상단의 설정만 바꾸면 됩니다.
+- `GET /api/jobs`
+- `GET /api/datasets`
+- `GET /api/datasets/{id}/preview`
 
-- `PORT` — 포트
-- `API_PATH` — URL 경로
-- `SUCCESS_RESPONSE` — 응답 JSON
+## UI
+
+브라우저에서 콘솔을 열면 알림 시뮬레이션, 최신 calibration 조회, ndjson.gz 다운로드/미리보기가 가능합니다.
