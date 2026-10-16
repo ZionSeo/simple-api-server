@@ -4,6 +4,22 @@ import { BODY_PARTS, KINDS, type BodyPart, type Kind } from "@/lib/types";
 
 export const runtime = "nodejs";
 
+/** 브라우저 주소창(GET)으로 열면 안내 JSON을 반환합니다. 실제 알림은 POST만 사용합니다. */
+export async function GET() {
+  return NextResponse.json({
+    ok: true,
+    message:
+      "이 URL은 POST 전용입니다. 브라우저로 열면 405가 날 수 있어, GET으로는 안내만 반환합니다.",
+    method: "POST",
+    path: "/api/calibration/complete",
+    body_example: {
+      individual_seq: 15,
+      calibration_seq: 101,
+    },
+    curl: 'curl -X POST "<이주소>" -H "Content-Type: application/json" -d \'{"individual_seq":15,"calibration_seq":101}\'',
+  });
+}
+
 function parseBodyPart(value: string | null): BodyPart | undefined {
   if (!value) return undefined;
   return (BODY_PARTS as readonly string[]).includes(value)
