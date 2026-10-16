@@ -14,7 +14,8 @@ npm run dev
 - 외부(현재 터널): [https://hearts-writers-satellite-submission.trycloudflare.com](https://hearts-writers-satellite-submission.trycloudflare.com)
 
 HIL 연동 API 사양: [`API_SPEC.md`](./API_SPEC.md)  
-서버 상시 유지(퇴근 후에도 유지): [`DEPLOY.md`](./DEPLOY.md)
+서버 상시 유지(학교 PC 퇴근 후에도 유지): [`DEPLOY.md`](./DEPLOY.md)  
+→ 학교 PC는 전원 OFF 시 꺼지므로 **Render 무료 배포**를 권장합니다.
 
 ## 환경 변수
 
