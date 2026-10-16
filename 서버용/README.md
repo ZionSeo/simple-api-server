@@ -14,8 +14,8 @@ npm run dev
 - 외부(현재 터널): [https://howto-paso-attribute-spies.trycloudflare.com](https://howto-paso-attribute-spies.trycloudflare.com)
 
 HIL 연동 API 사양: [`API_SPEC.md`](./API_SPEC.md)  
-서버 상시 유지(학교 PC 퇴근 후에도 유지): [`DEPLOY.md`](./DEPLOY.md)  
-→ 학교 PC는 전원 OFF 시 꺼지므로 **Render 무료 배포**를 권장합니다.
+서버 상시 유지: [`DEPLOY.md`](./DEPLOY.md)  
+**고정 주소(ENOTFOUND 방지):** [`FIXED_URL.md`](./FIXED_URL.md) ← Postman/HIL용 필수
 
 ## 환경 변수
 

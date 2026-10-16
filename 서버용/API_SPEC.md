@@ -4,14 +4,14 @@
 
 | 항목 | 값 |
 |------|-----|
-| 공개 도메인 (현재 터널) | `https://howto-paso-attribute-spies.trycloudflare.com` |
+| 공개 도메인 (임시 터널) | `https://howto-paso-attribute-spies.trycloudflare.com` |
 | 프로토콜 | HTTPS |
 | 공개 포트 | **443** (HTTPS 기본, 별도 포트 지정 불필요) |
 | 내부 리슨 포트 | `3847` (`0.0.0.0`) |
 | Content-Type | `application/json` (알림 API) |
 
-> Cloudflare Quick Tunnel 주소는 **터널을 재시작하면 변경**될 수 있습니다.  
-> 고정 도메인이 필요하면 별도 배포(VPS/Railway 등) 또는 Named Tunnel이 필요합니다.
+> ⚠️ Quick Tunnel은 **만료되면 `ENOTFOUND`** 가 납니다.  
+> Postman/HIL용 **고정 주소**는 [`FIXED_URL.md`](./FIXED_URL.md) 의 Render 배포를 사용하세요.
 
 콘솔 UI: https://howto-paso-attribute-spies.trycloudflare.com/
 
