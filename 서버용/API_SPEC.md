@@ -4,7 +4,7 @@
 
 | 항목 | 값 |
 |------|-----|
-| 공개 도메인 (현재 터널) | `https://hearts-writers-satellite-submission.trycloudflare.com` |
+| 공개 도메인 (현재 터널) | `https://howto-paso-attribute-spies.trycloudflare.com` |
 | 프로토콜 | HTTPS |
 | 공개 포트 | **443** (HTTPS 기본, 별도 포트 지정 불필요) |
 | 내부 리슨 포트 | `3847` (`0.0.0.0`) |
@@ -13,7 +13,7 @@
 > Cloudflare Quick Tunnel 주소는 **터널을 재시작하면 변경**될 수 있습니다.  
 > 고정 도메인이 필요하면 별도 배포(VPS/Railway 등) 또는 Named Tunnel이 필요합니다.
 
-콘솔 UI: https://hearts-writers-satellite-submission.trycloudflare.com/
+콘솔 UI: https://howto-paso-attribute-spies.trycloudflare.com/
 
 ---
 
@@ -25,7 +25,7 @@ HIL이 데이터 저장 후 호출하는 엔드포인트입니다.
 ### Request
 
 - **Method:** `POST`
-- **URL:** `https://hearts-writers-satellite-submission.trycloudflare.com/api/calibration/complete`
+- **URL:** `https://howto-paso-attribute-spies.trycloudflare.com/api/calibration/complete`
 - **Headers:** `Content-Type: application/json`
 
 **Body**
@@ -62,7 +62,7 @@ HIL이 데이터 저장 후 호출하는 엔드포인트입니다.
 ### curl 예시
 
 ```bash
-curl -X POST "https://hearts-writers-satellite-submission.trycloudflare.com/api/calibration/complete" \
+curl -X POST "https://howto-paso-attribute-spies.trycloudflare.com/api/calibration/complete" \
   -H "Content-Type: application/json" \
   -d '{"individual_seq":15,"calibration_seq":101}'
 ```
@@ -70,7 +70,7 @@ curl -X POST "https://hearts-writers-satellite-submission.trycloudflare.com/api/
 부위/종류 지정:
 
 ```bash
-curl -X POST "https://hearts-writers-satellite-submission.trycloudflare.com/api/calibration/complete?body_part=arm_r&kind=imu" \
+curl -X POST "https://howto-paso-attribute-spies.trycloudflare.com/api/calibration/complete?body_part=arm_r&kind=imu" \
   -H "Content-Type: application/json" \
   -d '{"individual_seq":15,"calibration_seq":101}'
 ```
@@ -92,7 +92,7 @@ curl -X POST "https://hearts-writers-satellite-submission.trycloudflare.com/api/
 
 ## 3. 분석서버 보조 API
 
-Base: `https://hearts-writers-satellite-submission.trycloudflare.com`
+Base: `https://howto-paso-attribute-spies.trycloudflare.com`
 
 | Method | Path | 설명 |
 |--------|------|------|
@@ -110,7 +110,7 @@ Base: `https://hearts-writers-satellite-submission.trycloudflare.com`
 ## 연동 체크리스트 (HIL 담당자)
 
 1. 알림 URL을 아래로 설정  
-   `POST https://hearts-writers-satellite-submission.trycloudflare.com/api/calibration/complete`
+   `POST https://howto-paso-attribute-spies.trycloudflare.com/api/calibration/complete`
 2. Body에 `individual_seq`, `calibration_seq` 포함
 3. 응답 `200` + `"ok": true` 확인
 4. 분석서버 콘솔 UI / `GET /api/jobs` 에서 `done` 상태 확인

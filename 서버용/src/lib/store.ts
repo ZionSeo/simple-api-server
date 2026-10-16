@@ -35,11 +35,17 @@ export function getJob(id: string) {
   return getStore().jobs.find((j) => j.id === id);
 }
 
+const MAX_JOBS = 100;
+const MAX_DATASETS = 100;
+
 export function upsertJob(job: AnalysisJob) {
   const store = getStore();
   const idx = store.jobs.findIndex((j) => j.id === job.id);
   if (idx >= 0) store.jobs[idx] = job;
   else store.jobs.unshift(job);
+  if (store.jobs.length > MAX_JOBS) {
+    store.jobs.length = MAX_JOBS;
+  }
   return job;
 }
 
@@ -54,6 +60,10 @@ export function getDataset(id: string) {
 }
 
 export function addDataset(dataset: DatasetRecord) {
-  getStore().datasets.unshift(dataset);
+  const store = getStore();
+  store.datasets.unshift(dataset);
+  if (store.datasets.length > MAX_DATASETS) {
+    store.datasets.length = MAX_DATASETS;
+  }
   return dataset;
 }

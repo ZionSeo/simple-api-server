@@ -79,30 +79,38 @@ export function Dashboard() {
   } | null>(null);
 
   const appendLog = useCallback((message: string) => {
-    setLog((prev) => `${new Date().toLocaleTimeString()}  ${message}\n${prev}`);
+    setLog((prev) => {
+      const next = `${new Date().toLocaleTimeString()}  ${message}\n${prev}`;
+      return next.length > 4000 ? next.slice(0, 4000) : next;
+    });
   }, []);
 
   const refresh = useCallback(async () => {
-    const [jobsRes, datasetsRes, healthRes] = await Promise.all([
-      fetch("/api/jobs").then((r) => r.json()),
-      fetch("/api/datasets").then((r) => r.json()),
-      fetch("/api/health").then((r) => r.json()),
-    ]);
-    setJobs(jobsRes.jobs ?? []);
-    setDatasets(datasetsRes.datasets ?? []);
+    if (typeof document !== "undefined" && document.hidden) return;
+    const res = await fetch("/api/status").then((r) => r.json());
+    setJobs(res.jobs ?? []);
+    setDatasets(res.datasets ?? []);
     setHealth({
-      hilBaseUrl: healthRes.hilBaseUrl,
-      hilMode: healthRes.hilMode,
-      publicBaseUrl: healthRes.publicBaseUrl,
-      notifyUrl: healthRes.notifyUrl,
-      port: healthRes.port,
+      hilBaseUrl: res.hilBaseUrl,
+      hilMode: res.hilMode,
+      publicBaseUrl: res.publicBaseUrl,
+      notifyUrl: res.notifyUrl,
+      port: res.port,
     });
   }, []);
 
   useEffect(() => {
     void refresh();
-    const timer = setInterval(() => void refresh(), 2500);
-    return () => clearInterval(timer);
+    // 2.5초×3요청 → 8초×1요청으로 부하 감소. 탭 숨김 시 폴링 중단.
+    const timer = setInterval(() => void refresh(), 8000);
+    const onVis = () => {
+      if (!document.hidden) void refresh();
+    };
+    document.addEventListener("visibilitychange", onVis);
+    return () => {
+      clearInterval(timer);
+      document.removeEventListener("visibilitychange", onVis);
+    };
   }, [refresh]);
 
   const statusColor = useMemo(

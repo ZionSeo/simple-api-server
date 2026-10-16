@@ -11,7 +11,7 @@ npm run dev
 ```
 
 - 로컬: [http://127.0.0.1:3847](http://127.0.0.1:3847)
-- 외부(현재 터널): [https://hearts-writers-satellite-submission.trycloudflare.com](https://hearts-writers-satellite-submission.trycloudflare.com)
+- 외부(현재 터널): [https://howto-paso-attribute-spies.trycloudflare.com](https://howto-paso-attribute-spies.trycloudflare.com)
 
 HIL 연동 API 사양: [`API_SPEC.md`](./API_SPEC.md)  
 서버 상시 유지(학교 PC 퇴근 후에도 유지): [`DEPLOY.md`](./DEPLOY.md)  
