@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: grip-analysis
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: HIL_BASE_URL
+        value: http://221.162.67.121:91
+      - key: HIL_MODE
+        value: auto
