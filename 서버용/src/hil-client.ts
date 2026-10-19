@@ -1,11 +1,11 @@
-import { config } from "@/lib/config";
-import { buildMockNdjsonGz } from "@/lib/ndjson";
+import { config } from "./config.js";
+import { buildMockNdjsonGz } from "./ndjson.js";
 import {
   BODY_PARTS,
   type BodyPart,
   type HilLatestResponse,
   type Kind,
-} from "@/lib/types";
+} from "./types.js";
 
 function mockLatest(individual_seq: number): HilLatestResponse {
   const calibration_seq = 101;
@@ -36,16 +36,12 @@ function mockLatest(individual_seq: number): HilLatestResponse {
 export async function fetchLatestCalibration(
   individual_seq: number
 ): Promise<HilLatestResponse> {
-  if (config.hilMode === "mock") {
-    return mockLatest(individual_seq);
-  }
+  if (config.hilMode === "mock") return mockLatest(individual_seq);
 
   const url = `${config.hilBaseUrl}/calibration/latest/${individual_seq}`;
   try {
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) {
-      throw new Error(`HIL latest HTTP ${res.status}`);
-    }
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HIL latest HTTP ${res.status}`);
     const data = (await res.json()) as HilLatestResponse;
     return { ...data, source: "hil" };
   } catch (error) {
@@ -60,9 +56,8 @@ export async function downloadCalibrationData(options: {
   kind: Kind;
 }): Promise<{ buffer: Buffer; source: "hil" | "mock"; contentType: string }> {
   if (config.hilMode === "mock") {
-    const buffer = await buildMockNdjsonGz(options);
     return {
-      buffer,
+      buffer: await buildMockNdjsonGz(options),
       source: "mock",
       contentType: "application/gzip",
     };
@@ -70,21 +65,17 @@ export async function downloadCalibrationData(options: {
 
   const url = `${config.hilBaseUrl}/calibration/${options.calibration_seq}/data?body_part=${options.body_part}&kind=${options.kind}`;
   try {
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) {
-      throw new Error(`HIL data HTTP ${res.status}`);
-    }
-    const arrayBuffer = await res.arrayBuffer();
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HIL data HTTP ${res.status}`);
     return {
-      buffer: Buffer.from(arrayBuffer),
+      buffer: Buffer.from(await res.arrayBuffer()),
       source: "hil",
       contentType: res.headers.get("content-type") || "application/gzip",
     };
   } catch (error) {
     if (config.hilMode === "live") throw error;
-    const buffer = await buildMockNdjsonGz(options);
     return {
-      buffer,
+      buffer: await buildMockNdjsonGz(options),
       source: "mock",
       contentType: "application/gzip",
     };

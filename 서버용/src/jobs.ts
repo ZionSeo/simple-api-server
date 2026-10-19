@@ -1,22 +1,23 @@
-import fs from "fs";
-import path from "path";
-import { randomUUID } from "crypto";
-import { downloadCalibrationData, fetchLatestCalibration } from "@/lib/hil-client";
-import { countNdjsonGzLines } from "@/lib/ndjson";
+import fs from "node:fs";
+import path from "node:path";
+import { randomUUID } from "node:crypto";
+import { analyzeDatasetFile } from "./analyze.js";
+import { downloadCalibrationData, fetchLatestCalibration } from "./hil-client.js";
+import { countNdjsonGzLines } from "./ndjson.js";
 import {
   addDataset,
   getDataDir,
+  getDataset,
   getJob,
+  setDatasetAnalysis,
   upsertJob,
-} from "@/lib/store";
-import {
-  BODY_PARTS,
-  KINDS,
-  type AnalysisJob,
-  type BodyPart,
-  type CalibrationCompletePayload,
-  type Kind,
-} from "@/lib/types";
+} from "./store.js";
+import type {
+  AnalysisJob,
+  BodyPart,
+  CalibrationCompletePayload,
+  Kind,
+} from "./types.js";
 
 function nowIso() {
   return new Date().toISOString();
@@ -33,13 +34,12 @@ export function enqueueCalibrationJob(
     body_part: payload.body_part,
     kind: payload.kind,
     status: "queued",
-    message: "알림 수신. HIL 데이터 조회 대기 중",
+    message: "알림 수신. 큐에 등록됨",
     createdAt,
     updatedAt: createdAt,
     datasetIds: [],
   };
   upsertJob(job);
-  // fire-and-forget
   void processJob(job.id);
   return job;
 }
@@ -59,24 +59,19 @@ async function processJob(jobId: string) {
     if (job.body_part && job.kind) {
       targets.push({ body_part: job.body_part, kind: job.kind });
     } else {
-      const latest = await fetchLatestCalibration(job.individual_seq);
-      const parts =
-        latest.body_parts?.map((b) => b.body_part) ??
-        ([...BODY_PARTS] as BodyPart[]);
-      for (const body_part of parts) {
-        for (const kind of KINDS) {
-          if (job.body_part && job.body_part !== body_part) continue;
-          if (job.kind && job.kind !== kind) continue;
-          targets.push({ body_part, kind });
-        }
-      }
-      // 알림에 body_part/kind가 없으면 기본으로 arm_r imu/emg만 (전체는 너무 큼)
+      await fetchLatestCalibration(job.individual_seq);
       if (!job.body_part && !job.kind) {
-        targets.length = 0;
         targets.push(
           { body_part: "arm_r", kind: "imu" },
           { body_part: "arm_r", kind: "emg" }
         );
+      } else {
+        // body_part만 지정된 경우 해당 부위 imu+emg
+        const parts: BodyPart[] = job.body_part ? [job.body_part] : ["arm_r"];
+        const kinds: Kind[] = job.kind ? [job.kind] : ["imu", "emg"];
+        for (const body_part of parts) {
+          for (const kind of kinds) targets.push({ body_part, kind });
+        }
       }
     }
 
@@ -111,17 +106,31 @@ async function processJob(jobId: string) {
 
     const current = getJob(jobId);
     if (!current) return;
-    current.status = "done";
+    current.status = "analyzing";
     current.datasetIds = datasetIds;
-    current.message = `다운로드 완료 (${datasetIds.length}개). 전처리 대기`;
+    current.message = `다운로드 완료 (${datasetIds.length}개). 분석 중`;
     current.updatedAt = nowIso();
     upsertJob(current);
+
+    for (const id of datasetIds) {
+      const ds = getDataset(id);
+      if (!ds) continue;
+      const analysis = await analyzeDatasetFile(ds.filePath);
+      setDatasetAnalysis(id, analysis);
+    }
+
+    const done = getJob(jobId);
+    if (!done) return;
+    done.status = "done";
+    done.message = `분석 완료 (${datasetIds.length}개)`;
+    done.updatedAt = nowIso();
+    upsertJob(done);
   } catch (error) {
     const current = getJob(jobId);
     if (!current) return;
     current.status = "failed";
     current.error = error instanceof Error ? error.message : String(error);
-    current.message = "다운로드/처리 실패";
+    current.message = "다운로드/분석 실패";
     current.updatedAt = nowIso();
     upsertJob(current);
   }

@@ -1,15 +1,15 @@
-# 악력 분석 / 테스트 서버
+# 악력 분석 서버
 
-`서버용` 폴더의 Next.js 앱이 AI 분석 서버 역할입니다.
+경량 Express 분석 서버입니다. (`서버용/`)
 
-- HIL 저장 완료 알림 수신: `POST /api/calibration/complete`
-- HIL raw 데이터 조회/다운로드 UI 포함
-- HIL 연결 실패 시 mock `ndjson.gz`로 로컬 테스트 가능
+- HIL 저장 완료 알림 수신 후 백그라운드 다운로드·분석
+- 얇은 HTML 모니터 UI
+- Next.js 제거로 메모리/의존성 대폭 축소
 
 ```bash
 cd 서버용
 npm install
-npm run dev
+npm start
 ```
 
-자세한 내용은 [`서버용/README.md`](./서버용/README.md)를 참고하세요.
+고정 URL 배포: [`서버용/FIXED_URL.md`](./서버용/FIXED_URL.md)

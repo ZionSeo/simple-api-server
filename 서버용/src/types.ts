@@ -11,8 +11,7 @@ export const KINDS = ["imu", "emg"] as const;
 
 export type BodyPart = (typeof BODY_PARTS)[number];
 export type Kind = (typeof KINDS)[number];
-
-export type JobStatus = "queued" | "running" | "done" | "failed";
+export type JobStatus = "queued" | "running" | "analyzing" | "done" | "failed";
 
 export type CalibrationCompletePayload = {
   individual_seq: number;
@@ -37,6 +36,20 @@ export type HilLatestResponse = {
   source?: "hil" | "mock";
 };
 
+export type FieldStats = {
+  count: number;
+  min: number;
+  max: number;
+  mean: number;
+};
+
+export type AnalysisResult = {
+  lineCount: number;
+  fields: Record<string, FieldStats>;
+  sample: Record<string, unknown>[];
+  finishedAt: string;
+};
+
 export type DatasetRecord = {
   id: string;
   jobId: string;
@@ -49,6 +62,7 @@ export type DatasetRecord = {
   lineCount: number;
   source: "hil" | "mock";
   createdAt: string;
+  analysis?: AnalysisResult;
 };
 
 export type AnalysisJob = {

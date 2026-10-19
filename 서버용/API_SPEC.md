@@ -4,7 +4,7 @@
 
 | 항목 | 값 |
 |------|-----|
-| 공개 도메인 (임시 터널) | `https://howto-paso-attribute-spies.trycloudflare.com` |
+| 공개 도메인 (임시 터널) | `https://office-treo-networking-disks.trycloudflare.com` |
 | 프로토콜 | HTTPS |
 | 공개 포트 | **443** (HTTPS 기본, 별도 포트 지정 불필요) |
 | 내부 리슨 포트 | `3847` (`0.0.0.0`) |
@@ -13,7 +13,7 @@
 > ⚠️ Quick Tunnel은 **만료되면 `ENOTFOUND`** 가 납니다.  
 > Postman/HIL용 **고정 주소**는 [`FIXED_URL.md`](./FIXED_URL.md) 의 Render 배포를 사용하세요.
 
-콘솔 UI: https://howto-paso-attribute-spies.trycloudflare.com/
+콘솔 UI: https://office-treo-networking-disks.trycloudflare.com/
 
 ---
 
@@ -25,7 +25,7 @@ HIL이 데이터 저장 후 호출하는 엔드포인트입니다.
 ### Request
 
 - **Method:** `POST`
-- **URL:** `https://howto-paso-attribute-spies.trycloudflare.com/api/calibration/complete`
+- **URL:** `https://office-treo-networking-disks.trycloudflare.com/api/calibration/complete`
 - **Headers:** `Content-Type: application/json`
 
 **Body**
@@ -62,7 +62,7 @@ HIL이 데이터 저장 후 호출하는 엔드포인트입니다.
 ### curl 예시
 
 ```bash
-curl -X POST "https://howto-paso-attribute-spies.trycloudflare.com/api/calibration/complete" \
+curl -X POST "https://office-treo-networking-disks.trycloudflare.com/api/calibration/complete" \
   -H "Content-Type: application/json" \
   -d '{"individual_seq":15,"calibration_seq":101}'
 ```
@@ -70,7 +70,7 @@ curl -X POST "https://howto-paso-attribute-spies.trycloudflare.com/api/calibrati
 부위/종류 지정:
 
 ```bash
-curl -X POST "https://howto-paso-attribute-spies.trycloudflare.com/api/calibration/complete?body_part=arm_r&kind=imu" \
+curl -X POST "https://office-treo-networking-disks.trycloudflare.com/api/calibration/complete?body_part=arm_r&kind=imu" \
   -H "Content-Type: application/json" \
   -d '{"individual_seq":15,"calibration_seq":101}'
 ```
@@ -92,7 +92,7 @@ curl -X POST "https://howto-paso-attribute-spies.trycloudflare.com/api/calibrati
 
 ## 3. 분석서버 보조 API
 
-Base: `https://howto-paso-attribute-spies.trycloudflare.com`
+Base: `https://office-treo-networking-disks.trycloudflare.com`
 
 | Method | Path | 설명 |
 |--------|------|------|
@@ -110,7 +110,7 @@ Base: `https://howto-paso-attribute-spies.trycloudflare.com`
 ## 연동 체크리스트 (HIL 담당자)
 
 1. 알림 URL을 아래로 설정  
-   `POST https://howto-paso-attribute-spies.trycloudflare.com/api/calibration/complete`
+   `POST https://office-treo-networking-disks.trycloudflare.com/api/calibration/complete`
 2. Body에 `individual_seq`, `calibration_seq` 포함
 3. 응답 `200` + `"ok": true` 확인
 4. 분석서버 콘솔 UI / `GET /api/jobs` 에서 `done` 상태 확인

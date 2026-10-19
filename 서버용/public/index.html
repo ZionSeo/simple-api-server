@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>악력 분석 서버</title>
+  <style>
+    :root {
+      --bg: #e7eef2;
+      --card: #fff;
+      --text: #1c2430;
+      --muted: #5b6775;
+      --line: #d5dee6;
+      --accent: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+      color: var(--text);
+      background: radial-gradient(120% 80% at 0% 0%, #c8ebe4 0%, #e8eef2 45%, #d7e0e8 100%);
+      min-height: 100vh;
+    }
+    main { max-width: 960px; margin: 0 auto; padding: 2rem 1rem 3rem; }
+    h1 { font-size: 1.75rem; margin: 0.25rem 0 0.5rem; }
+    .sub { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .badges { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+    .badge {
+      font-size: 0.75rem; border: 1px solid var(--line); background: #fff;
+      border-radius: 999px; padding: 0.2rem 0.55rem; color: var(--muted);
+    }
+    .grid { display: grid; gap: 1rem; }
+    @media (min-width: 800px) { .grid.two { grid-template-columns: 1fr 1fr; } }
+    .card {
+      background: color-mix(in srgb, var(--card) 92%, transparent);
+      border: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
+      border-radius: 14px; padding: 1rem;
+      backdrop-filter: blur(6px);
+    }
+    .card h2 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+    .card p { margin: 0 0 0.8rem; color: var(--muted); font-size: 0.85rem; }
+    label { display: block; font-size: 0.8rem; margin-bottom: 0.25rem; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-bottom: 0.6rem; }
+    input, select, button, textarea {
+      width: 100%; border: 1px solid var(--line); border-radius: 10px;
+      padding: 0.45rem 0.6rem; font: inherit; background: #fff;
+    }
+    button {
+      background: var(--accent); color: #fff; border: none; cursor: pointer;
+      font-weight: 600; margin-top: 0.3rem;
+    }
+    button.secondary { background: #334155; }
+    button.ghost { background: #fff; color: var(--text); border: 1px solid var(--line); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    th, td { text-align: left; padding: 0.45rem 0.3rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .ok { color: #0f766e; font-weight: 600; }
+    .fail { color: #b91c1c; font-weight: 600; }
+    textarea { min-height: 120px; font-family: ui-monospace, monospace; font-size: 0.75rem; }
+    code { font-size: 0.78rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">Grip Analysis · light runtime</div>
+    <h1>악력 분석 서버 콘솔</h1>
+    <p class="sub">HIL 알림 수신 → 백그라운드 다운로드/분석. API는 즉시 200만 응답합니다.</p>
+    <div class="badges" id="badges"></div>
+
+    <div class="grid two">
+      <section class="card">
+        <h2>1. 저장 완료 알림</h2>
+        <p>POST /api/calibration/complete</p>
+        <div class="row">
+          <div>
+            <label>individual_seq</label>
+            <input id="individual" value="15" />
+          </div>
+          <div>
+            <label>calibration_seq</label>
+            <input id="calibration" value="101" />
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label>body_part</label>
+            <select id="body">
+              <option value="arm_r">arm_r</option>
+              <option value="arm_l">arm_l</option>
+              <option value="leg_r">leg_r</option>
+              <option value="leg_l">leg_l</option>
+              <option value="chest">chest</option>
+              <option value="head">head</option>
+              <option value="">(기본 arm_r imu+emg)</option>
+            </select>
+          </div>
+          <div>
+            <label>kind</label>
+            <select id="kind">
+              <option value="imu">imu</option>
+              <option value="emg">emg</option>
+              <option value="">(미지정)</option>
+            </select>
+          </div>
+        </div>
+        <button id="btnNotify">알림 보내기</button>
+      </section>
+
+      <section class="card">
+        <h2>2. HIL 조회</h2>
+        <p>최신 calibration / raw 다운로드</p>
+        <button class="ghost" id="btnLatest">최신 calibration 조회</button>
+        <button class="secondary" id="btnDownload">ndjson.gz 다운로드</button>
+        <pre id="latest" style="white-space:pre-wrap;font-size:0.75rem;color:var(--muted)"></pre>
+      </section>
+    </div>
+
+    <section class="card" style="margin-top:1rem">
+      <h2>Jobs</h2>
+      <p>알림 후 다운로드·분석 상태</p>
+      <div style="overflow-x:auto">
+        <table>
+          <thead>
+            <tr><th>상태</th><th>individual</th><th>calibration</th><th>대상</th><th>메시지</th></tr>
+          </thead>
+          <tbody id="jobs"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:1rem">
+      <h2>Datasets / 분석</h2>
+      <p>다운로드된 파일과 요약 통계</p>
+      <div style="overflow-x:auto">
+        <table>
+          <thead>
+            <tr><th>calibration</th><th>부위/종류</th><th>lines</th><th>source</th><th>분석</th><th></th></tr>
+          </thead>
+          <tbody id="datasets"></tbody>
+        </table>
+      </div>
+      <textarea id="preview" readonly placeholder="미리보기 / 분석 결과"></textarea>
+    </section>
+
+    <section class="card" style="margin-top:1rem">
+      <h2>로그</h2>
+      <textarea id="log" readonly>준비됨</textarea>
+    </section>
+  </main>
+  <script>
+    const $ = (id) => document.getElementById(id);
+    function log(msg) {
+      const el = $("log");
+      const next = `${new Date().toLocaleTimeString()}  ${msg}\n${el.value}`;
+      el.value = next.length > 4000 ? next.slice(0, 4000) : next;
+    }
+
+    async function refresh() {
+      if (document.hidden) return;
+      const s = await fetch("/api/status").then((r) => r.json());
+      $("badges").innerHTML = [
+        `port ${s.port}`,
+        `mem ${s.memoryMB}MB`,
+        `mode ${s.hilMode}`,
+        s.publicBaseUrl || "",
+      ].map((t) => `<span class="badge">${t}</span>`).join("");
+
+      $("jobs").innerHTML = (s.jobs || []).length
+        ? s.jobs.map((j) => `<tr>
+            <td class="${j.status === "failed" ? "fail" : "ok"}">${j.status}</td>
+            <td>${j.individual_seq}</td><td>${j.calibration_seq}</td>
+            <td>${j.body_part || "-"}/${j.kind || "-"}</td>
+            <td>${j.message}${j.error ? " (" + j.error + ")" : ""}</td>
+          </tr>`).join("")
+        : `<tr><td colspan="5">아직 작업 없음</td></tr>`;
+
+      $("datasets").innerHTML = (s.datasets || []).length
+        ? s.datasets.map((d) => `<tr>
+            <td>${d.calibration_seq}</td>
+            <td>${d.body_part}/${d.kind}</td>
+            <td>${d.lineCount}</td>
+            <td>${d.source}</td>
+            <td>${d.hasAnalysis ? "done" : "-"}</td>
+            <td><button class="ghost" data-id="${d.id}">미리보기</button></td>
+          </tr>`).join("")
+        : `<tr><td colspan="6">데이터셋 없음</td></tr>`;
+
+      document.querySelectorAll("button[data-id]").forEach((btn) => {
+        btn.onclick = async () => {
+          const id = btn.getAttribute("data-id");
+          const p = await fetch(`/api/datasets/${id}/preview?limit=10`).then((r) => r.json());
+          $("preview").value = JSON.stringify({
+            analysis: p.dataset?.analysis,
+            lines: p.lines,
+          }, null, 2);
+          log(`preview ${id}`);
+        };
+      });
+    }
+
+    $("btnNotify").onclick = async () => {
+      const qs = new URLSearchParams();
+      if ($("body").value) qs.set("body_part", $("body").value);
+      if ($("kind").value) qs.set("kind", $("kind").value);
+      const res = await fetch(`/api/calibration/complete?${qs}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          individual_seq: Number($("individual").value),
+          calibration_seq: Number($("calibration").value),
+        }),
+      }).then((r) => r.json());
+      log(`notify ${JSON.stringify(res)}`);
+      setTimeout(refresh, 500);
+    };
+
+    $("btnLatest").onclick = async () => {
+      const seq = Number($("individual").value);
+      const data = await fetch(`/api/hil/latest/${seq}`).then((r) => r.json());
+      $("latest").textContent = JSON.stringify(data, null, 2);
+      if (data.calibration_seq) $("calibration").value = data.calibration_seq;
+      log(`latest source=${data.source}`);
+    };
+
+    $("btnDownload").onclick = async () => {
+      const qs = new URLSearchParams({
+        calibration_seq: $("calibration").value,
+        body_part: $("body").value || "arm_r",
+        kind: $("kind").value || "imu",
+      });
+      const res = await fetch(`/api/hil/data?${qs}`);
+      const blob = await res.blob();
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = `calibration_${qs.get("calibration_seq")}_${qs.get("body_part")}_${qs.get("kind")}.ndjson.gz`;
+      a.click();
+      log(`download ${blob.size}B source=${res.headers.get("X-Data-Source")}`);
+    };
+
+    refresh();
+    setInterval(refresh, 8000);
+    document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
+  </script>
+</body>
+</html>
