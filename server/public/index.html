@@ -69,7 +69,7 @@
     <div class="grid two">
       <section class="card">
         <h2>1. 저장 완료 알림</h2>
-        <p>POST /api/calibration/complete</p>
+        <p>POST /api/calibration/complete?body_part=&amp;kind=</p>
         <div class="row">
           <div>
             <label>individual_seq</label>
@@ -88,9 +88,8 @@
               <option value="arm_l">arm_l</option>
               <option value="leg_r">leg_r</option>
               <option value="leg_l">leg_l</option>
-              <option value="chest">chest</option>
               <option value="head">head</option>
-              <option value="">(기본 arm_r imu+emg)</option>
+              <option value="chest">chest</option>
             </select>
           </div>
           <div>
@@ -98,7 +97,6 @@
             <select id="kind">
               <option value="imu">imu</option>
               <option value="emg">emg</option>
-              <option value="">(미지정)</option>
             </select>
           </div>
         </div>
@@ -198,9 +196,10 @@
     }
 
     $("btnNotify").onclick = async () => {
-      const qs = new URLSearchParams();
-      if ($("body").value) qs.set("body_part", $("body").value);
-      if ($("kind").value) qs.set("kind", $("kind").value);
+      const qs = new URLSearchParams({
+        body_part: $("body").value,
+        kind: $("kind").value,
+      });
       const res = await fetch(`/api/calibration/complete?${qs}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -224,8 +223,8 @@
     $("btnDownload").onclick = async () => {
       const qs = new URLSearchParams({
         calibration_seq: $("calibration").value,
-        body_part: $("body").value || "arm_r",
-        kind: $("kind").value || "imu",
+        body_part: $("body").value,
+        kind: $("kind").value,
       });
       const res = await fetch(`/api/hil/data?${qs}`);
       const blob = await res.blob();

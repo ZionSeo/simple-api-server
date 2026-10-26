@@ -133,37 +133,49 @@ app.get("/api/datasets/:id/preview", async (req, res) => {
   }
 });
 
-app.get("/api/calibration/complete", (_req, res) => {
-  res.json({
-    ok: true,
-    message:
-      "이 URL은 POST 전용입니다. 브라우저 GET으로는 안내만 반환합니다.",
-    method: "POST",
-    path: "/api/calibration/complete",
-    body_example: { individual_seq: 15, calibration_seq: 101 },
-  });
-});
+function finiteNumber(value: unknown): number | undefined {
+  if (value === undefined || value === null || value === "") return undefined;
+  const number = Number(value);
+  return Number.isFinite(number) ? number : undefined;
+}
 
-app.post("/api/calibration/complete", (req, res) => {
-  const individual_seq = Number(
-    req.body?.individual_seq ?? req.query.individual_seq
-  );
-  const calibration_seq = Number(
-    req.body?.calibration_seq ?? req.query.calibration_seq
-  );
-
-  if (!Number.isFinite(individual_seq) || !Number.isFinite(calibration_seq)) {
+function handleCalibrationComplete(
+  req: express.Request,
+  res: express.Response
+) {
+  const individual_seq = finiteNumber(req.body?.individual_seq);
+  const pathSeq = finiteNumber(req.params.calibration_seq);
+  const bodySeq = finiteNumber(req.body?.calibration_seq);
+  if (pathSeq !== undefined && bodySeq !== undefined && pathSeq !== bodySeq) {
     res.status(400).json({
       ok: false,
       response: "invalid_request",
-      message: "individual_seq와 calibration_seq가 필요합니다.",
+      message: "경로의 calibration_seq와 본문의 calibration_seq가 다릅니다.",
     });
     return;
   }
+  const calibration_seq = pathSeq ?? bodySeq;
+  const body_part = parseBodyPart(req.query.body_part);
+  const kind = parseKind(req.query.kind);
 
-  const body_part =
-    parseBodyPart(req.body?.body_part) ?? parseBodyPart(req.query.body_part);
-  const kind = parseKind(req.body?.kind) ?? parseKind(req.query.kind);
+  if (individual_seq === undefined || calibration_seq === undefined) {
+    res.status(400).json({
+      ok: false,
+      response: "invalid_request",
+      message:
+        "individual_seq(본문)와 calibration_seq(경로 또는 본문)가 필요합니다.",
+    });
+    return;
+  }
+  if (!body_part || !kind) {
+    res.status(400).json({
+      ok: false,
+      response: "invalid_request",
+      message:
+        "query body_part, kind가 필요합니다. body_part는 arm_r, arm_l, leg_r, leg_l, head, chest 중 하나이고 kind는 imu 또는 emg입니다.",
+    });
+    return;
+  }
 
   const job = enqueueCalibrationJob({
     individual_seq,
@@ -172,14 +184,32 @@ app.post("/api/calibration/complete", (req, res) => {
     kind,
   });
 
-  // 즉시 200 — 다운로드/분석은 워커가 백그라운드 처리
   res.json({
     ok: true,
     response: "success",
     calibration_seq,
     job_id: job.id,
   });
+}
+
+app.get("/api/calibration/complete", (_req, res) => {
+  res.json({
+    ok: true,
+    message:
+      "이 URL은 POST 전용입니다. 브라우저 GET으로는 안내만 반환합니다.",
+    method: "POST",
+    path: "/api/calibration/complete",
+    query_required: {
+      body_part: [...BODY_PARTS],
+      kind: [...KINDS],
+    },
+    body_example: { individual_seq: 15, calibration_seq: 101 },
+    path_example: "/api/calibration/complete/101?body_part=arm_r&kind=imu",
+  });
 });
+
+app.post("/api/calibration/complete", handleCalibrationComplete);
+app.post("/api/calibration/complete/:calibration_seq", handleCalibrationComplete);
 
 app.get("/api/hil/latest/:individualSeq", async (req, res) => {
   const seq = Number(req.params.individualSeq);

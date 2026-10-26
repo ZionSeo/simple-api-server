@@ -12,7 +12,7 @@ module.exports = {
         NODE_ENV: "production",
         PORT: 3847,
         HIL_BASE_URL: "http://221.162.67.121:91",
-        HIL_MODE: "auto",
+        HIL_MODE: "live",
       },
     },
   ],

@@ -37,14 +37,14 @@ HIL이 데이터 저장 후 호출하는 엔드포인트입니다.
 }
 ```
 
-**Query (선택)**
+**Query (필수)**
 
 | 파라미터 | 필수 | 예시 | 설명 |
 |----------|------|------|------|
-| `body_part` | N | `arm_r` | `arm_r` / `arm_l` / `leg_r` / `leg_l` / `chest` / `head` |
-| `kind` | N | `imu` | `imu` / `emg` |
+| `body_part` | Y | `arm_r` | `arm_r` / `arm_l` / `leg_r` / `leg_l` / `head` / `chest` |
+| `kind` | Y | `imu` | `imu` / `emg` |
 
-미지정 시 기본으로 `arm_r`의 `imu` + `emg`를 다운로드합니다.
+`calibration_seq`는 경로(`/api/calibration/complete/{calibration_seq}`) 또는 본문에 둡니다. 둘 다 있으면 값이 같아야 합니다. 쿼리가 빠지거나 허용 값이 아니면 400을 반환하고 작업을 만들지 않습니다.
 
 ### Response (성공)
 
@@ -62,17 +62,17 @@ HIL이 데이터 저장 후 호출하는 엔드포인트입니다.
 ### curl 예시
 
 ```bash
-curl -X POST "https://office-treo-networking-disks.trycloudflare.com/api/calibration/complete" \
+curl -X POST "https://office-treo-networking-disks.trycloudflare.com/api/calibration/complete?body_part=arm_r&kind=imu" \
   -H "Content-Type: application/json" \
   -d '{"individual_seq":15,"calibration_seq":101}'
 ```
 
-부위/종류 지정:
+경로로 `calibration_seq`를 주는 경우:
 
 ```bash
-curl -X POST "https://office-treo-networking-disks.trycloudflare.com/api/calibration/complete?body_part=arm_r&kind=imu" \
+curl -X POST "https://office-treo-networking-disks.trycloudflare.com/api/calibration/complete/101?body_part=arm_r&kind=imu" \
   -H "Content-Type: application/json" \
-  -d '{"individual_seq":15,"calibration_seq":101}'
+  -d '{"individual_seq":15}'
 ```
 
 ---

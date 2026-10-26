@@ -39,15 +39,10 @@ export async function fetchLatestCalibration(
   if (config.hilMode === "mock") return mockLatest(individual_seq);
 
   const url = `${config.hilBaseUrl}/calibration/latest/${individual_seq}`;
-  try {
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`HIL latest HTTP ${res.status}`);
-    const data = (await res.json()) as HilLatestResponse;
-    return { ...data, source: "hil" };
-  } catch (error) {
-    if (config.hilMode === "live") throw error;
-    return mockLatest(individual_seq);
-  }
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`HIL latest HTTP ${res.status}`);
+  const data = (await res.json()) as HilLatestResponse;
+  return { ...data, source: "hil" };
 }
 
 export async function downloadCalibrationData(options: {
@@ -63,21 +58,16 @@ export async function downloadCalibrationData(options: {
     };
   }
 
-  const url = `${config.hilBaseUrl}/calibration/${options.calibration_seq}/data?body_part=${options.body_part}&kind=${options.kind}`;
-  try {
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`HIL data HTTP ${res.status}`);
-    return {
-      buffer: Buffer.from(await res.arrayBuffer()),
-      source: "hil",
-      contentType: res.headers.get("content-type") || "application/gzip",
-    };
-  } catch (error) {
-    if (config.hilMode === "live") throw error;
-    return {
-      buffer: await buildMockNdjsonGz(options),
-      source: "mock",
-      contentType: "application/gzip",
-    };
-  }
+  const params = new URLSearchParams({
+    body_part: options.body_part,
+    kind: options.kind,
+  });
+  const url = `${config.hilBaseUrl}/calibration/${options.calibration_seq}/data?${params}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`HIL data HTTP ${res.status}`);
+  return {
+    buffer: Buffer.from(await res.arrayBuffer()),
+    source: "hil",
+    contentType: res.headers.get("content-type") || "application/gzip",
+  };
 }

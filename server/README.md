@@ -24,7 +24,7 @@ npm start
 ## HIL 알림
 
 ```bash
-curl -X POST http://127.0.0.1:3847/api/calibration/complete \
+curl -X POST "http://127.0.0.1:3847/api/calibration/complete?body_part=arm_r&kind=imu" \
   -H "Content-Type: application/json" \
   -d '{"individual_seq":15,"calibration_seq":101}'
 ```
@@ -35,7 +35,7 @@ curl -X POST http://127.0.0.1:3847/api/calibration/complete \
 |------|------|------|
 | `PORT` | `3847` | 리슨 포트 |
 | `HIL_BASE_URL` | `http://221.162.67.121:91` | HIL 서버 |
-| `HIL_MODE` | `auto` | `auto` / `mock` / `live` |
+| `HIL_MODE` | `live` | `live`는 HIL 원본을 받고, 실패하면 작업을 실패 처리합니다. `mock`만 샘플을 씁니다. |
 | `PUBLIC_BASE_URL` | (자동) | 외부 공개 주소 |
 
 고정 URL: [`FIXED_URL.md`](./FIXED_URL.md)  

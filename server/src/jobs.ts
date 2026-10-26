@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
 import { analyzeDatasetFile } from "./analyze.js";
-import { downloadCalibrationData, fetchLatestCalibration } from "./hil-client.js";
+import { downloadCalibrationData } from "./hil-client.js";
 import { countNdjsonGzLines } from "./ndjson.js";
 import {
   addDataset,
@@ -12,12 +12,7 @@ import {
   setDatasetAnalysis,
   upsertJob,
 } from "./store.js";
-import type {
-  AnalysisJob,
-  BodyPart,
-  CalibrationCompletePayload,
-  Kind,
-} from "./types.js";
+import type { AnalysisJob, CalibrationCompletePayload } from "./types.js";
 
 function nowIso() {
   return new Date().toISOString();
@@ -54,26 +49,7 @@ async function processJob(jobId: string) {
   upsertJob(job);
 
   try {
-    const targets: Array<{ body_part: BodyPart; kind: Kind }> = [];
-
-    if (job.body_part && job.kind) {
-      targets.push({ body_part: job.body_part, kind: job.kind });
-    } else {
-      await fetchLatestCalibration(job.individual_seq);
-      if (!job.body_part && !job.kind) {
-        targets.push(
-          { body_part: "arm_r", kind: "imu" },
-          { body_part: "arm_r", kind: "emg" }
-        );
-      } else {
-        // body_part만 지정된 경우 해당 부위 imu+emg
-        const parts: BodyPart[] = job.body_part ? [job.body_part] : ["arm_r"];
-        const kinds: Kind[] = job.kind ? [job.kind] : ["imu", "emg"];
-        for (const body_part of parts) {
-          for (const kind of kinds) targets.push({ body_part, kind });
-        }
-      }
-    }
+    const targets = [{ body_part: job.body_part, kind: job.kind }];
 
     const datasetIds: string[] = [];
     for (const target of targets) {

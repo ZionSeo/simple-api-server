@@ -20,5 +20,6 @@ export const config = {
     ""
   ),
   publicBaseUrl: resolvePublicBaseUrl(),
-  hilMode: (process.env.HIL_MODE || "auto") as "auto" | "mock" | "live",
+  // mock만 샘플을 반환합니다. auto는 예전 환경변수 호환용이며 live와 같이 HIL을 호출합니다.
+  hilMode: (process.env.HIL_MODE || "live") as "auto" | "mock" | "live",
 };
