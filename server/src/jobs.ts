@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
 import { analyzeDatasetFile } from "./analyze.js";
+import { attachGripFile, ensureSubject } from "./cohort.js";
 import { downloadCalibrationData } from "./hil-client.js";
 import { countNdjsonGzLines } from "./ndjson.js";
 import {
@@ -35,6 +36,7 @@ export function enqueueCalibrationJob(
     datasetIds: [],
   };
   upsertJob(job);
+  ensureSubject(payload.individual_seq);
   void processJob(job.id);
   return job;
 }
@@ -78,6 +80,17 @@ async function processJob(jobId: string) {
         createdAt: nowIso(),
       });
       datasetIds.push(dataset.id);
+      attachGripFile({
+        individual_seq: job.individual_seq,
+        calibration_seq: job.calibration_seq,
+        body_part: target.body_part,
+        kind: target.kind,
+        fileName,
+        byteSize: downloaded.buffer.byteLength,
+        lineCount,
+        source: downloaded.source,
+        savedAt: dataset.createdAt,
+      });
     }
 
     const current = getJob(jobId);

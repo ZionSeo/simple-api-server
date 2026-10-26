@@ -71,3 +71,43 @@ export async function downloadCalibrationData(options: {
     contentType: res.headers.get("content-type") || "application/gzip",
   };
 }
+
+const MAX_MOTION_BYTES = 200 * 1024 * 1024;
+
+export async function downloadMotionExport(sessionSeq: number): Promise<{
+  buffer: Buffer;
+  source: "hil" | "mock";
+  contentType: string;
+  fileName: string;
+}> {
+  const fileName = `session_${sessionSeq}.zip`;
+  if (config.hilMode === "mock") {
+    return {
+      buffer: Buffer.from(
+        JSON.stringify({
+          mock: true,
+          session_seq: sessionSeq,
+          body_parts: BODY_PARTS,
+        }),
+        "utf8"
+      ),
+      source: "mock",
+      contentType: "application/json",
+      fileName: `session_${sessionSeq}.json`,
+    };
+  }
+
+  const url = `${config.hilBaseUrl}/export/all/${sessionSeq}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`HIL 동작 세트 HTTP ${res.status}`);
+  const length = Number(res.headers.get("content-length") || 0);
+  if (length > MAX_MOTION_BYTES) throw new Error("동작 세트가 너무 큽니다.");
+  const buffer = Buffer.from(await res.arrayBuffer());
+  if (buffer.byteLength > MAX_MOTION_BYTES) throw new Error("동작 세트가 너무 큽니다.");
+  return {
+    buffer,
+    source: "hil",
+    contentType: res.headers.get("content-type") || "application/zip",
+    fileName,
+  };
+}

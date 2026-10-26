@@ -1,11 +1,20 @@
 import express from "express";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  addTrainingExample,
+  listSubjects,
+  listTrainingExamples,
+  normalizeGroup,
+  setSubjectGroup,
+  subjectView,
+} from "./cohort.js";
 import { config } from "./config.js";
 import { downloadCalibrationData, fetchLatestCalibration } from "./hil-client.js";
 import { enqueueCalibrationJob } from "./jobs.js";
 import { parseNdjsonGz } from "./ndjson.js";
 import { getDataset, getJob, listDatasets, listJobs } from "./store.js";
+import { pullGripSet, pullMotionSet } from "./subject-sync.js";
 import { BODY_PARTS, KINDS, type BodyPart, type Kind } from "./types.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -253,6 +262,89 @@ app.get("/api/hil/data", async (req, res) => {
     res.send(downloaded.buffer);
   } catch (error) {
     res.status(502).json({
+      ok: false,
+      message: error instanceof Error ? error.message : String(error),
+    });
+  }
+});
+
+function individualParam(value: string | undefined): number | undefined {
+  const seq = Number(value);
+  return Number.isFinite(seq) ? seq : undefined;
+}
+
+app.get("/api/subjects", (_req, res) => {
+  res.json({
+    ok: true,
+    subjects: listSubjects().map(subjectView),
+    examples: listTrainingExamples(),
+  });
+});
+
+app.post("/api/subjects/:individualSeq/group", (req, res) => {
+  const individual_seq = individualParam(req.params.individualSeq);
+  const group = normalizeGroup(req.body?.group);
+  if (individual_seq === undefined || !group) {
+    res.status(400).json({
+      ok: false,
+      message: "individual_seq와 group(정상 또는 근감소)이 필요합니다.",
+    });
+    return;
+  }
+  res.json({ ok: true, subject: subjectView(setSubjectGroup(individual_seq, group)) });
+});
+
+app.post("/api/subjects/:individualSeq/grip", async (req, res) => {
+  const individual_seq = individualParam(req.params.individualSeq);
+  if (individual_seq === undefined) {
+    res.status(400).json({ ok: false, message: "individual_seq가 올바르지 않습니다." });
+    return;
+  }
+  try {
+    res.json(await pullGripSet(individual_seq));
+  } catch (error) {
+    res.status(502).json({
+      ok: false,
+      message: error instanceof Error ? error.message : String(error),
+    });
+  }
+});
+
+app.post("/api/subjects/:individualSeq/motion", async (req, res) => {
+  const individual_seq = individualParam(req.params.individualSeq);
+  const session_seq = Number(req.body?.session_seq);
+  if (individual_seq === undefined || !Number.isFinite(session_seq)) {
+    res.status(400).json({
+      ok: false,
+      message: "individual_seq와 session_seq가 필요합니다.",
+    });
+    return;
+  }
+  try {
+    res.json(await pullMotionSet(individual_seq, session_seq));
+  } catch (error) {
+    res.status(502).json({
+      ok: false,
+      message: error instanceof Error ? error.message : String(error),
+    });
+  }
+});
+
+app.post("/api/subjects/:individualSeq/training", (req, res) => {
+  const individual_seq = individualParam(req.params.individualSeq);
+  const session_seq = Number(req.body?.session_seq);
+  if (individual_seq === undefined || !Number.isFinite(session_seq)) {
+    res.status(400).json({
+      ok: false,
+      message: "individual_seq와 session_seq가 필요합니다.",
+    });
+    return;
+  }
+  try {
+    const example = addTrainingExample(individual_seq, session_seq);
+    res.json({ ok: true, example });
+  } catch (error) {
+    res.status(400).json({
       ok: false,
       message: error instanceof Error ? error.message : String(error),
     });

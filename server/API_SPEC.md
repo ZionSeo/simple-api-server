@@ -104,6 +104,13 @@ Base: `https://office-treo-networking-disks.trycloudflare.com`
 | `GET` | `/api/hil/latest/{individual_seq}` | HIL 최신 calibration 프록시 |
 | `GET` | `/api/hil/data?calibration_seq=&body_part=&kind=` | HIL raw 다운로드 프록시 |
 | `GET/POST` | `/api/test` | 통신 테스트 `{ "ok": true, "message": "success" }` |
+| `GET` | `/api/subjects` | 대상자 분류와 학습 예제 |
+| `POST` | `/api/subjects/{individual_seq}/group` | body `group`: `정상` 또는 `근감소` |
+| `POST` | `/api/subjects/{individual_seq}/grip` | HIL 최신 calibration의 부위·종류 파일을 모두 저장 |
+| `POST` | `/api/subjects/{individual_seq}/motion` | body `session_seq`. HIL `GET /export/all/{session_seq}` |
+| `POST` | `/api/subjects/{individual_seq}/training` | body `session_seq`. 분류된 악력+동작 한 건을 학습 예제로 저장 |
+
+분류와 학습 예제는 `data/cohort.json`에 남습니다. 정상 label은 0, 근감소 label은 1입니다. HIL 알림 응답에는 분류를 넣지 않습니다.
 
 ---
 

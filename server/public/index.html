@@ -51,6 +51,7 @@
     }
     button.secondary { background: #334155; }
     button.ghost { background: #fff; color: var(--text); border: 1px solid var(--line); }
+    button.mini { width: auto; margin: 0 0.25rem 0 0; padding: 0.3rem 0.55rem; }
     table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
     th, td { text-align: left; padding: 0.45rem 0.3rem; border-bottom: 1px solid var(--line); vertical-align: top; }
     .ok { color: #0f766e; font-weight: 600; }
@@ -63,13 +64,13 @@
   <main>
     <div class="badge">Grip Analysis · light runtime</div>
     <h1>악력 분석 서버 콘솔</h1>
-    <p class="sub">HIL 알림 수신 → 백그라운드 다운로드/분석. API는 즉시 200만 응답합니다.</p>
+    <p class="sub">HIL 알림을 받으면 엑셀 응답을 바로 돌려주고, 악력 파일과 동작 세트를 모은 뒤 정상·근감소를 직접 지정해 학습 예제를 만듭니다.</p>
     <div class="badges" id="badges"></div>
 
     <div class="grid two">
       <section class="card">
         <h2>1. 저장 완료 알림</h2>
-        <p>POST /api/calibration/complete?body_part=&amp;kind=</p>
+        <p>HIL이 이 주소로 알리면 즉시 <code>{ ok, response: "success", calibration_seq }</code>를 돌려줍니다. 분류 결과는 이 응답에 넣지 않습니다.</p>
         <div class="row">
           <div>
             <label>individual_seq</label>
@@ -137,6 +138,44 @@
         </table>
       </div>
       <textarea id="preview" readonly placeholder="미리보기 / 분석 결과"></textarea>
+    </section>
+
+    <section class="card" style="margin-top:1rem">
+      <h2>3. 대상자 분류</h2>
+      <p>HIL에서 악력 파일과 동작 세트를 받은 뒤, 그 인원을 정상 또는 근감소로 지정합니다.</p>
+      <div class="row">
+        <div>
+          <label>individual_seq</label>
+          <input id="cohortIndividual" value="15" />
+        </div>
+        <div>
+          <label>동작 session_seq</label>
+          <input id="cohortSession" placeholder="세션 번호" />
+        </div>
+      </div>
+      <button id="btnPullGrip">악력 세트 불러오기</button>
+      <button class="secondary" id="btnPullMotion">동작 세트 불러오기</button>
+      <div style="overflow-x:auto;margin-top:0.8rem">
+        <table>
+          <thead>
+            <tr><th>인원</th><th>분류</th><th>악력</th><th>동작</th><th>학습</th><th></th></tr>
+          </thead>
+          <tbody id="subjects"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:1rem">
+      <h2>4. 동작 학습 예제</h2>
+      <p>분류된 인원의 악력 파일과 동작 세션 하나를 학습용 한 건으로 저장합니다. 정상은 0, 근감소는 1입니다. 모델을 여기서 학습하지는 않습니다.</p>
+      <div style="overflow-x:auto">
+        <table>
+          <thead>
+            <tr><th>인원</th><th>분류</th><th>label</th><th>동작 세션</th><th>악력 파일</th></tr>
+          </thead>
+          <tbody id="examples"></tbody>
+        </table>
+      </div>
     </section>
 
     <section class="card" style="margin-top:1rem">
@@ -208,8 +247,82 @@
           calibration_seq: Number($("calibration").value),
         }),
       }).then((r) => r.json());
-      log(`notify ${JSON.stringify(res)}`);
+      log(`HIL 응답 ${JSON.stringify(res)}`);
       setTimeout(refresh, 500);
+    };
+
+    function groupButtons(seq) {
+      return `<button class="mini ghost" data-group="정상" data-seq="${seq}">정상</button><button class="mini" data-group="근감소" data-seq="${seq}">근감소</button>`;
+    }
+
+    async function refreshSubjects() {
+      const data = await fetch("/api/subjects").then((r) => r.json());
+      const subjects = data.subjects || [];
+      $("subjects").innerHTML = subjects.length
+        ? subjects.map((person) => `<tr>
+            <td>${person.individual_seq}</td>
+            <td>${person.group_label || "미분류"}</td>
+            <td>${(person.grip || []).length}</td>
+            <td>${(person.motions || []).map((item) => item.session_seq).join(", ") || "-"}</td>
+            <td>${person.ready ? "가능" : (person.ready_reason || "")}</td>
+            <td>${groupButtons(person.individual_seq)}${(person.motions || []).map((item) => `<button class="mini secondary" data-train="${person.individual_seq}" data-session="${item.session_seq}">학습 ${item.session_seq}</button>`).join("")}</td>
+          </tr>`).join("")
+        : `<tr><td colspan="6">아직 대상자 없음</td></tr>`;
+      $("examples").innerHTML = (data.examples || []).length
+        ? data.examples.map((item) => `<tr>
+            <td>${item.individual_seq}</td>
+            <td>${item.group === "patient" ? "근감소" : "정상"}</td>
+            <td>${item.label}</td>
+            <td>${item.motion.session_seq}</td>
+            <td>${(item.grip || []).length}</td>
+          </tr>`).join("")
+        : `<tr><td colspan="5">학습 예제 없음</td></tr>`;
+
+      document.querySelectorAll("button[data-group]").forEach((btn) => {
+        btn.onclick = async () => {
+          const seq = btn.getAttribute("data-seq");
+          const group = btn.getAttribute("data-group");
+          const res = await fetch(`/api/subjects/${seq}/group`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ group }),
+          }).then((r) => r.json());
+          log(`분류 ${JSON.stringify(res.subject || res)}`);
+          refreshSubjects();
+        };
+      });
+      document.querySelectorAll("button[data-train]").forEach((btn) => {
+        btn.onclick = async () => {
+          const seq = btn.getAttribute("data-train");
+          const session = btn.getAttribute("data-session");
+          const res = await fetch(`/api/subjects/${seq}/training`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ session_seq: Number(session) }),
+          }).then((r) => r.json());
+          log(`학습 예제 ${JSON.stringify(res)}`);
+          refreshSubjects();
+        };
+      });
+    }
+
+    $("btnPullGrip").onclick = async () => {
+      const seq = Number($("cohortIndividual").value);
+      const res = await fetch(`/api/subjects/${seq}/grip`, { method: "POST" }).then((r) => r.json());
+      log(`악력 세트 ${JSON.stringify({ ok: res.ok, saved: res.saved, errors: res.errors })}`);
+      refreshSubjects();
+    };
+
+    $("btnPullMotion").onclick = async () => {
+      const seq = Number($("cohortIndividual").value);
+      const session = Number($("cohortSession").value);
+      const res = await fetch(`/api/subjects/${seq}/motion`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ session_seq: session }),
+      }).then((r) => r.json());
+      log(`동작 세트 ${JSON.stringify(res.subject || res)}`);
+      refreshSubjects();
     };
 
     $("btnLatest").onclick = async () => {
@@ -236,7 +349,8 @@
     };
 
     refresh();
-    setInterval(refresh, 8000);
+    refreshSubjects();
+    setInterval(() => { refresh(); refreshSubjects(); }, 8000);
     document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
   </script>
 </body>
