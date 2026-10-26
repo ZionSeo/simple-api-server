@@ -179,6 +179,26 @@
     </section>
 
     <section class="card" style="margin-top:1rem">
+      <h2>5. 초기 로지스틱 모델</h2>
+      <p>56명은 기관 기준으로 미리 지정되어 있습니다. 정상 또는 근감소를 바꾼 뒤 모델 적용하기를 누르면, 서버가 가동·근활성·동작역학·보상맥락 편차로 근감소 확률을 계산합니다.</p>
+      <div id="formulaBox" style="font-size:0.82rem;line-height:1.45"></div>
+      <button id="btnApplyModel">모델 적용하기</button>
+      <p id="modelSummary"></p>
+      <div style="overflow-x:auto">
+        <table>
+          <thead>
+            <tr>
+              <th>인원</th><th>기관</th><th>지정</th>
+              <th>가동</th><th>근활성</th><th>동작역학</th><th>보상맥락</th>
+              <th>확률</th><th>모델 판정</th><th></th>
+            </tr>
+          </thead>
+          <tbody id="referenceSubjects"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:1rem">
       <h2>로그</h2>
       <textarea id="log" readonly>준비됨</textarea>
     </section>
@@ -348,9 +368,99 @@
       log(`download ${blob.size}B source=${res.headers.get("X-Data-Source")}`);
     };
 
+    function esc(value) {
+      return String(value).replace(/[&<>"']/g, (ch) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+      })[ch]);
+    }
+
+    function fmt(value) {
+      return Number.isFinite(value) ? Number(value).toFixed(3) : "";
+    }
+
+    function formulaBlock(title, lines) {
+      return `<h3 style="margin:0.8rem 0 0.25rem;font-size:0.92rem">${esc(title)}</h3><div>${lines.map((line) => `<div>${esc(line)}</div>`).join("")}</div>`;
+    }
+
+    function renderFormulas(formulas) {
+      if (!formulas || $("formulaBox").dataset.ready === "1") return;
+      const indicators = (formulas.indicators || []).map((item) => {
+        const lines = [
+          `방향: ${item.direction}. ${item.meaning}`,
+          ...item.features,
+          ...item.task,
+        ];
+        return formulaBlock(item.name, lines);
+      }).join("");
+      $("formulaBox").innerHTML = [
+        formulaBlock("정상군 기준", formulas.reference || []),
+        formulaBlock("중심과 척도", formulas.scale || []),
+        formulaBlock("특징 편차", formulas.deviation || []),
+        formulaBlock("네 지표로 모으는 식", formulas.aggregation || []),
+        indicators,
+        formulaBlock("로지스틱 적용", formulas.logistic || []),
+      ].join("");
+      $("formulaBox").dataset.ready = "1";
+    }
+
+    async function refreshReference() {
+      const data = await fetch("/api/reference").then((r) => r.json());
+      renderFormulas(data.model?.formulas);
+      const people = data.subjects || [];
+      const summary = data.summary || {};
+      const scoredText = summary.scored
+        ? ` 모델을 적용한 인원 ${summary.scored}명, 지정과 같은 판정 ${summary.matched}명, 일치율 ${Number(summary.accuracy).toFixed(3)}.`
+        : "";
+      $("modelSummary").textContent = `인원 ${summary.n || 0}명, 정상 ${summary.n_control || 0}명, 근감소 ${summary.n_patient || 0}명. 판정 기준 확률 ${data.model?.threshold ?? 0.5}.${scoredText}`;
+      $("referenceSubjects").innerHTML = people.map((person) => {
+        const features = person.features || {};
+        const prediction = person.prediction;
+        const id = encodeURIComponent(person.subject_id);
+        return `<tr>
+          <td>${esc(person.subject_id)}</td>
+          <td>${esc(person.institution)}</td>
+          <td>${esc(person.group_label)}${person.adjusted ? " (변경)" : ""}</td>
+          <td>${fmt(features.movement_capacity_deviation_z)}</td>
+          <td>${fmt(features.muscle_activation_deviation_z)}</td>
+          <td>${fmt(features.movement_dynamics_deviation_z)}</td>
+          <td>${fmt(features.compensation_context_deviation_z)}</td>
+          <td>${prediction ? fmt(prediction.probability) : ""}</td>
+          <td>${prediction ? esc(prediction.predicted_label) + (prediction.matches_group ? "" : " (지정과 다름)") : ""}</td>
+          <td>
+            <button class="mini ghost" data-ref-group="정상" data-ref-id="${id}">정상</button>
+            <button class="mini" data-ref-group="근감소" data-ref-id="${id}">근감소</button>
+          </td>
+        </tr>`;
+      }).join("");
+      document.querySelectorAll("button[data-ref-group]").forEach((btn) => {
+        btn.onclick = async () => {
+          const subjectId = decodeURIComponent(btn.getAttribute("data-ref-id"));
+          const group = btn.getAttribute("data-ref-group");
+          const res = await fetch("/api/reference/group", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ subject_id: subjectId, group }),
+          }).then((r) => r.json());
+          log(`초기 인원 분류 ${JSON.stringify(res.subject || res)}`);
+          refreshReference();
+        };
+      });
+    }
+
+    $("btnApplyModel").onclick = async () => {
+      const res = await fetch("/api/model/apply", { method: "POST" }).then((r) => r.json());
+      const summary = res.summary || {};
+      log(`모델 적용 ${JSON.stringify(summary)}`);
+      if (summary.n) {
+        $("modelSummary").textContent = `인원 ${summary.n}명, 정상 ${summary.n_control}명, 근감소 ${summary.n_patient}명. 지정과 모델이 같은 인원 ${summary.matched}명, 일치율 ${summary.accuracy.toFixed(3)}.`;
+      }
+      refreshReference();
+    };
+
     refresh();
     refreshSubjects();
-    setInterval(() => { refresh(); refreshSubjects(); }, 8000);
+    refreshReference();
+    setInterval(() => { refresh(); refreshSubjects(); refreshReference(); }, 8000);
     document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
   </script>
 </body>

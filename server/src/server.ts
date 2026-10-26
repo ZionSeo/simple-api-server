@@ -12,6 +12,13 @@ import {
 import { config } from "./config.js";
 import { downloadCalibrationData, fetchLatestCalibration } from "./hil-client.js";
 import { enqueueCalibrationJob } from "./jobs.js";
+import {
+  applyLogisticModel,
+  listReferenceSubjects,
+  modelInfo,
+  referenceGroupFromBody,
+  setReferenceGroup,
+} from "./logistic.js";
 import { parseNdjsonGz } from "./ndjson.js";
 import { getDataset, getJob, listDatasets, listJobs } from "./store.js";
 import { pullGripSet, pullMotionSet } from "./subject-sync.js";
@@ -349,6 +356,49 @@ app.post("/api/subjects/:individualSeq/training", (req, res) => {
       message: error instanceof Error ? error.message : String(error),
     });
   }
+});
+
+app.get("/api/reference", (_req, res) => {
+  const subjects = listReferenceSubjects();
+  const scored = subjects.filter((person) => person.prediction);
+  const matched = scored.filter((person) => person.prediction?.matches_group).length;
+  res.json({
+    ok: true,
+    model: modelInfo(),
+    subjects,
+    summary: {
+      n: subjects.length,
+      n_control: subjects.filter((person) => person.group === "control").length,
+      n_patient: subjects.filter((person) => person.group === "patient").length,
+      scored: scored.length,
+      matched,
+      accuracy: scored.length ? matched / scored.length : null,
+    },
+  });
+});
+
+app.post("/api/reference/group", (req, res) => {
+  const subjectId = String(req.body?.subject_id ?? "");
+  const group = referenceGroupFromBody(req.body?.group);
+  if (!subjectId || !group) {
+    res.status(400).json({
+      ok: false,
+      message: "subject_id와 group(정상 또는 근감소)이 필요합니다.",
+    });
+    return;
+  }
+  try {
+    res.json({ ok: true, subject: setReferenceGroup(subjectId, group) });
+  } catch (error) {
+    res.status(400).json({
+      ok: false,
+      message: error instanceof Error ? error.message : String(error),
+    });
+  }
+});
+
+app.post("/api/model/apply", (_req, res) => {
+  res.json(applyLogisticModel());
 });
 
 app.get("/api/test", (_req, res) => {

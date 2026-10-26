@@ -1,0 +1,38 @@
+{
+  "label_positive": "근감소",
+  "label_negative": "정상",
+  "positive_rule": "한동대=정상, 더조은·에스포항=근감소",
+  "features": [
+    "movement_capacity_deviation_z",
+    "muscle_activation_deviation_z",
+    "movement_dynamics_deviation_z",
+    "compensation_context_deviation_z"
+  ],
+  "feature_names_ko": [
+    "가동",
+    "근활성",
+    "동작역학",
+    "보상맥락"
+  ],
+  "mean": [
+    0.33918543490062275,
+    1.443295853497449,
+    0.9750798332740088,
+    0.7649142864526055
+  ],
+  "scale": [
+    0.47918300944493036,
+    1.1188696997796275,
+    0.5477765326320126,
+    0.9920507799958224
+  ],
+  "coef": [
+    1.020116721912855,
+    1.687292666415658,
+    0.3858542043738354,
+    1.3344053238835905
+  ],
+  "intercept": 0.4633962507029295,
+  "threshold": 0.5,
+  "preprocess": "분석기 06단계 subject_normative_scores 의 영역 편차. 신호 전처리는 재계산하지 않음."
+}

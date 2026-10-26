@@ -1,0 +1,674 @@
+[
+  {
+    "subject_id": "더조은/1. 김은자",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.16865024810159063,
+      "muscle_activation_deviation_z": 0.9989154092072443,
+      "movement_dynamics_deviation_z": 3.204986587603015,
+      "compensation_context_deviation_z": 0.9819102365029656
+    },
+    "overall_deviation_z": 1.3386156203537039
+  },
+  {
+    "subject_id": "더조은/10. 손홍준",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.07924487270773753,
+      "muscle_activation_deviation_z": 0.7817291064793215,
+      "movement_dynamics_deviation_z": 0.7033504838296674,
+      "compensation_context_deviation_z": 0.9143974627800663
+    },
+    "overall_deviation_z": 0.6196804814491981
+  },
+  {
+    "subject_id": "더조은/11. 김정광",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.9636538674480248,
+      "muscle_activation_deviation_z": 1.1249384173999815,
+      "movement_dynamics_deviation_z": 0.5896349159214803,
+      "compensation_context_deviation_z": 0.5598028311581208
+    },
+    "overall_deviation_z": 0.8095075079819019
+  },
+  {
+    "subject_id": "더조은/12. 이상화B",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 2.235069724670915,
+      "muscle_activation_deviation_z": 2.788080987460913,
+      "movement_dynamics_deviation_z": 2.349750658462854,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 1.8432253426486707
+  },
+  {
+    "subject_id": "더조은/14. 김철진",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.5991938829825473,
+      "muscle_activation_deviation_z": 1.5602388121380883,
+      "movement_dynamics_deviation_z": 1.4564811753477396,
+      "compensation_context_deviation_z": 1.81651698509174
+    },
+    "overall_deviation_z": 1.3581077138900288
+  },
+  {
+    "subject_id": "더조은/15. 윤실경",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.18695042309688403,
+      "muscle_activation_deviation_z": 2.408585662192624,
+      "movement_dynamics_deviation_z": 0.8643114171591664,
+      "compensation_context_deviation_z": 0.2069634178394484
+    },
+    "overall_deviation_z": 0.9167027300720306
+  },
+  {
+    "subject_id": "더조은/16. 이철구",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 2.132810086841996,
+      "movement_dynamics_deviation_z": 0.7668586432100595,
+      "compensation_context_deviation_z": 0.4047106654429717
+    },
+    "overall_deviation_z": 0.8260948488737568
+  },
+  {
+    "subject_id": "더조은/19. 윤춘색",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 1.978614944883009,
+      "movement_dynamics_deviation_z": 1.4867702375093228,
+      "compensation_context_deviation_z": 0.901341987461797
+    },
+    "overall_deviation_z": 1.0916817924635323
+  },
+  {
+    "subject_id": "더조은/2. 조세경",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.04363903757354399,
+      "muscle_activation_deviation_z": 1.1713362568312569,
+      "movement_dynamics_deviation_z": 0.7503925897341908,
+      "compensation_context_deviation_z": 0.6634572182117687
+    },
+    "overall_deviation_z": 0.6572062755876902
+  },
+  {
+    "subject_id": "더조은/20. 이정순",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 4.037990611311091,
+      "movement_dynamics_deviation_z": 2.0828478504107144,
+      "compensation_context_deviation_z": 0.32190511651380427
+    },
+    "overall_deviation_z": 1.6106858945589024
+  },
+  {
+    "subject_id": "더조은/21. 최영자",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 1.1092785374345036,
+      "muscle_activation_deviation_z": 1.2069161593591402,
+      "movement_dynamics_deviation_z": 0.7549590458973701,
+      "compensation_context_deviation_z": 1.0411820911261815
+    },
+    "overall_deviation_z": 1.028083958454299
+  },
+  {
+    "subject_id": "더조은/22. 유봉금",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 1.190118383326515,
+      "muscle_activation_deviation_z": 1.0023293341027522,
+      "movement_dynamics_deviation_z": 0.6538240319996647,
+      "compensation_context_deviation_z": 0.8390730432421782
+    },
+    "overall_deviation_z": 0.9213361981677775
+  },
+  {
+    "subject_id": "더조은/24. 정춘강",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.1857859491697649,
+      "muscle_activation_deviation_z": 3.451277979625946,
+      "movement_dynamics_deviation_z": 0.9884059553874662,
+      "compensation_context_deviation_z": 1.9850230711203507
+    },
+    "overall_deviation_z": 1.652623238825882
+  },
+  {
+    "subject_id": "더조은/3. 서용심",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 1.8899408634784371,
+      "muscle_activation_deviation_z": 0.6963035698075393,
+      "movement_dynamics_deviation_z": 0.7500067552815375,
+      "compensation_context_deviation_z": 2.0589968321549676
+    },
+    "overall_deviation_z": 1.3488120051806205
+  },
+  {
+    "subject_id": "더조은/4. 김점숙",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 1.1907751865348777,
+      "muscle_activation_deviation_z": 1.0427920522367318,
+      "movement_dynamics_deviation_z": 1.5041994364045475,
+      "compensation_context_deviation_z": 0.5231897042162772
+    },
+    "overall_deviation_z": 1.0652390948481083
+  },
+  {
+    "subject_id": "더조은/5. 이상화A",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 2.98454918783242,
+      "movement_dynamics_deviation_z": 0.7306396739701627,
+      "compensation_context_deviation_z": 0.9398493089144192
+    },
+    "overall_deviation_z": 1.1637595426792504
+  },
+  {
+    "subject_id": "더조은/6. 안영순",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.542854783715429,
+      "muscle_activation_deviation_z": 0.8262572709235412,
+      "movement_dynamics_deviation_z": 1.2502425151074827,
+      "compensation_context_deviation_z": 4.821474724116559
+    },
+    "overall_deviation_z": 1.860207323465753
+  },
+  {
+    "subject_id": "더조은/7. 배영자",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 1.2656049280864068,
+      "movement_dynamics_deviation_z": 2.4182413822876487,
+      "compensation_context_deviation_z": 0.9389213732566066
+    },
+    "overall_deviation_z": 1.1556919209076657
+  },
+  {
+    "subject_id": "더조은/8. 홍향숙",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 0.4288401148412006,
+      "movement_dynamics_deviation_z": 0.5934471061485508,
+      "compensation_context_deviation_z": 0.7087694197485668
+    },
+    "overall_deviation_z": 0.4327641601845795
+  },
+  {
+    "subject_id": "에스포항/10. 최숙",
+    "institution": "에스포항",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 0.9572777570959644,
+      "movement_dynamics_deviation_z": 1.0578141996364443,
+      "compensation_context_deviation_z": 2.778296529935004
+    },
+    "overall_deviation_z": 1.198347121666853
+  },
+  {
+    "subject_id": "에스포항/2. 김희자",
+    "institution": "에스포항",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 1.1085952276906084,
+      "muscle_activation_deviation_z": 0.669323628633415,
+      "movement_dynamics_deviation_z": 1.0274151710405022,
+      "compensation_context_deviation_z": 1.0916348772128848
+    },
+    "overall_deviation_z": 0.9742422261443526
+  },
+  {
+    "subject_id": "에스포항/3. 전태임",
+    "institution": "에스포항",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.5492272791323908,
+      "muscle_activation_deviation_z": 1.7348079799066496,
+      "movement_dynamics_deviation_z": 0.6067130703707876,
+      "compensation_context_deviation_z": 0.4247061560064715
+    },
+    "overall_deviation_z": 0.8288636213540748
+  },
+  {
+    "subject_id": "에스포항/4. 이후불",
+    "institution": "에스포항",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.5759903729256208,
+      "muscle_activation_deviation_z": 3.222726460260954,
+      "movement_dynamics_deviation_z": 1.2849180096834942,
+      "compensation_context_deviation_z": 2.5382745751216165
+    },
+    "overall_deviation_z": 1.9054773544979213
+  },
+  {
+    "subject_id": "에스포항/5. 이상걸",
+    "institution": "에스포항",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.3512213597073113,
+      "muscle_activation_deviation_z": 2.7353002093118675,
+      "movement_dynamics_deviation_z": 0.44836737141746746,
+      "compensation_context_deviation_z": 0.3387615227633526
+    },
+    "overall_deviation_z": 0.9684126157999997
+  },
+  {
+    "subject_id": "에스포항/6. 김정식",
+    "institution": "에스포항",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 2.5774556274998677,
+      "movement_dynamics_deviation_z": 0.6691626521605452,
+      "compensation_context_deviation_z": 0.8933425820128356
+    },
+    "overall_deviation_z": 1.0349902154183122
+  },
+  {
+    "subject_id": "에스포항/7. 서윤득",
+    "institution": "에스포항",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.4798357061983579,
+      "muscle_activation_deviation_z": 3.041405843529881,
+      "movement_dynamics_deviation_z": 0.9392937553944347,
+      "compensation_context_deviation_z": 1.578876169730006
+    },
+    "overall_deviation_z": 1.5098528687131698
+  },
+  {
+    "subject_id": "에스포항/8. 김점숙",
+    "institution": "에스포항",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.5866591776663557,
+      "muscle_activation_deviation_z": 4.98402472912662,
+      "movement_dynamics_deviation_z": 1.1440571840457023,
+      "compensation_context_deviation_z": 4.114465621484145
+    },
+    "overall_deviation_z": 2.707301678080706
+  },
+  {
+    "subject_id": "에스포항/9. 김성희",
+    "institution": "에스포항",
+    "initial_group": "patient",
+    "features": {
+      "movement_capacity_deviation_z": 0.27651585970458314,
+      "muscle_activation_deviation_z": 5.0,
+      "movement_dynamics_deviation_z": 0.783510603326836,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 1.5150066157578546
+  },
+  {
+    "subject_id": "한동대/1. 서유빈",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 0.7045105183688314,
+      "movement_dynamics_deviation_z": 0.6892077228245304,
+      "compensation_context_deviation_z": 0.14350041142711042
+    },
+    "overall_deviation_z": 0.384304663155118
+  },
+  {
+    "subject_id": "한동대/10. 정다혜",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 0.6087050142693005,
+      "movement_dynamics_deviation_z": 0.6133051600550994,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 0.30550254358109996
+  },
+  {
+    "subject_id": "한동대/11. 박예주",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.12043093841770673,
+      "muscle_activation_deviation_z": 0.6598115270650589,
+      "movement_dynamics_deviation_z": 0.522830058458543,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 0.32576813098532714
+  },
+  {
+    "subject_id": "한동대/12. 박지수",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 0.7138585344748545,
+      "movement_dynamics_deviation_z": 1.4084689862717497,
+      "compensation_context_deviation_z": 2.067994110933666
+    },
+    "overall_deviation_z": 1.0475804079200677
+  },
+  {
+    "subject_id": "한동대/13. 한민종",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.685681411230133,
+      "muscle_activation_deviation_z": 0.8694331135325587,
+      "movement_dynamics_deviation_z": 0.7026336332377687,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 0.5644370395001151
+  },
+  {
+    "subject_id": "한동대/14. 조성은",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 0.7254032591336528,
+      "movement_dynamics_deviation_z": 1.1059740147491945,
+      "compensation_context_deviation_z": 0.07339492513910752
+    },
+    "overall_deviation_z": 0.4761930497554887
+  },
+  {
+    "subject_id": "한동대/15. 최성우",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.4547840074543323,
+      "muscle_activation_deviation_z": 0.5615899116892689,
+      "movement_dynamics_deviation_z": 0.3552338582106602,
+      "compensation_context_deviation_z": 0.2906431321151956
+    },
+    "overall_deviation_z": 0.4155627273673642
+  },
+  {
+    "subject_id": "한동대/16. 윤선미",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.43125950772189947,
+      "muscle_activation_deviation_z": 0.33628195801752625,
+      "movement_dynamics_deviation_z": 2.249180419802017,
+      "compensation_context_deviation_z": 0.7517381377932816
+    },
+    "overall_deviation_z": 0.9421150058336811
+  },
+  {
+    "subject_id": "한동대/17. 이시현",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.11589490519596823,
+      "muscle_activation_deviation_z": 1.5868593143460898,
+      "movement_dynamics_deviation_z": 0.7999172148173656,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 0.625667858589856
+  },
+  {
+    "subject_id": "한동대/18. 장현준",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.25093779218771506,
+      "muscle_activation_deviation_z": 0.676717910364382,
+      "movement_dynamics_deviation_z": 0.7010157031988336,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 0.4071678514377327
+  },
+  {
+    "subject_id": "한동대/19. 임은결",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.41264604579193265,
+      "muscle_activation_deviation_z": 0.4199117170421678,
+      "movement_dynamics_deviation_z": 0.4446344092231717,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 0.319298043014318
+  },
+  {
+    "subject_id": "한동대/2. 서종현",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.15950123505605757,
+      "muscle_activation_deviation_z": 0.6187824045469249,
+      "movement_dynamics_deviation_z": 0.682513507966609,
+      "compensation_context_deviation_z": 0.18770115401657997
+    },
+    "overall_deviation_z": 0.4121245753965429
+  },
+  {
+    "subject_id": "한동대/20. 김예준",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.06261455699808627,
+      "muscle_activation_deviation_z": 1.1761367596239296,
+      "movement_dynamics_deviation_z": 0.795387423951732,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 0.5085346851434369
+  },
+  {
+    "subject_id": "한동대/21. 박성수",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 0.9759550155387929,
+      "movement_dynamics_deviation_z": 0.6645631525015926,
+      "compensation_context_deviation_z": 0.2961490786397719
+    },
+    "overall_deviation_z": 0.48416681167003933
+  },
+  {
+    "subject_id": "한동대/22. 박주열",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.22198338038724755,
+      "muscle_activation_deviation_z": 2.0718700865611925,
+      "movement_dynamics_deviation_z": 0.6711980243503669,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 0.7412628728247018
+  },
+  {
+    "subject_id": "한동대/23. 이재용",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 0.6470487549738522,
+      "movement_dynamics_deviation_z": 0.9188281908106273,
+      "compensation_context_deviation_z": 0.24849734898336043
+    },
+    "overall_deviation_z": 0.45359357369195996
+  },
+  {
+    "subject_id": "한동대/24. 심재욱",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.09565753272491048,
+      "muscle_activation_deviation_z": 0.3145272581416619,
+      "movement_dynamics_deviation_z": 1.1254913091258842,
+      "compensation_context_deviation_z": 0.5732485654309801
+    },
+    "overall_deviation_z": 0.5272311663558592
+  },
+  {
+    "subject_id": "한동대/26. 김희원",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 1.2736906110420356,
+      "movement_dynamics_deviation_z": 0.7121669120065188,
+      "compensation_context_deviation_z": 0.27014377248083177
+    },
+    "overall_deviation_z": 0.5640003238823466
+  },
+  {
+    "subject_id": "한동대/27. 김예람",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 1.315208342346982,
+      "movement_dynamics_deviation_z": 0.5699608086251676,
+      "compensation_context_deviation_z": 0.1991813858008218
+    },
+    "overall_deviation_z": 0.5210876341932429
+  },
+  {
+    "subject_id": "한동대/28. 임예정",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.6926742056219801,
+      "muscle_activation_deviation_z": 0.5617520255673683,
+      "movement_dynamics_deviation_z": 0.7674608230065023,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 0.5054717635489627
+  },
+  {
+    "subject_id": "한동대/29. 양준원",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 0.6354226332911925,
+      "movement_dynamics_deviation_z": 1.0684276224457727,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 0.4259625639342413
+  },
+  {
+    "subject_id": "한동대/3. 배산",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.7924118315314681,
+      "muscle_activation_deviation_z": 0.592290198190058,
+      "movement_dynamics_deviation_z": 0.6584253811853902,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 0.510781852726729
+  },
+  {
+    "subject_id": "한동대/4. 차원준",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.15195889615316271,
+      "muscle_activation_deviation_z": 0.5354492248397653,
+      "movement_dynamics_deviation_z": 1.1028954323759614,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 0.44757588834222234
+  },
+  {
+    "subject_id": "한동대/5. 최지안",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 0.7673880156923545,
+      "movement_dynamics_deviation_z": 0.47242795043787666,
+      "compensation_context_deviation_z": 0.0
+    },
+    "overall_deviation_z": 0.30995399153255776
+  },
+  {
+    "subject_id": "한동대/6. 박강호",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.03274736469627565,
+      "muscle_activation_deviation_z": 0.5354844196230465,
+      "movement_dynamics_deviation_z": 0.8196129390974787,
+      "compensation_context_deviation_z": 0.396267490738929
+    },
+    "overall_deviation_z": 0.44602805353893243
+  },
+  {
+    "subject_id": "한동대/7. 한지석",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 0.9325091416081017,
+      "movement_dynamics_deviation_z": 0.5252900522922834,
+      "compensation_context_deviation_z": 1.450570037838928
+    },
+    "overall_deviation_z": 0.7270923079348283
+  },
+  {
+    "subject_id": "한동대/8. 차현민",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 2.1764365798650593,
+      "movement_dynamics_deviation_z": 0.7928947540732819,
+      "compensation_context_deviation_z": 0.35413005484174526
+    },
+    "overall_deviation_z": 0.8308653471950216
+  },
+  {
+    "subject_id": "한동대/9. 박태헌",
+    "institution": "한동대",
+    "initial_group": "control",
+    "features": {
+      "movement_capacity_deviation_z": 0.0,
+      "muscle_activation_deviation_z": 1.0211004191747064,
+      "movement_dynamics_deviation_z": 0.8039227194936609,
+      "compensation_context_deviation_z": 1.1461969120004911
+    },
+    "overall_deviation_z": 0.7428050126672145
+  }
+]
