@@ -4,39 +4,53 @@ import { fileURLToPath } from "node:url";
 import { GROUP_DISPLAY, normalizeGroup, type CohortGroup } from "./cohort.js";
 import { getDataDir } from "./store.js";
 
-type FeatureName =
-  | "movement_capacity_deviation_z"
-  | "muscle_activation_deviation_z"
-  | "movement_dynamics_deviation_z"
-  | "compensation_context_deviation_z";
+type DomainName =
+  | "movement_capacity"
+  | "muscle_activation"
+  | "movement_dynamics"
+  | "compensation_context";
 
-type LogisticModel = {
-  label_positive: string;
-  label_negative: string;
-  positive_rule: string;
-  features: FeatureName[];
-  feature_names_ko: string[];
+type ExerciseModel = {
   mean: number[];
   scale: number[];
   coef: number[];
   intercept: number;
-  threshold: number;
-  preprocess: string;
+};
+
+type ExerciseSpec = {
+  n: number;
+  n_patient: number;
+  n_control: number;
+  model: ExerciseModel;
+};
+
+type ExerciseBundle = {
+  method: string;
+  C: number;
+  domains: DomainName[];
+  grades: { low: number; high: number };
+  exercises: Record<string, ExerciseSpec>;
 };
 
 type InitialSubject = {
   subject_id: string;
   institution: string;
   initial_group: CohortGroup;
-  features: Record<FeatureName, number>;
-  overall_deviation_z: number;
+  exercises: Partial<Record<string, Record<DomainName, number>>>;
+  missing_exercises?: Record<string, string>;
 };
 
-type Prediction = {
+type ExercisePrediction = {
   probability: number;
   predicted: CohortGroup;
   predicted_label: string;
   matches_group: boolean;
+  grade: string;
+  grade_label: string;
+};
+
+type Prediction = {
+  exercises: Record<string, ExercisePrediction>;
 };
 
 type OverrideFile = {
@@ -51,8 +65,34 @@ function readJson<T>(fileName: string): T {
   return JSON.parse(fs.readFileSync(file, "utf8")) as T;
 }
 
-const model = readJson<LogisticModel>("logistic-model.json");
+const model = readJson<ExerciseBundle>("exercise-models.json");
 const initialSubjects = readJson<InitialSubject[]>("initial-subjects.json");
+
+const EXERCISE_ORDER = [
+  "chest_press",
+  "shoulder_press",
+  "seated_row",
+  "arm_curl",
+  "overhead_triceps_extension",
+  "flexibility",
+];
+
+const EXERCISE_LABELS: Record<string, string> = {
+  chest_press: "체스트프레스",
+  shoulder_press: "숄더프레스",
+  seated_row: "시티드로우",
+  arm_curl: "암컬",
+  overhead_triceps_extension: "오버헤드트라이셉스",
+  flexibility: "유연성",
+};
+
+const DOMAIN_LABELS = ["가동", "근활성", "동작역학", "보상맥락"];
+
+function exerciseNames() {
+  return EXERCISE_ORDER.filter(
+    (name) => model.exercises[name] && initialSubjects.some((person) => person.exercises[name])
+  );
+}
 
 function overridePath() {
   return path.join(path.dirname(getDataDir()), "reference-groups.json");
@@ -105,10 +145,12 @@ const INDICATOR_FORMULAS = {
     "편차는 5를 넘기면 5로 자릅니다. 단위는 무차원 robust z입니다.",
   ],
   aggregation: [
-    "운동·한쪽의 영역값 = 그 영역에 속한 특징 편차의 중앙값",
-    "한쪽 대표값 = 다섯 운동 영역값의 중앙값",
-    "다섯 운동은 chest_press, shoulder_press, seated_row, arm_curl, overhead_triceps_extension입니다.",
-    "사람 지표 = (왼쪽 대표값 + 오른쪽 대표값) / 2",
+    "동작마다 모델을 따로 적용합니다. 다섯 동작을 하나로 합친 뒤 넣지 않습니다.",
+    "한 동작·한쪽의 영역값 = 그 영역 특징 편차의 중앙값",
+    "그 동작의 입력 = (왼쪽 영역값 + 오른쪽 영역값) / 2",
+    "체스트프레스, 숄더프레스, 시티드로우, 암컬, 오버헤드트라이셉스가 각각 계수 네 개를 가집니다.",
+    "유연성은 다섯 저항운동 점수에 없어 모델 적용 대상이 아닙니다. 검증용으로 빼 둔 동작이 아닙니다.",
+    "더조은/2. 조세경의 암컬은 검증용 제외가 아닙니다. session_100.zip 골격 seq가 한 번 끊겨 가동 지표가 비어 결측 처리했습니다.",
   ],
   indicators: [
     {
@@ -174,47 +216,66 @@ const INDICATOR_FORMULAS = {
   ],
 };
 
+function gradeOf(probability: number) {
+  if (probability < model.grades.low) return { grade: "low", grade_label: "낮음" };
+  if (probability < model.grades.high) return { grade: "moderate", grade_label: "중간" };
+  return { grade: "high", grade_label: "높음" };
+}
+
 export function modelInfo() {
+  const names = exerciseNames();
   return {
-    threshold: model.threshold,
-    intercept: model.intercept,
-    features: model.features,
-    feature_names_ko: model.feature_names_ko,
-    mean: model.mean,
-    scale: model.scale,
-    coef: model.coef,
-    positive_rule: model.positive_rule,
-    preprocess: model.preprocess,
+    method: model.method,
+    threshold: 0.5,
+    grades: model.grades,
+    domains: model.domains,
+    exercises: names.map((name) => ({
+      name,
+      label: EXERCISE_LABELS[name] ?? name,
+      n: model.exercises[name].n,
+      coef: model.exercises[name].model.coef,
+      intercept: model.exercises[name].model.intercept,
+    })),
     formulas: {
       ...INDICATOR_FORMULAS,
       logistic: [
-        "z = (사람 지표 - 학습 평균) / 학습 표준편차",
-        `logit = ${model.intercept} + ${model.coef
-          .map((coef, index) => `${coef}×${model.feature_names_ko[index]}z`)
-          .join(" + ")}`,
+        "동작마다 z = (그 동작의 영역값 - 그 동작 학습 평균) / 그 동작 학습 표준편차",
+        "logit = 그 동작의 절편 + 가동z·계수 + 근활성z·계수 + 동작역학z·계수 + 보상맥락z·계수",
         "근감소 확률 = 1 / (1 + exp(-logit))",
-        `확률이 ${model.threshold} 이상이면 근감소, 미만이면 정상입니다.`,
+        "확률이 0.5 이상이면 그 동작은 근감소, 미만이면 정상입니다.",
+        `위험 등급은 ${model.grades.low} 미만 낮음, ${model.grades.high} 미만 중간, 그 이상 높음입니다.`,
+        ...names.map((name) => {
+          const spec = model.exercises[name].model;
+          const terms = spec.coef
+            .map((coef, index) => `${DOMAIN_LABELS[index]} ${coef}`)
+            .join(", ");
+          return `${EXERCISE_LABELS[name] ?? name}: 절편 ${spec.intercept}, ${terms}`;
+        }),
       ],
     },
   };
 }
 
-export function scoreSubject(features: Record<FeatureName, number>) {
-  let logit = model.intercept;
-  model.features.forEach((name, index) => {
-    const z = (features[name] - model.mean[index]) / model.scale[index];
-    logit += z * model.coef[index];
+export function scoreExercise(exercise: string, domains: Record<DomainName, number>) {
+  const spec = model.exercises[exercise]?.model;
+  if (!spec) throw new Error(`동작 모델이 없습니다: ${exercise}`);
+  let logit = spec.intercept;
+  model.domains.forEach((name, index) => {
+    const scale = spec.scale[index] || 1;
+    const z = (domains[name] - spec.mean[index]) / scale;
+    logit += z * spec.coef[index];
   });
   const probability = sigmoid(logit);
-  const predicted: CohortGroup = probability >= model.threshold ? "patient" : "control";
-  return { logit, probability, predicted };
+  const predicted: CohortGroup = probability >= 0.5 ? "patient" : "control";
+  return { logit, probability, predicted, ...gradeOf(probability) };
 }
 
 export function listReferenceSubjects() {
   const overrides = loadOverrides();
   return initialSubjects.map((person) => {
     const group = overrides.groups[person.subject_id] ?? person.initial_group;
-    const prediction = overrides.predictions[person.subject_id] ?? null;
+    const stored = overrides.predictions[person.subject_id];
+    const prediction = stored?.exercises ? stored : null;
     return {
       ...person,
       group,
@@ -236,34 +297,59 @@ export function setReferenceGroup(subjectId: string, group: CohortGroup) {
   return listReferenceSubjects().find((item) => item.subject_id === subjectId);
 }
 
+export function referenceSummary(
+  subjects: ReturnType<typeof listReferenceSubjects>
+) {
+  const by_exercise = exerciseNames().map((name) => {
+    const scored = subjects.filter((person) => person.prediction?.exercises[name]);
+    const matched = scored.filter(
+      (person) => person.prediction?.exercises[name].matches_group
+    ).length;
+    return {
+      name,
+      label: EXERCISE_LABELS[name] ?? name,
+      n: scored.length,
+      matched,
+      accuracy: scored.length ? matched / scored.length : null,
+    };
+  });
+  return {
+    n: subjects.length,
+    n_control: subjects.filter((person) => person.group === "control").length,
+    n_patient: subjects.filter((person) => person.group === "patient").length,
+    by_exercise,
+  };
+}
+
 export function applyLogisticModel() {
   const overrides = loadOverrides();
   const subjects = listReferenceSubjects();
   const predictions: Record<string, Prediction> = {};
   const rows = subjects.map((person) => {
-    const scored = scoreSubject(person.features);
-    const prediction: Prediction = {
-      probability: scored.probability,
-      predicted: scored.predicted,
-      predicted_label: GROUP_DISPLAY[scored.predicted],
-      matches_group: scored.predicted === person.group,
-    };
+    const exercises: Record<string, ExercisePrediction> = {};
+    for (const name of exerciseNames()) {
+      const domains = person.exercises[name];
+      if (!domains) continue;
+      const scored = scoreExercise(name, domains);
+      exercises[name] = {
+        probability: scored.probability,
+        predicted: scored.predicted,
+        predicted_label: GROUP_DISPLAY[scored.predicted],
+        matches_group: scored.predicted === person.group,
+        grade: scored.grade,
+        grade_label: scored.grade_label,
+      };
+    }
+    const prediction = { exercises };
     predictions[person.subject_id] = prediction;
     return { ...person, prediction };
   });
   overrides.predictions = predictions;
   saveOverrides(overrides);
-  const matched = rows.filter((row) => row.prediction.matches_group).length;
   return {
     ok: true,
     model: modelInfo(),
-    summary: {
-      n: rows.length,
-      n_control: rows.filter((row) => row.group === "control").length,
-      n_patient: rows.filter((row) => row.group === "patient").length,
-      matched,
-      accuracy: rows.length ? matched / rows.length : 0,
-    },
+    summary: referenceSummary(rows),
     subjects: rows,
   };
 }

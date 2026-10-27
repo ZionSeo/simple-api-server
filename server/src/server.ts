@@ -17,6 +17,7 @@ import {
   listReferenceSubjects,
   modelInfo,
   referenceGroupFromBody,
+  referenceSummary,
   setReferenceGroup,
 } from "./logistic.js";
 import { parseNdjsonGz } from "./ndjson.js";
@@ -360,20 +361,11 @@ app.post("/api/subjects/:individualSeq/training", (req, res) => {
 
 app.get("/api/reference", (_req, res) => {
   const subjects = listReferenceSubjects();
-  const scored = subjects.filter((person) => person.prediction);
-  const matched = scored.filter((person) => person.prediction?.matches_group).length;
   res.json({
     ok: true,
     model: modelInfo(),
     subjects,
-    summary: {
-      n: subjects.length,
-      n_control: subjects.filter((person) => person.group === "control").length,
-      n_patient: subjects.filter((person) => person.group === "patient").length,
-      scored: scored.length,
-      matched,
-      accuracy: scored.length ? matched / scored.length : null,
-    },
+    summary: referenceSummary(subjects),
   });
 });
 

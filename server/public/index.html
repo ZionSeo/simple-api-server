@@ -180,19 +180,13 @@
 
     <section class="card" style="margin-top:1rem">
       <h2>5. 초기 로지스틱 모델</h2>
-      <p>56명은 기관 기준으로 미리 지정되어 있습니다. 정상 또는 근감소를 바꾼 뒤 모델 적용하기를 누르면, 서버가 가동·근활성·동작역학·보상맥락 편차로 근감소 확률을 계산합니다.</p>
+      <p>56명은 기관 기준으로 미리 지정되어 있습니다. 모델 적용하기를 누르면 서버가 동작마다 그 동작의 계수로 근감소 확률을 계산합니다. 유연성은 점수표에 없고, 더조은 조세경의 암컬만 골격 결측입니다.</p>
       <div id="formulaBox" style="font-size:0.82rem;line-height:1.45"></div>
       <button id="btnApplyModel">모델 적용하기</button>
       <p id="modelSummary"></p>
       <div style="overflow-x:auto">
         <table>
-          <thead>
-            <tr>
-              <th>인원</th><th>기관</th><th>지정</th>
-              <th>가동</th><th>근활성</th><th>동작역학</th><th>보상맥락</th>
-              <th>확률</th><th>모델 판정</th><th></th>
-            </tr>
-          </thead>
+          <thead id="referenceHead"></thead>
           <tbody id="referenceSubjects"></tbody>
         </table>
       </div>
@@ -408,24 +402,29 @@
       renderFormulas(data.model?.formulas);
       const people = data.subjects || [];
       const summary = data.summary || {};
-      const scoredText = summary.scored
-        ? ` 모델을 적용한 인원 ${summary.scored}명, 지정과 같은 판정 ${summary.matched}명, 일치율 ${Number(summary.accuracy).toFixed(3)}.`
+      const exercises = data.model?.exercises || [];
+      const scoredText = (summary.by_exercise || []).some((item) => item.n)
+        ? " " + summary.by_exercise.filter((item) => item.n).map((item) => `${item.label} 일치율 ${Number(item.accuracy).toFixed(3)}`).join(", ") + "."
         : "";
-      $("modelSummary").textContent = `인원 ${summary.n || 0}명, 정상 ${summary.n_control || 0}명, 근감소 ${summary.n_patient || 0}명. 판정 기준 확률 ${data.model?.threshold ?? 0.5}.${scoredText}`;
+      $("modelSummary").textContent = `인원 ${summary.n || 0}명, 정상 ${summary.n_control || 0}명, 근감소 ${summary.n_patient || 0}명. 동작별 판정 기준 확률 ${data.model?.threshold ?? 0.5}.${scoredText}`;
+      $("referenceHead").innerHTML = `<tr><th>인원</th><th>기관</th><th>지정</th>${exercises.map((item) => `<th>${esc(item.label)}</th>`).join("")}<th></th></tr>`;
       $("referenceSubjects").innerHTML = people.map((person) => {
-        const features = person.features || {};
-        const prediction = person.prediction;
+        const prediction = person.prediction?.exercises || {};
         const id = encodeURIComponent(person.subject_id);
+        const cells = exercises.map((item) => {
+          const scored = prediction[item.name];
+          if (!scored) {
+            const reason = person.missing_exercises?.[item.name];
+            return `<td>${reason ? esc(reason) : "-"}</td>`;
+          }
+          const mark = scored.matches_group ? "" : " (지정과 다름)";
+          return `<td>${fmt(scored.probability)} ${esc(scored.predicted_label)}${mark}<br>${esc(scored.grade_label)}</td>`;
+        }).join("");
         return `<tr>
           <td>${esc(person.subject_id)}</td>
           <td>${esc(person.institution)}</td>
           <td>${esc(person.group_label)}${person.adjusted ? " (변경)" : ""}</td>
-          <td>${fmt(features.movement_capacity_deviation_z)}</td>
-          <td>${fmt(features.muscle_activation_deviation_z)}</td>
-          <td>${fmt(features.movement_dynamics_deviation_z)}</td>
-          <td>${fmt(features.compensation_context_deviation_z)}</td>
-          <td>${prediction ? fmt(prediction.probability) : ""}</td>
-          <td>${prediction ? esc(prediction.predicted_label) + (prediction.matches_group ? "" : " (지정과 다름)") : ""}</td>
+          ${cells}
           <td>
             <button class="mini ghost" data-ref-group="정상" data-ref-id="${id}">정상</button>
             <button class="mini" data-ref-group="근감소" data-ref-id="${id}">근감소</button>
@@ -451,8 +450,8 @@
       const res = await fetch("/api/model/apply", { method: "POST" }).then((r) => r.json());
       const summary = res.summary || {};
       log(`모델 적용 ${JSON.stringify(summary)}`);
-      if (summary.n) {
-        $("modelSummary").textContent = `인원 ${summary.n}명, 정상 ${summary.n_control}명, 근감소 ${summary.n_patient}명. 지정과 모델이 같은 인원 ${summary.matched}명, 일치율 ${summary.accuracy.toFixed(3)}.`;
+      if (summary.by_exercise) {
+        log(summary.by_exercise.map((item) => `${item.label} ${item.matched}/${item.n}`).join(", "));
       }
       refreshReference();
     };

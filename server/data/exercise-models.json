@@ -1,0 +1,1351 @@
+{
+  "method": "per_exercise_l2_logistic",
+  "C": 1.0,
+  "domains": [
+    "movement_capacity",
+    "muscle_activation",
+    "movement_dynamics",
+    "compensation_context"
+  ],
+  "grades": {
+    "low": 0.35,
+    "high": 0.65
+  },
+  "label": "institution group, patient=1 control=0",
+  "calibration_used": false,
+  "exercises": {
+    "chest_press": {
+      "n": 56,
+      "n_patient": 28,
+      "n_control": 28,
+      "model": {
+        "mean": [
+          0.24980447922410987,
+          1.5117411462507668,
+          0.7625767237062023,
+          1.0637812844446355
+        ],
+        "scale": [
+          0.34994684879195004,
+          1.0901399767275775,
+          0.45451578879692744,
+          1.3301217521317927
+        ],
+        "coef": [
+          -0.11829918342178382,
+          1.1895269327211082,
+          -0.49141226709337094,
+          1.1361663688529273
+        ],
+        "intercept": 0.16186727191980496
+      },
+      "loso": {
+        "accuracy": 0.75,
+        "sensitivity": 0.7142857142857143,
+        "specificity": 0.7857142857142857,
+        "auc": 0.8443877551020408,
+        "tp": 20,
+        "tn": 22,
+        "fp": 6,
+        "fn": 8
+      },
+      "reference": {
+        "left.shoulder_rom_deg": {
+          "center": 54.54561032748664,
+          "scale": 19.88677315038444,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.elbow_rom_deg": {
+          "center": 90.45315318300679,
+          "scale": 56.371446113552274,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.task_endpoint_value_deg": {
+          "center": 105.50254552260506,
+          "scale": 67.33140775765128,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.task_endpoint_excursion_deg": {
+          "center": 42.814991333953174,
+          "scale": 45.41814937316996,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.reach_p95_shoulder_width": {
+          "center": 0.777765770380862,
+          "scale": 0.2513386824310088,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_trunk_sway_rom_deg": {
+          "center": 2.335466197118007,
+          "scale": 0.7224652359088175,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_scapular_tilt_rom_deg": {
+          "center": 4.893984386370558,
+          "scale": 1.0093143756859109,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_centerline_rom_shoulder_width": {
+          "center": 0.138662075086159,
+          "scale": 0.07572679565288301,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.imu_chest_roll_rom_deg": {
+          "center": 10.267068068591959,
+          "scale": 6.863710748986599,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.imu_chest_pitch_rom_deg": {
+          "center": 3.3928294358381352,
+          "scale": 1.841764945507402,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.shoulder_rom_deg": {
+          "center": 53.04456133926645,
+          "scale": 22.062746709470844,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.elbow_rom_deg": {
+          "center": 96.5968326670871,
+          "scale": 45.972735601612875,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.task_endpoint_value_deg": {
+          "center": 117.39922345309158,
+          "scale": 59.674736439987726,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.task_endpoint_excursion_deg": {
+          "center": 33.70861852884825,
+          "scale": 41.91128896263006,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.reach_p95_shoulder_width": {
+          "center": 0.7769078008663314,
+          "scale": 0.28066244683515335,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.emg_active_fraction": {
+          "center": 0.5319363604767584,
+          "scale": 0.1427861835042431,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.emg_rms_adc": {
+          "center": 636.2810618944454,
+          "scale": 269.68175140144456,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.emg_waveform_length_per_s": {
+          "center": 232295.02268415503,
+          "scale": 101519.55668711275,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_angular_speed_p95_deg_s": {
+          "center": 80.98880051829667,
+          "scale": 35.42167878652604,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_rms": {
+          "center": 1.5246457249839147,
+          "scale": 0.6260997993273968,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_p95": {
+          "center": 3.1442155330300112,
+          "scale": 1.1854143532199637,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_iqr": {
+          "center": 1.1343884254662644,
+          "scale": 0.3503237976618451,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_skewness": {
+          "center": 1.1834100324808237,
+          "scale": 0.6177260870603951,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_trunk_sway_rom_deg": {
+          "center": 2.335466197118007,
+          "scale": 0.7224652359088175,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_scapular_tilt_rom_deg": {
+          "center": 4.893984386370558,
+          "scale": 1.0093143756859109,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_centerline_rom_shoulder_width": {
+          "center": 0.138662075086159,
+          "scale": 0.07572679565288301,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.imu_chest_roll_rom_deg": {
+          "center": 10.267068068591959,
+          "scale": 6.863710748986599,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.imu_chest_pitch_rom_deg": {
+          "center": 3.3928294358381352,
+          "scale": 1.841764945507402,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        }
+      }
+    },
+    "shoulder_press": {
+      "n": 56,
+      "n_patient": 28,
+      "n_control": 28,
+      "model": {
+        "mean": [
+          0.7577177959095016,
+          1.4655738114215218,
+          1.1310559239288074,
+          0.6086172294424702
+        ],
+        "scale": [
+          1.0962026318393536,
+          1.0903855804810179,
+          0.8478366164816677,
+          0.8759000765894005
+        ],
+        "coef": [
+          0.6579872954533521,
+          0.9139943474739909,
+          0.5814058424015917,
+          0.3554480727505724
+        ],
+        "intercept": 0.04464214830461765
+      },
+      "loso": {
+        "accuracy": 0.7142857142857143,
+        "sensitivity": 0.7142857142857143,
+        "specificity": 0.7142857142857143,
+        "auc": 0.7576530612244898,
+        "tp": 20,
+        "tn": 20,
+        "fp": 8,
+        "fn": 8
+      },
+      "reference": {
+        "left.shoulder_rom_deg": {
+          "center": 132.07791241042787,
+          "scale": 24.286041277641704,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.elbow_rom_deg": {
+          "center": 117.30175637755559,
+          "scale": 13.20408465905776,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.task_endpoint_value_deg": {
+          "center": 172.69717089657456,
+          "scale": 6.62952063257874,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.task_endpoint_excursion_deg": {
+          "center": 122.11353712657561,
+          "scale": 24.574361349812744,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.reach_p95_shoulder_width": {
+          "center": 1.4233428411189721,
+          "scale": 0.1240257605521554,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.emg_active_fraction": {
+          "center": 0.413913695482023,
+          "scale": 0.15919394463997183,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.emg_rms_adc": {
+          "center": 1838.1600297374775,
+          "scale": 1764.91575702809,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.emg_waveform_length_per_s": {
+          "center": 395865.5810632635,
+          "scale": 256923.19574411787,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_angular_speed_p95_deg_s": {
+          "center": 66.04452654279295,
+          "scale": 22.01247241364411,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_rms": {
+          "center": 1.5359949679275422,
+          "scale": 0.43408512967264895,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_p95": {
+          "center": 2.52080095631555,
+          "scale": 0.5287522371745149,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_iqr": {
+          "center": 0.8616760683030937,
+          "scale": 0.3424599572513701,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_skewness": {
+          "center": 1.4190626570156786,
+          "scale": 0.7716736540772682,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_trunk_sway_rom_deg": {
+          "center": 2.196201878524583,
+          "scale": 0.6419121380422512,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_scapular_tilt_rom_deg": {
+          "center": 4.3315368167423625,
+          "scale": 1.1042625412963278,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_centerline_rom_shoulder_width": {
+          "center": 0.13329052401451374,
+          "scale": 0.06785413137452154,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.imu_chest_roll_rom_deg": {
+          "center": 9.65524743567742,
+          "scale": 5.17927994735104,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.imu_chest_pitch_rom_deg": {
+          "center": 3.663915205573846,
+          "scale": 2.1251300366712815,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.shoulder_rom_deg": {
+          "center": 135.90337081191785,
+          "scale": 18.008870836609415,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.elbow_rom_deg": {
+          "center": 112.88779730351561,
+          "scale": 13.601751528966341,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.task_endpoint_value_deg": {
+          "center": 172.3871697780238,
+          "scale": 4.94655983214322,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.task_endpoint_excursion_deg": {
+          "center": 125.42448508498049,
+          "scale": 27.013567041495403,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.reach_p95_shoulder_width": {
+          "center": 1.3843746132937333,
+          "scale": 0.12653080508305883,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.emg_active_fraction": {
+          "center": 0.531521944341941,
+          "scale": 0.14017588048340204,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.emg_rms_adc": {
+          "center": 675.5627270844474,
+          "scale": 363.54160770857516,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.emg_waveform_length_per_s": {
+          "center": 249780.16446678538,
+          "scale": 126399.64211212168,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_angular_speed_p95_deg_s": {
+          "center": 66.54270086393633,
+          "scale": 21.75000755880014,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_rms": {
+          "center": 1.3822988268380323,
+          "scale": 0.4100253657973753,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_p95": {
+          "center": 2.4360455123829654,
+          "scale": 0.7233552940497311,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_iqr": {
+          "center": 0.8773802217395812,
+          "scale": 0.29148356683538523,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_skewness": {
+          "center": 1.3145489010284683,
+          "scale": 0.8546015271826167,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_trunk_sway_rom_deg": {
+          "center": 2.196201878524583,
+          "scale": 0.6419121380422512,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_scapular_tilt_rom_deg": {
+          "center": 4.3315368167423625,
+          "scale": 1.1042625412963278,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_centerline_rom_shoulder_width": {
+          "center": 0.13329052401451374,
+          "scale": 0.06785413137452154,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.imu_chest_roll_rom_deg": {
+          "center": 9.65524743567742,
+          "scale": 5.17927994735104,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.imu_chest_pitch_rom_deg": {
+          "center": 3.663915205573846,
+          "scale": 2.1251300366712815,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        }
+      }
+    },
+    "seated_row": {
+      "n": 56,
+      "n_patient": 28,
+      "n_control": 28,
+      "model": {
+        "mean": [
+          0.1358233008895531,
+          1.501767061476967,
+          1.5552582725281272,
+          0.5835246347812675
+        ],
+        "scale": [
+          0.21170685192949212,
+          1.1435720175074013,
+          1.2348907860984621,
+          0.8760293112741389
+        ],
+        "coef": [
+          -0.10996928388987248,
+          1.205322814820439,
+          1.0129840054417445,
+          0.8476998090371315
+        ],
+        "intercept": 0.19146052648355125
+      },
+      "loso": {
+        "accuracy": 0.8392857142857143,
+        "sensitivity": 0.7857142857142857,
+        "specificity": 0.8928571428571429,
+        "auc": 0.8686224489795918,
+        "tp": 22,
+        "tn": 25,
+        "fp": 3,
+        "fn": 6
+      },
+      "reference": {
+        "left.shoulder_rom_deg": {
+          "center": 19.699928434726143,
+          "scale": 9.843289915403503,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.elbow_rom_deg": {
+          "center": 38.85384819512535,
+          "scale": 25.258757110387098,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.task_endpoint_value_deg": {
+          "center": 45.57703275948964,
+          "scale": 31.703635255542125,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.task_endpoint_excursion_deg": {
+          "center": 22.685913344248917,
+          "scale": 21.98756129563802,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.reach_p95_shoulder_width": {
+          "center": 1.402258864426149,
+          "scale": 0.10548661713416037,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.emg_active_fraction": {
+          "center": 0.40287713365660616,
+          "scale": 0.15832614509203932,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.emg_rms_adc": {
+          "center": 2209.4174122917248,
+          "scale": 2333.1068737488945,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.emg_waveform_length_per_s": {
+          "center": 366278.71787683544,
+          "scale": 249790.3786878474,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_angular_speed_p95_deg_s": {
+          "center": 60.7808755746603,
+          "scale": 27.08062290654655,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_rms": {
+          "center": 1.3392672296829808,
+          "scale": 0.45901642323523095,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_p95": {
+          "center": 2.451275967834019,
+          "scale": 0.7683335497864022,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_iqr": {
+          "center": 1.0009815507553954,
+          "scale": 0.28746092423250197,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_skewness": {
+          "center": 0.9869907811650123,
+          "scale": 0.35372324647467107,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_trunk_sway_rom_deg": {
+          "center": 2.6374779699809636,
+          "scale": 0.8059461693302665,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_scapular_tilt_rom_deg": {
+          "center": 4.386143809882279,
+          "scale": 1.3604871685524806,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_centerline_rom_shoulder_width": {
+          "center": 0.1447477088739155,
+          "scale": 0.05749199395833551,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.imu_chest_roll_rom_deg": {
+          "center": 12.030709903749736,
+          "scale": 6.924437350794061,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.imu_chest_pitch_rom_deg": {
+          "center": 3.243834409499609,
+          "scale": 2.09804619825054,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.shoulder_rom_deg": {
+          "center": 16.601286596705528,
+          "scale": 5.020837220726512,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.elbow_rom_deg": {
+          "center": 35.95580976834782,
+          "scale": 19.824879483097465,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.task_endpoint_value_deg": {
+          "center": 39.19367347909703,
+          "scale": 15.205683658036723,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.task_endpoint_excursion_deg": {
+          "center": 22.66445476929684,
+          "scale": 16.429686834221947,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.reach_p95_shoulder_width": {
+          "center": 1.4215115375611203,
+          "scale": 0.07278401016667485,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_trunk_sway_rom_deg": {
+          "center": 2.6374779699809636,
+          "scale": 0.8059461693302665,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_scapular_tilt_rom_deg": {
+          "center": 4.386143809882279,
+          "scale": 1.3604871685524806,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_centerline_rom_shoulder_width": {
+          "center": 0.1447477088739155,
+          "scale": 0.05749199395833551,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.imu_chest_roll_rom_deg": {
+          "center": 12.030709903749736,
+          "scale": 6.924437350794061,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.imu_chest_pitch_rom_deg": {
+          "center": 3.243834409499609,
+          "scale": 2.09804619825054,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        }
+      }
+    },
+    "arm_curl": {
+      "n": 55,
+      "n_patient": 27,
+      "n_control": 28,
+      "model": {
+        "mean": [
+          0.8042743597193868,
+          1.2471895909101103,
+          1.390482949721545,
+          1.1498679514876202
+        ],
+        "scale": [
+          1.0343296931276895,
+          1.1565364156656333,
+          1.2480410502557973,
+          1.3263840176346406
+        ],
+        "coef": [
+          0.9667147108324861,
+          1.0428206069490173,
+          0.626379510656821,
+          1.1653261398699888
+        ],
+        "intercept": 0.1482385190726248
+      },
+      "loso": {
+        "accuracy": 0.8363636363636363,
+        "sensitivity": 0.7777777777777778,
+        "specificity": 0.8928571428571429,
+        "auc": 0.873015873015873,
+        "tp": 21,
+        "tn": 25,
+        "fp": 3,
+        "fn": 6
+      },
+      "reference": {
+        "left.shoulder_rom_deg": {
+          "center": 9.69885687124264,
+          "scale": 4.169975422541333,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.elbow_rom_deg": {
+          "center": 163.25095037476297,
+          "scale": 11.303323767612795,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.task_endpoint_value_deg": {
+          "center": 165.86390582819246,
+          "scale": 10.350002037409105,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.task_endpoint_excursion_deg": {
+          "center": 151.4942101461802,
+          "scale": 18.69094917830635,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.reach_p95_shoulder_width": {
+          "center": 1.2833788585058181,
+          "scale": 0.1865570654504705,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.emg_active_fraction": {
+          "center": 0.5208071388539933,
+          "scale": 0.08714611264718944,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.emg_rms_adc": {
+          "center": 2312.5505725815315,
+          "scale": 2336.6745789543997,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.emg_waveform_length_per_s": {
+          "center": 437439.12854840263,
+          "scale": 465795.64934926794,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_angular_speed_p95_deg_s": {
+          "center": 102.0922625956772,
+          "scale": 17.864230283335004,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_rms": {
+          "center": 2.312555699166772,
+          "scale": 0.6853934892737958,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_p95": {
+          "center": 3.634388805442492,
+          "scale": 1.0439359508513444,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_iqr": {
+          "center": 1.2955591538857103,
+          "scale": 0.40662584854777023,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_skewness": {
+          "center": 0.4489971682141207,
+          "scale": 0.45279946529735443,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_trunk_sway_rom_deg": {
+          "center": 1.9141844730088247,
+          "scale": 0.5024534112932463,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_scapular_tilt_rom_deg": {
+          "center": 4.115998395563619,
+          "scale": 1.2327000858235364,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_centerline_rom_shoulder_width": {
+          "center": 0.089668547371024,
+          "scale": 0.04856162616676281,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.shoulder_rom_deg": {
+          "center": 12.341626481915567,
+          "scale": 4.280857181764991,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.elbow_rom_deg": {
+          "center": 155.19309954608693,
+          "scale": 11.374590600439232,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.task_endpoint_value_deg": {
+          "center": 160.101062116121,
+          "scale": 8.901523097976206,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.task_endpoint_excursion_deg": {
+          "center": 138.2829935300516,
+          "scale": 26.753707768164176,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.reach_p95_shoulder_width": {
+          "center": 1.2397521171794867,
+          "scale": 0.18916236257872956,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.emg_active_fraction": {
+          "center": 0.5072280711384967,
+          "scale": 0.14654141956364153,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.emg_rms_adc": {
+          "center": 1147.2705081097874,
+          "scale": 595.2032653506953,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.emg_waveform_length_per_s": {
+          "center": 388035.6523872183,
+          "scale": 138596.94640746954,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_angular_speed_p95_deg_s": {
+          "center": 106.77138204764296,
+          "scale": 21.86317160553352,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_rms": {
+          "center": 2.459428576219681,
+          "scale": 0.8772295168038127,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_p95": {
+          "center": 3.896615574572445,
+          "scale": 1.1053641950100321,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_iqr": {
+          "center": 1.3972857454469383,
+          "scale": 0.47333294712413393,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_skewness": {
+          "center": 0.48309299760473845,
+          "scale": 0.520526575726497,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_trunk_sway_rom_deg": {
+          "center": 1.9141844730088247,
+          "scale": 0.5024534112932463,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_scapular_tilt_rom_deg": {
+          "center": 4.115998395563619,
+          "scale": 1.2327000858235364,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_centerline_rom_shoulder_width": {
+          "center": 0.089668547371024,
+          "scale": 0.04856162616676281,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        }
+      }
+    },
+    "overhead_triceps_extension": {
+      "n": 56,
+      "n_patient": 28,
+      "n_control": 28,
+      "model": {
+        "mean": [
+          0.6282025699884733,
+          1.6482821563045356,
+          1.1244287057378843,
+          0.8728728905832946
+        ],
+        "scale": [
+          0.6851215969858836,
+          1.3902908628058928,
+          0.8223795258063549,
+          1.2389402182927138
+        ],
+        "coef": [
+          1.091183992403593,
+          1.4679791912341469,
+          0.0593978263342372,
+          1.0396081670294761
+        ],
+        "intercept": 0.3882541998734843
+      },
+      "loso": {
+        "accuracy": 0.7678571428571429,
+        "sensitivity": 0.7142857142857143,
+        "specificity": 0.8214285714285714,
+        "auc": 0.8839285714285714,
+        "tp": 20,
+        "tn": 23,
+        "fp": 5,
+        "fn": 8
+      },
+      "reference": {
+        "left.shoulder_rom_deg": {
+          "center": 16.624685774651837,
+          "scale": 10.016874058118319,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.elbow_rom_deg": {
+          "center": 115.84632871849954,
+          "scale": 18.4645772618195,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.task_endpoint_value_deg": {
+          "center": 152.9384689050057,
+          "scale": 7.1623008886896145,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.task_endpoint_excursion_deg": {
+          "center": 95.27515357991616,
+          "scale": 26.048551046208676,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.reach_p95_shoulder_width": {
+          "center": 1.5146553292861662,
+          "scale": 0.16812747247620966,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.emg_active_fraction": {
+          "center": 0.4255786306701982,
+          "scale": 0.10635439885147811,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.emg_rms_adc": {
+          "center": 3224.831573506539,
+          "scale": 2250.4217313912914,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.emg_waveform_length_per_s": {
+          "center": 495840.2141839722,
+          "scale": 330899.1853147874,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_angular_speed_p95_deg_s": {
+          "center": 96.00426570015253,
+          "scale": 23.651614455756594,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_rms": {
+          "center": 2.2285621151799737,
+          "scale": 0.37213454723673967,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_p95": {
+          "center": 3.904851702301844,
+          "scale": 1.2357597359924866,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_iqr": {
+          "center": 1.3768854364268568,
+          "scale": 0.3260497378834758,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_skewness": {
+          "center": 1.2468200141238155,
+          "scale": 0.9569242254894103,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_trunk_sway_rom_deg": {
+          "center": 2.0973417781906067,
+          "scale": 0.572511923073265,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_scapular_tilt_rom_deg": {
+          "center": 4.337407582901062,
+          "scale": 1.3586607315285968,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_centerline_rom_shoulder_width": {
+          "center": 0.11074382106241751,
+          "scale": 0.04496640250898082,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.imu_chest_roll_rom_deg": {
+          "center": 5.342112132694005,
+          "scale": 3.165821477469996,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.imu_chest_pitch_rom_deg": {
+          "center": 3.656615623516616,
+          "scale": 2.4200012993558833,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.shoulder_rom_deg": {
+          "center": 23.568110264696557,
+          "scale": 16.576679362890193,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.elbow_rom_deg": {
+          "center": 109.15235560695824,
+          "scale": 17.60136881237642,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.task_endpoint_value_deg": {
+          "center": 149.16956869191446,
+          "scale": 7.694339208231329,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.task_endpoint_excursion_deg": {
+          "center": 96.22822532179013,
+          "scale": 29.203067062675732,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.reach_p95_shoulder_width": {
+          "center": 1.4879201920531897,
+          "scale": 0.19498943356285756,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_trunk_sway_rom_deg": {
+          "center": 2.0973417781906067,
+          "scale": 0.572511923073265,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_scapular_tilt_rom_deg": {
+          "center": 4.337407582901062,
+          "scale": 1.3586607315285968,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_centerline_rom_shoulder_width": {
+          "center": 0.11074382106241751,
+          "scale": 0.04496640250898082,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.imu_chest_roll_rom_deg": {
+          "center": 5.342112132694005,
+          "scale": 3.165821477469996,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.imu_chest_pitch_rom_deg": {
+          "center": 3.656615623516616,
+          "scale": 2.4200012993558833,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        }
+      }
+    },
+    "flexibility": {
+      "n": 55,
+      "n_patient": 27,
+      "n_control": 28,
+      "model": {
+        "mean": [
+          0.7950824727800849,
+          1.4363991652386021,
+          1.1536503507688705,
+          0.34553409995295964
+        ],
+        "scale": [
+          0.9739573426241082,
+          0.9915673535216583,
+          0.8565496990125188,
+          0.516481915837942
+        ],
+        "coef": [
+          1.8014467969669599,
+          1.3198940384483961,
+          0.5517956842930689,
+          0.14296785821123198
+        ],
+        "intercept": 0.3689740612970068
+      },
+      "loso": {
+        "accuracy": 0.7636363636363637,
+        "sensitivity": 0.7407407407407407,
+        "specificity": 0.7857142857142857,
+        "auc": 0.8822751322751323,
+        "tp": 20,
+        "tn": 22,
+        "fp": 6,
+        "fn": 7
+      },
+      "reference": {
+        "left.shoulder_rom_deg": {
+          "center": 150.6659663307131,
+          "scale": 10.671138599145117,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.elbow_rom_deg": {
+          "center": 136.37410975539532,
+          "scale": 11.169461701590809,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.reach_p95_shoulder_width": {
+          "center": 1.4425734760029698,
+          "scale": 0.0924454325791854,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "left.emg_active_fraction": {
+          "center": 0.24950239803315832,
+          "scale": 0.06624295979173685,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.emg_rms_adc": {
+          "center": 2332.5996162810807,
+          "scale": 1392.92071855999,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.emg_waveform_length_per_s": {
+          "center": 312918.5909013748,
+          "scale": 128653.23652853516,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_angular_speed_p95_deg_s": {
+          "center": 108.86480589502972,
+          "scale": 11.381451434358956,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_rms": {
+          "center": 1.7727793488871035,
+          "scale": 0.20272512232036802,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_p95": {
+          "center": 3.8075861250769174,
+          "scale": 0.4107890659800155,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_iqr": {
+          "center": 1.582845837176691,
+          "scale": 0.3065352537140321,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_skewness": {
+          "center": 1.449408359584877,
+          "scale": 0.34591476228169254,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_trunk_sway_rom_deg": {
+          "center": 7.49299842238936,
+          "scale": 1.7740362110861427,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_scapular_tilt_rom_deg": {
+          "center": 14.280958868247566,
+          "scale": 2.6323696545061517,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.skeleton_centerline_rom_shoulder_width": {
+          "center": 0.38980244243789985,
+          "scale": 0.06218428188320748,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.imu_chest_roll_rom_deg": {
+          "center": 28.96743510896071,
+          "scale": 10.91999947811786,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.imu_chest_pitch_rom_deg": {
+          "center": 22.798837129682024,
+          "scale": 7.515492983237007,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.shoulder_rom_deg": {
+          "center": 148.32476566251117,
+          "scale": 10.184674915809428,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.elbow_rom_deg": {
+          "center": 135.59379395110773,
+          "scale": 13.749983694062925,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.reach_p95_shoulder_width": {
+          "center": 1.4688527747899534,
+          "scale": 0.10131608282159475,
+          "direction": "low_bad",
+          "scale_method": "MAD"
+        },
+        "right.emg_active_fraction": {
+          "center": 0.3892056430369373,
+          "scale": 0.043388299349389536,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.emg_rms_adc": {
+          "center": 819.0197776515892,
+          "scale": 441.8373285037724,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.emg_waveform_length_per_s": {
+          "center": 241298.65415656831,
+          "scale": 94997.37888838357,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_angular_speed_p95_deg_s": {
+          "center": 114.69845502487277,
+          "scale": 15.779697010502598,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_rms": {
+          "center": 1.8085647618759642,
+          "scale": 0.24484126137069429,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_p95": {
+          "center": 4.202753105433381,
+          "scale": 0.6537542544954383,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_iqr": {
+          "center": 1.6018065428566044,
+          "scale": 0.3197744547681732,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_skewness": {
+          "center": 1.6209519083002752,
+          "scale": 0.24633630698001255,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_trunk_sway_rom_deg": {
+          "center": 7.49299842238936,
+          "scale": 1.7740362110861427,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_scapular_tilt_rom_deg": {
+          "center": 14.280958868247566,
+          "scale": 2.6323696545061517,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.skeleton_centerline_rom_shoulder_width": {
+          "center": 0.38980244243789985,
+          "scale": 0.06218428188320748,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.imu_chest_roll_rom_deg": {
+          "center": 28.96743510896071,
+          "scale": 10.91999947811786,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.imu_chest_pitch_rom_deg": {
+          "center": 22.798837129682024,
+          "scale": 7.515492983237007,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        }
+      },
+      "capacity_note": "shoulder_rom, elbow_rom, reach_p95 only"
+    }
+  }
+}
