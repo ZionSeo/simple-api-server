@@ -40,6 +40,13 @@ type InitialSubject = {
   missing_exercises?: Record<string, string>;
 };
 
+type DomainComputation = {
+  label: string;
+  value: number;
+  z: number;
+  term: number;
+};
+
 type ExercisePrediction = {
   probability: number;
   predicted: CohortGroup;
@@ -47,6 +54,7 @@ type ExercisePrediction = {
   matches_group: boolean;
   grade: string;
   grade_label: string;
+  components: Record<DomainName, DomainComputation>;
 };
 
 type Prediction = {
@@ -260,14 +268,22 @@ export function scoreExercise(exercise: string, domains: Record<DomainName, numb
   const spec = model.exercises[exercise]?.model;
   if (!spec) throw new Error(`동작 모델이 없습니다: ${exercise}`);
   let logit = spec.intercept;
+  const components = {} as Record<DomainName, DomainComputation>;
   model.domains.forEach((name, index) => {
     const scale = spec.scale[index] || 1;
     const z = (domains[name] - spec.mean[index]) / scale;
-    logit += z * spec.coef[index];
+    const term = z * spec.coef[index];
+    logit += term;
+    components[name] = {
+      label: DOMAIN_LABELS[index],
+      value: domains[name],
+      z,
+      term,
+    };
   });
   const probability = sigmoid(logit);
   const predicted: CohortGroup = probability >= 0.5 ? "patient" : "control";
-  return { logit, probability, predicted, ...gradeOf(probability) };
+  return { logit, probability, predicted, components, ...gradeOf(probability) };
 }
 
 export function listReferenceSubjects() {
@@ -338,6 +354,7 @@ export function applyLogisticModel() {
         matches_group: scored.predicted === person.group,
         grade: scored.grade,
         grade_label: scored.grade_label,
+        components: scored.components,
       };
     }
     const prediction = { exercises };

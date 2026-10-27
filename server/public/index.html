@@ -413,12 +413,27 @@
         const id = encodeURIComponent(person.subject_id);
         const cells = exercises.map((item) => {
           const scored = prediction[item.name];
-          if (!scored) {
+          const domains = person.exercises?.[item.name];
+          if (!scored && !domains) {
             const reason = person.missing_exercises?.[item.name];
             return `<td>${reason ? esc(reason) : "-"}</td>`;
           }
-          const mark = scored.matches_group ? "" : " (지정과 다름)";
-          return `<td>${fmt(scored.probability)} ${esc(scored.predicted_label)}${mark}<br>${esc(scored.grade_label)}</td>`;
+          const order = [
+            ["가동", "movement_capacity"],
+            ["근활성", "muscle_activation"],
+            ["동작역학", "movement_dynamics"],
+            ["보상맥락", "compensation_context"],
+          ];
+          const lines = order.map(([label, key]) => {
+            const component = scored?.components?.[key];
+            const value = component ? component.value : domains?.[key];
+            const zText = component ? ` (z ${fmt(component.z)})` : "";
+            return `${esc(label)} ${fmt(value)}${zText}`;
+          }).join("<br>");
+          const decision = scored
+            ? `<br>${fmt(scored.probability)} ${esc(scored.predicted_label)}${scored.matches_group ? "" : " (지정과 다름)"} / ${esc(scored.grade_label)}`
+            : "";
+          return `<td>${lines}${decision}</td>`;
         }).join("");
         return `<tr>
           <td>${esc(person.subject_id)}</td>
