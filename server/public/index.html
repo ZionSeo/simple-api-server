@@ -6,39 +6,51 @@
   <title>악력 분석 서버</title>
   <style>
     :root {
-      --bg: #e7eef2;
-      --card: #fff;
-      --text: #1c2430;
-      --muted: #5b6775;
-      --line: #d5dee6;
+      --text: #14212b;
+      --muted: #5c6b78;
+      --line: #d7e2ea;
       --accent: #0f766e;
+      --ink: #08343a;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif;
       color: var(--text);
-      background: radial-gradient(120% 80% at 0% 0%, #c8ebe4 0%, #e8eef2 45%, #d7e0e8 100%);
+      background:
+        radial-gradient(900px 420px at 8% -10%, rgba(15, 118, 110, 0.18), transparent 60%),
+        radial-gradient(700px 380px at 100% 0%, rgba(194, 65, 12, 0.08), transparent 55%),
+        #f3f6f8;
       min-height: 100vh;
     }
-    main { max-width: 1280px; margin: 0 auto; padding: 2rem 1.25rem 3.5rem; }
-    h1 { font-size: 1.85rem; margin: 0.35rem 0 0.4rem; letter-spacing: -0.03em; }
-    .sub { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.25rem; line-height: 1.5; }
-    .badges { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+    main { max-width: 1360px; margin: 0 auto; padding: 1.4rem 1.25rem 3.5rem; }
+    .hero {
+      display: flex; justify-content: space-between; gap: 1.2rem; align-items: flex-end;
+      margin-bottom: 1.15rem; padding: 1.35rem 1.4rem;
+      border-radius: 22px; color: #f8fffc;
+      background: linear-gradient(135deg, #08343a 0%, #0f766e 62%, #157a73 100%);
+      box-shadow: 0 18px 40px rgba(8, 52, 58, 0.18);
+    }
+    .eyebrow { margin: 0 0 0.35rem; letter-spacing: 0.14em; font-size: 0.72rem; text-transform: uppercase; color: #b7efe4; }
+    h1 { font-size: 1.9rem; margin: 0 0 0.35rem; letter-spacing: -0.04em; }
+    .hero .sub { color: #d7f3ee; margin: 0; max-width: 46rem; }
+    .sub { color: var(--muted); font-size: 0.95rem; line-height: 1.55; }
+    .badges { display: flex; flex-wrap: wrap; gap: 0.4rem; justify-content: flex-end; max-width: 22rem; }
     .badge {
-      font-size: 0.75rem; border: 1px solid var(--line); background: #fff;
-      border-radius: 999px; padding: 0.2rem 0.55rem; color: var(--muted);
+      font-size: 0.75rem; border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.12);
+      border-radius: 999px; padding: 0.28rem 0.65rem; color: #f3fffc;
     }
     .grid { display: grid; gap: 1rem; }
     @media (min-width: 800px) { .grid.two { grid-template-columns: 1fr 1fr; } }
+    main > .card, main > .grid { margin-top: 1rem; }
     .card {
-      background: #fff;
-      border: 1px solid #e2e8f0;
-      border-radius: 18px; padding: 1.1rem 1.15rem 1.15rem;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      background: rgba(255,255,255,0.92);
+      border: 1px solid rgba(215, 226, 234, 0.95);
+      border-radius: 20px; padding: 1.15rem 1.2rem 1.2rem;
+      box-shadow: 0 12px 32px rgba(20, 33, 43, 0.05);
     }
-    .card h2 { margin: 0 0 0.35rem; font-size: 1.05rem; letter-spacing: -0.02em; }
-    .card p { margin: 0 0 0.8rem; color: var(--muted); font-size: 0.85rem; line-height: 1.5; }
+    .card h2 { margin: 0 0 0.35rem; font-size: 1.08rem; letter-spacing: -0.03em; }
+    .card p { margin: 0 0 0.85rem; color: var(--muted); font-size: 0.86rem; line-height: 1.55; }
     label { display: block; font-size: 0.8rem; margin-bottom: 0.25rem; }
     .row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-bottom: 0.6rem; }
     input, select, button, textarea {
@@ -46,21 +58,29 @@
       padding: 0.45rem 0.6rem; font: inherit; background: #fff;
     }
     button {
-      background: var(--accent); color: #fff; border: none; cursor: pointer;
-      font-weight: 650; margin-top: 0.3rem;
+      background: linear-gradient(180deg, #149487, #0f766e); color: #fff; border: none; cursor: pointer;
+      font-weight: 700; margin-top: 0.3rem; box-shadow: 0 6px 14px rgba(15, 118, 110, 0.18);
     }
-    button:hover { filter: brightness(1.05); }
-    button.secondary { background: #334155; }
-    button.ghost { background: #fff; color: var(--text); border: 1px solid var(--line); }
-    button.mini { width: auto; margin: 0 0.25rem 0.25rem 0; padding: 0.28rem 0.6rem; border-radius: 999px; font-size: 0.75rem; }
+    button:hover { filter: brightness(1.06); }
+    button.secondary { background: #243246; box-shadow: none; }
+    button.ghost { background: #fff; color: var(--text); border: 1px solid var(--line); box-shadow: none; }
+    button.mini { width: auto; margin: 0 0.25rem 0.25rem 0; padding: 0.28rem 0.65rem; border-radius: 999px; font-size: 0.75rem; box-shadow: none; }
+    button.mini.ghost { background: #f4fbf9; }
     .actions { display: flex; flex-wrap: wrap; gap: 0.45rem; }
     .actions button { width: auto; margin: 0; }
-    .table-wrap { overflow: auto; border: 1px solid var(--line); border-radius: 12px; }
-    .table-wrap.tall { max-height: 72vh; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
-    th, td { text-align: left; padding: 0.55rem 0.55rem; border-bottom: 1px solid var(--line); vertical-align: top; }
-    th { position: sticky; top: 0; background: #f8fafc; z-index: 1; font-size: 0.75rem; color: #475569; }
-    tbody tr:hover td { background: #f8fbfb; }
+    .table-wrap { overflow: auto; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+    .table-wrap.tall { max-height: 74vh; }
+    table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.82rem; }
+    th, td { text-align: left; padding: 0.62rem 0.6rem; border-bottom: 1px solid #e8eef3; vertical-align: top; }
+    th { position: sticky; top: 0; background: #f7fbfb; z-index: 2; font-size: 0.74rem; color: #3e5563; letter-spacing: -0.01em; }
+    tbody tr:nth-child(even) td { background: #fbfdfd; }
+    tbody tr:hover td { background: #f3faf8; }
+    #referenceHead th:first-child, #referenceSubjects td:first-child {
+      position: sticky; left: 0; z-index: 3; min-width: 9.5rem;
+      background: #fff; box-shadow: 8px 0 12px rgba(20, 33, 43, 0.04);
+    }
+    #referenceHead th:first-child { z-index: 4; background: #f7fbfb; }
+    #referenceSubjects td:first-child { font-weight: 750; }
     .ok { color: #0f766e; font-weight: 700; }
     .fail { color: #b91c1c; font-weight: 700; }
     textarea { min-height: 120px; font-family: ui-monospace, monospace; font-size: 0.75rem; }
@@ -70,24 +90,36 @@
     .formula-body { padding: 0 0.9rem 0.8rem; }
     .formula h3 { margin: 0.7rem 0 0.2rem; font-size: 0.88rem; }
     .formula div div { color: #334155; font-size: 0.8rem; line-height: 1.45; }
-    .ex-cell { min-width: 176px; }
-    .metric { display: grid; grid-template-columns: 3.6rem 3.3rem auto; gap: 0.2rem; align-items: baseline; font-size: 0.75rem; line-height: 1.35; }
+    .ex-cell { min-width: 188px; }
+    .metric { display: grid; grid-template-columns: 3.5rem 3.2rem auto; gap: 0.25rem; align-items: baseline; font-size: 0.75rem; line-height: 1.45; }
     .metric span { color: #64748b; }
-    .metric b { font-weight: 700; font-variant-numeric: tabular-nums; }
+    .metric span::before { content: ""; display: inline-block; width: 0.45rem; height: 0.45rem; border-radius: 99px; margin-right: 0.28rem; transform: translateY(-1px); }
+    .metric b { font-weight: 750; font-variant-numeric: tabular-nums; }
     .metric em { font-style: normal; color: #94a3b8; font-size: 0.7rem; }
-    .verdict { margin-top: 0.4rem; border-radius: 8px; padding: 0.28rem 0.45rem; font-size: 0.75rem; font-weight: 750; }
+    .metric.cap span::before { background: #0f766e; }
+    .metric.emg span::before { background: #2563eb; }
+    .metric.dyn span::before { background: #7c3aed; }
+    .metric.comp span::before { background: #d97706; }
+    .verdict { margin-top: 0.45rem; border-radius: 9px; padding: 0.32rem 0.48rem; font-size: 0.75rem; font-weight: 750; }
     .verdict.control { background: #ecfdf5; color: #047857; }
     .verdict.patient { background: #fff7ed; color: #c2410c; }
-    .missing { color: #9a3412; font-size: 0.75rem; line-height: 1.4; }
-    #modelSummary { margin-top: 0.7rem; padding: 0.55rem 0.7rem; background: #f0fdfa; border-radius: 10px; color: #115e59; }
+    .missing { color: #9a3412; font-size: 0.75rem; line-height: 1.45; background: #fff7ed; border-radius: 10px; }
+    #modelSummary:empty { display: none; }
+    #modelSummary { margin-top: 0.75rem; padding: 0.65rem 0.75rem; background: #f0fdfa; border-radius: 12px; color: #115e59; }
+    #latest { max-height: 220px; overflow: auto; margin: 0.8rem 0 0; white-space: pre-wrap; background: #f8fafc; border-radius: 12px; padding: 0.7rem; color: #526270; font-size: 0.75rem; }
+    @media (max-width: 800px) { .hero { flex-direction: column; align-items: flex-start; } .badges { justify-content: flex-start; } }
   </style>
 </head>
 <body>
   <main>
-    <div class="badge">Grip Analysis · light runtime</div>
-    <h1>악력 분석 서버 콘솔</h1>
-    <p class="sub">HIL 알림을 받으면 엑셀 응답을 바로 돌려주고, 악력 파일과 동작 세트를 모은 뒤 정상·근감소를 직접 지정해 학습 예제를 만듭니다.</p>
-    <div class="badges" id="badges"></div>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Grip Analysis</p>
+        <h1>악력 분석 서버 콘솔</h1>
+        <p class="sub">HIL 알림을 받으면 엑셀 응답을 바로 돌려주고, 악력 파일과 동작 세트를 모은 뒤 정상·근감소를 직접 지정해 학습 예제를 만듭니다.</p>
+      </div>
+      <div class="badges" id="badges"></div>
+    </header>
 
     <div class="grid two">
       <section class="card">
@@ -133,7 +165,7 @@
           <button class="ghost" id="btnLatest">최신 calibration 조회</button>
           <button class="secondary" id="btnDownload">ndjson.gz 다운로드</button>
         </div>
-        <pre id="latest" style="white-space:pre-wrap;font-size:0.75rem;color:var(--muted)"></pre>
+        <pre id="latest"></pre>
       </section>
     </div>
 
@@ -448,16 +480,16 @@
             return `<td class="ex-cell missing">${reason ? esc(reason) : "-"}</td>`;
           }
           const order = [
-            ["가동", "movement_capacity"],
-            ["근활성", "muscle_activation"],
-            ["동작역학", "movement_dynamics"],
-            ["보상맥락", "compensation_context"],
+            ["가동", "movement_capacity", "cap"],
+            ["근활성", "muscle_activation", "emg"],
+            ["동작역학", "movement_dynamics", "dyn"],
+            ["보상맥락", "compensation_context", "comp"],
           ];
-          const lines = order.map(([label, key]) => {
+          const lines = order.map(([label, key, tone]) => {
             const component = scored?.components?.[key];
             const value = component ? component.value : domains?.[key];
             const zText = component ? `<em>z ${fmt(component.z)}</em>` : "<em></em>";
-            return `<div class="metric"><span>${esc(label)}</span><b>${fmt(value)}</b>${zText}</div>`;
+            return `<div class="metric ${tone}"><span>${esc(label)}</span><b>${fmt(value)}</b>${zText}</div>`;
           }).join("");
           const decision = scored
             ? `<div class="verdict ${esc(scored.predicted)}">${fmt(scored.probability)} ${esc(scored.predicted_label)}${scored.matches_group ? "" : " · 지정과 다름"} · ${esc(scored.grade_label)}</div>`
