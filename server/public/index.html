@@ -21,9 +21,9 @@
       background: radial-gradient(120% 80% at 0% 0%, #c8ebe4 0%, #e8eef2 45%, #d7e0e8 100%);
       min-height: 100vh;
     }
-    main { max-width: 960px; margin: 0 auto; padding: 2rem 1rem 3rem; }
-    h1 { font-size: 1.75rem; margin: 0.25rem 0 0.5rem; }
-    .sub { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.25rem; }
+    main { max-width: 1280px; margin: 0 auto; padding: 2rem 1.25rem 3.5rem; }
+    h1 { font-size: 1.85rem; margin: 0.35rem 0 0.4rem; letter-spacing: -0.03em; }
+    .sub { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.25rem; line-height: 1.5; }
     .badges { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
     .badge {
       font-size: 0.75rem; border: 1px solid var(--line); background: #fff;
@@ -32,13 +32,13 @@
     .grid { display: grid; gap: 1rem; }
     @media (min-width: 800px) { .grid.two { grid-template-columns: 1fr 1fr; } }
     .card {
-      background: color-mix(in srgb, var(--card) 92%, transparent);
-      border: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
-      border-radius: 14px; padding: 1rem;
-      backdrop-filter: blur(6px);
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px; padding: 1.1rem 1.15rem 1.15rem;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
     }
-    .card h2 { margin: 0 0 0.35rem; font-size: 1.05rem; }
-    .card p { margin: 0 0 0.8rem; color: var(--muted); font-size: 0.85rem; }
+    .card h2 { margin: 0 0 0.35rem; font-size: 1.05rem; letter-spacing: -0.02em; }
+    .card p { margin: 0 0 0.8rem; color: var(--muted); font-size: 0.85rem; line-height: 1.5; }
     label { display: block; font-size: 0.8rem; margin-bottom: 0.25rem; }
     .row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-bottom: 0.6rem; }
     input, select, button, textarea {
@@ -47,17 +47,39 @@
     }
     button {
       background: var(--accent); color: #fff; border: none; cursor: pointer;
-      font-weight: 600; margin-top: 0.3rem;
+      font-weight: 650; margin-top: 0.3rem;
     }
+    button:hover { filter: brightness(1.05); }
     button.secondary { background: #334155; }
     button.ghost { background: #fff; color: var(--text); border: 1px solid var(--line); }
-    button.mini { width: auto; margin: 0 0.25rem 0 0; padding: 0.3rem 0.55rem; }
+    button.mini { width: auto; margin: 0 0.25rem 0.25rem 0; padding: 0.28rem 0.6rem; border-radius: 999px; font-size: 0.75rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .actions button { width: auto; margin: 0; }
+    .table-wrap { overflow: auto; border: 1px solid var(--line); border-radius: 12px; }
+    .table-wrap.tall { max-height: 72vh; }
     table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
-    th, td { text-align: left; padding: 0.45rem 0.3rem; border-bottom: 1px solid var(--line); vertical-align: top; }
-    .ok { color: #0f766e; font-weight: 600; }
-    .fail { color: #b91c1c; font-weight: 600; }
+    th, td { text-align: left; padding: 0.55rem 0.55rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { position: sticky; top: 0; background: #f8fafc; z-index: 1; font-size: 0.75rem; color: #475569; }
+    tbody tr:hover td { background: #f8fbfb; }
+    .ok { color: #0f766e; font-weight: 700; }
+    .fail { color: #b91c1c; font-weight: 700; }
     textarea { min-height: 120px; font-family: ui-monospace, monospace; font-size: 0.75rem; }
-    code { font-size: 0.78rem; }
+    code { font-size: 0.78rem; background: #f1f5f9; padding: 0.05rem 0.3rem; border-radius: 6px; }
+    .formula { margin: 0.2rem 0 0.9rem; border: 1px solid var(--line); border-radius: 12px; background: #f8fafc; }
+    .formula summary { cursor: pointer; padding: 0.65rem 0.8rem; font-weight: 700; }
+    .formula-body { padding: 0 0.9rem 0.8rem; }
+    .formula h3 { margin: 0.7rem 0 0.2rem; font-size: 0.88rem; }
+    .formula div div { color: #334155; font-size: 0.8rem; line-height: 1.45; }
+    .ex-cell { min-width: 176px; }
+    .metric { display: grid; grid-template-columns: 3.6rem 3.3rem auto; gap: 0.2rem; align-items: baseline; font-size: 0.75rem; line-height: 1.35; }
+    .metric span { color: #64748b; }
+    .metric b { font-weight: 700; font-variant-numeric: tabular-nums; }
+    .metric em { font-style: normal; color: #94a3b8; font-size: 0.7rem; }
+    .verdict { margin-top: 0.4rem; border-radius: 8px; padding: 0.28rem 0.45rem; font-size: 0.75rem; font-weight: 750; }
+    .verdict.control { background: #ecfdf5; color: #047857; }
+    .verdict.patient { background: #fff7ed; color: #c2410c; }
+    .missing { color: #9a3412; font-size: 0.75rem; line-height: 1.4; }
+    #modelSummary { margin-top: 0.7rem; padding: 0.55rem 0.7rem; background: #f0fdfa; border-radius: 10px; color: #115e59; }
   </style>
 </head>
 <body>
@@ -101,14 +123,16 @@
             </select>
           </div>
         </div>
-        <button id="btnNotify">알림 보내기</button>
+        <div class="actions"><button id="btnNotify">알림 보내기</button></div>
       </section>
 
       <section class="card">
         <h2>2. HIL 조회</h2>
         <p>최신 calibration / raw 다운로드</p>
-        <button class="ghost" id="btnLatest">최신 calibration 조회</button>
-        <button class="secondary" id="btnDownload">ndjson.gz 다운로드</button>
+        <div class="actions">
+          <button class="ghost" id="btnLatest">최신 calibration 조회</button>
+          <button class="secondary" id="btnDownload">ndjson.gz 다운로드</button>
+        </div>
         <pre id="latest" style="white-space:pre-wrap;font-size:0.75rem;color:var(--muted)"></pre>
       </section>
     </div>
@@ -116,7 +140,7 @@
     <section class="card" style="margin-top:1rem">
       <h2>Jobs</h2>
       <p>알림 후 다운로드·분석 상태</p>
-      <div style="overflow-x:auto">
+      <div class="table-wrap">
         <table>
           <thead>
             <tr><th>상태</th><th>individual</th><th>calibration</th><th>대상</th><th>메시지</th></tr>
@@ -129,7 +153,7 @@
     <section class="card" style="margin-top:1rem">
       <h2>Datasets / 분석</h2>
       <p>다운로드된 파일과 요약 통계</p>
-      <div style="overflow-x:auto">
+      <div class="table-wrap">
         <table>
           <thead>
             <tr><th>calibration</th><th>부위/종류</th><th>lines</th><th>source</th><th>분석</th><th></th></tr>
@@ -153,9 +177,11 @@
           <input id="cohortSession" placeholder="세션 번호" />
         </div>
       </div>
-      <button id="btnPullGrip">악력 세트 불러오기</button>
-      <button class="secondary" id="btnPullMotion">동작 세트 불러오기</button>
-      <div style="overflow-x:auto;margin-top:0.8rem">
+      <div class="actions">
+        <button id="btnPullGrip">악력 세트 불러오기</button>
+        <button class="secondary" id="btnPullMotion">동작 세트 불러오기</button>
+      </div>
+      <div class="table-wrap" style="margin-top:0.8rem">
         <table>
           <thead>
             <tr><th>인원</th><th>분류</th><th>악력</th><th>동작</th><th>학습</th><th></th></tr>
@@ -168,7 +194,7 @@
     <section class="card" style="margin-top:1rem">
       <h2>4. 동작 학습 예제</h2>
       <p>분류된 인원의 악력 파일과 동작 세션 하나를 학습용 한 건으로 저장합니다. 정상은 0, 근감소는 1입니다. 모델을 여기서 학습하지는 않습니다.</p>
-      <div style="overflow-x:auto">
+      <div class="table-wrap">
         <table>
           <thead>
             <tr><th>인원</th><th>분류</th><th>label</th><th>동작 세션</th><th>악력 파일</th></tr>
@@ -181,10 +207,13 @@
     <section class="card" style="margin-top:1rem">
       <h2>5. 초기 로지스틱 모델</h2>
       <p>56명은 기관 기준으로 미리 지정되어 있습니다. 모델 적용하기를 누르면 서버가 동작마다 그 동작의 계수로 근감소 확률을 계산합니다. 유연성은 점수표에 없고, 더조은 조세경의 암컬만 골격 결측입니다.</p>
-      <div id="formulaBox" style="font-size:0.82rem;line-height:1.45"></div>
-      <button id="btnApplyModel">모델 적용하기</button>
+      <details class="formula">
+        <summary>지표 계산식</summary>
+        <div class="formula-body" id="formulaBox"></div>
+      </details>
+      <div class="actions"><button id="btnApplyModel">모델 적용하기</button></div>
       <p id="modelSummary"></p>
-      <div style="overflow-x:auto">
+      <div class="table-wrap tall">
         <table>
           <thead id="referenceHead"></thead>
           <tbody id="referenceSubjects"></tbody>
@@ -373,7 +402,7 @@
     }
 
     function formulaBlock(title, lines) {
-      return `<h3 style="margin:0.8rem 0 0.25rem;font-size:0.92rem">${esc(title)}</h3><div>${lines.map((line) => `<div>${esc(line)}</div>`).join("")}</div>`;
+      return `<h3>${esc(title)}</h3><div>${lines.map((line) => `<div>${esc(line)}</div>`).join("")}</div>`;
     }
 
     function renderFormulas(formulas) {
@@ -416,7 +445,7 @@
           const domains = person.exercises?.[item.name];
           if (!scored && !domains) {
             const reason = person.missing_exercises?.[item.name];
-            return `<td>${reason ? esc(reason) : "-"}</td>`;
+            return `<td class="ex-cell missing">${reason ? esc(reason) : "-"}</td>`;
           }
           const order = [
             ["가동", "movement_capacity"],
@@ -427,13 +456,13 @@
           const lines = order.map(([label, key]) => {
             const component = scored?.components?.[key];
             const value = component ? component.value : domains?.[key];
-            const zText = component ? ` (z ${fmt(component.z)})` : "";
-            return `${esc(label)} ${fmt(value)}${zText}`;
-          }).join("<br>");
+            const zText = component ? `<em>z ${fmt(component.z)}</em>` : "<em></em>";
+            return `<div class="metric"><span>${esc(label)}</span><b>${fmt(value)}</b>${zText}</div>`;
+          }).join("");
           const decision = scored
-            ? `<br>${fmt(scored.probability)} ${esc(scored.predicted_label)}${scored.matches_group ? "" : " (지정과 다름)"} / ${esc(scored.grade_label)}`
+            ? `<div class="verdict ${esc(scored.predicted)}">${fmt(scored.probability)} ${esc(scored.predicted_label)}${scored.matches_group ? "" : " · 지정과 다름"} · ${esc(scored.grade_label)}</div>`
             : "";
-          return `<td>${lines}${decision}</td>`;
+          return `<td class="ex-cell">${lines}${decision}</td>`;
         }).join("");
         return `<tr>
           <td>${esc(person.subject_id)}</td>
