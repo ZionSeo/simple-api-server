@@ -7,14 +7,18 @@ export type CohortGroup = "control" | "patient";
 
 const GROUP_ALIASES: Record<string, CohortGroup> = {
   정상: "control",
+  정상군: "control",
+  "정상 기준군": "control",
   control: "control",
   근감소: "patient",
+  환자군: "patient",
+  "기관 환자군": "patient",
   patient: "patient",
 };
 
 export const GROUP_DISPLAY: Record<CohortGroup, string> = {
-  control: "정상",
-  patient: "근감소",
+  control: "정상 기준군",
+  patient: "기관 환자군",
 };
 
 export type GripFileRef = {
@@ -187,7 +191,7 @@ export function attachMotion(individual_seq: number, motion: MotionRef): Subject
 }
 
 export function trainingReadiness(subject: SubjectRecord): string | null {
-  if (!subject.group) return "정상 또는 근감소로 분류해야 합니다.";
+  if (!subject.group) return "정상 기준군 또는 기관 환자군으로 지정해야 합니다.";
   if (subject.grip.length === 0) return "악력 파일이 없습니다.";
   if (subject.motions.length === 0) return "동작 세트가 없습니다.";
   return null;

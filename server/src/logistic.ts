@@ -134,12 +134,12 @@ function sigmoid(value: number) {
 
 const INDICATOR_FORMULAS = {
   reference: [
-    "기준 집단은 한동대 정상군입니다. 같은 운동, 같은 쪽(왼쪽 또는 오른쪽)끼리 중심과 척도를 구합니다.",
-    "정상군 본인의 점수를 계산할 때는 그 사람을 기준에서 뺍니다. 근감소군은 정상군 전체 기준을 사용합니다.",
+    "기준 집단은 한동대 정상 기준군입니다. 같은 운동, 같은 쪽(왼쪽 또는 오른쪽)끼리 중심과 척도를 구합니다.",
+    "정상 기준군 본인의 점수를 계산할 때는 그 사람을 기준에서 뺍니다. 기관 환자군은 정상 기준군 전체를 사용합니다.",
     "기준 인원이 8명 미만이거나 척도를 만들지 못하면 그 특징은 빠집니다.",
   ],
   scale: [
-    "중심 = median(정상군 측정값)",
+    "중심 = median(정상 기준군 측정값)",
     "MAD = median(|측정값 - 중심|)",
     "척도 = 1.4826 × MAD",
     "척도가 0이면 척도 = (Q3 - Q1) / 1.349",
@@ -165,7 +165,7 @@ const INDICATOR_FORMULAS = {
       name: "가동",
       key: "movement_capacity_deviation_z",
       direction: "low_bad",
-      meaning: "정상보다 가동 범위나 도달량이 작을 때만 편차로 셉니다.",
+      meaning: "정상 기준군보다 가동 범위나 도달량이 작을 때만 편차로 셉니다.",
       features: [
         "어깨 가동범위 shoulder_rom_deg (도)",
         "팔꿈치 가동범위 elbow_rom_deg (도)",
@@ -185,7 +185,7 @@ const INDICATOR_FORMULAS = {
       name: "근활성",
       key: "muscle_activation_deviation_z",
       direction: "two_sided",
-      meaning: "정상 중심보다 크거나 작은 근활성 모두 편차로 셉니다.",
+      meaning: "정상 기준군 중심보다 크거나 작은 근활성 모두 편차로 셉니다.",
       features: [
         "활성 비율 emg_active_fraction (0~1)",
         "RMS emg_rms_adc (ADC)",
@@ -197,7 +197,7 @@ const INDICATOR_FORMULAS = {
       name: "동작역학",
       key: "movement_dynamics_deviation_z",
       direction: "two_sided",
-      meaning: "정상 중심보다 크거나 작은 움직임 모두 편차로 셉니다.",
+      meaning: "정상 기준군 중심보다 크거나 작은 움직임 모두 편차로 셉니다.",
       features: [
         "각속도 95백분위 imu_angular_speed_p95_deg_s (도/초)",
         "동적 가속도 RMS imu_acceleration_dynamic_rms",
@@ -211,7 +211,7 @@ const INDICATOR_FORMULAS = {
       name: "보상맥락",
       key: "compensation_context_deviation_z",
       direction: "high_bad",
-      meaning: "정상보다 몸통이나 가슴의 보상 움직임이 클 때만 편차로 셉니다.",
+      meaning: "정상 기준군보다 몸통이나 가슴의 보상 움직임이 클 때만 편차로 셉니다.",
       features: [
         "몸통 흔들림 skeleton_trunk_sway_rom_deg (도)",
         "견갑 기울기 skeleton_scapular_tilt_rom_deg (도)",
@@ -249,9 +249,10 @@ export function modelInfo() {
       logistic: [
         "동작마다 z = (그 동작의 영역값 - 그 동작 학습 평균) / 그 동작 학습 표준편차",
         "logit = 그 동작의 절편 + 가동z·계수 + 근활성z·계수 + 동작역학z·계수 + 보상맥락z·계수",
-        "근감소 확률 = 1 / (1 + exp(-logit))",
-        "확률이 0.5 이상이면 그 동작은 근감소, 미만이면 정상입니다.",
-        `위험 등급은 ${model.grades.low} 미만 낮음, ${model.grades.high} 미만 중간, 그 이상 높음입니다.`,
+        "기관 환자군 운동패턴 유사도 = 1 / (1 + exp(-logit))",
+        "0.5는 기관 그룹 라벨 일치율을 계산하기 위한 연구용 분류 경계입니다.",
+        `화면의 유사도 수준은 ${model.grades.low} 미만 낮음, ${model.grades.high} 미만 중간, 그 이상 높음입니다.`,
+        "이 값과 구간은 임상적 근감소증 진단 확률 또는 진단 기준이 아닙니다.",
         ...names.map((name) => {
           const spec = model.exercises[name].model;
           const terms = spec.coef

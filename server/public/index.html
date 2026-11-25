@@ -538,7 +538,7 @@
     <header class="hero">
       <div>
         <h1 class="brand">Grip Analysis<span>악력 분석 서버 콘솔</span></h1>
-        <p class="sub">HIL 알림을 받으면 즉시 응답하고, 악력·동작 세트를 모아 정상·근감소를 지정해 학습 예제와 로지스틱 판정을 만듭니다.</p>
+        <p class="sub">HIL 알림을 받으면 즉시 응답하고, 악력·동작 세트를 모아 정상 기준군·기관 환자군을 지정해 학습 예제와 운동패턴 비교 결과를 만듭니다.</p>
       </div>
       <div class="live-panel">
         <p class="live-label"><span class="pulse" aria-hidden="true"></span> Live status</p>
@@ -648,13 +648,13 @@
 
     <div class="section-label" id="sec-subjects">
       <h2>대상자 분류</h2>
-      <p>악력·동작 세트를 받은 뒤 정상 또는 근감소로 지정</p>
+      <p>악력·동작 세트를 받은 뒤 정상 기준군 또는 기관 환자군으로 지정</p>
     </div>
     <section class="card">
       <div class="card-head">
         <div>
           <h3><span class="step">3</span>대상자 불러오기</h3>
-          <p>HIL에서 악력 파일과 동작 세트를 받은 뒤, 그 인원을 정상 또는 근감소로 지정합니다.</p>
+          <p>HIL에서 악력 파일과 동작 세트를 받은 뒤, 그 인원을 정상 기준군 또는 기관 환자군으로 지정합니다.</p>
         </div>
       </div>
       <div class="row">
@@ -683,7 +683,7 @@
 
     <div class="section-label" id="sec-examples">
       <h2>동작 학습 예제</h2>
-      <p>정상 0 · 근감소 1 · 모델 학습은 이 화면에서 하지 않음</p>
+      <p>정상 기준군 0 · 기관 환자군 1 · 모델 학습은 이 화면에서 하지 않음</p>
     </div>
     <section class="card">
       <div class="card-head">
@@ -704,13 +704,13 @@
 
     <div class="section-label" id="sec-model">
       <h2>초기 로지스틱 모델</h2>
-      <p>기관 기준 56명 · 동작별 계수로 근감소 확률 계산</p>
+      <p>기관 기준 56명 · 동작별 계수로 기관 환자군 운동패턴 유사도 계산</p>
     </div>
     <section class="card">
       <div class="card-head">
         <div>
           <h3><span class="step">5</span>모델 적용</h3>
-          <p>56명은 기관 기준으로 미리 지정되어 있습니다. 모델 적용하기를 누르면 서버가 동작마다 그 동작의 계수로 근감소 확률을 계산합니다. 유연성은 점수표에 없고, 더조은 조세경의 암컬만 골격 결측입니다.</p>
+          <p>56명은 기관 기준 그룹으로 미리 지정되어 있습니다. 모델 적용하기를 누르면 서버가 동작마다 기관 환자군 운동패턴 유사도를 계산합니다. 이 값은 임상적 근감소증 진단 확률이 아닙니다. 유연성은 점수표에 없고, 더조은 조세경의 암컬만 골격 결측입니다.</p>
         </div>
       </div>
       <details class="formula">
@@ -810,7 +810,7 @@
     };
 
     function groupButtons(seq) {
-      return `<button class="mini ghost" data-group="정상" data-seq="${seq}">정상</button><button class="mini" data-group="근감소" data-seq="${seq}">근감소</button>`;
+      return `<button class="mini ghost" data-group="control" data-seq="${seq}">정상 기준군</button><button class="mini" data-group="patient" data-seq="${seq}">기관 환자군</button>`;
     }
 
     async function refreshSubjects() {
@@ -829,7 +829,7 @@
       $("examples").innerHTML = (data.examples || []).length
         ? data.examples.map((item) => `<tr>
             <td>${item.individual_seq}</td>
-            <td>${item.group === "patient" ? "근감소" : "정상"}</td>
+            <td>${item.group === "patient" ? "기관 환자군" : "정상 기준군"}</td>
             <td>${item.label}</td>
             <td>${item.motion.session_seq}</td>
             <td>${(item.grip || []).length}</td>
@@ -931,7 +931,7 @@
         return formulaBlock(item.name, lines);
       }).join("");
       $("formulaBox").innerHTML = [
-        formulaBlock("정상군 기준", formulas.reference || []),
+        formulaBlock("정상 기준군", formulas.reference || []),
         formulaBlock("중심과 척도", formulas.scale || []),
         formulaBlock("특징 편차", formulas.deviation || []),
         formulaBlock("네 지표로 모으는 식", formulas.aggregation || []),
@@ -950,7 +950,7 @@
       const scoredText = (summary.by_exercise || []).some((item) => item.n)
         ? " " + summary.by_exercise.filter((item) => item.n).map((item) => `${item.label} 일치율 ${Number(item.accuracy).toFixed(3)}`).join(", ") + "."
         : "";
-      $("modelSummary").textContent = `인원 ${summary.n || 0}명, 정상 ${summary.n_control || 0}명, 근감소 ${summary.n_patient || 0}명. 동작별 판정 기준 확률 ${data.model?.threshold ?? 0.5}.${scoredText}`;
+      $("modelSummary").textContent = `인원 ${summary.n || 0}명, 정상 기준군 ${summary.n_control || 0}명, 기관 환자군 ${summary.n_patient || 0}명. 기관 그룹 비교 경계 ${data.model?.threshold ?? 0.5}.${scoredText} 이 결과는 임상적 근감소증 진단이 아닙니다.`;
       $("referenceHead").innerHTML = `<tr><th>인원</th><th>기관</th><th>지정</th>${exercises.map((item) => `<th>${esc(item.label)}</th>`).join("")}<th></th></tr>`;
       $("referenceSubjects").innerHTML = people.map((person) => {
         const prediction = person.prediction?.exercises || {};
@@ -985,8 +985,8 @@
           <td>${esc(person.group_label)}${person.adjusted ? " (변경)" : ""}</td>
           ${cells}
           <td>
-            <button class="mini ghost" data-ref-group="정상" data-ref-id="${id}">정상</button>
-            <button class="mini" data-ref-group="근감소" data-ref-id="${id}">근감소</button>
+            <button class="mini ghost" data-ref-group="control" data-ref-id="${id}">정상 기준군</button>
+            <button class="mini" data-ref-group="patient" data-ref-id="${id}">기관 환자군</button>
           </td>
         </tr>`;
       }).join("");

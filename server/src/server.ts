@@ -295,7 +295,7 @@ app.post("/api/subjects/:individualSeq/group", (req, res) => {
   if (individual_seq === undefined || !group) {
     res.status(400).json({
       ok: false,
-      message: "individual_seq와 group(정상 또는 근감소)이 필요합니다.",
+      message: "individual_seq와 group(정상 기준군 또는 기관 환자군)이 필요합니다.",
     });
     return;
   }
@@ -375,7 +375,7 @@ app.post("/api/reference/group", (req, res) => {
   if (!subjectId || !group) {
     res.status(400).json({
       ok: false,
-      message: "subject_id와 group(정상 또는 근감소)이 필요합니다.",
+      message: "subject_id와 group(정상 기준군 또는 기관 환자군)이 필요합니다.",
     });
     return;
   }
