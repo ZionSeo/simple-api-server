@@ -21,6 +21,8 @@ import {
   setReferenceGroup,
 } from "./logistic.js";
 import { parseNdjsonGz } from "./ndjson.js";
+import { buildFeedback } from "./feedback.js";
+import { scoreRiskPayload } from "./risk-score.js";
 import { getDataset, getJob, listDatasets, listJobs } from "./store.js";
 import { pullGripSet, pullMotionSet } from "./subject-sync.js";
 import { BODY_PARTS, KINDS, type BodyPart, type Kind } from "./types.js";
@@ -391,6 +393,26 @@ app.post("/api/reference/group", (req, res) => {
 
 app.post("/api/model/apply", (_req, res) => {
   res.json(applyLogisticModel());
+});
+
+/**
+ * 모델·피드백 전용.
+ * raw 추출은 하지 않는다. 앱(또는 HIL 분석기)이 만든 features/domains만 받아
+ * 로지스틱 모델 점수와 피드백 문장을 반환한다.
+ *
+ * body: { exercise, features? | domains?, session_seq? }
+ */
+app.post("/api/risk/score", (req, res) => {
+  const body =
+    req.body && typeof req.body === "object" && !Array.isArray(req.body)
+      ? (req.body as Record<string, unknown>)
+      : {};
+  const result = scoreRiskPayload(body);
+  const payload = {
+    ...result,
+    feedback: buildFeedback(result),
+  };
+  res.status(result.sufficient ? 200 : 422).json(payload);
 });
 
 app.get("/api/test", (_req, res) => {

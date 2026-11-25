@@ -104,6 +104,53 @@ Base: `https://office-treo-networking-disks.trycloudflare.com`
 | `GET` | `/api/hil/latest/{individual_seq}` | HIL 최신 calibration 프록시 |
 | `GET` | `/api/hil/data?calibration_seq=&body_part=&kind=` | HIL raw 다운로드 프록시 |
 | `GET/POST` | `/api/test` | 통신 테스트 `{ "ok": true, "message": "success" }` |
+| `POST` | `/api/risk/score` | 모델·피드백 전용. body: `exercise` + (`features` 또는 `domains`), 선택 `session_seq`. raw 추출 없음 |
+
+### 근감소 위험도 (`POST /api/risk/score`)
+
+Render는 **모델 채점 + 피드백 문장만** 담당합니다. HIL zip raw 다운로드·특징 추출은 하지 않습니다.
+
+```json
+{
+  "session_seq": "12345",
+  "exercise": "seated_row",
+  "features": {
+    "skeleton_arm_l_shoulder_rom_deg": 55.2,
+    "emg_arm_r_rms_adc": 1200.0
+  }
+}
+```
+
+또는 이미 만든 영역값:
+
+```json
+{
+  "exercise": "seated_row",
+  "domains": {
+    "movement_capacity": 0.42,
+    "muscle_activation": 1.21,
+    "movement_dynamics": 0.88,
+    "compensation_context": 0.95
+  }
+}
+```
+
+응답 예:
+
+```json
+{
+  "sufficient": true,
+  "probability": 0.81,
+  "grade": "high",
+  "grade_label": "높음",
+  "domains": { "...": 0 },
+  "feedback": {
+    "summary": "이 동작 기준 근감소 위험도가 높은 편입니다.",
+    "points": ["· 근활성 패턴이 정상 범위와 다릅니다."]
+  },
+  "source": "render"
+}
+```
 | `GET` | `/api/subjects` | 대상자 분류와 학습 예제 |
 | `POST` | `/api/subjects/{individual_seq}/group` | body `group`: `control`(정상 기준군) 또는 `patient`(기관 환자군) |
 | `POST` | `/api/subjects/{individual_seq}/grip` | HIL 최신 calibration의 부위·종류 파일을 모두 저장 |
