@@ -547,6 +547,7 @@
     </header>
 
     <nav class="nav" aria-label="섹션 이동">
+      <a href="#sec-risk">위험도</a>
       <a href="#sec-hil">HIL 연동</a>
       <a href="#sec-jobs">Jobs</a>
       <a href="#sec-datasets">Datasets</a>
@@ -554,6 +555,24 @@
       <a href="#sec-examples">학습 예제</a>
       <a href="#sec-model">로지스틱 모델</a>
     </nav>
+
+    <div class="section-label" id="sec-risk">
+      <h2>근감소 위험도</h2>
+      <p>앱이 보낸 특징을 이 서버의 28명 지표로 계산한 최근 결과</p>
+    </div>
+    <section class="card">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>시각</th><th>세션</th><th>동작</th><th>등급</th><th>확률</th>
+              <th>가동</th><th>근활성</th><th>동작역학</th><th>보상</th>
+            </tr>
+          </thead>
+          <tbody id="risks"></tbody>
+        </table>
+      </div>
+    </section>
 
     <div class="section-label" id="sec-hil">
       <h2>HIL 연동</h2>
@@ -758,6 +777,28 @@
         `mode ${s.hilMode}`,
         s.publicBaseUrl || "",
       ].filter(Boolean).map((t) => `<span class="badge">${t}</span>`).join("");
+
+      const risks = await fetch("/api/risk/recent").then((r) => r.json()).catch(() => ({ results: [] }));
+      const riskRows = risks.results || [];
+      $("risks").innerHTML = riskRows.length
+        ? riskRows.map((item) => {
+            const domains = item.domains || {};
+            const probability = Number.isFinite(item.probability) ? `${Math.round(item.probability * 100)}%` : "-";
+            const when = item.at ? new Date(item.at).toLocaleString() : "-";
+            const cell = (value) => Number.isFinite(value) ? Number(value).toFixed(2) : "-";
+            return `<tr>
+              <td>${when}</td>
+              <td>${item.session_seq || "-"}</td>
+              <td>${item.exercise || "-"}</td>
+              <td>${item.grade_label || item.reason || "-"}</td>
+              <td>${probability}</td>
+              <td>${cell(domains.movement_capacity)}</td>
+              <td>${cell(domains.muscle_activation)}</td>
+              <td>${cell(domains.movement_dynamics)}</td>
+              <td>${cell(domains.compensation_context)}</td>
+            </tr>`;
+          }).join("")
+        : emptyRow(9, "앱에서 아직 받은 위험도가 없습니다.");
 
       $("jobs").innerHTML = (s.jobs || []).length
         ? s.jobs.map((j) => `<tr>

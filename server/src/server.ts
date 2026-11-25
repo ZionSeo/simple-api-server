@@ -22,6 +22,7 @@ import {
 } from "./logistic.js";
 import { parseNdjsonGz } from "./ndjson.js";
 import { buildFeedback } from "./feedback.js";
+import { listRisks, recordRisk } from "./risk-log.js";
 import { scoreRiskPayload } from "./risk-score.js";
 import { getDataset, getJob, listDatasets, listJobs } from "./store.js";
 import { pullGripSet, pullMotionSet } from "./subject-sync.js";
@@ -408,11 +409,17 @@ app.post("/api/risk/score", (req, res) => {
       ? (req.body as Record<string, unknown>)
       : {};
   const result = scoreRiskPayload(body);
+  const feedback = buildFeedback(result);
   const payload = {
     ...result,
-    feedback: buildFeedback(result),
+    feedback,
   };
+  if (result.exercise) recordRisk(result, feedback.summary);
   res.status(result.sufficient ? 200 : 422).json(payload);
+});
+
+app.get("/api/risk/recent", (_req, res) => {
+  res.json({ ok: true, results: listRisks() });
 });
 
 app.get("/api/test", (_req, res) => {
