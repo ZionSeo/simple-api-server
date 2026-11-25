@@ -21,63 +21,63 @@
       "n_control": 28,
       "model": {
         "mean": [
-          0.31099417119651446,
+          0.3120953025523167,
           1.5065579171136723,
           0.9810417180221421,
-          0.6134091545068114
+          1.1634679114839384
         ],
         "scale": [
-          0.2785870848600764,
+          0.2837614909691061,
           0.879333688151383,
           0.5830612113762965,
-          0.4999630463509629
+          0.9980003336038006
         ],
         "coef": [
-          -0.11846859679941538,
-          1.631541885290735,
-          -0.7414225695382844,
-          0.9544275277712877
+          0.1117187438497991,
+          1.5195505632881336,
+          -0.6529930936258862,
+          1.4572579892135773
         ],
-        "intercept": 0.16165266903208161
+        "intercept": 0.24583791598775168
       },
       "loso": {
-        "accuracy": 0.7678571428571429,
-        "sensitivity": 0.7857142857142857,
-        "specificity": 0.75,
-        "auc": 0.8647959183673469,
-        "tp": 22,
-        "tn": 21,
-        "fp": 7,
-        "fn": 6
+        "accuracy": 0.7857142857142857,
+        "sensitivity": 0.75,
+        "specificity": 0.8214285714285714,
+        "auc": 0.9119897959183674,
+        "tp": 21,
+        "tn": 23,
+        "fp": 5,
+        "fn": 7
       },
       "reference": {
         "left.shoulder_rom_deg": {
-          "center": 63.92080759780728,
-          "scale": 21.717553712040942,
+          "center": 59.86563663221556,
+          "scale": 20.837319024480145,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.elbow_rom_deg": {
-          "center": 99.40482456926361,
-          "scale": 60.328709328980686,
+          "center": 91.65462878827984,
+          "scale": 54.34157207741728,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_value_deg": {
-          "center": 107.04190078585583,
-          "scale": 67.89479464832476,
+          "center": 103.50733559349197,
+          "scale": 66.72609768876872,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_excursion_deg": {
-          "center": 42.70293612447318,
-          "scale": 46.92973604633418,
+          "center": 42.5601899896113,
+          "scale": 51.41769117567558,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.reach_p95_shoulder_width": {
-          "center": 0.784799467724713,
-          "scale": 0.24293038339398057,
+          "center": 0.775526935011068,
+          "scale": 0.23122722956808534,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
@@ -130,20 +130,20 @@
           "scale_method": "MAD"
         },
         "left.skeleton_trunk_sway_rom_deg": {
-          "center": 359.44379079834573,
-          "scale": 0.5191906565474176,
+          "center": 2.3023909774536966,
+          "scale": 0.7070761607714959,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_scapular_tilt_rom_deg": {
-          "center": 359.2010102199778,
-          "scale": 0.5650196575481586,
+          "center": 4.774682440293859,
+          "scale": 0.8810964098170344,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.14698288378827695,
-          "scale": 0.0687037629726145,
+          "center": 0.13660524084935172,
+          "scale": 0.07596319272317892,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
@@ -160,32 +160,32 @@
           "scale_method": "MAD"
         },
         "right.shoulder_rom_deg": {
-          "center": 55.501589592059375,
-          "scale": 24.41326657447982,
+          "center": 52.0923717292376,
+          "scale": 25.16348321902925,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.elbow_rom_deg": {
-          "center": 100.74082090046329,
-          "scale": 45.603772949047126,
+          "center": 101.50866742165391,
+          "scale": 50.1237261901514,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_value_deg": {
-          "center": 122.85718218119642,
-          "scale": 52.65179923656081,
+          "center": 121.08966366298385,
+          "scale": 55.37301876995604,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_excursion_deg": {
-          "center": 39.44384829632476,
-          "scale": 36.67223502095349,
+          "center": 37.84493114093272,
+          "scale": 36.98670967858306,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.reach_p95_shoulder_width": {
-          "center": 0.7836813761697154,
-          "scale": 0.28197830367632293,
+          "center": 0.7687950689933764,
+          "scale": 0.25376244362575445,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
@@ -238,20 +238,20 @@
           "scale_method": "MAD"
         },
         "right.skeleton_trunk_sway_rom_deg": {
-          "center": 359.44379079834573,
-          "scale": 0.5191906565474176,
+          "center": 2.3023909774536966,
+          "scale": 0.7070761607714959,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_scapular_tilt_rom_deg": {
-          "center": 359.2010102199778,
-          "scale": 0.5650196575481586,
+          "center": 4.774682440293859,
+          "scale": 0.8810964098170344,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.14698288378827695,
-          "scale": 0.0687037629726145,
+          "center": 0.13660524084935172,
+          "scale": 0.07596319272317892,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
@@ -275,63 +275,63 @@
       "n_control": 28,
       "model": {
         "mean": [
-          1.0173187752381092,
+          0.9937462248630287,
           1.2368458405704605,
           1.2888136544793816,
-          0.45403567662128325
+          0.8967277387671343
         ],
         "scale": [
-          1.0626950561189674,
+          1.057041642175951,
           0.7624618643296293,
           0.6951934963615065,
-          0.4578553429412323
+          0.7695902449183557
         ],
         "coef": [
-          1.2254004815533193,
-          1.0501870843001837,
-          0.48215272538260834,
-          -0.35105980597350284
+          1.1847747595844849,
+          0.9101616976368326,
+          0.35673615468679504,
+          0.5398368070406591
         ],
-        "intercept": 0.0372638723538524
+        "intercept": 0.0845510347560937
       },
       "loso": {
-        "accuracy": 0.7857142857142857,
+        "accuracy": 0.75,
         "sensitivity": 0.8214285714285714,
-        "specificity": 0.75,
-        "auc": 0.7844387755102041,
+        "specificity": 0.6785714285714286,
+        "auc": 0.8176020408163265,
         "tp": 23,
-        "tn": 21,
-        "fp": 7,
+        "tn": 19,
+        "fp": 9,
         "fn": 5
       },
       "reference": {
         "left.shoulder_rom_deg": {
-          "center": 132.18127547819302,
-          "scale": 23.275635089577715,
+          "center": 131.76876568415963,
+          "scale": 23.548834423507326,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.elbow_rom_deg": {
-          "center": 120.57149377143784,
-          "scale": 15.300975475056404,
+          "center": 119.06145978496443,
+          "scale": 13.581197649365903,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_value_deg": {
-          "center": 173.59774621769037,
-          "scale": 5.727137129859598,
+          "center": 173.9149077869845,
+          "scale": 6.184612446524105,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_excursion_deg": {
-          "center": 121.8510692211907,
-          "scale": 23.480132870356748,
+          "center": 121.5780751064867,
+          "scale": 24.066532506185084,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.reach_p95_shoulder_width": {
-          "center": 1.4317254266518944,
-          "scale": 0.1045415519030303,
+          "center": 1.412518345018952,
+          "scale": 0.1175985684753942,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
@@ -384,20 +384,20 @@
           "scale_method": "MAD"
         },
         "left.skeleton_trunk_sway_rom_deg": {
-          "center": 359.6454082242569,
-          "scale": 0.22056451068716632,
+          "center": 2.1771499928625175,
+          "scale": 0.6408891245683755,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_scapular_tilt_rom_deg": {
-          "center": 359.43483100927983,
-          "scale": 0.2847666181348818,
+          "center": 4.235847434513925,
+          "scale": 1.1046173916873234,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.1429928398631809,
-          "scale": 0.06644051166475995,
+          "center": 0.1282732882928631,
+          "scale": 0.06993115335304256,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
@@ -414,32 +414,32 @@
           "scale_method": "MAD"
         },
         "right.shoulder_rom_deg": {
-          "center": 136.70867860129346,
-          "scale": 19.915121739055618,
+          "center": 136.07016698279872,
+          "scale": 18.42136034089753,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.elbow_rom_deg": {
-          "center": 114.90249644654033,
-          "scale": 14.517249984665316,
+          "center": 113.99205810940305,
+          "scale": 14.168380857320889,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_value_deg": {
-          "center": 172.9099891753951,
-          "scale": 4.648594504648645,
+          "center": 172.71019815494867,
+          "scale": 4.811793644588008,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_excursion_deg": {
-          "center": 125.34000179169848,
-          "scale": 26.191173220621728,
+          "center": 124.79445109030522,
+          "scale": 26.843749553553486,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.reach_p95_shoulder_width": {
-          "center": 1.3960914112635616,
-          "scale": 0.10423046707538153,
+          "center": 1.3858335038390983,
+          "scale": 0.12136011360607735,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
@@ -492,20 +492,20 @@
           "scale_method": "MAD"
         },
         "right.skeleton_trunk_sway_rom_deg": {
-          "center": 359.6454082242569,
-          "scale": 0.22056451068716632,
+          "center": 2.1771499928625175,
+          "scale": 0.6408891245683755,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_scapular_tilt_rom_deg": {
-          "center": 359.43483100927983,
-          "scale": 0.2847666181348818,
+          "center": 4.235847434513925,
+          "scale": 1.1046173916873234,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.1429928398631809,
-          "scale": 0.06644051166475995,
+          "center": 0.1282732882928631,
+          "scale": 0.06993115335304256,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
@@ -529,63 +529,63 @@
       "n_control": 28,
       "model": {
         "mean": [
-          0.5878429404891131,
+          0.5848891732175555,
           1.304369841803608,
           1.3091178199508957,
-          0.5063680422177481
+          0.8453505462634775
         ],
         "scale": [
-          0.3447308311860106,
+          0.34881725134278596,
           0.839895883234566,
           0.7423876786595055,
-          0.4682266843703649
+          0.752451486285302
         ],
         "coef": [
-          1.3848002174969467,
-          0.6767565574664298,
-          0.6548433751167899,
-          0.435627613007994
+          1.5529278158053266,
+          0.8067347488112623,
+          0.5506591280883042,
+          1.3415644372156417
         ],
-        "intercept": 0.09075622312577715
+        "intercept": 0.09792681093862801
       },
       "loso": {
         "accuracy": 0.8035714285714286,
-        "sensitivity": 0.8571428571428571,
-        "specificity": 0.75,
-        "auc": 0.8354591836734694,
-        "tp": 24,
-        "tn": 21,
-        "fp": 7,
-        "fn": 4
+        "sensitivity": 0.7857142857142857,
+        "specificity": 0.8214285714285714,
+        "auc": 0.8941326530612245,
+        "tp": 22,
+        "tn": 23,
+        "fp": 5,
+        "fn": 6
       },
       "reference": {
         "left.shoulder_rom_deg": {
-          "center": 20.83547328192201,
-          "scale": 9.678658669431275,
+          "center": 20.08655739304337,
+          "scale": 9.74600265576563,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.elbow_rom_deg": {
-          "center": 41.73157978551005,
-          "scale": 25.469250167326898,
+          "center": 39.10125272362943,
+          "scale": 23.090339713320112,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_value_deg": {
-          "center": 47.29562136725609,
-          "scale": 31.72722930288549,
+          "center": 44.92956716198003,
+          "scale": 30.071719898231265,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_excursion_deg": {
-          "center": 24.715648825022086,
-          "scale": 21.443705204450502,
+          "center": 23.316559307096668,
+          "scale": 21.289673636688676,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.reach_p95_shoulder_width": {
-          "center": 1.4180336887565845,
-          "scale": 0.09127707811844998,
+          "center": 1.4052920625073118,
+          "scale": 0.10419968631342942,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
@@ -638,20 +638,20 @@
           "scale_method": "MAD"
         },
         "left.skeleton_trunk_sway_rom_deg": {
-          "center": 314.6949488890779,
-          "scale": 66.90696837384004,
+          "center": 2.593421025806963,
+          "scale": 0.7394693024834631,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_scapular_tilt_rom_deg": {
-          "center": 359.0507900435698,
-          "scale": 0.9304512482475281,
+          "center": 4.2664053481548345,
+          "scale": 1.2435343462392718,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.14849349990325922,
-          "scale": 0.056443860037596424,
+          "center": 0.14211228605228063,
+          "scale": 0.058790847903108845,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
@@ -668,32 +668,32 @@
           "scale_method": "MAD"
         },
         "right.shoulder_rom_deg": {
-          "center": 17.48710107748097,
-          "scale": 5.5029228926897975,
+          "center": 16.76383062235653,
+          "scale": 5.382660442641793,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.elbow_rom_deg": {
-          "center": 39.68825818293038,
-          "scale": 19.418298502949586,
+          "center": 37.139173129726885,
+          "scale": 19.277562057602815,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_value_deg": {
-          "center": 41.88524396246606,
-          "scale": 18.499942879124117,
+          "center": 39.93242603016118,
+          "scale": 17.325383783458275,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_excursion_deg": {
-          "center": 26.410763171890395,
-          "scale": 17.194431640087746,
+          "center": 23.261326715541216,
+          "scale": 16.50680979304402,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.reach_p95_shoulder_width": {
-          "center": 1.4271752235392936,
-          "scale": 0.07605094810626262,
+          "center": 1.4219786411238902,
+          "scale": 0.0759862329865855,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
@@ -746,20 +746,20 @@
           "scale_method": "MAD"
         },
         "right.skeleton_trunk_sway_rom_deg": {
-          "center": 314.6949488890779,
-          "scale": 66.90696837384004,
+          "center": 2.593421025806963,
+          "scale": 0.7394693024834631,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_scapular_tilt_rom_deg": {
-          "center": 359.0507900435698,
-          "scale": 0.9304512482475281,
+          "center": 4.2664053481548345,
+          "scale": 1.2435343462392718,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.14849349990325922,
-          "scale": 0.056443860037596424,
+          "center": 0.14211228605228063,
+          "scale": 0.058790847903108845,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
@@ -783,63 +783,63 @@
       "n_control": 28,
       "model": {
         "mean": [
-          0.8973270595283809,
+          0.8691163320780018,
           1.209286119612734,
           1.49635274867408,
-          0.7536971513626304
+          1.2632542941123606
         ],
         "scale": [
-          0.7935704286356984,
+          0.7799332643697575,
           0.8661482343811163,
           0.8829842901878807,
-          0.58565720169318
+          1.0275900372015618
         ],
         "coef": [
-          1.0144320215803029,
-          0.6689102658789792,
-          0.8438326336266642,
-          0.5567299670780892
+          0.95165521682457,
+          0.6983775929173889,
+          0.8006348562860957,
+          1.0216621308821296
         ],
-        "intercept": 0.05553947063590539
+        "intercept": 0.11820059986893106
       },
       "loso": {
-        "accuracy": 0.7636363636363637,
-        "sensitivity": 0.7037037037037037,
+        "accuracy": 0.8181818181818182,
+        "sensitivity": 0.8148148148148148,
         "specificity": 0.8214285714285714,
-        "auc": 0.83994708994709,
-        "tp": 19,
+        "auc": 0.8716931216931217,
+        "tp": 22,
         "tn": 23,
         "fp": 5,
-        "fn": 8
+        "fn": 5
       },
       "reference": {
         "left.shoulder_rom_deg": {
-          "center": 11.786012731776129,
-          "scale": 5.965775444920793,
+          "center": 9.556733163321619,
+          "scale": 4.220914196018832,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.elbow_rom_deg": {
-          "center": 164.60767540121748,
-          "scale": 11.745788619459331,
+          "center": 163.131290050266,
+          "scale": 11.992320209032828,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_value_deg": {
-          "center": 167.61355210369817,
-          "scale": 8.670129773754558,
+          "center": 167.17756624118775,
+          "scale": 10.646384507277793,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_excursion_deg": {
-          "center": 155.09042518017134,
-          "scale": 16.34054624239584,
+          "center": 153.11777389299542,
+          "scale": 19.89259362183267,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.reach_p95_shoulder_width": {
-          "center": 1.294808238578793,
-          "scale": 0.18519320027530062,
+          "center": 1.2834590703798274,
+          "scale": 0.18351604012713604,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
@@ -892,20 +892,20 @@
           "scale_method": "MAD"
         },
         "left.skeleton_trunk_sway_rom_deg": {
-          "center": 359.5612348473362,
-          "scale": 0.39523026036691317,
+          "center": 1.8608609044557394,
+          "scale": 0.5082704308496159,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_scapular_tilt_rom_deg": {
-          "center": 359.3344368794736,
-          "scale": 0.49577233781765606,
+          "center": 3.9841939665337502,
+          "scale": 1.242004336644267,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.09761350377101063,
-          "scale": 0.04695996785099299,
+          "center": 0.08960055745428455,
+          "scale": 0.05016804913160928,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
@@ -922,32 +922,32 @@
           "scale_method": "MAD"
         },
         "right.shoulder_rom_deg": {
-          "center": 14.080114383325547,
-          "scale": 4.513479585128203,
+          "center": 12.528516835566927,
+          "scale": 3.963164376107878,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.elbow_rom_deg": {
-          "center": 157.21613082837922,
-          "scale": 11.755663867201912,
+          "center": 155.5890855456464,
+          "scale": 12.910149257404031,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_value_deg": {
-          "center": 161.6000953018735,
-          "scale": 8.758995986570355,
+          "center": 160.59797051747682,
+          "scale": 9.055578659848633,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_excursion_deg": {
-          "center": 142.20936026653112,
-          "scale": 27.849994268481044,
+          "center": 140.1515258924034,
+          "scale": 29.020792989841105,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.reach_p95_shoulder_width": {
-          "center": 1.2645041957325938,
-          "scale": 0.20126566895264544,
+          "center": 1.2453016107548533,
+          "scale": 0.21590931345171804,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
@@ -1000,20 +1000,20 @@
           "scale_method": "MAD"
         },
         "right.skeleton_trunk_sway_rom_deg": {
-          "center": 359.5612348473362,
-          "scale": 0.39523026036691317,
+          "center": 1.8608609044557394,
+          "scale": 0.5082704308496159,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_scapular_tilt_rom_deg": {
-          "center": 359.3344368794736,
-          "scale": 0.49577233781765606,
+          "center": 3.9841939665337502,
+          "scale": 1.242004336644267,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.09761350377101063,
-          "scale": 0.04695996785099299,
+          "center": 0.08960055745428455,
+          "scale": 0.05016804913160928,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
@@ -1037,63 +1037,63 @@
       "n_control": 28,
       "model": {
         "mean": [
-          0.7754314715508617,
+          0.807396763330641,
           1.4437111353190313,
           1.168490487836618,
-          0.7218016670793573
+          1.1891444185033873
         ],
         "scale": [
-          0.6648844638851501,
+          0.6931258504992462,
           0.9643245821957772,
           0.5878345576949332,
-          0.7089232758028623
+          1.1820353919648694
         ],
         "coef": [
-          1.3437517450454768,
-          1.212820893475558,
-          0.1256247022356719,
-          0.44840384787937815
+          1.3020813904205515,
+          1.1261242983578421,
+          -0.04297093266830509,
+          1.005261990715006
         ],
-        "intercept": 0.18113126800786516
+        "intercept": 0.22929083449787507
       },
       "loso": {
-        "accuracy": 0.7321428571428571,
-        "sensitivity": 0.7142857142857143,
+        "accuracy": 0.75,
+        "sensitivity": 0.75,
         "specificity": 0.75,
-        "auc": 0.8494897959183674,
-        "tp": 20,
+        "auc": 0.889030612244898,
+        "tp": 21,
         "tn": 21,
         "fp": 7,
-        "fn": 8
+        "fn": 7
       },
       "reference": {
         "left.shoulder_rom_deg": {
-          "center": 20.33485718498602,
-          "scale": 12.983287738236541,
+          "center": 17.254582263316735,
+          "scale": 10.539288258921635,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.elbow_rom_deg": {
-          "center": 118.3752283966278,
-          "scale": 19.6610744564908,
+          "center": 116.52516374356182,
+          "scale": 18.446715363843783,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_value_deg": {
-          "center": 153.31644956942512,
-          "scale": 7.856099487612496,
+          "center": 152.97713194530334,
+          "scale": 8.035954180608947,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_excursion_deg": {
-          "center": 95.76707044471254,
-          "scale": 26.725209586737883,
+          "center": 94.70362791488506,
+          "scale": 26.45425347467699,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.reach_p95_shoulder_width": {
-          "center": 1.5225716065391732,
-          "scale": 0.16846496053738624,
+          "center": 1.5191764604856908,
+          "scale": 0.16564621350761977,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
@@ -1146,20 +1146,20 @@
           "scale_method": "MAD"
         },
         "left.skeleton_trunk_sway_rom_deg": {
-          "center": 359.6503976064215,
-          "scale": 0.21624369177327316,
+          "center": 2.0692256040636794,
+          "scale": 0.6101478177928262,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_scapular_tilt_rom_deg": {
-          "center": 359.3724473188163,
-          "scale": 0.3765431973399091,
+          "center": 4.3161514360330475,
+          "scale": 1.3117804438723912,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.13044187182218914,
-          "scale": 0.045112902292947246,
+          "center": 0.1091290840202094,
+          "scale": 0.04825413869663015,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
@@ -1176,32 +1176,32 @@
           "scale_method": "MAD"
         },
         "right.shoulder_rom_deg": {
-          "center": 24.713113648605642,
-          "scale": 15.555296201289922,
+          "center": 23.530078796309155,
+          "scale": 16.109473728446783,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.elbow_rom_deg": {
-          "center": 113.0014107846792,
-          "scale": 18.785182572295344,
+          "center": 110.3914759207708,
+          "scale": 18.116560680632457,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_value_deg": {
-          "center": 149.93746434981472,
-          "scale": 8.151854765982105,
+          "center": 149.4942251901544,
+          "scale": 7.568306514936154,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_excursion_deg": {
-          "center": 98.19226311073919,
-          "scale": 28.470718901957593,
+          "center": 95.92499608526428,
+          "scale": 26.232584637299574,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.reach_p95_shoulder_width": {
-          "center": 1.491786020104692,
-          "scale": 0.19347715416632388,
+          "center": 1.4892859568689039,
+          "scale": 0.20196062841278736,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
@@ -1254,20 +1254,20 @@
           "scale_method": "MAD"
         },
         "right.skeleton_trunk_sway_rom_deg": {
-          "center": 359.6503976064215,
-          "scale": 0.21624369177327316,
+          "center": 2.0692256040636794,
+          "scale": 0.6101478177928262,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_scapular_tilt_rom_deg": {
-          "center": 359.3724473188163,
-          "scale": 0.3765431973399091,
+          "center": 4.3161514360330475,
+          "scale": 1.3117804438723912,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.13044187182218914,
-          "scale": 0.045112902292947246,
+          "center": 0.1091290840202094,
+          "scale": 0.04825413869663015,
           "direction": "high_bad",
           "scale_method": "MAD"
         },

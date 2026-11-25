@@ -5,31 +5,31 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.1826536523908014,
+        "movement_capacity": 0.25001236613238476,
         "muscle_activation": 0.7530727375502547,
         "movement_dynamics": 1.6203894909952632,
-        "compensation_context": 1.576694927237471
+        "compensation_context": 2.600466988007148
       },
       "shoulder_press": {
-        "movement_capacity": 1.4581149283605424,
+        "movement_capacity": 1.396003228691192,
         "muscle_activation": 1.0385980294277832,
         "movement_dynamics": 2.3313937456390157,
-        "compensation_context": 0.295310954076858
+        "compensation_context": 1.0495624598954416
       },
       "seated_row": {
-        "movement_capacity": 0.7880770225906871,
+        "movement_capacity": 0.7453568213709953,
         "muscle_activation": 0.7931721073812932,
         "movement_dynamics": 1.57722915046237,
-        "compensation_context": 0.03774764522991366
+        "compensation_context": 0.8659903579031306
       },
       "arm_curl": {
-        "movement_capacity": 0.1928209612209394,
+        "movement_capacity": 0.10457742201228559,
         "muscle_activation": 0.6375898064791595,
         "movement_dynamics": 2.6990608048950655,
-        "compensation_context": 0.9971415801642225
+        "compensation_context": 2.142457676295506
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.42352070614035103,
+        "movement_capacity": 0.4192125091667039,
         "muscle_activation": 0.9502666875498043,
         "movement_dynamics": 0.8790356844755596,
         "compensation_context": 0.0
@@ -42,34 +42,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.12725204145260785,
+        "movement_capacity": 0.12650835871596783,
         "muscle_activation": 1.1138431680980254,
         "movement_dynamics": 0.34413743673244546,
-        "compensation_context": 0.6640737378306559
+        "compensation_context": 0.7744795241864043
       },
       "shoulder_press": {
-        "movement_capacity": 2.437770231756688,
+        "movement_capacity": 2.3658412232634607,
         "muscle_activation": 0.38578908465030093,
         "movement_dynamics": 1.3119859443743387,
-        "compensation_context": 0.0072793723286131195
+        "compensation_context": 0.09346196669357129
       },
       "seated_row": {
-        "movement_capacity": 1.0184146767025017,
+        "movement_capacity": 1.0055764473106863,
         "muscle_activation": 0.3428777828976708,
         "movement_dynamics": 0.8051494363306677,
-        "compensation_context": 0.4065228370727028
+        "compensation_context": 1.3627801535625532
       },
       "arm_curl": {
-        "movement_capacity": 1.548975628090478,
+        "movement_capacity": 1.4885577582854703,
         "muscle_activation": 0.5304057346584813,
         "movement_dynamics": 1.2295104221291382,
-        "compensation_context": 1.482140279137088
+        "compensation_context": 2.084980711880438
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.7807232186918447,
+        "movement_capacity": 0.7685923024786546,
         "muscle_activation": 1.3322042746565184,
         "movement_dynamics": 0.7573574244943936,
-        "compensation_context": 0.20577424342662165
+        "compensation_context": 0.4422921443756055
       }
     }
   },
@@ -79,34 +79,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.2962438279581341,
+        "movement_capacity": 0.2910275581536613,
         "muscle_activation": 1.7483332127709788,
         "movement_dynamics": 0.5903222927262723,
-        "compensation_context": 0.45889171985474186
+        "compensation_context": 0.6000669404212079
       },
       "shoulder_press": {
-        "movement_capacity": 1.6571435397102867,
+        "movement_capacity": 1.5672435337595032,
         "muscle_activation": 0.9218669515534836,
         "movement_dynamics": 0.4999583772483539,
-        "compensation_context": 0.2700326462861854
+        "compensation_context": 0.35919820185673557
       },
       "seated_row": {
-        "movement_capacity": 1.1904283604548995,
+        "movement_capacity": 1.2133985543820986,
         "muscle_activation": 1.9867614529091442,
         "movement_dynamics": 1.2264560704539562,
-        "compensation_context": 0.1006929899308254
+        "compensation_context": 0.04549368498523548
       },
       "arm_curl": {
-        "movement_capacity": 0.914431045527182,
+        "movement_capacity": 0.8385509806221413,
         "muscle_activation": 1.1667787388029354,
         "movement_dynamics": 1.2149187278134634,
-        "compensation_context": 1.9479311853513728
+        "compensation_context": 2.8110316192886717
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 2.0152921868451616,
+        "movement_capacity": 2.0575754701354265,
         "muscle_activation": 0.4415587363208734,
         "movement_dynamics": 0.5826744504082366,
-        "compensation_context": 0.36036869584206155
+        "compensation_context": 0.860685966726613
       }
     }
   },
@@ -116,31 +116,31 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.816913363858493,
+        "movement_capacity": 0.7973127387746294,
         "muscle_activation": 2.5624769168728823,
         "movement_dynamics": 1.410174672676899,
-        "compensation_context": 0.3470230583177213
+        "compensation_context": 0.7339073962663761
       },
       "shoulder_press": {
-        "movement_capacity": 3.9726901449515197,
+        "movement_capacity": 4.03983531604892,
         "muscle_activation": 2.6687996894703314,
         "movement_dynamics": 2.2218898339313333,
-        "compensation_context": 0.0
+        "compensation_context": 0.20995843123078445
       },
       "seated_row": {
-        "movement_capacity": 1.3307117567056586,
+        "movement_capacity": 1.359765645585203,
         "muscle_activation": 0.8702851692710412,
         "movement_dynamics": 1.9401991209484197,
-        "compensation_context": 0.14519312775421966
+        "compensation_context": 0.37046683050466633
       },
       "arm_curl": {
-        "movement_capacity": 2.039676055168319,
+        "movement_capacity": 2.0659317874759324,
         "muscle_activation": 0.6538338345188508,
         "movement_dynamics": 2.451550018978572,
-        "compensation_context": 0.48627543346473995
+        "compensation_context": 0.5058715061427016
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 2.445973258076659,
+        "movement_capacity": 2.5658230224004503,
         "muscle_activation": 3.881174023398702,
         "movement_dynamics": 2.132297453938343,
         "compensation_context": 0.7061840092215168
@@ -156,31 +156,31 @@
         "movement_capacity": 0.0,
         "muscle_activation": 0.5696974561253481,
         "movement_dynamics": 0.5934093040782422,
-        "compensation_context": 1.1124720864755548
+        "compensation_context": 1.4459667563779885
       },
       "shoulder_press": {
-        "movement_capacity": 0.9163576364145245,
+        "movement_capacity": 1.0298363471345977,
         "muscle_activation": 1.4420307623544626,
         "movement_dynamics": 2.3996571595501215,
-        "compensation_context": 0.9028721896189073
+        "compensation_context": 1.679804906146856
       },
       "seated_row": {
-        "movement_capacity": 0.8572787661429433,
+        "movement_capacity": 0.865384946967892,
         "muscle_activation": 2.6794848161345097,
         "movement_dynamics": 2.674649120813884,
-        "compensation_context": 2.611393377302334
+        "compensation_context": 3.8481320929787017
       },
       "arm_curl": {
-        "movement_capacity": 2.6000152437002497,
+        "movement_capacity": 2.586700247223093,
         "muscle_activation": 1.9901407675152183,
         "movement_dynamics": 2.04949641972284,
-        "compensation_context": 1.1306860203708182
+        "compensation_context": 2.5100618765663225
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.9521764339895329,
+        "movement_capacity": 0.961687490698311,
         "muscle_activation": 3.5031966840945508,
         "movement_dynamics": 0.9971005023447105,
-        "compensation_context": 0.6315283185718433
+        "compensation_context": 1.2707888116191592
       }
     }
   },
@@ -190,34 +190,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.08737307249348966,
+        "movement_capacity": 0.08796649269005044,
         "muscle_activation": 2.101089450295083,
         "movement_dynamics": 0.5003253860212752,
-        "compensation_context": 0.08324569097148651
+        "compensation_context": 0.969560499670631
       },
       "shoulder_press": {
-        "movement_capacity": 0.47888864960339905,
+        "movement_capacity": 0.5258576362236564,
         "muscle_activation": 2.254408327553648,
         "movement_dynamics": 1.2902502543462298,
-        "compensation_context": 0.019107705945423024
+        "compensation_context": 0.7832136021075204
       },
       "seated_row": {
-        "movement_capacity": 0.8028059469827016,
+        "movement_capacity": 0.8987931893387912,
         "muscle_activation": 2.2789628803062336,
         "movement_dynamics": 1.82330241346373,
-        "compensation_context": 0.10170071927647481
+        "compensation_context": 0.45955202052920185
       },
       "arm_curl": {
-        "movement_capacity": 0.7800441332544941,
+        "movement_capacity": 0.7257308526526722,
         "muscle_activation": 1.8104576440789177,
         "movement_dynamics": 2.1604205110000967,
-        "compensation_context": 1.263182809419452
+        "compensation_context": 2.514750247393365
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.05884888115069575,
+        "movement_capacity": 0.16031256879895187,
         "muscle_activation": 2.2661219167029483,
         "movement_dynamics": 1.469557258289396,
-        "compensation_context": 0.6803360574099611
+        "compensation_context": 2.5852589062070157
       }
     }
   },
@@ -227,34 +227,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.23544143133997608,
+        "movement_capacity": 0.22425699993425927,
         "muscle_activation": 2.8831616577822903,
         "movement_dynamics": 1.0164805524967453,
-        "compensation_context": 0.2787955654072013
+        "compensation_context": 0.9082356351157728
       },
       "shoulder_press": {
         "movement_capacity": 0.0,
         "muscle_activation": 2.782797301573053,
         "movement_dynamics": 1.5099491039032213,
-        "compensation_context": 0.34969563803329473
+        "compensation_context": 1.4717865213856296
       },
       "seated_row": {
-        "movement_capacity": 0.24509861474895797,
+        "movement_capacity": 0.16078347220628464,
         "muscle_activation": 1.525200195015103,
         "movement_dynamics": 3.8725853761860347,
-        "compensation_context": 0.16187531364425087
+        "compensation_context": 0.5678953838716843
       },
       "arm_curl": {
-        "movement_capacity": 1.0796007636188678,
+        "movement_capacity": 0.8722336092963119,
         "muscle_activation": 1.4251138072961727,
         "movement_dynamics": 4.291510133238297,
-        "compensation_context": 0.3821128172857625
+        "compensation_context": 0.651641972325895
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.08439026096806392,
+        "movement_capacity": 0.11934043360173024,
         "muscle_activation": 1.69058173554737,
         "movement_dynamics": 0.8682492788598852,
-        "compensation_context": 0.9782752890134047
+        "compensation_context": 1.9944748769265477
       }
     }
   },
@@ -264,34 +264,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.12522399585713695,
+        "movement_capacity": 0.12425060513253774,
         "muscle_activation": 2.3015183581903025,
         "movement_dynamics": 0.9748481897477879,
-        "compensation_context": 0.45148744339258656
+        "compensation_context": 1.5335886710071165
       },
       "shoulder_press": {
-        "movement_capacity": 0.1887392162853457,
+        "movement_capacity": 0.175427482764825,
         "muscle_activation": 1.75428970983313,
         "movement_dynamics": 2.2132124477912134,
-        "compensation_context": 0.1714757770929262
+        "compensation_context": 0.855683384176765
       },
       "seated_row": {
-        "movement_capacity": 1.0,
+        "movement_capacity": 0.9907730684163495,
         "muscle_activation": 2.4193841421025937,
         "movement_dynamics": 2.5492130631912824,
-        "compensation_context": 0.20678480813890604
+        "compensation_context": 0.6011384595669191
       },
       "arm_curl": {
-        "movement_capacity": 0.9100876701766984,
+        "movement_capacity": 0.8136368037146569,
         "muscle_activation": 1.3888268316630308,
         "movement_dynamics": 4.56289829938013,
-        "compensation_context": 0.846562460104396
+        "compensation_context": 1.6398941377097227
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.37941048578219766,
+        "movement_capacity": 0.36341522835338513,
         "muscle_activation": 0.8459207854361952,
         "movement_dynamics": 1.5239270171551915,
-        "compensation_context": 2.1503790930827607
+        "compensation_context": 3.6191385664197653
       }
     }
   },
@@ -301,28 +301,28 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.22263232452333964,
+        "movement_capacity": 0.28977955866128274,
         "muscle_activation": 1.3995413430938135,
         "movement_dynamics": 0.3083600181933972,
-        "compensation_context": 0.088217914303153
+        "compensation_context": 1.102148157166022
       },
       "shoulder_press": {
-        "movement_capacity": 0.9822040595831397,
+        "movement_capacity": 0.9498943336251484,
         "muscle_activation": 0.6233310045795559,
         "movement_dynamics": 1.002180411829725,
-        "compensation_context": 0.15463521900040272
+        "compensation_context": 0.9526905198518593
       },
       "seated_row": {
-        "movement_capacity": 0.22829994323741354,
+        "movement_capacity": 0.1846020908889947,
         "muscle_activation": 0.820993598407544,
         "movement_dynamics": 2.5970644642557845,
-        "compensation_context": 0.878691699138583
+        "compensation_context": 2.1595007351229683
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.2662438900898405,
+        "movement_capacity": 0.25176549499525464,
         "muscle_activation": 1.8273107741636638,
         "movement_dynamics": 0.5661321890754685,
-        "compensation_context": 0.09307696381249561
+        "compensation_context": 0.882838187597128
       }
     },
     "missing_exercises": {
@@ -335,34 +335,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.4006400296595164,
+        "movement_capacity": 0.33941479452502665,
         "muscle_activation": 2.787091213611834,
         "movement_dynamics": 1.8011570184647365,
-        "compensation_context": 0.21361326229462313
+        "compensation_context": 0.0
       },
       "shoulder_press": {
-        "movement_capacity": 0.21162645237400185,
+        "movement_capacity": 0.19111243603499678,
         "muscle_activation": 2.4360989732732734,
         "movement_dynamics": 1.7139725606607557,
-        "compensation_context": 0.20148271851353847
+        "compensation_context": 0.23893675395707384
       },
       "seated_row": {
-        "movement_capacity": 0.8066588323937922,
+        "movement_capacity": 0.7674407771958,
         "muscle_activation": 2.8505943883919804,
         "movement_dynamics": 0.8602255517010313,
-        "compensation_context": 0.26912616553870916
+        "compensation_context": 0.0
       },
       "arm_curl": {
-        "movement_capacity": 0.4991190472746305,
+        "movement_capacity": 0.47242192829589935,
         "muscle_activation": 3.578197937606191,
         "movement_dynamics": 1.3970538597143798,
-        "compensation_context": 0.2439219652004298
+        "compensation_context": 0.296785336986166
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.5281241857622356,
+        "movement_capacity": 0.5511674516045312,
         "muscle_activation": 3.677476743214629,
         "movement_dynamics": 1.139205991767858,
-        "compensation_context": 1.298783194330574
+        "compensation_context": 1.6112022608709669
       }
     }
   },
@@ -372,34 +372,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.20860243328972156,
+        "movement_capacity": 0.18097427544858335,
         "muscle_activation": 1.5486359159400271,
         "movement_dynamics": 0.49936402603394636,
-        "compensation_context": 0.7075497427880812
+        "compensation_context": 1.5871422383536251
       },
       "shoulder_press": {
-        "movement_capacity": 2.3289870733697913,
+        "movement_capacity": 2.2823460934855957,
         "muscle_activation": 0.7333944924144034,
         "movement_dynamics": 1.086010077032553,
-        "compensation_context": 0.2550578174655976
+        "compensation_context": 1.4536825383955638
       },
       "seated_row": {
-        "movement_capacity": 0.8700465870302346,
+        "movement_capacity": 0.8927648889960897,
         "muscle_activation": 0.9112197396608884,
         "movement_dynamics": 1.3567414313729957,
-        "compensation_context": 0.1261488791035219
+        "compensation_context": 0.1271254288469349
       },
       "arm_curl": {
-        "movement_capacity": 1.2905071962645134,
+        "movement_capacity": 1.0740920669568217,
         "muscle_activation": 1.094866935769498,
         "movement_dynamics": 1.6428791664080564,
-        "compensation_context": 0.48268955295030186
+        "compensation_context": 0.7562693089259184
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 2.0524746754035688,
+        "movement_capacity": 2.0969555006685803,
         "muscle_activation": 1.2962422045830695,
         "movement_dynamics": 1.717618528283901,
-        "compensation_context": 0.9000560634957532
+        "compensation_context": 1.3263877169098581
       }
     }
   },
@@ -409,34 +409,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.40974533651780726,
+        "movement_capacity": 0.3906750870593454,
         "muscle_activation": 2.9548667982229495,
         "movement_dynamics": 0.2829318582682372,
-        "compensation_context": 0.6425971326181531
+        "compensation_context": 0.9128204937889954
       },
       "shoulder_press": {
-        "movement_capacity": 2.927841580926681,
+        "movement_capacity": 2.8451764350040367,
         "muscle_activation": 1.3163896355708025,
         "movement_dynamics": 0.8875751181747228,
-        "compensation_context": 0.22064890264732145
+        "compensation_context": 0.9047394720240771
       },
       "seated_row": {
-        "movement_capacity": 0.9885375298675024,
+        "movement_capacity": 0.9605998478553592,
         "muscle_activation": 0.4661902079398518,
         "movement_dynamics": 0.9587310098651154,
-        "compensation_context": 0.24770044033544628
+        "compensation_context": 1.5319912430194507
       },
       "arm_curl": {
-        "movement_capacity": 1.2663675624264783,
+        "movement_capacity": 1.106976249310711,
         "muscle_activation": 0.9245591972015184,
         "movement_dynamics": 1.1522533845481013,
-        "compensation_context": 0.44576037325116313
+        "compensation_context": 0.24545900936541037
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 1.3314043031016012,
+        "movement_capacity": 1.4455592635394274,
         "muscle_activation": 1.2618801967796878,
         "movement_dynamics": 1.3418682141027751,
-        "compensation_context": 1.088215476988465
+        "compensation_context": 2.273099655533611
       }
     }
   },
@@ -446,34 +446,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.29236067579956726,
+        "movement_capacity": 0.301987457186772,
         "muscle_activation": 2.0257148118348463,
         "movement_dynamics": 1.2613013789335894,
-        "compensation_context": 0.19119070551758274
+        "compensation_context": 0.03744910323963936
       },
       "shoulder_press": {
-        "movement_capacity": 3.1452259410861716,
+        "movement_capacity": 3.1831188832622015,
         "muscle_activation": 0.04885862329920362,
         "movement_dynamics": 1.1915917548701855,
-        "compensation_context": 0.7173016075905668
+        "compensation_context": 0.8539515555112439
       },
       "seated_row": {
-        "movement_capacity": 1.1882874038874363,
+        "movement_capacity": 1.1491296362325099,
         "muscle_activation": 1.3344238902564298,
         "movement_dynamics": 0.9109418092125976,
-        "compensation_context": 0.5585887180503355
+        "compensation_context": 0.7411444116300854
       },
       "arm_curl": {
-        "movement_capacity": 2.1274866816398927,
+        "movement_capacity": 2.125342576220161,
         "muscle_activation": 0.37350602070598504,
         "movement_dynamics": 0.5493925046590846,
-        "compensation_context": 0.9026412581360651
+        "compensation_context": 2.4024511664016126
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 1.991159887879493,
+        "movement_capacity": 1.995890389473046,
         "muscle_activation": 1.9740438335262482,
         "movement_dynamics": 0.6510395525483825,
-        "compensation_context": 1.2462229370479714
+        "compensation_context": 2.335583785723565
       }
     }
   },
@@ -483,34 +483,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.2945768017999847,
+        "movement_capacity": 0.26856302258151443,
         "muscle_activation": 3.3712184404069663,
         "movement_dynamics": 0.32849686309085213,
-        "compensation_context": 1.0363125713098689
+        "compensation_context": 2.3812708428900558
       },
       "shoulder_press": {
-        "movement_capacity": 0.8215313401001891,
+        "movement_capacity": 0.7300060803027528,
         "muscle_activation": 1.3179298364812426,
         "movement_dynamics": 1.4911467450446572,
-        "compensation_context": 0.05757609526546627
+        "compensation_context": 1.0498759802486999
       },
       "seated_row": {
-        "movement_capacity": 1.1343519389361365,
+        "movement_capacity": 1.0561576451999393,
         "muscle_activation": 3.5635318084367134,
         "movement_dynamics": 1.4197474801294763,
-        "compensation_context": 0.5113783269532426
+        "compensation_context": 1.3608241987638223
       },
       "arm_curl": {
-        "movement_capacity": 1.526325381362368,
+        "movement_capacity": 1.5012816659293482,
         "muscle_activation": 2.5750199006524213,
         "movement_dynamics": 0.8586620100869846,
-        "compensation_context": 0.9446269151943303
+        "compensation_context": 2.1475695523481577
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 1.7918162169821008,
+        "movement_capacity": 1.8203624177119377,
         "muscle_activation": 2.2529505197681248,
         "movement_dynamics": 1.2507519207398619,
-        "compensation_context": 1.7363997643203901
+        "compensation_context": 3.128943976821818
       }
     }
   },
@@ -520,34 +520,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.5107414225712708,
+        "movement_capacity": 0.4836392203110841,
         "muscle_activation": 1.33613209864176,
         "movement_dynamics": 1.6523299330109862,
-        "compensation_context": 0.6566821889090351
+        "compensation_context": 1.7776067312443804
       },
       "shoulder_press": {
-        "movement_capacity": 2.5041915217794406,
+        "movement_capacity": 2.491121852916661,
         "muscle_activation": 0.43893957811929707,
         "movement_dynamics": 1.7818658811515151,
-        "compensation_context": 0.5272758197995299
+        "compensation_context": 1.659079713139311
       },
       "seated_row": {
-        "movement_capacity": 1.0990401185852883,
+        "movement_capacity": 1.0963170236923423,
         "muscle_activation": 1.1015307035011033,
         "movement_dynamics": 1.816253363531327,
-        "compensation_context": 1.3222275721803585
+        "compensation_context": 2.155982403713687
       },
       "arm_curl": {
-        "movement_capacity": 2.1187880216729376,
+        "movement_capacity": 2.104521094365917,
         "muscle_activation": 0.4353264104625363,
         "movement_dynamics": 1.873274112926606,
-        "compensation_context": 1.0843795149959616
+        "compensation_context": 2.2138981943423808
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 2.0212332039983565,
+        "movement_capacity": 2.096479830314405,
         "muscle_activation": 0.5103927125080666,
         "movement_dynamics": 0.3313706684369487,
-        "compensation_context": 1.7669573368442664
+        "compensation_context": 3.5962454282020553
       }
     }
   },
@@ -557,34 +557,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.10857919883895348,
+        "movement_capacity": 0.08900468725569802,
         "muscle_activation": 2.1860891620219083,
         "movement_dynamics": 1.7556606845286447,
-        "compensation_context": 0.9825573544787876
+        "compensation_context": 2.981729439925785
       },
       "shoulder_press": {
-        "movement_capacity": 2.2706093493558837,
+        "movement_capacity": 2.1853353002329463,
         "muscle_activation": 1.011627685388338,
         "movement_dynamics": 1.9474123776974386,
-        "compensation_context": 0.27556853672067627
+        "compensation_context": 2.2547235784357396
       },
       "seated_row": {
-        "movement_capacity": 1.0089660570323655,
+        "movement_capacity": 1.0543307292558612,
         "muscle_activation": 0.9755397438688512,
         "movement_dynamics": 1.4987934679101584,
-        "compensation_context": 0.13440309564077632
+        "compensation_context": 0.7382873373961062
       },
       "arm_curl": {
-        "movement_capacity": 2.9182685020164616,
+        "movement_capacity": 2.8534915555537337,
         "muscle_activation": 0.9989577098097866,
         "movement_dynamics": 2.38745427515629,
-        "compensation_context": 0.15052527344706684
+        "compensation_context": 1.9185609404686474
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 1.307149608380715,
+        "movement_capacity": 1.3381807872147928,
         "muscle_activation": 0.47898070923281233,
         "movement_dynamics": 1.4319400293303823,
-        "compensation_context": 0.07196040243627463
+        "compensation_context": 0.6648913277601497
       }
     }
   },
@@ -594,34 +594,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.008024574381317281,
+        "movement_capacity": 0.009299268747776306,
         "muscle_activation": 2.3436664020446334,
         "movement_dynamics": 0.6885280850347961,
-        "compensation_context": 0.4108075780351587
+        "compensation_context": 2.260011387311359
       },
       "shoulder_press": {
-        "movement_capacity": 1.7805376589330764,
+        "movement_capacity": 1.6339548094192207,
         "muscle_activation": 2.0104192351830847,
         "movement_dynamics": 0.9870103977304616,
-        "compensation_context": 0.0
+        "compensation_context": 0.7240136620008755
       },
       "seated_row": {
-        "movement_capacity": 0.6173256362412113,
+        "movement_capacity": 0.586679297675345,
         "muscle_activation": 1.8493365140009603,
         "movement_dynamics": 1.4187267496951115,
-        "compensation_context": 0.31000175621770926
+        "compensation_context": 0.44127279873727676
       },
       "arm_curl": {
-        "movement_capacity": 0.061206326054187424,
+        "movement_capacity": 0.06359486562450194,
         "muscle_activation": 2.4628508575903463,
         "movement_dynamics": 1.4253438413922392,
-        "compensation_context": 0.9541057716067616
+        "compensation_context": 2.104442538783755
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.7784023742211041,
+        "movement_capacity": 0.7945258225747678,
         "muscle_activation": 3.477302363385064,
         "movement_dynamics": 0.6894213363444657,
-        "compensation_context": 0.20868016884690452
+        "compensation_context": 1.0924744848755652
       }
     }
   },
@@ -631,34 +631,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.24282770892014552,
+        "movement_capacity": 0.22664858607830154,
         "muscle_activation": 0.7270631243834516,
         "movement_dynamics": 0.6031635091647838,
-        "compensation_context": 1.4543954968897996
+        "compensation_context": 3.3559299013399766
       },
       "shoulder_press": {
-        "movement_capacity": 3.129986376327845,
+        "movement_capacity": 3.083522989445698,
         "muscle_activation": 0.5804301701149261,
         "movement_dynamics": 1.4665149744255523,
-        "compensation_context": 1.4651880128656174
+        "compensation_context": 3.107096139409524
       },
       "seated_row": {
-        "movement_capacity": 0.30115347422373995,
+        "movement_capacity": 0.4447025703997949,
         "muscle_activation": 0.6644327667125408,
         "movement_dynamics": 1.1338754622769076,
-        "compensation_context": 0.9337208974189084
+        "compensation_context": 1.3367765923946253
       },
       "arm_curl": {
-        "movement_capacity": 1.261340829996723,
+        "movement_capacity": 1.4941796140838144,
         "muscle_activation": 0.5872589533316112,
         "movement_dynamics": 1.288956842236271,
-        "compensation_context": 1.7070749123219897
+        "compensation_context": 3.659070153462347
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.6985696465867977,
+        "movement_capacity": 0.9335760847972643,
         "muscle_activation": 1.0768710090736677,
         "movement_dynamics": 1.4642084371994724,
-        "compensation_context": 3.0
+        "compensation_context": 5.0
       }
     }
   },
@@ -668,34 +668,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.001810826123713834,
+        "movement_capacity": 0.0017301715034326241,
         "muscle_activation": 1.5270024799188735,
         "movement_dynamics": 0.5452997933656183,
-        "compensation_context": 0.2847855378992362
+        "compensation_context": 1.5969610329078432
       },
       "shoulder_press": {
-        "movement_capacity": 0.5936050583537651,
+        "movement_capacity": 0.5380275247802343,
         "muscle_activation": 1.6153984094994231,
         "movement_dynamics": 3.244436829258689,
-        "compensation_context": 0.4383017671114088
+        "compensation_context": 1.9724132460666695
       },
       "seated_row": {
-        "movement_capacity": 0.6941675735245214,
+        "movement_capacity": 0.6477354549301143,
         "muscle_activation": 1.6555027966866105,
         "movement_dynamics": 1.7427242083287315,
-        "compensation_context": 0.18447124605404924
+        "compensation_context": 0.8828436733950703
       },
       "arm_curl": {
-        "movement_capacity": 0.8928709628853857,
+        "movement_capacity": 0.9512889628141836,
         "muscle_activation": 0.953129134557799,
         "movement_dynamics": 1.4951367539251366,
-        "compensation_context": 0.7963944614531461
+        "compensation_context": 1.8202435746007262
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 1.589813426691323,
+        "movement_capacity": 1.7195695580871584,
         "muscle_activation": 1.1296146020667641,
         "movement_dynamics": 2.0539556276777424,
-        "compensation_context": 1.2120854278532556
+        "compensation_context": 3.1822819696987397
       }
     }
   },
@@ -705,34 +705,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.272325011682821,
+        "movement_capacity": 0.25373898669493616,
         "muscle_activation": 0.7317491030542473,
         "movement_dynamics": 0.23909457880166074,
-        "compensation_context": 1.4749080876050047
+        "compensation_context": 2.3607560007342228
       },
       "shoulder_press": {
-        "movement_capacity": 1.368393807001727,
+        "movement_capacity": 1.2587572231097188,
         "muscle_activation": 0.6296105659304385,
         "movement_dynamics": 0.4146826597612059,
-        "compensation_context": 0.25567772598510097
+        "compensation_context": 0.4316871744033121
       },
       "seated_row": {
-        "movement_capacity": 0.3883832483860643,
+        "movement_capacity": 0.3643043332638283,
         "muscle_activation": 0.8056420634337507,
         "movement_dynamics": 0.7790196792020778,
-        "compensation_context": 0.7981371861147606
+        "compensation_context": 1.4753431806303239
       },
       "arm_curl": {
-        "movement_capacity": 0.2905581564224811,
+        "movement_capacity": 0.2953565066995867,
         "muscle_activation": 0.6135010676122081,
         "movement_dynamics": 0.6109906691014951,
-        "compensation_context": 0.4368924130868635
+        "compensation_context": 0.8931484407707325
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 1.3102848980546646,
+        "movement_capacity": 1.361128671373105,
         "muscle_activation": 1.0583373710783561,
         "movement_dynamics": 1.44883166013179,
-        "compensation_context": 0.5591855459283778
+        "compensation_context": 0.9090922736390331
       }
     }
   },
@@ -742,34 +742,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.3212540325220577,
+        "movement_capacity": 0.3380693574632426,
         "muscle_activation": 3.3361834587239083,
         "movement_dynamics": 1.8442130058581152,
-        "compensation_context": 2.150616663008596
+        "compensation_context": 2.30547959893791
       },
       "shoulder_press": {
-        "movement_capacity": 2.066565483783403,
+        "movement_capacity": 2.3543112364589973,
         "muscle_activation": 2.4639682534420784,
         "movement_dynamics": 2.6392531843874925,
-        "compensation_context": 0.6942635356867242
+        "compensation_context": 2.1690058666989764
       },
       "seated_row": {
-        "movement_capacity": 0.8879864555017359,
+        "movement_capacity": 0.8503174197406725,
         "muscle_activation": 3.4671085734957714,
         "movement_dynamics": 1.7144373391618983,
-        "compensation_context": 0.7371591477937525
+        "compensation_context": 1.2963101312867982
       },
       "arm_curl": {
-        "movement_capacity": 1.2908892606329885,
+        "movement_capacity": 1.2010704421243108,
         "muscle_activation": 3.6148034365310853,
         "movement_dynamics": 2.516861545898601,
-        "compensation_context": 1.5395843894362073
+        "compensation_context": 2.559967107594273
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.9570713179540182,
+        "movement_capacity": 0.945312971153379,
         "muscle_activation": 2.7191161683777074,
         "movement_dynamics": 2.568388196716223,
-        "compensation_context": 1.7726338149693928
+        "compensation_context": 3.0084069861920715
       }
     }
   },
@@ -779,34 +779,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.19499976458652338,
+        "movement_capacity": 0.18296634014928936,
         "muscle_activation": 2.691232253665961,
         "movement_dynamics": 0.5332460852969643,
-        "compensation_context": 1.2861148661013173
+        "compensation_context": 3.165565374711131
       },
       "shoulder_press": {
-        "movement_capacity": 0.024102622819235697,
+        "movement_capacity": 0.03800890649365823,
         "muscle_activation": 1.9352496803521153,
         "movement_dynamics": 0.8645806189309926,
-        "compensation_context": 0.7242774441508111
+        "compensation_context": 1.7752083839407966
       },
       "seated_row": {
-        "movement_capacity": 0.6542649619352731,
+        "movement_capacity": 0.6314560710363022,
         "muscle_activation": 1.6138755046347995,
         "movement_dynamics": 1.5392816216611427,
-        "compensation_context": 0.4721713341352086
+        "compensation_context": 1.4685424563106562
       },
       "arm_curl": {
-        "movement_capacity": 0.36392262202834075,
+        "movement_capacity": 0.5216956326013619,
         "muscle_activation": 1.3760515320577809,
         "movement_dynamics": 1.3123559275287817,
-        "compensation_context": 1.5191272533837978
+        "compensation_context": 2.288259656800588
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.987834104470956,
+        "movement_capacity": 1.0429962745972605,
         "muscle_activation": 1.0412778247265375,
         "movement_dynamics": 1.9302854777859615,
-        "compensation_context": 1.2935353845984516
+        "compensation_context": 1.6436670564296905
       }
     }
   },
@@ -816,34 +816,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.22944095829067196,
+        "movement_capacity": 0.26007945548510997,
         "muscle_activation": 0.7009869905520281,
         "movement_dynamics": 0.8044983737053838,
-        "compensation_context": 0.2907024593548786
+        "compensation_context": 1.3979070238753164
       },
       "shoulder_press": {
-        "movement_capacity": 2.7486849768327786,
+        "movement_capacity": 2.674556325805213,
         "muscle_activation": 0.5566240190045673,
         "movement_dynamics": 1.5919613248937337,
-        "compensation_context": 0.0
+        "compensation_context": 0.4466192667186533
       },
       "seated_row": {
-        "movement_capacity": 0.7514563451075498,
+        "movement_capacity": 0.6918945721835217,
         "muscle_activation": 1.0896423367039476,
         "movement_dynamics": 0.7914039294272996,
-        "compensation_context": 0.9399895807876149
+        "compensation_context": 1.7377720640957264
       },
       "arm_curl": {
-        "movement_capacity": 1.043698684645065,
+        "movement_capacity": 0.9016758458724721,
         "muscle_activation": 0.3227949921668773,
         "movement_dynamics": 1.5366649734925224,
-        "compensation_context": 0.2656430252028242
+        "compensation_context": 1.333776094482018
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 1.3674103573999983,
+        "movement_capacity": 1.4218952986889186,
         "muscle_activation": 0.6210141207004269,
         "movement_dynamics": 1.531149720833434,
-        "compensation_context": 0.0
+        "compensation_context": 0.5633946859753186
       }
     }
   },
@@ -856,28 +856,28 @@
         "movement_capacity": 0.0,
         "muscle_activation": 1.7195511776742334,
         "movement_dynamics": 0.371146490193084,
-        "compensation_context": 0.3904683323455004
+        "compensation_context": 1.668284537066868
       },
       "shoulder_press": {
-        "movement_capacity": 0.7957017733662076,
+        "movement_capacity": 0.781188746868808,
         "muscle_activation": 0.49200749852918146,
         "movement_dynamics": 0.7530817327587129,
-        "compensation_context": 0.21838215657511445
+        "compensation_context": 0.5718384637173346
       },
       "seated_row": {
-        "movement_capacity": 0.5260867125822557,
+        "movement_capacity": 0.49978169888464474,
         "muscle_activation": 1.5968213500520037,
         "movement_dynamics": 1.953060122400754,
-        "compensation_context": 0.5520427864387869
+        "compensation_context": 1.1975321367642535
       },
       "arm_curl": {
-        "movement_capacity": 0.6961427439538487,
+        "movement_capacity": 0.57338527633033,
         "muscle_activation": 2.2904925048107763,
         "movement_dynamics": 2.7411678455650526,
-        "compensation_context": 0.5333315761582186
+        "compensation_context": 0.7973123134216513
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 1.1234919149253106,
+        "movement_capacity": 1.1688052722590379,
         "muscle_activation": 2.5464868515938077,
         "movement_dynamics": 1.1404920595781007,
         "compensation_context": 0.13826134918639638
@@ -890,34 +890,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.8947467906516342,
+        "movement_capacity": 0.8931679073349705,
         "muscle_activation": 2.853916762467349,
         "movement_dynamics": 0.7241348934045079,
-        "compensation_context": 1.9934452590498435
+        "compensation_context": 3.9932969060401136
       },
       "shoulder_press": {
-        "movement_capacity": 0.237183152278734,
+        "movement_capacity": 0.24760432289128032,
         "muscle_activation": 2.7448977583312124,
         "movement_dynamics": 0.9268095541942949,
-        "compensation_context": 0.8592487110487506
+        "compensation_context": 1.7725080764743761
       },
       "seated_row": {
-        "movement_capacity": 0.5021690573032426,
+        "movement_capacity": 0.4616183865452075,
         "muscle_activation": 2.599994308836836,
         "movement_dynamics": 0.837312189149118,
-        "compensation_context": 1.0938995431567313
+        "compensation_context": 1.829234677585444
       },
       "arm_curl": {
-        "movement_capacity": 1.3271774783063026,
+        "movement_capacity": 1.251123835202428,
         "muscle_activation": 1.0231585032249813,
         "movement_dynamics": 1.5980247521907165,
-        "compensation_context": 1.9716503966376986
+        "compensation_context": 2.904032051080079
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 1.9956528585887687,
+        "movement_capacity": 2.074186344197869,
         "muscle_activation": 1.4989911240133125,
         "movement_dynamics": 1.3830925806712104,
-        "compensation_context": 2.050033915393672
+        "compensation_context": 4.040726579912312
       }
     }
   },
@@ -927,34 +927,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.7003901455673474,
+        "movement_capacity": 0.7610729099424449,
         "muscle_activation": 2.756443716347172,
         "movement_dynamics": 0.9409649802830022,
-        "compensation_context": 0.44869746506301295
+        "compensation_context": 0.5922287083967926
       },
       "shoulder_press": {
-        "movement_capacity": 0.3755775231388132,
+        "movement_capacity": 0.3527790510539714,
         "muscle_activation": 2.303371406214603,
         "movement_dynamics": 0.9233663710000342,
-        "compensation_context": 0.3074858735859343
+        "compensation_context": 0.5204323254224394
       },
       "seated_row": {
-        "movement_capacity": 0.7931907826411071,
+        "movement_capacity": 0.7345130716263477,
         "muscle_activation": 2.479682177841822,
         "movement_dynamics": 1.5214742244013295,
-        "compensation_context": 0.22624782547156558
+        "compensation_context": 0.09235691604781368
       },
       "arm_curl": {
-        "movement_capacity": 1.4842657529216587,
+        "movement_capacity": 1.3990753228157444,
         "muscle_activation": 2.1753221575040604,
         "movement_dynamics": 0.9436998662547027,
-        "compensation_context": 0.5218113407255524
+        "compensation_context": 0.516915503352163
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.31696037221146506,
+        "movement_capacity": 0.32613836568566534,
         "muscle_activation": 2.399424791145017,
         "movement_dynamics": 0.7774493960690934,
-        "compensation_context": 0.4745917575442868
+        "compensation_context": 0.17618503367834376
       }
     }
   },
@@ -964,34 +964,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.04494385692936195,
+        "movement_capacity": 0.03311453142667137,
         "muscle_activation": 3.3025135496209144,
         "movement_dynamics": 0.5197678809571982,
-        "compensation_context": 0.38795007519726393
+        "compensation_context": 1.6571324615710548
       },
       "shoulder_press": {
-        "movement_capacity": 0.11302459897271463,
+        "movement_capacity": 0.12258703396759286,
         "muscle_activation": 2.338122543890606,
         "movement_dynamics": 2.398070845313477,
-        "compensation_context": 0.6062233537639549
+        "compensation_context": 2.382280538718158
       },
       "seated_row": {
-        "movement_capacity": 0.26753002358296013,
+        "movement_capacity": 0.2282783990366733,
         "muscle_activation": 1.1924716393083277,
         "movement_dynamics": 1.0085272125048337,
-        "compensation_context": 0.42179696457864085
+        "compensation_context": 1.8213786613912926
       },
       "arm_curl": {
-        "movement_capacity": 2.8079707093374138,
+        "movement_capacity": 2.689781542981814,
         "muscle_activation": 1.6029162396210461,
         "movement_dynamics": 1.8747106811249514,
-        "compensation_context": 1.14795888597197
+        "compensation_context": 2.0925085061893904
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 1.0328403549059684,
+        "movement_capacity": 1.0418670496761742,
         "muscle_activation": 2.5437603832488205,
         "movement_dynamics": 1.8434841647066402,
-        "compensation_context": 1.530359115981852
+        "compensation_context": 1.756848814053494
       }
     }
   },
@@ -1001,34 +1001,34 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.42372425640867384,
+        "movement_capacity": 0.4228983937229073,
         "muscle_activation": 2.183060366861717,
         "movement_dynamics": 0.6284157294677573,
-        "compensation_context": 0.594027136860134
+        "compensation_context": 2.5348553703253836
       },
       "shoulder_press": {
-        "movement_capacity": 0.6958284734616094,
+        "movement_capacity": 0.6568233370068685,
         "muscle_activation": 3.033856501635495,
         "movement_dynamics": 0.9543790115169526,
-        "compensation_context": 1.3404708696388012
+        "compensation_context": 1.9397940884532088
       },
       "seated_row": {
-        "movement_capacity": 0.9496859190498992,
+        "movement_capacity": 1.0099300800196722,
         "muscle_activation": 2.213717344063188,
         "movement_dynamics": 1.6465521271568146,
-        "compensation_context": 0.6988924488312334
+        "compensation_context": 1.4467173817588934
       },
       "arm_curl": {
-        "movement_capacity": 1.1028058833565955,
+        "movement_capacity": 1.3135872950559198,
         "muscle_activation": 4.044142553268818,
         "movement_dynamics": 2.9722614574660264,
-        "compensation_context": 1.4631918952975247
+        "compensation_context": 3.3983089231578303
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.4940106191889374,
+        "movement_capacity": 0.48202588210217706,
         "muscle_activation": 3.4247009531127874,
         "movement_dynamics": 0.679253422330538,
-        "compensation_context": 0.7612708117504937
+        "compensation_context": 1.5403483380490879
       }
     }
   },
@@ -1038,34 +1038,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 1.1672302136975148,
+        "movement_capacity": 1.2181180627463322,
         "muscle_activation": 0.5409258496645195,
         "movement_dynamics": 1.2439155029480675,
-        "compensation_context": 0.2749722398631043
+        "compensation_context": 0.14384280296954732
       },
       "shoulder_press": {
-        "movement_capacity": 0.06961032427207041,
+        "movement_capacity": 0.06660670132157576,
         "muscle_activation": 0.5095795771624265,
         "movement_dynamics": 1.9045658805669403,
-        "compensation_context": 0.14287573941645096
+        "compensation_context": 0.44091762428469145
       },
       "seated_row": {
-        "movement_capacity": 0.49663504943802117,
+        "movement_capacity": 0.540246277848935,
         "muscle_activation": 1.0120535693086845,
         "movement_dynamics": 0.6170160714807618,
-        "compensation_context": 0.26846674640558493
+        "compensation_context": 0.31242255941170716
       },
       "arm_curl": {
-        "movement_capacity": 0.1286424750426558,
+        "movement_capacity": 0.18739851768536553,
         "muscle_activation": 0.34397992467154487,
         "movement_dynamics": 1.6765774955737396,
-        "compensation_context": 0.30962020789318956
+        "compensation_context": 0.4624990182384911
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.12271876552310909,
+        "movement_capacity": 0.10546672278258422,
         "muscle_activation": 1.29248071744433,
         "movement_dynamics": 1.7307910409165013,
-        "compensation_context": 0.43983883922287087
+        "compensation_context": 0.264248894726279
       }
     }
   },
@@ -1075,34 +1075,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.14877312593636624,
+        "movement_capacity": 0.14707577624871265,
         "muscle_activation": 1.0591808152055457,
         "movement_dynamics": 0.6854959095101203,
-        "compensation_context": 0.03617332608148327
+        "compensation_context": 0.0937480066271106
       },
       "shoulder_press": {
-        "movement_capacity": 0.05659225259698992,
+        "movement_capacity": 0.0493440103556783,
         "muscle_activation": 1.9688504625541303,
         "movement_dynamics": 2.3010070820042166,
-        "compensation_context": 0.1354915920603828
+        "compensation_context": 0.1383099284213944
       },
       "seated_row": {
-        "movement_capacity": 0.32404131305961215,
+        "movement_capacity": 0.29419182538930266,
         "muscle_activation": 0.5840452077395155,
         "movement_dynamics": 0.5135866918921987,
-        "compensation_context": 0.309275647699441
+        "compensation_context": 0.30925840802339927
       },
       "arm_curl": {
-        "movement_capacity": 0.06246285721601329,
+        "movement_capacity": 0.029499850126882457,
         "muscle_activation": 0.24062069844287187,
         "movement_dynamics": 1.0331603300628494,
-        "compensation_context": 0.15686193918165764
+        "compensation_context": 0.24967144309934386
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.010007415972524017,
+        "movement_capacity": 0.0032369504632050704,
         "muscle_activation": 1.227359011281512,
         "movement_dynamics": 0.8158177277111025,
-        "compensation_context": 0.3324464345430522
+        "compensation_context": 0.38568032951830417
       }
     }
   },
@@ -1112,34 +1112,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.32448326881438716,
+        "movement_capacity": 0.31762730330387445,
         "muscle_activation": 0.6871452135098781,
         "movement_dynamics": 0.835866817833346,
-        "compensation_context": 0.3027616311311275
+        "compensation_context": 0.1827641669584359
       },
       "shoulder_press": {
-        "movement_capacity": 1.1635140534698765,
+        "movement_capacity": 1.1570337521872285,
         "muscle_activation": 1.776311572520572,
         "movement_dynamics": 0.9731408673146738,
-        "compensation_context": 0.22784874166263142
+        "compensation_context": 0.13223249643491292
       },
       "seated_row": {
-        "movement_capacity": 1.0059183472127522,
+        "movement_capacity": 0.996038375645568,
         "muscle_activation": 0.6372376841090038,
         "movement_dynamics": 1.6144246623628424,
-        "compensation_context": 0.15322276429781118
+        "compensation_context": 0.17616264368581194
       },
       "arm_curl": {
-        "movement_capacity": 1.328363731555172,
+        "movement_capacity": 1.242106546311171,
         "muscle_activation": 0.6636965652931643,
         "movement_dynamics": 1.650039086224673,
-        "compensation_context": 0.8585121059066603
+        "compensation_context": 1.1788297024167755
       },
       "overhead_triceps_extension": {
         "movement_capacity": 0.0,
         "muscle_activation": 2.4454189272970086,
         "movement_dynamics": 0.4658657685503779,
-        "compensation_context": 0.31645746621112625
+        "compensation_context": 0.6178529187475195
       }
     }
   },
@@ -1149,34 +1149,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.15744969012053694,
+        "movement_capacity": 0.14238462411256841,
         "muscle_activation": 0.8894109220761446,
         "movement_dynamics": 2.1899721713183906,
-        "compensation_context": 1.0026048321742764
+        "compensation_context": 2.0048322177928255
       },
       "shoulder_press": {
-        "movement_capacity": 0.038679221903343684,
+        "movement_capacity": 0.09124943756646259,
         "muscle_activation": 0.9234146414729363,
         "movement_dynamics": 1.9691679028430131,
-        "compensation_context": 2.5739906002304673
+        "compensation_context": 2.6467188461005478
       },
       "seated_row": {
-        "movement_capacity": 0.046151576449270384,
+        "movement_capacity": 0.039689093692704354,
         "muscle_activation": 0.4280380343784139,
         "movement_dynamics": 1.5046849186199647,
-        "compensation_context": 0.8522057650952245
+        "compensation_context": 1.0987057899453414
       },
       "arm_curl": {
-        "movement_capacity": 0.08288969371387814,
+        "movement_capacity": 0.0869495300557033,
         "muscle_activation": 0.4112461971468735,
         "movement_dynamics": 1.1572482217716205,
-        "compensation_context": 0.5838297024589971
+        "compensation_context": 0.7002285669693853
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.7701690645492607,
+        "movement_capacity": 0.7681133438563763,
         "muscle_activation": 0.6102714574284175,
         "movement_dynamics": 0.8710779228912928,
-        "compensation_context": 2.4434157983370506
+        "compensation_context": 2.428521866440854
       }
     }
   },
@@ -1186,34 +1186,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.18856572170671643,
+        "movement_capacity": 0.18215853572109686,
         "muscle_activation": 2.4543390158611964,
         "movement_dynamics": 1.3313967479760564,
-        "compensation_context": 0.07820848642410183
+        "compensation_context": 0.2644977598054421
       },
       "shoulder_press": {
-        "movement_capacity": 1.17144741402891,
+        "movement_capacity": 1.0942851455284712,
         "muscle_activation": 1.5331732448843312,
         "movement_dynamics": 1.1474789906917526,
-        "compensation_context": 0.0
+        "compensation_context": 0.5447455436563994
       },
       "seated_row": {
-        "movement_capacity": 0.2604703858964838,
+        "movement_capacity": 0.28244176275837973,
         "muscle_activation": 0.7267580375120819,
         "movement_dynamics": 0.8939635688382198,
-        "compensation_context": 0.2730818741914349
+        "compensation_context": 0.31432085786816427
       },
       "arm_curl": {
-        "movement_capacity": 0.8966805686329624,
+        "movement_capacity": 0.8348788554981221,
         "muscle_activation": 1.9293014997332807,
         "movement_dynamics": 0.5570779351982389,
-        "compensation_context": 0.28257978017784857
+        "compensation_context": 0.37359697727257357
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.7605005223139232,
+        "movement_capacity": 0.7967606529628737,
         "muscle_activation": 0.4179828380376162,
         "movement_dynamics": 0.49800478607921883,
-        "compensation_context": 0.0
+        "compensation_context": 0.02481355207263235
       }
     }
   },
@@ -1226,31 +1226,31 @@
         "movement_capacity": 0.0,
         "muscle_activation": 1.18355101325391,
         "movement_dynamics": 1.1539364253744249,
-        "compensation_context": 0.7520071915859101
+        "compensation_context": 1.7439187365564894
       },
       "shoulder_press": {
-        "movement_capacity": 0.17084661510614174,
+        "movement_capacity": 0.14324798752602827,
         "muscle_activation": 0.45597959105500985,
         "movement_dynamics": 0.64802038082282,
-        "compensation_context": 0.4474516227881658
+        "compensation_context": 0.44650839401283937
       },
       "seated_row": {
-        "movement_capacity": 0.40788818683058686,
+        "movement_capacity": 0.370585444170411,
         "muscle_activation": 0.4757840033831712,
         "movement_dynamics": 1.734667254488561,
-        "compensation_context": 0.2067229626744243
+        "compensation_context": 0.41827465530996066
       },
       "arm_curl": {
-        "movement_capacity": 0.2875802771442064,
+        "movement_capacity": 0.2990183927350686,
         "muscle_activation": 1.1865618500463169,
         "movement_dynamics": 1.4100864809649853,
-        "compensation_context": 0.17792104581496673
+        "compensation_context": 0.2599166158348381
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.14249460571779043,
+        "movement_capacity": 0.12969767969157486,
         "muscle_activation": 0.4715471893511456,
         "movement_dynamics": 2.4056485038167583,
-        "compensation_context": 0.06951863133677985
+        "compensation_context": 0.10719603531379458
       }
     }
   },
@@ -1260,34 +1260,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.22285461917125438,
+        "movement_capacity": 0.21061728755184864,
         "muscle_activation": 0.44508334375526426,
         "movement_dynamics": 1.5819529929678653,
-        "compensation_context": 0.3721118475051648
+        "compensation_context": 0.5892247989943185
       },
       "shoulder_press": {
-        "movement_capacity": 0.6762413134441674,
+        "movement_capacity": 0.5913187360137173,
         "muscle_activation": 0.4050321842872537,
         "movement_dynamics": 0.899690201559527,
-        "compensation_context": 0.35032869018844676
+        "compensation_context": 0.388793946453291
       },
       "seated_row": {
-        "movement_capacity": 0.2558575107342408,
+        "movement_capacity": 0.25005333124885426,
         "muscle_activation": 0.49451148132392986,
         "movement_dynamics": 0.531075551948621,
-        "compensation_context": 0.7578371831990632
+        "compensation_context": 0.6251608214464929
       },
       "arm_curl": {
-        "movement_capacity": 0.5091071168349897,
+        "movement_capacity": 0.4503737619554462,
         "muscle_activation": 0.5156215536626783,
         "movement_dynamics": 0.5103922122676245,
-        "compensation_context": 1.2884496885325267
+        "compensation_context": 1.699806429675812
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.9155672977002488,
+        "movement_capacity": 1.076369960504212,
         "muscle_activation": 0.5229326009268828,
         "movement_dynamics": 1.075189895777029,
-        "compensation_context": 0.655915915670253
+        "compensation_context": 0.2714545363068395
       }
     }
   },
@@ -1297,34 +1297,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.4749474797899427,
+        "movement_capacity": 0.4615502285806723,
         "muscle_activation": 0.5256518013750502,
         "movement_dynamics": 2.440937600154453,
-        "compensation_context": 1.299094873402458
+        "compensation_context": 2.1473137760063516
       },
       "shoulder_press": {
-        "movement_capacity": 0.9018568559266325,
+        "movement_capacity": 0.8330919921474158,
         "muscle_activation": 0.5940345378951251,
         "movement_dynamics": 3.2153354162427936,
-        "compensation_context": 0.2847348379128324
+        "compensation_context": 0.5937819624197148
       },
       "seated_row": {
-        "movement_capacity": 0.46767088577611804,
+        "movement_capacity": 0.48800056331590713,
         "muscle_activation": 0.6056588703429016,
         "movement_dynamics": 2.3727877255759973,
-        "compensation_context": 0.5169081948026649
+        "compensation_context": 0.74451431268111
       },
       "arm_curl": {
-        "movement_capacity": 0.44298152337015023,
+        "movement_capacity": 0.4637560587634935,
         "muscle_activation": 0.23323637668140568,
         "movement_dynamics": 1.4308572152410821,
-        "compensation_context": 0.5914848038223565
+        "compensation_context": 0.9909925654413844
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.010247324217573652,
+        "movement_capacity": 0.04037788558588864,
         "muscle_activation": 0.38208886544830895,
         "movement_dynamics": 0.7754743393166327,
-        "compensation_context": 0.16807821979246368
+        "compensation_context": 0.20885824646065906
       }
     }
   },
@@ -1334,34 +1334,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.15092998790222417,
+        "movement_capacity": 0.1487749329781585,
         "muscle_activation": 0.7262513130459418,
         "movement_dynamics": 0.6258511037616585,
-        "compensation_context": 0.132824670538123
+        "compensation_context": 0.0
       },
       "shoulder_press": {
-        "movement_capacity": 0.24760020601604732,
+        "movement_capacity": 0.21206210671535064,
         "muscle_activation": 1.0390321716053994,
         "movement_dynamics": 0.514320387576084,
-        "compensation_context": 0.16252595290813604
+        "compensation_context": 0.01627539788357928
       },
       "seated_row": {
-        "movement_capacity": 0.2573690971189752,
+        "movement_capacity": 0.2392244824153586,
         "muscle_activation": 1.4842789437170256,
         "movement_dynamics": 0.4511071796996125,
-        "compensation_context": 0.17787771997894875
+        "compensation_context": 0.16871506974650646
       },
       "arm_curl": {
-        "movement_capacity": 0.5382336359278903,
+        "movement_capacity": 0.5051698410230209,
         "muscle_activation": 1.2846690242227263,
         "movement_dynamics": 0.2599395539461049,
-        "compensation_context": 0.12174614678256926
+        "compensation_context": 0.16967671684189717
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.457358465669651,
+        "movement_capacity": 0.4404513544657175,
         "muscle_activation": 2.4984500744536775,
         "movement_dynamics": 0.740358203539342,
-        "compensation_context": 0.05623832124308684
+        "compensation_context": 0.06656025002111096
       }
     }
   },
@@ -1371,34 +1371,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.7825809720805008,
+        "movement_capacity": 0.7439345140803744,
         "muscle_activation": 0.6446564981877096,
         "movement_dynamics": 0.8358450157229127,
-        "compensation_context": 0.09425432461246257
+        "compensation_context": 0.0
       },
       "shoulder_press": {
-        "movement_capacity": 0.08050416075233943,
+        "movement_capacity": 0.03717717033095966,
         "muscle_activation": 0.5737694505801058,
         "movement_dynamics": 0.5804828771711595,
-        "compensation_context": 0.5334875748987281
+        "compensation_context": 1.1983491603707972
       },
       "seated_row": {
-        "movement_capacity": 0.5983448634298676,
+        "movement_capacity": 0.6289546232242142,
         "muscle_activation": 0.9157752999757263,
         "movement_dynamics": 0.9423447694475215,
-        "compensation_context": 1.1844901251430004
+        "compensation_context": 0.9068582282161884
       },
       "arm_curl": {
-        "movement_capacity": 0.5885082786411685,
+        "movement_capacity": 0.49146400727766426,
         "muscle_activation": 0.8444444587933282,
         "movement_dynamics": 0.3648693710330275,
-        "compensation_context": 0.7961497765595755
+        "compensation_context": 0.6407662215027645
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.12955653376493326,
+        "movement_capacity": 0.15586395889422455,
         "muscle_activation": 0.7329985844043242,
         "movement_dynamics": 1.0452609719505084,
-        "compensation_context": 0.17264453092002577
+        "compensation_context": 0.4311028455537732
       }
     }
   },
@@ -1408,34 +1408,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.6890697980916625,
+        "movement_capacity": 0.7232093805962104,
         "muscle_activation": 0.5477095539170025,
         "movement_dynamics": 0.5718051783046141,
-        "compensation_context": 0.13719710806361804
+        "compensation_context": 0.04219230954511333
       },
       "shoulder_press": {
-        "movement_capacity": 0.26571013741985555,
+        "movement_capacity": 0.2559211867180057,
         "muscle_activation": 1.0333561474892572,
         "movement_dynamics": 0.5751907043508326,
-        "compensation_context": 0.523670736205711
+        "compensation_context": 0.30465132332414824
       },
       "seated_row": {
-        "movement_capacity": 0.46669286741192684,
+        "movement_capacity": 0.43570823778012235,
         "muscle_activation": 0.541244414550376,
         "movement_dynamics": 0.34557917257686077,
-        "compensation_context": 0.3526415960284215
+        "compensation_context": 0.10357136799277038
       },
       "arm_curl": {
-        "movement_capacity": 0.25493269953973824,
+        "movement_capacity": 0.22275653639612214,
         "muscle_activation": 0.7176252481327602,
         "movement_dynamics": 0.4708485866384371,
-        "compensation_context": 0.2208001399435481
+        "compensation_context": 0.665774948247207
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.5323649861323263,
+        "movement_capacity": 0.5441972076615798,
         "muscle_activation": 0.4903927378300815,
         "movement_dynamics": 0.6172708378909921,
-        "compensation_context": 0.12056034051853701
+        "compensation_context": 0.21832662484147303
       }
     }
   },
@@ -1445,34 +1445,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.3728828161700086,
+        "movement_capacity": 0.37614271931815957,
         "muscle_activation": 0.8318439427061174,
         "movement_dynamics": 0.5403011371336728,
-        "compensation_context": 0.5775393494805142
+        "compensation_context": 1.0445344505548557
       },
       "shoulder_press": {
-        "movement_capacity": 0.3376027155440546,
+        "movement_capacity": 0.34730963270914494,
         "muscle_activation": 0.6951328100909145,
         "movement_dynamics": 0.49092232406761593,
-        "compensation_context": 0.4730833721388367
+        "compensation_context": 0.26250631814316117
       },
       "seated_row": {
-        "movement_capacity": 0.47966097850083267,
+        "movement_capacity": 0.4771755976321265,
         "muscle_activation": 0.7829297862072913,
         "movement_dynamics": 0.7910804413055241,
-        "compensation_context": 0.7496420679681974
+        "compensation_context": 0.6405019892428567
       },
       "arm_curl": {
-        "movement_capacity": 0.4956240369727438,
+        "movement_capacity": 0.4472622871480465,
         "muscle_activation": 0.35759375407015037,
         "movement_dynamics": 2.043094791735356,
-        "compensation_context": 1.5067331004590208
+        "compensation_context": 1.8659970350996447
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.15800180292512783,
+        "movement_capacity": 0.14635221285341438,
         "muscle_activation": 0.9309124762047576,
         "movement_dynamics": 0.3739516092605538,
-        "compensation_context": 0.2304184208008267
+        "compensation_context": 0.5626754322021583
       }
     }
   },
@@ -1482,31 +1482,31 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.9643154791999036,
+        "movement_capacity": 0.9713400146781922,
         "muscle_activation": 1.2882029775763568,
         "movement_dynamics": 0.9590017980460961,
         "compensation_context": 0.0
       },
       "shoulder_press": {
-        "movement_capacity": 0.7846141722300279,
+        "movement_capacity": 0.7243232164323644,
         "muscle_activation": 1.2150505029847019,
         "movement_dynamics": 1.4139225663241177,
-        "compensation_context": 0.4229804249436905
+        "compensation_context": 0.06397054610281004
       },
       "seated_row": {
-        "movement_capacity": 0.28176208747835774,
+        "movement_capacity": 0.26524992215689286,
         "muscle_activation": 1.062711166108538,
         "movement_dynamics": 1.0131461406172688,
-        "compensation_context": 0.2703150228233245
+        "compensation_context": 0.0803607671573654
       },
       "arm_curl": {
-        "movement_capacity": 0.3001093990141682,
+        "movement_capacity": 0.27387825707546415,
         "muscle_activation": 1.3693095392971184,
         "movement_dynamics": 0.3097282133651264,
-        "compensation_context": 0.30302029089336796
+        "compensation_context": 0.0
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.19697369068646103,
+        "movement_capacity": 0.17123596219723836,
         "muscle_activation": 1.1500643362671843,
         "movement_dynamics": 1.317547705245369,
         "compensation_context": 0.0
@@ -1519,34 +1519,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.09348755601674599,
+        "movement_capacity": 0.08441200027376737,
         "muscle_activation": 1.0012427951365315,
         "movement_dynamics": 1.8632455279948066,
-        "compensation_context": 1.5174729644945804
+        "compensation_context": 1.6514377505440145
       },
       "shoulder_press": {
         "movement_capacity": 0.0,
         "muscle_activation": 0.7035652608979733,
         "movement_dynamics": 0.9959898113470244,
-        "compensation_context": 0.1643113696594965
+        "compensation_context": 0.1839137681437114
       },
       "seated_row": {
-        "movement_capacity": 0.3873910060729703,
+        "movement_capacity": 0.32309230953121315,
         "muscle_activation": 1.2928171111572593,
         "movement_dynamics": 0.2844425716227262,
-        "compensation_context": 0.0
+        "compensation_context": 0.07252885109999527
       },
       "arm_curl": {
-        "movement_capacity": 0.1750724000366589,
+        "movement_capacity": 0.14375442493151352,
         "muscle_activation": 0.8474048325276002,
         "movement_dynamics": 2.4950766033597267,
-        "compensation_context": 0.01603453550374758
+        "compensation_context": 0.24119093156940102
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.07298751778260668,
+        "movement_capacity": 0.07256170317399271,
         "muscle_activation": 0.7083543859044759,
         "movement_dynamics": 0.5188744989030705,
-        "compensation_context": 0.26674842122980047
+        "compensation_context": 0.3694259784208982
       }
     }
   },
@@ -1556,34 +1556,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.24812662151282636,
+        "movement_capacity": 0.2549039999734418,
         "muscle_activation": 2.0992060778303023,
         "movement_dynamics": 0.8134506844030918,
-        "compensation_context": 0.20462280121552195
+        "compensation_context": 0.16938836716239805
       },
       "shoulder_press": {
-        "movement_capacity": 1.0354612041045046,
+        "movement_capacity": 0.9639364514636972,
         "muscle_activation": 2.169538784421737,
         "movement_dynamics": 0.676404413420465,
-        "compensation_context": 0.19447516940250054
+        "compensation_context": 0.014032230723789136
       },
       "seated_row": {
-        "movement_capacity": 0.4876307826116947,
+        "movement_capacity": 0.5385701060460207,
         "muscle_activation": 0.7232284181789033,
         "movement_dynamics": 0.7472459761204984,
-        "compensation_context": 0.6962905108648776
+        "compensation_context": 0.4058101809019443
       },
       "arm_curl": {
-        "movement_capacity": 0.43152875761448783,
+        "movement_capacity": 0.41238897585640344,
         "muscle_activation": 1.4300344721281792,
         "movement_dynamics": 0.454288523069434,
-        "compensation_context": 0.31556007377419604
+        "compensation_context": 0.0
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.034927011076354056,
+        "movement_capacity": 0.03612809125956707,
         "muscle_activation": 1.8165391909392934,
         "movement_dynamics": 0.770100465113591,
-        "compensation_context": 0.1712140704234496
+        "compensation_context": 0.0
       }
     }
   },
@@ -1593,34 +1593,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.2436444922033026,
+        "movement_capacity": 0.24175264067502908,
         "muscle_activation": 0.9759921284259976,
         "movement_dynamics": 1.1063705948228013,
-        "compensation_context": 0.7781396944406136
+        "compensation_context": 0.5166888267477829
       },
       "shoulder_press": {
-        "movement_capacity": 0.014707440399071509,
+        "movement_capacity": 0.01316842433215539,
         "muscle_activation": 0.6313685217595768,
         "movement_dynamics": 0.9246928098348948,
-        "compensation_context": 0.4429626723061316
+        "compensation_context": 0.21543462273886388
       },
       "seated_row": {
-        "movement_capacity": 0.012107845911991247,
+        "movement_capacity": 0.004428605841035067,
         "muscle_activation": 0.3500957486264935,
         "movement_dynamics": 0.5045041307789234,
-        "compensation_context": 0.21251101916305348
+        "compensation_context": 0.13882625292905892
       },
       "arm_curl": {
-        "movement_capacity": 0.14629735898729618,
+        "movement_capacity": 0.15503522671328748,
         "muscle_activation": 0.9722458645815198,
         "movement_dynamics": 1.042198972482946,
-        "compensation_context": 1.9267056817731625
+        "compensation_context": 1.7568613781298965
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.9949487723668409,
+        "movement_capacity": 1.073095874795126,
         "muscle_activation": 0.9382838014030932,
         "movement_dynamics": 2.2294417634757004,
-        "compensation_context": 0.17029717600396702
+        "compensation_context": 1.0415984588420113
       }
     }
   },
@@ -1630,34 +1630,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.6465319486336871,
+        "movement_capacity": 0.700113288813724,
         "muscle_activation": 0.4984649140744267,
         "movement_dynamics": 0.43329085241048126,
-        "compensation_context": 0.5118536923103264
+        "compensation_context": 0.6043099739226395
       },
       "shoulder_press": {
-        "movement_capacity": 0.30968170570048986,
+        "movement_capacity": 0.3066707412889247,
         "muscle_activation": 0.297496003033537,
         "movement_dynamics": 1.321629516636762,
-        "compensation_context": 0.6591940007245167
+        "compensation_context": 0.53624381706911
       },
       "seated_row": {
-        "movement_capacity": 0.002877663875857323,
+        "movement_capacity": 0.0021464092198122627,
         "muscle_activation": 0.6365817797864612,
         "movement_dynamics": 1.2079616576388714,
-        "compensation_context": 0.5090541402160667
+        "compensation_context": 0.6553175702161684
       },
       "arm_curl": {
-        "movement_capacity": 0.21642226628861214,
+        "movement_capacity": 0.2507254535249998,
         "muscle_activation": 0.7819464070156265,
         "movement_dynamics": 1.4963841222562944,
-        "compensation_context": 0.8497763390391672
+        "compensation_context": 0.9938948254292539
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.13971757814484054,
+        "movement_capacity": 0.13442607224785377,
         "muscle_activation": 0.5267826315151694,
         "movement_dynamics": 0.8373832154789036,
-        "compensation_context": 1.0500941064283928
+        "compensation_context": 0.9046850727163005
       }
     }
   },
@@ -1667,34 +1667,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.15290936942947805,
+        "movement_capacity": 0.1733350064941129,
         "muscle_activation": 1.9309638778456706,
         "movement_dynamics": 1.051267783229863,
-        "compensation_context": 0.10478987871339433
+        "compensation_context": 0.2250908180669573
       },
       "shoulder_press": {
-        "movement_capacity": 0.4063191269876295,
+        "movement_capacity": 0.4324159776928789,
         "muscle_activation": 0.566124775222597,
         "movement_dynamics": 0.5721523928500062,
-        "compensation_context": 0.10324928257805492
+        "compensation_context": 0.40558765125835594
       },
       "seated_row": {
-        "movement_capacity": 0.24567538280502077,
+        "movement_capacity": 0.2687701588560174,
         "muscle_activation": 1.4970222762174275,
         "movement_dynamics": 0.6286173669709803,
-        "compensation_context": 0.0
+        "compensation_context": 0.12758382349805925
       },
       "arm_curl": {
-        "movement_capacity": 2.8205402308399856,
+        "movement_capacity": 2.827877395255555,
         "muscle_activation": 0.8494152425915042,
         "movement_dynamics": 0.4776154736534838,
-        "compensation_context": 0.24008541571998449
+        "compensation_context": 0.16263199639544174
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.44436426138185314,
+        "movement_capacity": 0.4340007825335659,
         "muscle_activation": 1.5140759149065492,
         "movement_dynamics": 0.5274174913990597,
-        "compensation_context": 0.35459997314696734
+        "compensation_context": 0.20966183445513167
       }
     }
   },
@@ -1704,34 +1704,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.19264382365478588,
+        "movement_capacity": 0.18151517587457128,
         "muscle_activation": 1.1709985031386911,
         "movement_dynamics": 0.644959386206479,
-        "compensation_context": 0.8509755705136252
+        "compensation_context": 0.7965376406700139
       },
       "shoulder_press": {
-        "movement_capacity": 0.12649057239097494,
+        "movement_capacity": 0.11638745158660199,
         "muscle_activation": 0.8700643290055594,
         "movement_dynamics": 0.9059575611091617,
-        "compensation_context": 0.39079324489189754
+        "compensation_context": 0.5522547595504156
       },
       "seated_row": {
-        "movement_capacity": 0.10473794892851739,
+        "movement_capacity": 0.11993380722346654,
         "muscle_activation": 1.8064557275742055,
         "movement_dynamics": 1.1341671438150152,
-        "compensation_context": 0.8071106721987681
+        "compensation_context": 1.17234632839517
       },
       "arm_curl": {
-        "movement_capacity": 0.04190514076967857,
+        "movement_capacity": 0.07372575912613698,
         "muscle_activation": 0.8729906128438542,
         "movement_dynamics": 0.6135507848806994,
-        "compensation_context": 0.0898215620346688
+        "compensation_context": 0.020477317874792355
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.1266476177579483,
+        "movement_capacity": 0.14299840258206067,
         "muscle_activation": 1.963362349884458,
         "movement_dynamics": 1.2474049572269932,
-        "compensation_context": 0.25923024665660904
+        "compensation_context": 0.5345728855960422
       }
     }
   },
@@ -1744,31 +1744,31 @@
         "movement_capacity": 0.0,
         "muscle_activation": 0.8208365116705165,
         "movement_dynamics": 2.1218613708585448,
-        "compensation_context": 0.29274476165153696
+        "compensation_context": 0.013747582358758559
       },
       "shoulder_press": {
-        "movement_capacity": 3.8957980813673663,
+        "movement_capacity": 3.856000091417238,
         "muscle_activation": 0.6803496880956738,
         "movement_dynamics": 0.39641627409137237,
-        "compensation_context": 1.131935763044402
+        "compensation_context": 1.3719602110117453
       },
       "seated_row": {
-        "movement_capacity": 0.615067199165523,
+        "movement_capacity": 0.8088221239275567,
         "muscle_activation": 0.44386048018590374,
         "movement_dynamics": 1.4485817538508607,
-        "compensation_context": 0.13480604960802084
+        "compensation_context": 0.10278018524796147
       },
       "arm_curl": {
-        "movement_capacity": 2.372141298649404,
+        "movement_capacity": 2.273484337242743,
         "muscle_activation": 0.7401968542943695,
         "movement_dynamics": 1.9718104836036763,
-        "compensation_context": 0.47939523378765375
+        "compensation_context": 0.27083405301782093
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 1.3633832520016547,
+        "movement_capacity": 1.3838332656875525,
         "muscle_activation": 0.6715100708804216,
         "movement_dynamics": 2.1489123242121746,
-        "compensation_context": 0.10916811003934326
+        "compensation_context": 0.0
       }
     }
   },
@@ -1778,34 +1778,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.7753121165345245,
+        "movement_capacity": 0.7839463323664225,
         "muscle_activation": 0.3769886498661328,
         "movement_dynamics": 0.4887637627617848,
-        "compensation_context": 0.2740966776165837
+        "compensation_context": 0.06282251555414599
       },
       "shoulder_press": {
-        "movement_capacity": 0.08292974923199259,
+        "movement_capacity": 0.12255784668948799,
         "muscle_activation": 0.637150119560487,
         "movement_dynamics": 0.6425088316590847,
-        "compensation_context": 0.13158645847381967
+        "compensation_context": 0.20021608946835817
       },
       "seated_row": {
-        "movement_capacity": 0.8149884200634814,
+        "movement_capacity": 0.9685019115312299,
         "muscle_activation": 1.2166538138080871,
         "movement_dynamics": 1.4686422211202554,
-        "compensation_context": 0.1571251267833263
+        "compensation_context": 0.0
       },
       "arm_curl": {
-        "movement_capacity": 0.41918399578386956,
+        "movement_capacity": 0.446062123739233,
         "muscle_activation": 1.0572903586236313,
         "movement_dynamics": 1.5616898210420689,
-        "compensation_context": 0.05531234634975849
+        "compensation_context": 0.0
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 1.309795747333839,
+        "movement_capacity": 1.5207736345262886,
         "muscle_activation": 0.38868049359381507,
         "movement_dynamics": 1.0970650523309784,
-        "compensation_context": 0.237780535862154
+        "compensation_context": 0.5793017638565752
       }
     }
   },
@@ -1815,34 +1815,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.8296477885463518,
+        "movement_capacity": 0.8439956883742508,
         "muscle_activation": 0.9063189940544001,
         "movement_dynamics": 0.6204488399397667,
-        "compensation_context": 0.13700400167414356
+        "compensation_context": 0.0
       },
       "shoulder_press": {
-        "movement_capacity": 0.9319223176931373,
+        "movement_capacity": 0.9178024837855692,
         "muscle_activation": 0.7647406279376981,
         "movement_dynamics": 1.418869755750258,
-        "compensation_context": 0.2123195685959618
+        "compensation_context": 0.16154180141205438
       },
       "seated_row": {
-        "movement_capacity": 0.9439417781703783,
+        "movement_capacity": 0.8738189977848516,
         "muscle_activation": 0.28240727931070125,
         "movement_dynamics": 1.2891456302256865,
-        "compensation_context": 0.3026177799300251
+        "compensation_context": 0.5022538244702968
       },
       "arm_curl": {
-        "movement_capacity": 1.1182168003962452,
+        "movement_capacity": 1.002112736967574,
         "muscle_activation": 0.5525784771735327,
         "movement_dynamics": 1.6925879602733924,
-        "compensation_context": 0.01749756613348105
+        "compensation_context": 0.08645458365078632
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.6571342716161166,
+        "movement_capacity": 0.6490985633545321,
         "muscle_activation": 0.374757815139816,
         "movement_dynamics": 0.7162952391267234,
-        "compensation_context": 0.1799858091147401
+        "compensation_context": 0.22351865635674698
       }
     }
   },
@@ -1855,31 +1855,31 @@
         "movement_capacity": 0.0,
         "muscle_activation": 0.5452575422991283,
         "movement_dynamics": 2.0269342281686957,
-        "compensation_context": 1.0260836221939553
+        "compensation_context": 1.0592599893212973
       },
       "shoulder_press": {
-        "movement_capacity": 2.1509570169309553,
+        "movement_capacity": 1.9983395284117416,
         "muscle_activation": 0.49243082582366793,
         "movement_dynamics": 1.5403270005858585,
-        "compensation_context": 0.6290955994666813
+        "compensation_context": 0.44689358335307805
       },
       "seated_row": {
-        "movement_capacity": 0.3423027904898449,
+        "movement_capacity": 0.3308829817877061,
         "muscle_activation": 1.2916867025245897,
         "movement_dynamics": 0.49851286439233755,
-        "compensation_context": 0.07165558591850016
+        "compensation_context": 0.06744345837222497
       },
       "arm_curl": {
-        "movement_capacity": 0.30981656196195856,
+        "movement_capacity": 0.35016789915957947,
         "muscle_activation": 0.3589063232232299,
         "movement_dynamics": 0.5997356498652671,
-        "compensation_context": 0.4974498868906764
+        "compensation_context": 0.7960587233660481
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 1.7555491264771814,
+        "movement_capacity": 1.8495413516220514,
         "muscle_activation": 0.5018486064032543,
         "movement_dynamics": 0.7593331308511561,
-        "compensation_context": 0.5105935604350816
+        "compensation_context": 0.3468674152481637
       }
     }
   },
@@ -1889,34 +1889,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.4919896127137111,
+        "movement_capacity": 0.4859206798008488,
         "muscle_activation": 0.9584792078654296,
         "movement_dynamics": 0.6351272574174683,
-        "compensation_context": 0.33242170201161836
+        "compensation_context": 0.10783730693951561
       },
       "shoulder_press": {
-        "movement_capacity": 0.043108037095011764,
+        "movement_capacity": 0.028939720749033032,
         "muscle_activation": 1.6121532164572723,
         "movement_dynamics": 0.38485196649724746,
-        "compensation_context": 0.7017630674468909
+        "compensation_context": 0.44691033203826025
       },
       "seated_row": {
-        "movement_capacity": 0.7399164193557759,
+        "movement_capacity": 0.7218365204678086,
         "muscle_activation": 0.874129945200367,
         "movement_dynamics": 0.6293081687389486,
-        "compensation_context": 0.13480900888660602
+        "compensation_context": 0.0
       },
       "arm_curl": {
-        "movement_capacity": 0.04322499877350581,
+        "movement_capacity": 0.06381357834476535,
         "muscle_activation": 1.0496191089291866,
         "movement_dynamics": 1.080105064743011,
-        "compensation_context": 0.15503738806837167
+        "compensation_context": 0.0
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.06346126830712412,
+        "movement_capacity": 0.04187025192523397,
         "muscle_activation": 0.8717890255330579,
         "movement_dynamics": 0.5428108095835376,
-        "compensation_context": 0.5461700963750858
+        "compensation_context": 0.47570818958130434
       }
     }
   },
@@ -1926,34 +1926,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.05057977195205907,
+        "movement_capacity": 0.0437494444703769,
         "muscle_activation": 0.44882600444583,
         "movement_dynamics": 1.4114601066889816,
-        "compensation_context": 0.6452472213822256
+        "compensation_context": 0.39188400307725735
       },
       "shoulder_press": {
-        "movement_capacity": 0.7710082191391152,
+        "movement_capacity": 0.6864098908898809,
         "muscle_activation": 0.9145294668957382,
         "movement_dynamics": 0.7695774990428985,
-        "compensation_context": 0.7673824965325979
+        "compensation_context": 0.5175436267349909
       },
       "seated_row": {
-        "movement_capacity": 0.029139159156099263,
+        "movement_capacity": 0.07265081308577023,
         "muscle_activation": 0.3796917626864853,
         "movement_dynamics": 1.8802383403630127,
-        "compensation_context": 1.1993358310700741
+        "compensation_context": 1.9677060787237728
       },
       "arm_curl": {
-        "movement_capacity": 0.38539338614757557,
+        "movement_capacity": 0.41045566815767587,
         "muscle_activation": 0.932812629644818,
         "movement_dynamics": 1.1605728682157261,
-        "compensation_context": 0.3647331776958685
+        "compensation_context": 0.9001820716037601
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.6094766910252529,
+        "movement_capacity": 0.6339769623305664,
         "muscle_activation": 0.5737057793600151,
         "movement_dynamics": 1.3418901433704276,
-        "compensation_context": 0.4421399873652409
+        "compensation_context": 0.48107237878526093
       }
     }
   },
@@ -1963,34 +1963,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.032612518254279924,
+        "movement_capacity": 0.06914998949100483,
         "muscle_activation": 0.8925036001866169,
         "movement_dynamics": 0.5898352818404828,
-        "compensation_context": 0.9596999799451652
+        "compensation_context": 2.0116868101777454
       },
       "shoulder_press": {
-        "movement_capacity": 0.771130417229217,
+        "movement_capacity": 0.7016828260833134,
         "muscle_activation": 0.9502917212123843,
         "movement_dynamics": 0.8895819627980119,
-        "compensation_context": 0.439021830253315
+        "compensation_context": 1.0449806818266907
       },
       "seated_row": {
-        "movement_capacity": 0.44904344755096004,
+        "movement_capacity": 0.39940514436441316,
         "muscle_activation": 0.8924240825699545,
         "movement_dynamics": 0.27772085876981706,
-        "compensation_context": 1.4758656411707378
+        "compensation_context": 2.007747089726767
       },
       "arm_curl": {
-        "movement_capacity": 0.20470400234987207,
+        "movement_capacity": 0.20712625161677004,
         "muscle_activation": 0.7520407604498289,
         "movement_dynamics": 0.7709644694162809,
-        "compensation_context": 0.7590845116431872
+        "compensation_context": 1.8938826761957936
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.2366209254861796,
+        "movement_capacity": 0.2254869935496216,
         "muscle_activation": 0.6614147793453427,
         "movement_dynamics": 1.8965584168349023,
-        "compensation_context": 1.451081977140328
+        "compensation_context": 1.8988497970941816
       }
     }
   },
@@ -2000,34 +2000,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.1722394132749126,
+        "movement_capacity": 0.15879532423885329,
         "muscle_activation": 1.9180885397994063,
         "movement_dynamics": 0.42502448038649987,
-        "compensation_context": 0.5000580369518584
+        "compensation_context": 1.1415270578565244
       },
       "shoulder_press": {
-        "movement_capacity": 0.10652799136847678,
+        "movement_capacity": 0.0994994908110486,
         "muscle_activation": 1.8933944244897205,
         "movement_dynamics": 1.0150788921890406,
-        "compensation_context": 1.6182224269307621
+        "compensation_context": 2.5875362976990326
       },
       "seated_row": {
-        "movement_capacity": 0.009549779836837117,
+        "movement_capacity": 0.02035468168692987,
         "muscle_activation": 3.357229707903533,
         "movement_dynamics": 3.4256598385561223,
-        "compensation_context": 0.19048958115206938
+        "compensation_context": 1.091961161345583
       },
       "arm_curl": {
-        "movement_capacity": 0.2769160972725299,
+        "movement_capacity": 0.21297762084950544,
         "muscle_activation": 1.7759329784209303,
         "movement_dynamics": 1.8057182912772587,
-        "compensation_context": 0.36723933029744527
+        "compensation_context": 0.34245288429064286
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.32577243157132973,
+        "movement_capacity": 0.3099209446033986,
         "muscle_activation": 2.3875471913090993,
         "movement_dynamics": 0.46255819147682475,
-        "compensation_context": 1.9683496700840686
+        "compensation_context": 1.9975245178883583
       }
     }
   },
@@ -2037,34 +2037,34 @@
     "initial_group": "control",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.18839784718206531,
+        "movement_capacity": 0.1846548610552539,
         "muscle_activation": 1.4832716248181792,
         "movement_dynamics": 2.3278551395263363,
-        "compensation_context": 0.497628107287497
+        "compensation_context": 0.9102676540118939
       },
       "shoulder_press": {
-        "movement_capacity": 0.12787692005821427,
+        "movement_capacity": 0.10272890152387575,
         "muscle_activation": 1.4783466848799625,
         "movement_dynamics": 1.0420810840807442,
-        "compensation_context": 0.22637460433282394
+        "compensation_context": 0.6706955932415888
       },
       "seated_row": {
-        "movement_capacity": 0.4959681486802563,
+        "movement_capacity": 0.4406334513131841,
         "muscle_activation": 2.1010198043635233,
         "movement_dynamics": 0.5867080502372984,
-        "compensation_context": 1.2035453146346742
+        "compensation_context": 1.166112902306738
       },
       "arm_curl": {
-        "movement_capacity": 0.040145380628027416,
+        "movement_capacity": 0.04731663063117049,
         "muscle_activation": 2.7894117565602574,
         "movement_dynamics": 1.3666727880786318,
-        "compensation_context": 2.4745577880512863
+        "compensation_context": 3.546640373879602
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.0011318109044708663,
+        "movement_capacity": 0.004034204057245479,
         "muscle_activation": 2.0490716253671017,
         "movement_dynamics": 2.457024062224934,
-        "compensation_context": 0.7827515596452684
+        "compensation_context": 1.592305762537887
       }
     }
   }
