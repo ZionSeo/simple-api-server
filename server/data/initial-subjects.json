@@ -4,35 +4,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.11157771803607906,
-        "muscle_activation": 0.708962387123658,
-        "movement_dynamics": 4.402843200474986,
-        "compensation_context": 1.7003924758348166
-      },
       "chest_press": {
-        "movement_capacity": 0.3025274904477392,
-        "muscle_activation": 0.8580080730074044,
-        "movement_dynamics": 1.2114220819939407,
-        "compensation_context": 2.9072804164873047
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.10367338608765318,
-        "muscle_activation": 1.0327353652759221,
-        "movement_dynamics": 0.8324153282098057,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.160350487632635,
-        "movement_dynamics": 4.573502473933772,
-        "compensation_context": 0.1944569309382769
+        "movement_capacity": 0.1826536523908014,
+        "muscle_activation": 0.7530727375502547,
+        "movement_dynamics": 1.6203894909952632,
+        "compensation_context": 1.576694927237471
       },
       "shoulder_press": {
-        "movement_capacity": 0.6856215031344939,
-        "muscle_activation": 0.48432622784399987,
-        "movement_dynamics": 3.204986587603015,
-        "compensation_context": 0.9819102365029656
+        "movement_capacity": 1.4581149283605424,
+        "muscle_activation": 1.0385980294277832,
+        "movement_dynamics": 2.3313937456390157,
+        "compensation_context": 0.295310954076858
+      },
+      "seated_row": {
+        "movement_capacity": 0.7880770225906871,
+        "muscle_activation": 0.7931721073812932,
+        "movement_dynamics": 1.57722915046237,
+        "compensation_context": 0.03774764522991366
+      },
+      "arm_curl": {
+        "movement_capacity": 0.1928209612209394,
+        "muscle_activation": 0.6375898064791595,
+        "movement_dynamics": 2.6990608048950655,
+        "compensation_context": 0.9971415801642225
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.42352070614035103,
+        "muscle_activation": 0.9502666875498043,
+        "movement_dynamics": 0.8790356844755596,
+        "compensation_context": 0.0
       }
     }
   },
@@ -41,35 +41,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.962743282935979,
-        "muscle_activation": 0.4250840605883428,
-        "movement_dynamics": 0.7889611610592882,
-        "compensation_context": 1.7739187609623828
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.7103491543025121,
-        "movement_dynamics": 0.6419046354860078,
-        "compensation_context": 0.6436790050916049
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.6471045384445124,
-        "muscle_activation": 0.7985002871895457,
-        "movement_dynamics": 1.0846246024535358,
-        "compensation_context": 0.9143974627800663
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.8868184824962648,
-        "movement_dynamics": 2.5492615818570514,
-        "compensation_context": 1.1447466344846924
+        "movement_capacity": 0.12725204145260785,
+        "muscle_activation": 1.1138431680980254,
+        "movement_dynamics": 0.34413743673244546,
+        "compensation_context": 0.6640737378306559
       },
       "shoulder_press": {
-        "movement_capacity": 1.917819650619479,
-        "muscle_activation": 0.7242218871407202,
-        "movement_dynamics": 0.41788850342499584,
-        "compensation_context": 0.1353037307249191
+        "movement_capacity": 2.437770231756688,
+        "muscle_activation": 0.38578908465030093,
+        "movement_dynamics": 1.3119859443743387,
+        "compensation_context": 0.0072793723286131195
+      },
+      "seated_row": {
+        "movement_capacity": 1.0184146767025017,
+        "muscle_activation": 0.3428777828976708,
+        "movement_dynamics": 0.8051494363306677,
+        "compensation_context": 0.4065228370727028
+      },
+      "arm_curl": {
+        "movement_capacity": 1.548975628090478,
+        "muscle_activation": 0.5304057346584813,
+        "movement_dynamics": 1.2295104221291382,
+        "compensation_context": 1.482140279137088
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.7807232186918447,
+        "muscle_activation": 1.3322042746565184,
+        "movement_dynamics": 0.7573574244943936,
+        "compensation_context": 0.20577424342662165
       }
     }
   },
@@ -78,35 +78,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.9636538674480248,
-        "muscle_activation": 1.932554352809697,
-        "movement_dynamics": 1.4723724648797614,
-        "compensation_context": 3.0166626213205783
-      },
       "chest_press": {
-        "movement_capacity": 0.24074451002813013,
-        "muscle_activation": 1.7707910911917402,
-        "movement_dynamics": 0.5896349159214803,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 1.8350031028308633,
-        "muscle_activation": 0.2731972434605046,
-        "movement_dynamics": 0.27804588274292663,
-        "compensation_context": 0.7466952205732883
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.5059950870622214,
-        "movement_dynamics": 2.512503380003219,
-        "compensation_context": 0.0
+        "movement_capacity": 0.2962438279581341,
+        "muscle_activation": 1.7483332127709788,
+        "movement_dynamics": 0.5903222927262723,
+        "compensation_context": 0.45889171985474186
       },
       "shoulder_press": {
-        "movement_capacity": 1.1777860299964706,
-        "muscle_activation": 0.7897573868708645,
-        "movement_dynamics": 0.4218791098366681,
-        "compensation_context": 0.5598028311581208
+        "movement_capacity": 1.6571435397102867,
+        "muscle_activation": 0.9218669515534836,
+        "movement_dynamics": 0.4999583772483539,
+        "compensation_context": 0.2700326462861854
+      },
+      "seated_row": {
+        "movement_capacity": 1.1904283604548995,
+        "muscle_activation": 1.9867614529091442,
+        "movement_dynamics": 1.2264560704539562,
+        "compensation_context": 0.1006929899308254
+      },
+      "arm_curl": {
+        "movement_capacity": 0.914431045527182,
+        "muscle_activation": 1.1667787388029354,
+        "movement_dynamics": 1.2149187278134634,
+        "compensation_context": 1.9479311853513728
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 2.0152921868451616,
+        "muscle_activation": 0.4415587363208734,
+        "movement_dynamics": 0.5826744504082366,
+        "compensation_context": 0.36036869584206155
       }
     }
   },
@@ -115,35 +115,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 2.5,
-        "muscle_activation": 0.5133757182621661,
-        "movement_dynamics": 2.603432899621976,
-        "compensation_context": 0.0
-      },
       "chest_press": {
-        "movement_capacity": 0.8004424587213566,
-        "muscle_activation": 2.788080987460913,
-        "movement_dynamics": 1.2584355615748377,
-        "compensation_context": 0.6913063820623626
+        "movement_capacity": 0.816913363858493,
+        "muscle_activation": 2.5624769168728823,
+        "movement_dynamics": 1.410174672676899,
+        "compensation_context": 0.3470230583177213
       },
-      "overhead_triceps_extension": {
-        "movement_capacity": 2.624627986450636,
-        "muscle_activation": 5.0,
-        "movement_dynamics": 2.4060366588033,
+      "shoulder_press": {
+        "movement_capacity": 3.9726901449515197,
+        "muscle_activation": 2.6687996894703314,
+        "movement_dynamics": 2.2218898339313333,
         "compensation_context": 0.0
       },
       "seated_row": {
-        "movement_capacity": 0.548596688505086,
-        "muscle_activation": 0.7431786250939227,
-        "movement_dynamics": 3.5403285396827977,
-        "compensation_context": 0.0
+        "movement_capacity": 1.3307117567056586,
+        "muscle_activation": 0.8702851692710412,
+        "movement_dynamics": 1.9401991209484197,
+        "compensation_context": 0.14519312775421966
       },
-      "shoulder_press": {
-        "movement_capacity": 3.9750085719285857,
-        "muscle_activation": 2.656759717718468,
-        "movement_dynamics": 1.7420795382939196,
-        "compensation_context": 0.0
+      "arm_curl": {
+        "movement_capacity": 2.039676055168319,
+        "muscle_activation": 0.6538338345188508,
+        "movement_dynamics": 2.451550018978572,
+        "compensation_context": 0.48627543346473995
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 2.445973258076659,
+        "muscle_activation": 3.881174023398702,
+        "movement_dynamics": 2.132297453938343,
+        "compensation_context": 0.7061840092215168
       }
     }
   },
@@ -152,35 +152,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 3.5024780710525825,
-        "muscle_activation": 0.772901071790501,
-        "movement_dynamics": 1.873189467681042,
-        "compensation_context": 2.509963083842545
-      },
       "chest_press": {
         "movement_capacity": 0.0,
-        "muscle_activation": 0.5952278151300352,
-        "movement_dynamics": 0.6445771344447001,
-        "compensation_context": 1.0339898562175989
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 1.3299300831340812,
-        "muscle_activation": 3.722333454386855,
-        "movement_dynamics": 0.33805916640079203,
-        "compensation_context": 1.81651698509174
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.4915699067663084,
-        "movement_dynamics": 2.031263790937387,
-        "compensation_context": 4.676862223490434
+        "muscle_activation": 0.5696974561253481,
+        "movement_dynamics": 0.5934093040782422,
+        "compensation_context": 1.1124720864755548
       },
       "shoulder_press": {
-        "movement_capacity": 0.9953138736442978,
-        "muscle_activation": 1.70433156794043,
-        "movement_dynamics": 2.134266058517966,
-        "compensation_context": 0.9856641414973518
+        "movement_capacity": 0.9163576364145245,
+        "muscle_activation": 1.4420307623544626,
+        "movement_dynamics": 2.3996571595501215,
+        "compensation_context": 0.9028721896189073
+      },
+      "seated_row": {
+        "movement_capacity": 0.8572787661429433,
+        "muscle_activation": 2.6794848161345097,
+        "movement_dynamics": 2.674649120813884,
+        "compensation_context": 2.611393377302334
+      },
+      "arm_curl": {
+        "movement_capacity": 2.6000152437002497,
+        "muscle_activation": 1.9901407675152183,
+        "movement_dynamics": 2.04949641972284,
+        "compensation_context": 1.1306860203708182
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.9521764339895329,
+        "muscle_activation": 3.5031966840945508,
+        "movement_dynamics": 0.9971005023447105,
+        "compensation_context": 0.6315283185718433
       }
     }
   },
@@ -189,35 +189,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.9805327082188513,
-        "muscle_activation": 1.5509385541784284,
-        "movement_dynamics": 0.8664564315296164,
-        "compensation_context": 3.285729003919925
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.947047491509445,
-        "movement_dynamics": 0.6349189709070275,
-        "compensation_context": 0.2069634178394484
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.2616982614821748,
-        "muscle_activation": 2.6648419959110585,
-        "movement_dynamics": 0.20793511623280825,
-        "compensation_context": 1.7799251172854202
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.6412234896765046,
-        "movement_dynamics": 1.7026059247932328,
-        "compensation_context": 0.0
+        "movement_capacity": 0.08737307249348966,
+        "muscle_activation": 2.101089450295083,
+        "movement_dynamics": 0.5003253860212752,
+        "compensation_context": 0.08324569097148651
       },
       "shoulder_press": {
-        "movement_capacity": 0.40914366132382635,
-        "muscle_activation": 2.5520300319623717,
-        "movement_dynamics": 1.2341802574981506,
-        "compensation_context": 0.0
+        "movement_capacity": 0.47888864960339905,
+        "muscle_activation": 2.254408327553648,
+        "movement_dynamics": 1.2902502543462298,
+        "compensation_context": 0.019107705945423024
+      },
+      "seated_row": {
+        "movement_capacity": 0.8028059469827016,
+        "muscle_activation": 2.2789628803062336,
+        "movement_dynamics": 1.82330241346373,
+        "compensation_context": 0.10170071927647481
+      },
+      "arm_curl": {
+        "movement_capacity": 0.7800441332544941,
+        "muscle_activation": 1.8104576440789177,
+        "movement_dynamics": 2.1604205110000967,
+        "compensation_context": 1.263182809419452
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.05884888115069575,
+        "muscle_activation": 2.2661219167029483,
+        "movement_dynamics": 1.469557258289396,
+        "compensation_context": 0.6803360574099611
       }
     }
   },
@@ -226,35 +226,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 1.0614864536406483,
-        "muscle_activation": 0.6410887274017785,
-        "movement_dynamics": 4.628429546132226,
-        "compensation_context": 0.5203020647682808
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 3.437265019114769,
-        "movement_dynamics": 0.20028920420603635,
-        "compensation_context": 0.37603325741124866
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.2225256782304132,
-        "movement_dynamics": 0.3640296245988171,
-        "compensation_context": 1.618623880059718
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.2579039597585604,
-        "movement_dynamics": 4.7403817414323,
-        "compensation_context": 0.0
+        "movement_capacity": 0.23544143133997608,
+        "muscle_activation": 2.8831616577822903,
+        "movement_dynamics": 1.0164805524967453,
+        "compensation_context": 0.2787955654072013
       },
       "shoulder_press": {
         "movement_capacity": 0.0,
-        "muscle_activation": 2.9867153715454737,
-        "movement_dynamics": 0.7668586432100595,
-        "compensation_context": 0.4047106654429717
+        "muscle_activation": 2.782797301573053,
+        "movement_dynamics": 1.5099491039032213,
+        "compensation_context": 0.34969563803329473
+      },
+      "seated_row": {
+        "movement_capacity": 0.24509861474895797,
+        "muscle_activation": 1.525200195015103,
+        "movement_dynamics": 3.8725853761860347,
+        "compensation_context": 0.16187531364425087
+      },
+      "arm_curl": {
+        "movement_capacity": 1.0796007636188678,
+        "muscle_activation": 1.4251138072961727,
+        "movement_dynamics": 4.291510133238297,
+        "compensation_context": 0.3821128172857625
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.08439026096806392,
+        "muscle_activation": 1.69058173554737,
+        "movement_dynamics": 0.8682492788598852,
+        "compensation_context": 0.9782752890134047
       }
     }
   },
@@ -263,35 +263,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.7788989469919614,
-        "muscle_activation": 1.2092435394622185,
-        "movement_dynamics": 5.0,
-        "compensation_context": 1.644469921204521
-      },
       "chest_press": {
-        "movement_capacity": 0.18785806733137372,
-        "muscle_activation": 3.0017258728513814,
-        "movement_dynamics": 1.4584613001815367,
-        "compensation_context": 0.8875570342920445
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.5129309420351157,
-        "muscle_activation": 1.649294135790962,
-        "movement_dynamics": 0.9605088839770487,
-        "compensation_context": 3.5298056366035304
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.602651951713264,
-        "movement_dynamics": 3.6349362421844695,
-        "compensation_context": 0.4833785838463601
+        "movement_capacity": 0.12522399585713695,
+        "muscle_activation": 2.3015183581903025,
+        "movement_dynamics": 0.9748481897477879,
+        "compensation_context": 0.45148744339258656
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.978614944883009,
-        "movement_dynamics": 0.7437596520104499,
-        "compensation_context": 0.901341987461797
+        "movement_capacity": 0.1887392162853457,
+        "muscle_activation": 1.75428970983313,
+        "movement_dynamics": 2.2132124477912134,
+        "compensation_context": 0.1714757770929262
+      },
+      "seated_row": {
+        "movement_capacity": 1.0,
+        "muscle_activation": 2.4193841421025937,
+        "movement_dynamics": 2.5492130631912824,
+        "compensation_context": 0.20678480813890604
+      },
+      "arm_curl": {
+        "movement_capacity": 0.9100876701766984,
+        "muscle_activation": 1.3888268316630308,
+        "movement_dynamics": 4.56289829938013,
+        "compensation_context": 0.846562460104396
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.37941048578219766,
+        "muscle_activation": 0.8459207854361952,
+        "movement_dynamics": 1.5239270171551915,
+        "compensation_context": 2.1503790930827607
       }
     }
   },
@@ -301,28 +301,28 @@
     "initial_group": "patient",
     "exercises": {
       "chest_press": {
-        "movement_capacity": 0.36547155518999996,
-        "muscle_activation": 1.367877170227762,
-        "movement_dynamics": 0.49445477053851183,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.08727807514708798,
-        "muscle_activation": 1.758911153345136,
-        "movement_dynamics": 0.698720015273515,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.0544574501192385,
-        "movement_dynamics": 4.455522959288959,
-        "compensation_context": 1.5240265009931917
+        "movement_capacity": 0.22263232452333964,
+        "muscle_activation": 1.3995413430938135,
+        "movement_dynamics": 0.3083600181933972,
+        "compensation_context": 0.088217914303153
       },
       "shoulder_press": {
-        "movement_capacity": 0.4639770947394204,
-        "muscle_activation": 0.6680592750185735,
-        "movement_dynamics": 0.7503925897341908,
-        "compensation_context": 0.6634572182117687
+        "movement_capacity": 0.9822040595831397,
+        "muscle_activation": 0.6233310045795559,
+        "movement_dynamics": 1.002180411829725,
+        "compensation_context": 0.15463521900040272
+      },
+      "seated_row": {
+        "movement_capacity": 0.22829994323741354,
+        "muscle_activation": 0.820993598407544,
+        "movement_dynamics": 2.5970644642557845,
+        "compensation_context": 0.878691699138583
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.2662438900898405,
+        "muscle_activation": 1.8273107741636638,
+        "movement_dynamics": 0.5661321890754685,
+        "compensation_context": 0.09307696381249561
       }
     },
     "missing_exercises": {
@@ -334,35 +334,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.3220511980996254,
-        "muscle_activation": 5.0,
-        "movement_dynamics": 2.5535368998210166,
-        "compensation_context": 0.3612103265438598
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.7749553004618126,
-        "movement_dynamics": 1.4862043752203853,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.5047569095488488,
-        "muscle_activation": 5.0,
-        "movement_dynamics": 1.337105655339872,
-        "compensation_context": 0.5897505823218673
-      },
-      "seated_row": {
-        "movement_capacity": 0.28776498365383807,
-        "muscle_activation": 2.81273133869119,
-        "movement_dynamics": 2.03434602488839,
-        "compensation_context": 0.0
+        "movement_capacity": 0.4006400296595164,
+        "muscle_activation": 2.787091213611834,
+        "movement_dynamics": 1.8011570184647365,
+        "compensation_context": 0.21361326229462313
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 3.0146994057042513,
-        "movement_dynamics": 2.769119705765389,
-        "compensation_context": 0.32190511651380427
+        "movement_capacity": 0.21162645237400185,
+        "muscle_activation": 2.4360989732732734,
+        "movement_dynamics": 1.7139725606607557,
+        "compensation_context": 0.20148271851353847
+      },
+      "seated_row": {
+        "movement_capacity": 0.8066588323937922,
+        "muscle_activation": 2.8505943883919804,
+        "movement_dynamics": 0.8602255517010313,
+        "compensation_context": 0.26912616553870916
+      },
+      "arm_curl": {
+        "movement_capacity": 0.4991190472746305,
+        "muscle_activation": 3.578197937606191,
+        "movement_dynamics": 1.3970538597143798,
+        "compensation_context": 0.2439219652004298
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.5281241857622356,
+        "muscle_activation": 3.677476743214629,
+        "movement_dynamics": 1.139205991767858,
+        "compensation_context": 1.298783194330574
       }
     }
   },
@@ -371,35 +371,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 1.242644437085902,
-        "muscle_activation": 1.048508919927323,
-        "movement_dynamics": 0.8067910138207837,
-        "compensation_context": 1.0411820911261815
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.7593262937991064,
-        "movement_dynamics": 0.4357008734707723,
-        "compensation_context": 0.25785938385649265
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 2.342071546439841,
-        "muscle_activation": 1.7854768638163319,
-        "movement_dynamics": 1.4809868085987923,
-        "compensation_context": 1.107690477836738
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.9595424003516244,
-        "movement_dynamics": 0.30191514248914886,
-        "compensation_context": 0.0
+        "movement_capacity": 0.20860243328972156,
+        "muscle_activation": 1.5486359159400271,
+        "movement_dynamics": 0.49936402603394636,
+        "compensation_context": 0.7075497427880812
       },
       "shoulder_press": {
-        "movement_capacity": 1.4423565764486983,
-        "muscle_activation": 1.358882271828432,
-        "movement_dynamics": 1.2395146644274733,
-        "compensation_context": 1.2972694050373847
+        "movement_capacity": 2.3289870733697913,
+        "muscle_activation": 0.7333944924144034,
+        "movement_dynamics": 1.086010077032553,
+        "compensation_context": 0.2550578174655976
+      },
+      "seated_row": {
+        "movement_capacity": 0.8700465870302346,
+        "muscle_activation": 0.9112197396608884,
+        "movement_dynamics": 1.3567414313729957,
+        "compensation_context": 0.1261488791035219
+      },
+      "arm_curl": {
+        "movement_capacity": 1.2905071962645134,
+        "muscle_activation": 1.094866935769498,
+        "movement_dynamics": 1.6428791664080564,
+        "compensation_context": 0.48268955295030186
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 2.0524746754035688,
+        "muscle_activation": 1.2962422045830695,
+        "movement_dynamics": 1.717618528283901,
+        "compensation_context": 0.9000560634957532
       }
     }
   },
@@ -408,35 +408,72 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 1.2992745698238737,
-        "muscle_activation": 0.8678759176525935,
-        "movement_dynamics": 0.6150105984476422,
-        "compensation_context": 0.6264288244840598
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.9368647877693856,
-        "movement_dynamics": 0.49884152341574584,
-        "compensation_context": 1.004253488118495
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 1.6709790663592647,
-        "muscle_activation": 1.184795678238605,
-        "movement_dynamics": 0.25774659067363087,
-        "compensation_context": 2.3875463093770524
-      },
-      "seated_row": {
-        "movement_capacity": 0.25977372525775455,
-        "muscle_activation": 0.6980044438030777,
-        "movement_dynamics": 1.6046656155174037,
-        "compensation_context": 0.27052553667216883
+        "movement_capacity": 0.40974533651780726,
+        "muscle_activation": 2.9548667982229495,
+        "movement_dynamics": 0.2829318582682372,
+        "compensation_context": 0.6425971326181531
       },
       "shoulder_press": {
-        "movement_capacity": 2.8879687172675474,
-        "muscle_activation": 0.7306235722404234,
-        "movement_dynamics": 2.060646389323431,
-        "compensation_context": 0.8390730432421782
+        "movement_capacity": 2.927841580926681,
+        "muscle_activation": 1.3163896355708025,
+        "movement_dynamics": 0.8875751181747228,
+        "compensation_context": 0.22064890264732145
+      },
+      "seated_row": {
+        "movement_capacity": 0.9885375298675024,
+        "muscle_activation": 0.4661902079398518,
+        "movement_dynamics": 0.9587310098651154,
+        "compensation_context": 0.24770044033544628
+      },
+      "arm_curl": {
+        "movement_capacity": 1.2663675624264783,
+        "muscle_activation": 0.9245591972015184,
+        "movement_dynamics": 1.1522533845481013,
+        "compensation_context": 0.44576037325116313
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 1.3314043031016012,
+        "muscle_activation": 1.2618801967796878,
+        "movement_dynamics": 1.3418682141027751,
+        "compensation_context": 1.088215476988465
+      }
+    }
+  },
+  {
+    "subject_id": "더조은/23. 안영자",
+    "institution": "더조은",
+    "initial_group": "patient",
+    "exercises": {
+      "chest_press": {
+        "movement_capacity": 0.29236067579956726,
+        "muscle_activation": 2.0257148118348463,
+        "movement_dynamics": 1.2613013789335894,
+        "compensation_context": 0.19119070551758274
+      },
+      "shoulder_press": {
+        "movement_capacity": 3.1452259410861716,
+        "muscle_activation": 0.04885862329920362,
+        "movement_dynamics": 1.1915917548701855,
+        "compensation_context": 0.7173016075905668
+      },
+      "seated_row": {
+        "movement_capacity": 1.1882874038874363,
+        "muscle_activation": 1.3344238902564298,
+        "movement_dynamics": 0.9109418092125976,
+        "compensation_context": 0.5585887180503355
+      },
+      "arm_curl": {
+        "movement_capacity": 2.1274866816398927,
+        "muscle_activation": 0.37350602070598504,
+        "movement_dynamics": 0.5493925046590846,
+        "compensation_context": 0.9026412581360651
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 1.991159887879493,
+        "muscle_activation": 1.9740438335262482,
+        "movement_dynamics": 0.6510395525483825,
+        "compensation_context": 1.2462229370479714
       }
     }
   },
@@ -445,35 +482,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 1.0476868468055358,
-        "muscle_activation": 3.365508572926508,
-        "movement_dynamics": 0.20483999819607285,
-        "compensation_context": 1.9850230711203507
-      },
       "chest_press": {
-        "movement_capacity": 0.1857859491697649,
-        "muscle_activation": 2.9621207641788274,
-        "movement_dynamics": 0.6207388356962099,
-        "compensation_context": 2.0786782623856577
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 1.7562841542000673,
-        "muscle_activation": 2.5879528038612953,
-        "movement_dynamics": 1.2178957032238893,
-        "compensation_context": 2.0685084599744483
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 4.95408616217182,
-        "movement_dynamics": 0.8398675815655084,
-        "compensation_context": 0.04944447812419432
+        "movement_capacity": 0.2945768017999847,
+        "muscle_activation": 3.3712184404069663,
+        "movement_dynamics": 0.32849686309085213,
+        "compensation_context": 1.0363125713098689
       },
       "shoulder_press": {
-        "movement_capacity": 0.24948733875612802,
-        "muscle_activation": 3.1401559134791253,
-        "movement_dynamics": 1.6059624999876587,
-        "compensation_context": 0.2759542903656626
+        "movement_capacity": 0.8215313401001891,
+        "muscle_activation": 1.3179298364812426,
+        "movement_dynamics": 1.4911467450446572,
+        "compensation_context": 0.05757609526546627
+      },
+      "seated_row": {
+        "movement_capacity": 1.1343519389361365,
+        "muscle_activation": 3.5635318084367134,
+        "movement_dynamics": 1.4197474801294763,
+        "compensation_context": 0.5113783269532426
+      },
+      "arm_curl": {
+        "movement_capacity": 1.526325381362368,
+        "muscle_activation": 2.5750199006524213,
+        "movement_dynamics": 0.8586620100869846,
+        "compensation_context": 0.9446269151943303
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 1.7918162169821008,
+        "muscle_activation": 2.2529505197681248,
+        "movement_dynamics": 1.2507519207398619,
+        "compensation_context": 1.7363997643203901
       }
     }
   },
@@ -482,35 +519,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 2.6417057170285942,
-        "muscle_activation": 0.5016262421885568,
-        "movement_dynamics": 1.6355575389993031,
-        "compensation_context": 1.699220453949262
-      },
       "chest_press": {
-        "movement_capacity": 0.31954644411166955,
-        "muscle_activation": 1.7301568258468216,
-        "movement_dynamics": 0.8221204786867671,
-        "compensation_context": 2.2031216337470556
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 1.8899408634784371,
-        "muscle_activation": 0.7482821048987203,
-        "movement_dynamics": 0.3727809923466548,
-        "compensation_context": 2.5963814349029746
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.6009080379094802,
-        "movement_dynamics": 0.20555597688846167,
-        "compensation_context": 2.0589968321549676
+        "movement_capacity": 0.5107414225712708,
+        "muscle_activation": 1.33613209864176,
+        "movement_dynamics": 1.6523299330109862,
+        "compensation_context": 0.6566821889090351
       },
       "shoulder_press": {
-        "movement_capacity": 2.320918620028121,
-        "muscle_activation": 0.43870367672490085,
-        "movement_dynamics": 2.946459143775607,
-        "compensation_context": 0.0
+        "movement_capacity": 2.5041915217794406,
+        "muscle_activation": 0.43893957811929707,
+        "movement_dynamics": 1.7818658811515151,
+        "compensation_context": 0.5272758197995299
+      },
+      "seated_row": {
+        "movement_capacity": 1.0990401185852883,
+        "muscle_activation": 1.1015307035011033,
+        "movement_dynamics": 1.816253363531327,
+        "compensation_context": 1.3222275721803585
+      },
+      "arm_curl": {
+        "movement_capacity": 2.1187880216729376,
+        "muscle_activation": 0.4353264104625363,
+        "movement_dynamics": 1.873274112926606,
+        "compensation_context": 1.0843795149959616
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 2.0212332039983565,
+        "muscle_activation": 0.5103927125080666,
+        "movement_dynamics": 0.3313706684369487,
+        "compensation_context": 1.7669573368442664
       }
     }
   },
@@ -519,35 +556,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 3.577659149552915,
-        "muscle_activation": 0.6947264306744068,
-        "movement_dynamics": 2.1402981204181484,
-        "compensation_context": 0.5231897042162772
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.466138782773491,
-        "movement_dynamics": 0.6445339678908955,
-        "compensation_context": 3.9951152596763886
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 1.1907751865348777,
-        "muscle_activation": 0.6927299525555871,
-        "movement_dynamics": 1.7294399426047105,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.8797026325493623,
-        "movement_dynamics": 2.16822890041634,
-        "compensation_context": 0.0
+        "movement_capacity": 0.10857919883895348,
+        "muscle_activation": 2.1860891620219083,
+        "movement_dynamics": 1.7556606845286447,
+        "compensation_context": 0.9825573544787876
       },
       "shoulder_press": {
-        "movement_capacity": 2.2673712048043244,
-        "muscle_activation": 1.4835938963050106,
-        "movement_dynamics": 1.7519082437578866,
-        "compensation_context": 1.5658903131851993
+        "movement_capacity": 2.2706093493558837,
+        "muscle_activation": 1.011627685388338,
+        "movement_dynamics": 1.9474123776974386,
+        "compensation_context": 0.27556853672067627
+      },
+      "seated_row": {
+        "movement_capacity": 1.0089660570323655,
+        "muscle_activation": 0.9755397438688512,
+        "movement_dynamics": 1.4987934679101584,
+        "compensation_context": 0.13440309564077632
+      },
+      "arm_curl": {
+        "movement_capacity": 2.9182685020164616,
+        "muscle_activation": 0.9989577098097866,
+        "movement_dynamics": 2.38745427515629,
+        "compensation_context": 0.15052527344706684
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 1.307149608380715,
+        "muscle_activation": 0.47898070923281233,
+        "movement_dynamics": 1.4319400293303823,
+        "compensation_context": 0.07196040243627463
       }
     }
   },
@@ -556,35 +593,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 3.243641688153235,
-        "movement_dynamics": 0.7964084104949711,
-        "compensation_context": 1.5124288145411968
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.98454918783242,
-        "movement_dynamics": 0.9327190015394751,
-        "compensation_context": 3.1428755843418963
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 4.835965351560385,
-        "movement_dynamics": 0.6999087668543125,
-        "compensation_context": 0.9398493089144192
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.938240833851946,
-        "movement_dynamics": 1.1321975703312626,
-        "compensation_context": 0.01310541668683357
+        "movement_capacity": 0.008024574381317281,
+        "muscle_activation": 2.3436664020446334,
+        "movement_dynamics": 0.6885280850347961,
+        "compensation_context": 0.4108075780351587
       },
       "shoulder_press": {
-        "movement_capacity": 1.086548407263423,
-        "muscle_activation": 2.7866014875443326,
-        "movement_dynamics": 0.4585634562068059,
+        "movement_capacity": 1.7805376589330764,
+        "muscle_activation": 2.0104192351830847,
+        "movement_dynamics": 0.9870103977304616,
         "compensation_context": 0.0
+      },
+      "seated_row": {
+        "movement_capacity": 0.6173256362412113,
+        "muscle_activation": 1.8493365140009603,
+        "movement_dynamics": 1.4187267496951115,
+        "compensation_context": 0.31000175621770926
+      },
+      "arm_curl": {
+        "movement_capacity": 0.061206326054187424,
+        "muscle_activation": 2.4628508575903463,
+        "movement_dynamics": 1.4253438413922392,
+        "compensation_context": 0.9541057716067616
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.7784023742211041,
+        "muscle_activation": 3.477302363385064,
+        "movement_dynamics": 0.6894213363444657,
+        "compensation_context": 0.20868016884690452
       }
     }
   },
@@ -593,35 +630,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 1.5673097381992152,
-        "muscle_activation": 0.7805014398771256,
-        "movement_dynamics": 0.707573530910735,
-        "compensation_context": 4.821474724116559
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.5822591111063169,
-        "movement_dynamics": 0.6933263941742589,
-        "compensation_context": 4.953730567803693
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.9598618030383459,
-        "muscle_activation": 1.0476999180520807,
-        "movement_dynamics": 1.6636583717540878,
-        "compensation_context": 5.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.5650955902545519,
-        "movement_dynamics": 3.131387836571011,
-        "compensation_context": 1.188261600980999
+        "movement_capacity": 0.24282770892014552,
+        "muscle_activation": 0.7270631243834516,
+        "movement_dynamics": 0.6031635091647838,
+        "compensation_context": 1.4543954968897996
       },
       "shoulder_press": {
-        "movement_capacity": 3.0843114060085335,
-        "muscle_activation": 0.8734318826216944,
-        "movement_dynamics": 1.6719419218306093,
-        "compensation_context": 3.4937316288338254
+        "movement_capacity": 3.129986376327845,
+        "muscle_activation": 0.5804301701149261,
+        "movement_dynamics": 1.4665149744255523,
+        "compensation_context": 1.4651880128656174
+      },
+      "seated_row": {
+        "movement_capacity": 0.30115347422373995,
+        "muscle_activation": 0.6644327667125408,
+        "movement_dynamics": 1.1338754622769076,
+        "compensation_context": 0.9337208974189084
+      },
+      "arm_curl": {
+        "movement_capacity": 1.261340829996723,
+        "muscle_activation": 0.5872589533316112,
+        "movement_dynamics": 1.288956842236271,
+        "compensation_context": 1.7070749123219897
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.6985696465867977,
+        "muscle_activation": 1.0768710090736677,
+        "movement_dynamics": 1.4642084371994724,
+        "compensation_context": 3.0
       }
     }
   },
@@ -630,35 +667,35 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.43560477562269106,
-        "muscle_activation": 0.6705849756685395,
-        "movement_dynamics": 1.264538840253417,
-        "compensation_context": 1.3351093586751799
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.8097838842994909,
-        "movement_dynamics": 0.8209185512769375,
-        "compensation_context": 0.08751816127889184
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.8922818449564124,
-        "muscle_activation": 1.2656049280864068,
-        "movement_dynamics": 2.4182413822876487,
-        "compensation_context": 2.3180338594902907
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.7426784999034446,
-        "movement_dynamics": 4.7471815356892275,
-        "compensation_context": 0.35192707255988126
+        "movement_capacity": 0.001810826123713834,
+        "muscle_activation": 1.5270024799188735,
+        "movement_dynamics": 0.5452997933656183,
+        "compensation_context": 0.2847855378992362
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.1309017487475947,
-        "movement_dynamics": 3.6488980278000858,
-        "compensation_context": 0.9389213732566066
+        "movement_capacity": 0.5936050583537651,
+        "muscle_activation": 1.6153984094994231,
+        "movement_dynamics": 3.244436829258689,
+        "compensation_context": 0.4383017671114088
+      },
+      "seated_row": {
+        "movement_capacity": 0.6941675735245214,
+        "muscle_activation": 1.6555027966866105,
+        "movement_dynamics": 1.7427242083287315,
+        "compensation_context": 0.18447124605404924
+      },
+      "arm_curl": {
+        "movement_capacity": 0.8928709628853857,
+        "muscle_activation": 0.953129134557799,
+        "movement_dynamics": 1.4951367539251366,
+        "compensation_context": 0.7963944614531461
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 1.589813426691323,
+        "muscle_activation": 1.1296146020667641,
+        "movement_dynamics": 2.0539556276777424,
+        "compensation_context": 1.2120854278532556
       }
     }
   },
@@ -667,35 +704,72 @@
     "institution": "더조은",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.20700196261811993,
-        "movement_dynamics": 0.8182771472854484,
-        "compensation_context": 0.48386934513197444
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.6735311883467132,
-        "movement_dynamics": 0.20098823513393127,
-        "compensation_context": 1.7325557878343756
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 1.4895651289178196,
-        "muscle_activation": 0.951675635645095,
-        "movement_dynamics": 1.0604505764566403,
-        "compensation_context": 0.7087694197485668
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.41300445329489044,
-        "movement_dynamics": 1.6882306385255996,
-        "compensation_context": 1.9902777000162726
+        "movement_capacity": 0.272325011682821,
+        "muscle_activation": 0.7317491030542473,
+        "movement_dynamics": 0.23909457880166074,
+        "compensation_context": 1.4749080876050047
       },
       "shoulder_press": {
-        "movement_capacity": 0.6003649331445411,
-        "muscle_activation": 0.6873541223512871,
-        "movement_dynamics": 0.29402232945451046,
-        "compensation_context": 0.2894884230313957
+        "movement_capacity": 1.368393807001727,
+        "muscle_activation": 0.6296105659304385,
+        "movement_dynamics": 0.4146826597612059,
+        "compensation_context": 0.25567772598510097
+      },
+      "seated_row": {
+        "movement_capacity": 0.3883832483860643,
+        "muscle_activation": 0.8056420634337507,
+        "movement_dynamics": 0.7790196792020778,
+        "compensation_context": 0.7981371861147606
+      },
+      "arm_curl": {
+        "movement_capacity": 0.2905581564224811,
+        "muscle_activation": 0.6135010676122081,
+        "movement_dynamics": 0.6109906691014951,
+        "compensation_context": 0.4368924130868635
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 1.3102848980546646,
+        "muscle_activation": 1.0583373710783561,
+        "movement_dynamics": 1.44883166013179,
+        "compensation_context": 0.5591855459283778
+      }
+    }
+  },
+  {
+    "subject_id": "에스포항/1. 박위곤",
+    "institution": "에스포항",
+    "initial_group": "patient",
+    "exercises": {
+      "chest_press": {
+        "movement_capacity": 0.3212540325220577,
+        "muscle_activation": 3.3361834587239083,
+        "movement_dynamics": 1.8442130058581152,
+        "compensation_context": 2.150616663008596
+      },
+      "shoulder_press": {
+        "movement_capacity": 2.066565483783403,
+        "muscle_activation": 2.4639682534420784,
+        "movement_dynamics": 2.6392531843874925,
+        "compensation_context": 0.6942635356867242
+      },
+      "seated_row": {
+        "movement_capacity": 0.8879864555017359,
+        "muscle_activation": 3.4671085734957714,
+        "movement_dynamics": 1.7144373391618983,
+        "compensation_context": 0.7371591477937525
+      },
+      "arm_curl": {
+        "movement_capacity": 1.2908892606329885,
+        "muscle_activation": 3.6148034365310853,
+        "movement_dynamics": 2.516861545898601,
+        "compensation_context": 1.5395843894362073
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.9570713179540182,
+        "muscle_activation": 2.7191161683777074,
+        "movement_dynamics": 2.568388196716223,
+        "compensation_context": 1.7726338149693928
       }
     }
   },
@@ -704,35 +778,35 @@
     "institution": "에스포항",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.1958617767969137,
-        "movement_dynamics": 0.4058448534104433,
-        "compensation_context": 3.0516016844816924
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.97130232137405,
-        "movement_dynamics": 0.5348334182645889,
-        "compensation_context": 4.4917435051067764
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.11905989033591,
-        "movement_dynamics": 1.7135041720955797,
-        "compensation_context": 1.3854459847901839
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.544990441395881,
-        "movement_dynamics": 1.5129470110974845,
-        "compensation_context": 1.1126566864673366
+        "movement_capacity": 0.19499976458652338,
+        "muscle_activation": 2.691232253665961,
+        "movement_dynamics": 0.5332460852969643,
+        "compensation_context": 1.2861148661013173
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.9572777570959644,
-        "movement_dynamics": 1.2034794323737419,
-        "compensation_context": 2.778296529935004
+        "movement_capacity": 0.024102622819235697,
+        "muscle_activation": 1.9352496803521153,
+        "movement_dynamics": 0.8645806189309926,
+        "compensation_context": 0.7242774441508111
+      },
+      "seated_row": {
+        "movement_capacity": 0.6542649619352731,
+        "muscle_activation": 1.6138755046347995,
+        "movement_dynamics": 1.5392816216611427,
+        "compensation_context": 0.4721713341352086
+      },
+      "arm_curl": {
+        "movement_capacity": 0.36392262202834075,
+        "muscle_activation": 1.3760515320577809,
+        "movement_dynamics": 1.3123559275287817,
+        "compensation_context": 1.5191272533837978
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.987834104470956,
+        "muscle_activation": 1.0412778247265375,
+        "movement_dynamics": 1.9302854777859615,
+        "compensation_context": 1.2935353845984516
       }
     }
   },
@@ -741,34 +815,34 @@
     "institution": "에스포항",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 1.1085952276906084,
-        "muscle_activation": 0.3695570761252694,
-        "movement_dynamics": 0.9487076762834368,
-        "compensation_context": 1.0916348772128848
-      },
       "chest_press": {
-        "movement_capacity": 0.24631154768466995,
-        "muscle_activation": 0.5918228775000912,
-        "movement_dynamics": 0.6518130286572709,
-        "compensation_context": 1.5247888724139302
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 1.2944507876306561,
-        "muscle_activation": 0.6550542091234559,
-        "movement_dynamics": 1.3369550120250606,
-        "compensation_context": 0.3406650736658039
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.1668887321453074,
-        "movement_dynamics": 0.9044411360255207,
-        "compensation_context": 1.7120674220547403
+        "movement_capacity": 0.22944095829067196,
+        "muscle_activation": 0.7009869905520281,
+        "movement_dynamics": 0.8044983737053838,
+        "compensation_context": 0.2907024593548786
       },
       "shoulder_press": {
-        "movement_capacity": 2.415331764483076,
-        "muscle_activation": 0.8540854387366597,
-        "movement_dynamics": 1.2919796316735521,
+        "movement_capacity": 2.7486849768327786,
+        "muscle_activation": 0.5566240190045673,
+        "movement_dynamics": 1.5919613248937337,
+        "compensation_context": 0.0
+      },
+      "seated_row": {
+        "movement_capacity": 0.7514563451075498,
+        "muscle_activation": 1.0896423367039476,
+        "movement_dynamics": 0.7914039294272996,
+        "compensation_context": 0.9399895807876149
+      },
+      "arm_curl": {
+        "movement_capacity": 1.043698684645065,
+        "muscle_activation": 0.3227949921668773,
+        "movement_dynamics": 1.5366649734925224,
+        "compensation_context": 0.2656430252028242
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 1.3674103573999983,
+        "muscle_activation": 0.6210141207004269,
+        "movement_dynamics": 1.531149720833434,
         "compensation_context": 0.0
       }
     }
@@ -778,35 +852,35 @@
     "institution": "에스포항",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.6199223726938042,
-        "muscle_activation": 2.258101648652789,
-        "movement_dynamics": 1.824885295721967,
-        "compensation_context": 0.4247061560064715
-      },
       "chest_press": {
         "movement_capacity": 0.0,
-        "muscle_activation": 0.6963501823193661,
-        "movement_dynamics": 0.4683954924409468,
-        "compensation_context": 2.4473850179573824
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.9031356984538719,
-        "muscle_activation": 3.147708513847946,
-        "movement_dynamics": 0.5225353341124368,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.1860649103854377,
-        "movement_dynamics": 2.1152750708852084,
-        "compensation_context": 0.8266457858630856
+        "muscle_activation": 1.7195511776742334,
+        "movement_dynamics": 0.371146490193084,
+        "compensation_context": 0.3904683323455004
       },
       "shoulder_press": {
-        "movement_capacity": 0.886334968461334,
-        "muscle_activation": 0.33430278107224287,
-        "movement_dynamics": 0.38171282867211387,
-        "compensation_context": 0.0
+        "movement_capacity": 0.7957017733662076,
+        "muscle_activation": 0.49200749852918146,
+        "movement_dynamics": 0.7530817327587129,
+        "compensation_context": 0.21838215657511445
+      },
+      "seated_row": {
+        "movement_capacity": 0.5260867125822557,
+        "muscle_activation": 1.5968213500520037,
+        "movement_dynamics": 1.953060122400754,
+        "compensation_context": 0.5520427864387869
+      },
+      "arm_curl": {
+        "movement_capacity": 0.6961427439538487,
+        "muscle_activation": 2.2904925048107763,
+        "movement_dynamics": 2.7411678455650526,
+        "compensation_context": 0.5333315761582186
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 1.1234919149253106,
+        "muscle_activation": 2.5464868515938077,
+        "movement_dynamics": 1.1404920595781007,
+        "compensation_context": 0.13826134918639638
       }
     }
   },
@@ -815,35 +889,35 @@
     "institution": "에스포항",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.26408197228089725,
-        "muscle_activation": 0.814168094263615,
-        "movement_dynamics": 3.1763678277724097,
-        "compensation_context": 2.5382745751216165
-      },
       "chest_press": {
-        "movement_capacity": 0.9339069554425288,
-        "muscle_activation": 2.805033406373661,
-        "movement_dynamics": 0.3441019698912704,
-        "compensation_context": 3.873558467302259
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 1.2816249818639482,
-        "muscle_activation": 1.4870857309494012,
-        "movement_dynamics": 3.5193990563121553,
-        "compensation_context": 4.880580366641732
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 3.222726460260954,
-        "movement_dynamics": 1.5598386596292673,
-        "compensation_context": 2.1668927170584085
+        "movement_capacity": 0.8947467906516342,
+        "muscle_activation": 2.853916762467349,
+        "movement_dynamics": 0.7241348934045079,
+        "compensation_context": 1.9934452590498435
       },
       "shoulder_press": {
-        "movement_capacity": 0.3119084006447235,
-        "muscle_activation": 3.2609181739612922,
-        "movement_dynamics": 0.6504160018894447,
-        "compensation_context": 1.9560734566138913
+        "movement_capacity": 0.237183152278734,
+        "muscle_activation": 2.7448977583312124,
+        "movement_dynamics": 0.9268095541942949,
+        "compensation_context": 0.8592487110487506
+      },
+      "seated_row": {
+        "movement_capacity": 0.5021690573032426,
+        "muscle_activation": 2.599994308836836,
+        "movement_dynamics": 0.837312189149118,
+        "compensation_context": 1.0938995431567313
+      },
+      "arm_curl": {
+        "movement_capacity": 1.3271774783063026,
+        "muscle_activation": 1.0231585032249813,
+        "movement_dynamics": 1.5980247521907165,
+        "compensation_context": 1.9716503966376986
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 1.9956528585887687,
+        "muscle_activation": 1.4989911240133125,
+        "movement_dynamics": 1.3830925806712104,
+        "compensation_context": 2.050033915393672
       }
     }
   },
@@ -852,35 +926,35 @@
     "institution": "에스포항",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 1.4151762639901342,
-        "muscle_activation": 2.735051508769912,
-        "movement_dynamics": 0.7739080029362909,
-        "compensation_context": 0.5767312169190993
-      },
       "chest_press": {
-        "movement_capacity": 0.949651414114681,
-        "muscle_activation": 2.9162176440220886,
-        "movement_dynamics": 0.27537963161101914,
-        "compensation_context": 0.3387615227633526
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.03374453261417814,
-        "muscle_activation": 2.9338646101248673,
-        "movement_dynamics": 0.5843807084867263,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.604075229448299,
-        "muscle_activation": 2.7353002093118675,
-        "movement_dynamics": 0.5161262670608273,
-        "compensation_context": 0.0
+        "movement_capacity": 0.7003901455673474,
+        "muscle_activation": 2.756443716347172,
+        "movement_dynamics": 0.9409649802830022,
+        "compensation_context": 0.44869746506301295
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.5925237989724343,
-        "movement_dynamics": 0.39237742779910434,
-        "compensation_context": 0.6560951785927608
+        "movement_capacity": 0.3755775231388132,
+        "muscle_activation": 2.303371406214603,
+        "movement_dynamics": 0.9233663710000342,
+        "compensation_context": 0.3074858735859343
+      },
+      "seated_row": {
+        "movement_capacity": 0.7931907826411071,
+        "muscle_activation": 2.479682177841822,
+        "movement_dynamics": 1.5214742244013295,
+        "compensation_context": 0.22624782547156558
+      },
+      "arm_curl": {
+        "movement_capacity": 1.4842657529216587,
+        "muscle_activation": 2.1753221575040604,
+        "movement_dynamics": 0.9436998662547027,
+        "compensation_context": 0.5218113407255524
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.31696037221146506,
+        "muscle_activation": 2.399424791145017,
+        "movement_dynamics": 0.7774493960690934,
+        "compensation_context": 0.4745917575442868
       }
     }
   },
@@ -889,35 +963,35 @@
     "institution": "에스포항",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 3.653760770752535,
-        "muscle_activation": 1.5956043356241603,
-        "movement_dynamics": 0.6204068637412337,
-        "compensation_context": 1.5451811536719822
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.9121989722864137,
-        "movement_dynamics": 0.4089695978388761,
-        "compensation_context": 1.4956244019671108
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.584418088604007,
-        "movement_dynamics": 1.6034825794679488,
-        "compensation_context": 0.1057915838248034
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.9009289091325907,
-        "movement_dynamics": 0.5508939286095352,
-        "compensation_context": 0.8933425820128356
+        "movement_capacity": 0.04494385692936195,
+        "muscle_activation": 3.3025135496209144,
+        "movement_dynamics": 0.5197678809571982,
+        "compensation_context": 0.38795007519726393
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.3645133967541576,
-        "movement_dynamics": 3.1220279847233785,
-        "compensation_context": 0.3271569603354766
+        "movement_capacity": 0.11302459897271463,
+        "muscle_activation": 2.338122543890606,
+        "movement_dynamics": 2.398070845313477,
+        "compensation_context": 0.6062233537639549
+      },
+      "seated_row": {
+        "movement_capacity": 0.26753002358296013,
+        "muscle_activation": 1.1924716393083277,
+        "movement_dynamics": 1.0085272125048337,
+        "compensation_context": 0.42179696457864085
+      },
+      "arm_curl": {
+        "movement_capacity": 2.8079707093374138,
+        "muscle_activation": 1.6029162396210461,
+        "movement_dynamics": 1.8747106811249514,
+        "compensation_context": 1.14795888597197
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 1.0328403549059684,
+        "muscle_activation": 2.5437603832488205,
+        "movement_dynamics": 1.8434841647066402,
+        "compensation_context": 1.530359115981852
       }
     }
   },
@@ -926,109 +1000,35 @@
     "institution": "에스포항",
     "initial_group": "patient",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 1.3176669344304737,
-        "muscle_activation": 5.0,
-        "movement_dynamics": 2.063435691934455,
-        "compensation_context": 5.0
-      },
       "chest_press": {
-        "movement_capacity": 0.34512886712855567,
-        "muscle_activation": 2.7369409560831195,
-        "movement_dynamics": 0.5836460585899386,
-        "compensation_context": 1.326792649169108
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.4798357061983579,
-        "muscle_activation": 4.484450874790703,
-        "movement_dynamics": 1.4628492521830907,
-        "compensation_context": 0.97999551972195
-      },
-      "seated_row": {
-        "movement_capacity": 0.46482172114672515,
-        "muscle_activation": 2.5105979523713056,
-        "movement_dynamics": 0.9392937553944347,
-        "compensation_context": 1.578876169730006
+        "movement_capacity": 0.42372425640867384,
+        "muscle_activation": 2.183060366861717,
+        "movement_dynamics": 0.6284157294677573,
+        "compensation_context": 0.594027136860134
       },
       "shoulder_press": {
-        "movement_capacity": 0.26147715636450547,
-        "muscle_activation": 3.041405843529881,
-        "movement_dynamics": 0.5268989826186359,
-        "compensation_context": 2.1952451977748924
-      }
-    }
-  },
-  {
-    "subject_id": "에스포항/8. 김점숙",
-    "institution": "에스포항",
-    "initial_group": "patient",
-    "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.5417716194183767,
-        "muscle_activation": 2.7408802730558706,
-        "movement_dynamics": 1.51127735135217,
-        "compensation_context": 4.657059460013443
-      },
-      "chest_press": {
-        "movement_capacity": 0.07801240197254758,
-        "muscle_activation": 2.2100183587444793,
-        "movement_dynamics": 1.1440571840457023,
-        "compensation_context": 4.385479621220128
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 1.3741396352957573,
-        "muscle_activation": 4.98402472912662,
-        "movement_dynamics": 1.8016947437543391,
-        "compensation_context": 4.114465621484145
+        "movement_capacity": 0.6958284734616094,
+        "muscle_activation": 3.033856501635495,
+        "movement_dynamics": 0.9543790115169526,
+        "compensation_context": 1.3404708696388012
       },
       "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 5.0,
-        "movement_dynamics": 0.7388601868628233,
-        "compensation_context": 2.456386670747262
+        "movement_capacity": 0.9496859190498992,
+        "muscle_activation": 2.213717344063188,
+        "movement_dynamics": 1.6465521271568146,
+        "compensation_context": 0.6988924488312334
       },
-      "shoulder_press": {
-        "movement_capacity": 2.2401875243497225,
-        "muscle_activation": 3.9141934018397784,
-        "movement_dynamics": 1.0631714311176639,
-        "compensation_context": 1.0300325236440158
-      }
-    }
-  },
-  {
-    "subject_id": "에스포항/9. 김성희",
-    "institution": "에스포항",
-    "initial_group": "patient",
-    "exercises": {
       "arm_curl": {
-        "movement_capacity": 0.5074948810385252,
-        "muscle_activation": 5.0,
-        "movement_dynamics": 0.23959949642030026,
-        "compensation_context": 0.0
-      },
-      "chest_press": {
-        "movement_capacity": 0.7044566209224462,
-        "muscle_activation": 5.0,
-        "movement_dynamics": 0.3009571052601881,
-        "compensation_context": 0.0
+        "movement_capacity": 1.1028058833565955,
+        "muscle_activation": 4.044142553268818,
+        "movement_dynamics": 2.9722614574660264,
+        "compensation_context": 1.4631918952975247
       },
       "overhead_triceps_extension": {
-        "movement_capacity": 0.4640416302020379,
-        "muscle_activation": 5.0,
-        "movement_dynamics": 1.4684450710967796,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 5.0,
-        "movement_dynamics": 2.747258396200417,
-        "compensation_context": 0.0
-      },
-      "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 5.0,
-        "movement_dynamics": 0.783510603326836,
-        "compensation_context": 0.0
+        "movement_capacity": 0.4940106191889374,
+        "muscle_activation": 3.4247009531127874,
+        "movement_dynamics": 0.679253422330538,
+        "compensation_context": 0.7612708117504937
       }
     }
   },
@@ -1037,35 +1037,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.10102339273966203,
-        "muscle_activation": 0.34240505885583544,
-        "movement_dynamics": 5.0,
-        "compensation_context": 0.19366410616011917
-      },
       "chest_press": {
-        "movement_capacity": 1.2742016388626476,
-        "muscle_activation": 0.8096853870499336,
-        "movement_dynamics": 0.7143448278819196,
-        "compensation_context": 0.14350041142711042
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.3794296806594921,
-        "movement_dynamics": 0.34757276076668575,
-        "compensation_context": 0.09361207332368893
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.7996296464941679,
-        "movement_dynamics": 0.22244929108547928,
-        "compensation_context": 0.0
+        "movement_capacity": 1.1672302136975148,
+        "muscle_activation": 0.5409258496645195,
+        "movement_dynamics": 1.2439155029480675,
+        "compensation_context": 0.2749722398631043
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.7367085888566578,
-        "movement_dynamics": 0.8278210943643605,
-        "compensation_context": 0.7074358255916743
+        "movement_capacity": 0.06961032427207041,
+        "muscle_activation": 0.5095795771624265,
+        "movement_dynamics": 1.9045658805669403,
+        "compensation_context": 0.14287573941645096
+      },
+      "seated_row": {
+        "movement_capacity": 0.49663504943802117,
+        "muscle_activation": 1.0120535693086845,
+        "movement_dynamics": 0.6170160714807618,
+        "compensation_context": 0.26846674640558493
+      },
+      "arm_curl": {
+        "movement_capacity": 0.1286424750426558,
+        "muscle_activation": 0.34397992467154487,
+        "movement_dynamics": 1.6765774955737396,
+        "compensation_context": 0.30962020789318956
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.12271876552310909,
+        "muscle_activation": 1.29248071744433,
+        "movement_dynamics": 1.7307910409165013,
+        "compensation_context": 0.43983883922287087
       }
     }
   },
@@ -1074,35 +1074,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.21146146786659548,
-        "movement_dynamics": 0.52337559766035,
-        "compensation_context": 0.03926997123601996
-      },
       "chest_press": {
-        "movement_capacity": 0.02477468329236734,
-        "muscle_activation": 0.8271022421747884,
-        "movement_dynamics": 0.9496699768881979,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.6522491998436726,
-        "movement_dynamics": 0.5821380751773422,
-        "compensation_context": 0.19433881194017022
-      },
-      "seated_row": {
-        "movement_capacity": 0.00554703313986604,
-        "muscle_activation": 0.5009314537022801,
-        "movement_dynamics": 0.236209729459265,
-        "compensation_context": 0.0
+        "movement_capacity": 0.14877312593636624,
+        "muscle_activation": 1.0591808152055457,
+        "movement_dynamics": 0.6854959095101203,
+        "compensation_context": 0.03617332608148327
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.9226534434036724,
-        "movement_dynamics": 0.9845808635963303,
-        "compensation_context": 0.0
+        "movement_capacity": 0.05659225259698992,
+        "muscle_activation": 1.9688504625541303,
+        "movement_dynamics": 2.3010070820042166,
+        "compensation_context": 0.1354915920603828
+      },
+      "seated_row": {
+        "movement_capacity": 0.32404131305961215,
+        "muscle_activation": 0.5840452077395155,
+        "movement_dynamics": 0.5135866918921987,
+        "compensation_context": 0.309275647699441
+      },
+      "arm_curl": {
+        "movement_capacity": 0.06246285721601329,
+        "muscle_activation": 0.24062069844287187,
+        "movement_dynamics": 1.0331603300628494,
+        "compensation_context": 0.15686193918165764
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.010007415972524017,
+        "muscle_activation": 1.227359011281512,
+        "movement_dynamics": 0.8158177277111025,
+        "compensation_context": 0.3324464345430522
       }
     }
   },
@@ -1111,35 +1111,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 1.1435242145420474,
-        "muscle_activation": 0.4761808445616979,
-        "movement_dynamics": 0.6558043451262212,
-        "compensation_context": 0.0
-      },
       "chest_press": {
-        "movement_capacity": 0.2642825392304692,
-        "muscle_activation": 0.7407853045454602,
-        "movement_dynamics": 0.7274313324042797,
-        "compensation_context": 0.0
+        "movement_capacity": 0.32448326881438716,
+        "muscle_activation": 0.6871452135098781,
+        "movement_dynamics": 0.835866817833346,
+        "compensation_context": 0.3027616311311275
+      },
+      "shoulder_press": {
+        "movement_capacity": 1.1635140534698765,
+        "muscle_activation": 1.776311572520572,
+        "movement_dynamics": 0.9731408673146738,
+        "compensation_context": 0.22784874166263142
+      },
+      "seated_row": {
+        "movement_capacity": 1.0059183472127522,
+        "muscle_activation": 0.6372376841090038,
+        "movement_dynamics": 1.6144246623628424,
+        "compensation_context": 0.15322276429781118
+      },
+      "arm_curl": {
+        "movement_capacity": 1.328363731555172,
+        "muscle_activation": 0.6636965652931643,
+        "movement_dynamics": 1.650039086224673,
+        "compensation_context": 0.8585121059066603
       },
       "overhead_triceps_extension": {
         "movement_capacity": 0.0,
-        "muscle_activation": 2.6492143594822233,
-        "movement_dynamics": 0.4728314684159577,
-        "compensation_context": 0.5564085053895554
-      },
-      "seated_row": {
-        "movement_capacity": 0.18276444868714406,
-        "muscle_activation": 0.7463242021321053,
-        "movement_dynamics": 0.5210888695350127,
-        "compensation_context": 0.0
-      },
-      "shoulder_press": {
-        "movement_capacity": 0.0564588141826658,
-        "muscle_activation": 1.9407807276165405,
-        "movement_dynamics": 0.6217844197051297,
-        "compensation_context": 0.0
+        "muscle_activation": 2.4454189272970086,
+        "movement_dynamics": 0.4658657685503779,
+        "compensation_context": 0.31645746621112625
       }
     }
   },
@@ -1148,35 +1148,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.47050718029525496,
-        "movement_dynamics": 0.8580585418267392,
-        "compensation_context": 0.663003774301103
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.5123878754672594,
-        "movement_dynamics": 1.2662005895452317,
-        "compensation_context": 2.067994110933666
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.7083649295795855,
-        "movement_dynamics": 0.8612392355025281,
-        "compensation_context": 2.412164500331933
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.7127486336815242,
-        "movement_dynamics": 1.9139895342947537,
-        "compensation_context": 0.8559630941031889
+        "movement_capacity": 0.15744969012053694,
+        "muscle_activation": 0.8894109220761446,
+        "movement_dynamics": 2.1899721713183906,
+        "compensation_context": 1.0026048321742764
       },
       "shoulder_press": {
-        "movement_capacity": 0.025960954974583738,
-        "muscle_activation": 0.7890973184347372,
-        "movement_dynamics": 1.4313135955543075,
-        "compensation_context": 2.2180648533232716
+        "movement_capacity": 0.038679221903343684,
+        "muscle_activation": 0.9234146414729363,
+        "movement_dynamics": 1.9691679028430131,
+        "compensation_context": 2.5739906002304673
+      },
+      "seated_row": {
+        "movement_capacity": 0.046151576449270384,
+        "muscle_activation": 0.4280380343784139,
+        "movement_dynamics": 1.5046849186199647,
+        "compensation_context": 0.8522057650952245
+      },
+      "arm_curl": {
+        "movement_capacity": 0.08288969371387814,
+        "muscle_activation": 0.4112461971468735,
+        "movement_dynamics": 1.1572482217716205,
+        "compensation_context": 0.5838297024589971
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.7701690645492607,
+        "muscle_activation": 0.6102714574284175,
+        "movement_dynamics": 0.8710779228912928,
+        "compensation_context": 2.4434157983370506
       }
     }
   },
@@ -1185,34 +1185,34 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.9859820069313033,
-        "muscle_activation": 0.8628579466206265,
-        "movement_dynamics": 0.4708575658325521,
-        "compensation_context": 0.0
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.6923218612974817,
-        "movement_dynamics": 1.2914155669060765,
-        "compensation_context": 0.0
+        "movement_capacity": 0.18856572170671643,
+        "muscle_activation": 2.4543390158611964,
+        "movement_dynamics": 1.3313967479760564,
+        "compensation_context": 0.07820848642410183
       },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.4992281850832483,
-        "muscle_activation": 0.5951705488100482,
-        "movement_dynamics": 0.9010025391773471,
+      "shoulder_press": {
+        "movement_capacity": 1.17144741402891,
+        "muscle_activation": 1.5331732448843312,
+        "movement_dynamics": 1.1474789906917526,
         "compensation_context": 0.0
       },
       "seated_row": {
-        "movement_capacity": 0.4163070936640315,
-        "muscle_activation": 0.6335083776496063,
-        "movement_dynamics": 0.5127885986812244,
-        "compensation_context": 0.11648697222373423
+        "movement_capacity": 0.2604703858964838,
+        "muscle_activation": 0.7267580375120819,
+        "movement_dynamics": 0.8939635688382198,
+        "compensation_context": 0.2730818741914349
       },
-      "shoulder_press": {
-        "movement_capacity": 1.0787251527498856,
-        "muscle_activation": 2.7082508613984473,
-        "movement_dynamics": 0.9551267080706203,
+      "arm_curl": {
+        "movement_capacity": 0.8966805686329624,
+        "muscle_activation": 1.9293014997332807,
+        "movement_dynamics": 0.5570779351982389,
+        "compensation_context": 0.28257978017784857
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.7605005223139232,
+        "muscle_activation": 0.4179828380376162,
+        "movement_dynamics": 0.49800478607921883,
         "compensation_context": 0.0
       }
     }
@@ -1222,35 +1222,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.4028559517969274,
-        "movement_dynamics": 4.431542302186417,
-        "compensation_context": 0.05237733579090048
-      },
       "chest_press": {
         "movement_capacity": 0.0,
-        "muscle_activation": 1.2861777884784464,
-        "movement_dynamics": 1.1059740147491945,
-        "compensation_context": 1.5279233323892003
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.5585667673960277,
-        "movement_dynamics": 2.7475999439307492,
-        "compensation_context": 0.07339492513910752
-      },
-      "seated_row": {
-        "movement_capacity": 0.4439449011110189,
-        "muscle_activation": 0.5206761831252422,
-        "movement_dynamics": 0.674134834589464,
-        "compensation_context": 0.3882798885774538
+        "muscle_activation": 1.18355101325391,
+        "movement_dynamics": 1.1539364253744249,
+        "compensation_context": 0.7520071915859101
       },
       "shoulder_press": {
-        "movement_capacity": 0.1497594858682721,
-        "muscle_activation": 0.909971556162106,
-        "movement_dynamics": 0.740389257000426,
-        "compensation_context": 0.0
+        "movement_capacity": 0.17084661510614174,
+        "muscle_activation": 0.45597959105500985,
+        "movement_dynamics": 0.64802038082282,
+        "compensation_context": 0.4474516227881658
+      },
+      "seated_row": {
+        "movement_capacity": 0.40788818683058686,
+        "muscle_activation": 0.4757840033831712,
+        "movement_dynamics": 1.734667254488561,
+        "compensation_context": 0.2067229626744243
+      },
+      "arm_curl": {
+        "movement_capacity": 0.2875802771442064,
+        "muscle_activation": 1.1865618500463169,
+        "movement_dynamics": 1.4100864809649853,
+        "compensation_context": 0.17792104581496673
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.14249460571779043,
+        "muscle_activation": 0.4715471893511456,
+        "movement_dynamics": 2.4056485038167583,
+        "compensation_context": 0.06951863133677985
       }
     }
   },
@@ -1259,35 +1259,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.4547840074543323,
-        "muscle_activation": 0.8016605932168654,
-        "movement_dynamics": 0.2858687255075405,
-        "compensation_context": 2.2046837083328756
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.3506416543159938,
-        "movement_dynamics": 0.2737208622208643,
-        "compensation_context": 0.20348063418308646
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 1.1065767443492882,
-        "muscle_activation": 0.6292011150089035,
-        "movement_dynamics": 0.3349813368257611,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.1784469954241471,
-        "muscle_activation": 0.5615899116892689,
-        "movement_dynamics": 0.5875331193049877,
-        "compensation_context": 0.42545895296165565
+        "movement_capacity": 0.22285461917125438,
+        "muscle_activation": 0.44508334375526426,
+        "movement_dynamics": 1.5819529929678653,
+        "compensation_context": 0.3721118475051648
       },
       "shoulder_press": {
-        "movement_capacity": 0.5544891605537766,
-        "muscle_activation": 0.42463549174580517,
-        "movement_dynamics": 0.7190203144323795,
-        "compensation_context": 0.2906431321151956
+        "movement_capacity": 0.6762413134441674,
+        "muscle_activation": 0.4050321842872537,
+        "movement_dynamics": 0.899690201559527,
+        "compensation_context": 0.35032869018844676
+      },
+      "seated_row": {
+        "movement_capacity": 0.2558575107342408,
+        "muscle_activation": 0.49451148132392986,
+        "movement_dynamics": 0.531075551948621,
+        "compensation_context": 0.7578371831990632
+      },
+      "arm_curl": {
+        "movement_capacity": 0.5091071168349897,
+        "muscle_activation": 0.5156215536626783,
+        "movement_dynamics": 0.5103922122676245,
+        "compensation_context": 1.2884496885325267
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.9155672977002488,
+        "muscle_activation": 0.5229326009268828,
+        "movement_dynamics": 1.075189895777029,
+        "compensation_context": 0.655915915670253
       }
     }
   },
@@ -1296,35 +1296,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.4863725471203101,
-        "muscle_activation": 0.2921703964550987,
-        "movement_dynamics": 0.7866286200996235,
-        "compensation_context": 1.4947112631313784
-      },
       "chest_press": {
-        "movement_capacity": 0.5510826536283546,
-        "muscle_activation": 0.3427702313609599,
-        "movement_dynamics": 2.6908847280592303,
-        "compensation_context": 2.144219757251052
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.43275721382527077,
-        "movement_dynamics": 1.1012449821899764,
-        "compensation_context": 0.40306396223893864
-      },
-      "seated_row": {
-        "movement_capacity": 0.5091986162619182,
-        "muscle_activation": 0.5886244220424842,
-        "movement_dynamics": 2.541576190573978,
-        "compensation_context": 0.37307931673298167
+        "movement_capacity": 0.4749474797899427,
+        "muscle_activation": 0.5256518013750502,
+        "movement_dynamics": 2.440937600154453,
+        "compensation_context": 1.299094873402458
       },
       "shoulder_press": {
-        "movement_capacity": 0.2039818246198322,
-        "muscle_activation": 0.5355360595005416,
-        "movement_dynamics": 3.304763043704793,
-        "compensation_context": 0.7517381377932816
+        "movement_capacity": 0.9018568559266325,
+        "muscle_activation": 0.5940345378951251,
+        "movement_dynamics": 3.2153354162427936,
+        "compensation_context": 0.2847348379128324
+      },
+      "seated_row": {
+        "movement_capacity": 0.46767088577611804,
+        "muscle_activation": 0.6056588703429016,
+        "movement_dynamics": 2.3727877255759973,
+        "compensation_context": 0.5169081948026649
+      },
+      "arm_curl": {
+        "movement_capacity": 0.44298152337015023,
+        "muscle_activation": 0.23323637668140568,
+        "movement_dynamics": 1.4308572152410821,
+        "compensation_context": 0.5914848038223565
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.010247324217573652,
+        "muscle_activation": 0.38208886544830895,
+        "movement_dynamics": 0.7754743393166327,
+        "compensation_context": 0.16807821979246368
       }
     }
   },
@@ -1333,35 +1333,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.5472424760470009,
-        "muscle_activation": 1.5868593143460898,
-        "movement_dynamics": 0.3349681506163822,
-        "compensation_context": 0.0
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.8436198328501341,
-        "movement_dynamics": 0.5674021412372434,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.5319152571433832,
-        "muscle_activation": 2.818928011357325,
-        "movement_dynamics": 0.8043712972528266,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.11589490519596823,
-        "muscle_activation": 1.9622309907463578,
-        "movement_dynamics": 0.9566408225629432,
-        "compensation_context": 0.0
+        "movement_capacity": 0.15092998790222417,
+        "muscle_activation": 0.7262513130459418,
+        "movement_dynamics": 0.6258511037616585,
+        "compensation_context": 0.132824670538123
       },
       "shoulder_press": {
-        "movement_capacity": 0.1995903384055158,
-        "muscle_activation": 0.704425490795864,
-        "movement_dynamics": 0.7154362636016312,
-        "compensation_context": 0.0
+        "movement_capacity": 0.24760020601604732,
+        "muscle_activation": 1.0390321716053994,
+        "movement_dynamics": 0.514320387576084,
+        "compensation_context": 0.16252595290813604
+      },
+      "seated_row": {
+        "movement_capacity": 0.2573690971189752,
+        "muscle_activation": 1.4842789437170256,
+        "movement_dynamics": 0.4511071796996125,
+        "compensation_context": 0.17787771997894875
+      },
+      "arm_curl": {
+        "movement_capacity": 0.5382336359278903,
+        "muscle_activation": 1.2846690242227263,
+        "movement_dynamics": 0.2599395539461049,
+        "compensation_context": 0.12174614678256926
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.457358465669651,
+        "muscle_activation": 2.4984500744536775,
+        "movement_dynamics": 0.740358203539342,
+        "compensation_context": 0.05623832124308684
       }
     }
   },
@@ -1370,35 +1370,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.25093779218771506,
-        "muscle_activation": 0.9354475635496188,
-        "movement_dynamics": 0.6845929936728001,
-        "compensation_context": 0.0
-      },
       "chest_press": {
-        "movement_capacity": 0.6888973635154346,
-        "muscle_activation": 0.6597090453209585,
-        "movement_dynamics": 0.9385290225170315,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.5653236527889284,
-        "movement_dynamics": 0.35189357289797885,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.6576790964827575,
-        "muscle_activation": 1.208205320792018,
-        "movement_dynamics": 0.6933190221976114,
-        "compensation_context": 0.0
+        "movement_capacity": 0.7825809720805008,
+        "muscle_activation": 0.6446564981877096,
+        "movement_dynamics": 0.8358450157229127,
+        "compensation_context": 0.09425432461246257
       },
       "shoulder_press": {
-        "movement_capacity": 0.006228289507317654,
-        "muscle_activation": 0.531602574851521,
-        "movement_dynamics": 0.7911157574811505,
-        "compensation_context": 0.8535122858021102
+        "movement_capacity": 0.08050416075233943,
+        "muscle_activation": 0.5737694505801058,
+        "movement_dynamics": 0.5804828771711595,
+        "compensation_context": 0.5334875748987281
+      },
+      "seated_row": {
+        "movement_capacity": 0.5983448634298676,
+        "muscle_activation": 0.9157752999757263,
+        "movement_dynamics": 0.9423447694475215,
+        "compensation_context": 1.1844901251430004
+      },
+      "arm_curl": {
+        "movement_capacity": 0.5885082786411685,
+        "muscle_activation": 0.8444444587933282,
+        "movement_dynamics": 0.3648693710330275,
+        "compensation_context": 0.7961497765595755
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.12955653376493326,
+        "muscle_activation": 0.7329985844043242,
+        "movement_dynamics": 1.0452609719505084,
+        "compensation_context": 0.17264453092002577
       }
     }
   },
@@ -1407,35 +1407,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.2679772621189861,
-        "muscle_activation": 0.5328632403307973,
-        "movement_dynamics": 0.23641696095591577,
-        "compensation_context": 0.0
-      },
       "chest_press": {
-        "movement_capacity": 0.8420474860115807,
-        "muscle_activation": 0.2777696476074178,
-        "movement_dynamics": 0.478913036000428,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.41264604579193265,
-        "muscle_activation": 0.3261718117077934,
-        "movement_dynamics": 0.5331745806623613,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.3669995066459756,
-        "muscle_activation": 0.6213483782108424,
-        "movement_dynamics": 0.4559458778221395,
-        "compensation_context": 0.0
+        "movement_capacity": 0.6890697980916625,
+        "muscle_activation": 0.5477095539170025,
+        "movement_dynamics": 0.5718051783046141,
+        "compensation_context": 0.13719710806361804
       },
       "shoulder_press": {
-        "movement_capacity": 0.035544090758221306,
-        "muscle_activation": 0.6970776003041647,
-        "movement_dynamics": 0.4446344092231717,
-        "compensation_context": 0.0
+        "movement_capacity": 0.26571013741985555,
+        "muscle_activation": 1.0333561474892572,
+        "movement_dynamics": 0.5751907043508326,
+        "compensation_context": 0.523670736205711
+      },
+      "seated_row": {
+        "movement_capacity": 0.46669286741192684,
+        "muscle_activation": 0.541244414550376,
+        "movement_dynamics": 0.34557917257686077,
+        "compensation_context": 0.3526415960284215
+      },
+      "arm_curl": {
+        "movement_capacity": 0.25493269953973824,
+        "muscle_activation": 0.7176252481327602,
+        "movement_dynamics": 0.4708485866384371,
+        "compensation_context": 0.2208001399435481
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.5323649861323263,
+        "muscle_activation": 0.4903927378300815,
+        "movement_dynamics": 0.6172708378909921,
+        "compensation_context": 0.12056034051853701
       }
     }
   },
@@ -1444,35 +1444,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.2616593375588978,
-        "muscle_activation": 0.4381005830346154,
-        "movement_dynamics": 1.0207162191292891,
-        "compensation_context": 1.436829435560199
-      },
       "chest_press": {
-        "movement_capacity": 0.2800910141748412,
-        "muscle_activation": 0.6187824045469249,
-        "movement_dynamics": 0.727492115814501,
-        "compensation_context": 0.7834549889284628
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.7347560948098006,
-        "movement_dynamics": 0.354604715897966,
-        "compensation_context": 0.18770115401657997
-      },
-      "seated_row": {
-        "movement_capacity": 0.5653361823095931,
-        "muscle_activation": 0.7050773023471133,
-        "movement_dynamics": 0.7663365930674222,
-        "compensation_context": 0.0353083656274169
+        "movement_capacity": 0.3728828161700086,
+        "muscle_activation": 0.8318439427061174,
+        "movement_dynamics": 0.5403011371336728,
+        "compensation_context": 0.5775393494805142
       },
       "shoulder_press": {
-        "movement_capacity": 0.2550613528610969,
-        "muscle_activation": 0.5286679218703638,
-        "movement_dynamics": 0.5954092731470689,
-        "compensation_context": 0.0
+        "movement_capacity": 0.3376027155440546,
+        "muscle_activation": 0.6951328100909145,
+        "movement_dynamics": 0.49092232406761593,
+        "compensation_context": 0.4730833721388367
+      },
+      "seated_row": {
+        "movement_capacity": 0.47966097850083267,
+        "muscle_activation": 0.7829297862072913,
+        "movement_dynamics": 0.7910804413055241,
+        "compensation_context": 0.7496420679681974
+      },
+      "arm_curl": {
+        "movement_capacity": 0.4956240369727438,
+        "muscle_activation": 0.35759375407015037,
+        "movement_dynamics": 2.043094791735356,
+        "compensation_context": 1.5067331004590208
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.15800180292512783,
+        "muscle_activation": 0.9309124762047576,
+        "movement_dynamics": 0.3739516092605538,
+        "compensation_context": 0.2304184208008267
       }
     }
   },
@@ -1481,34 +1481,34 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.1334072666980761,
-        "movement_dynamics": 0.11892002719425626,
-        "compensation_context": 0.0
-      },
       "chest_press": {
-        "movement_capacity": 0.9491222983884617,
-        "muscle_activation": 1.1998999072388141,
-        "movement_dynamics": 0.6879355342395516,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.143902011621563,
-        "movement_dynamics": 0.634051017975509,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.27332761970358976,
-        "muscle_activation": 0.9025829939123134,
-        "movement_dynamics": 1.0931302062249517,
+        "movement_capacity": 0.9643154791999036,
+        "muscle_activation": 1.2882029775763568,
+        "movement_dynamics": 0.9590017980460961,
         "compensation_context": 0.0
       },
       "shoulder_press": {
-        "movement_capacity": 0.5586959403201618,
-        "muscle_activation": 1.187749904872581,
-        "movement_dynamics": 1.8759977896282696,
+        "movement_capacity": 0.7846141722300279,
+        "muscle_activation": 1.2150505029847019,
+        "movement_dynamics": 1.4139225663241177,
+        "compensation_context": 0.4229804249436905
+      },
+      "seated_row": {
+        "movement_capacity": 0.28176208747835774,
+        "muscle_activation": 1.062711166108538,
+        "movement_dynamics": 1.0131461406172688,
+        "compensation_context": 0.2703150228233245
+      },
+      "arm_curl": {
+        "movement_capacity": 0.3001093990141682,
+        "muscle_activation": 1.3693095392971184,
+        "movement_dynamics": 0.3097282133651264,
+        "compensation_context": 0.30302029089336796
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.19697369068646103,
+        "muscle_activation": 1.1500643362671843,
+        "movement_dynamics": 1.317547705245369,
         "compensation_context": 0.0
       }
     }
@@ -1518,35 +1518,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.6074209834244375,
-        "movement_dynamics": 1.2198103109533542,
-        "compensation_context": 0.2961490786397719
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.9759550155387929,
-        "movement_dynamics": 0.6145652333628278,
-        "compensation_context": 1.6925330545217514
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.605809465094021,
-        "movement_dynamics": 0.626140034787447,
-        "compensation_context": 0.342588457698772
-      },
-      "seated_row": {
-        "movement_capacity": 0.12266352951995489,
-        "muscle_activation": 1.2803323878723956,
-        "movement_dynamics": 0.16531443655014874,
-        "compensation_context": 0.0
+        "movement_capacity": 0.09348755601674599,
+        "muscle_activation": 1.0012427951365315,
+        "movement_dynamics": 1.8632455279948066,
+        "compensation_context": 1.5174729644945804
       },
       "shoulder_press": {
         "movement_capacity": 0.0,
-        "muscle_activation": 0.9406880313957515,
-        "movement_dynamics": 0.8377574262044462,
-        "compensation_context": 0.18647593994327802
+        "muscle_activation": 0.7035652608979733,
+        "movement_dynamics": 0.9959898113470244,
+        "compensation_context": 0.1643113696594965
+      },
+      "seated_row": {
+        "movement_capacity": 0.3873910060729703,
+        "muscle_activation": 1.2928171111572593,
+        "movement_dynamics": 0.2844425716227262,
+        "compensation_context": 0.0
+      },
+      "arm_curl": {
+        "movement_capacity": 0.1750724000366589,
+        "muscle_activation": 0.8474048325276002,
+        "movement_dynamics": 2.4950766033597267,
+        "compensation_context": 0.01603453550374758
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.07298751778260668,
+        "muscle_activation": 0.7083543859044759,
+        "movement_dynamics": 0.5188744989030705,
+        "compensation_context": 0.26674842122980047
       }
     }
   },
@@ -1555,35 +1555,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.1674042419869812,
-        "muscle_activation": 2.2966674109193184,
-        "movement_dynamics": 0.7064925467090684,
-        "compensation_context": 0.0
-      },
       "chest_press": {
-        "movement_capacity": 0.14717738323576973,
-        "muscle_activation": 2.7084544617295228,
-        "movement_dynamics": 0.7438634637045485,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.587680784056236,
-        "movement_dynamics": 0.6884256158425708,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.39585178856875525,
-        "muscle_activation": 0.6393327532632507,
-        "movement_dynamics": 0.7265394419942522,
-        "compensation_context": 0.0
+        "movement_capacity": 0.24812662151282636,
+        "muscle_activation": 2.0992060778303023,
+        "movement_dynamics": 0.8134506844030918,
+        "compensation_context": 0.20462280121552195
       },
       "shoulder_press": {
-        "movement_capacity": 1.3610995150747565,
-        "muscle_activation": 2.9746609430980655,
-        "movement_dynamics": 0.47834665287252387,
-        "compensation_context": 0.0
+        "movement_capacity": 1.0354612041045046,
+        "muscle_activation": 2.169538784421737,
+        "movement_dynamics": 0.676404413420465,
+        "compensation_context": 0.19447516940250054
+      },
+      "seated_row": {
+        "movement_capacity": 0.4876307826116947,
+        "muscle_activation": 0.7232284181789033,
+        "movement_dynamics": 0.7472459761204984,
+        "compensation_context": 0.6962905108648776
+      },
+      "arm_curl": {
+        "movement_capacity": 0.43152875761448783,
+        "muscle_activation": 1.4300344721281792,
+        "movement_dynamics": 0.454288523069434,
+        "compensation_context": 0.31556007377419604
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.034927011076354056,
+        "muscle_activation": 1.8165391909392934,
+        "movement_dynamics": 0.770100465113591,
+        "compensation_context": 0.1712140704234496
       }
     }
   },
@@ -1592,35 +1592,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.6720478582277163,
-        "movement_dynamics": 2.6660375869624726,
-        "compensation_context": 0.8065708883564311
-      },
       "chest_press": {
-        "movement_capacity": 0.09891283445543508,
-        "muscle_activation": 0.8208424718078287,
-        "movement_dynamics": 0.7566228400063051,
-        "compensation_context": 0.46996106887181266
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.7891361470535467,
-        "muscle_activation": 0.5878573291304876,
-        "movement_dynamics": 2.7389539330489114,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.32954375987727613,
-        "movement_dynamics": 0.6889791585889613,
-        "compensation_context": 0.0
+        "movement_capacity": 0.2436444922033026,
+        "muscle_activation": 0.9759921284259976,
+        "movement_dynamics": 1.1063705948228013,
+        "compensation_context": 0.7781396944406136
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.5282083961216872,
-        "movement_dynamics": 0.7433996391660453,
-        "compensation_context": 0.24849734898336043
+        "movement_capacity": 0.014707440399071509,
+        "muscle_activation": 0.6313685217595768,
+        "movement_dynamics": 0.9246928098348948,
+        "compensation_context": 0.4429626723061316
+      },
+      "seated_row": {
+        "movement_capacity": 0.012107845911991247,
+        "muscle_activation": 0.3500957486264935,
+        "movement_dynamics": 0.5045041307789234,
+        "compensation_context": 0.21251101916305348
+      },
+      "arm_curl": {
+        "movement_capacity": 0.14629735898729618,
+        "muscle_activation": 0.9722458645815198,
+        "movement_dynamics": 1.042198972482946,
+        "compensation_context": 1.9267056817731625
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.9949487723668409,
+        "muscle_activation": 0.9382838014030932,
+        "movement_dynamics": 2.2294417634757004,
+        "compensation_context": 0.17029717600396702
       }
     }
   },
@@ -1629,35 +1629,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.09565753272491048,
-        "muscle_activation": 1.1533970588999567,
-        "movement_dynamics": 1.3946176870317806,
-        "compensation_context": 0.7815109375567341
-      },
       "chest_press": {
-        "movement_capacity": 0.8981036466758776,
-        "muscle_activation": 0.33022034484345497,
-        "movement_dynamics": 0.739128496379297,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.05441811844888633,
-        "muscle_activation": 0.30318513570484634,
-        "movement_dynamics": 2.255829849182461,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.5214253576833748,
-        "movement_dynamics": 1.5242407119224253,
-        "compensation_context": 0.6532038212867657
+        "movement_capacity": 0.6465319486336871,
+        "muscle_activation": 0.4984649140744267,
+        "movement_dynamics": 0.43329085241048126,
+        "compensation_context": 0.5118536923103264
       },
       "shoulder_press": {
-        "movement_capacity": 0.12872092411593025,
-        "muscle_activation": 0.25719790134758913,
-        "movement_dynamics": 0.29064720775422237,
-        "compensation_context": 0.5732485654309801
+        "movement_capacity": 0.30968170570048986,
+        "muscle_activation": 0.297496003033537,
+        "movement_dynamics": 1.321629516636762,
+        "compensation_context": 0.6591940007245167
+      },
+      "seated_row": {
+        "movement_capacity": 0.002877663875857323,
+        "muscle_activation": 0.6365817797864612,
+        "movement_dynamics": 1.2079616576388714,
+        "compensation_context": 0.5090541402160667
+      },
+      "arm_curl": {
+        "movement_capacity": 0.21642226628861214,
+        "muscle_activation": 0.7819464070156265,
+        "movement_dynamics": 1.4963841222562944,
+        "compensation_context": 0.8497763390391672
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.13971757814484054,
+        "muscle_activation": 0.5267826315151694,
+        "movement_dynamics": 0.8373832154789036,
+        "compensation_context": 1.0500941064283928
       }
     }
   },
@@ -1666,35 +1666,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 4.175915848061308,
-        "muscle_activation": 0.696912786450082,
-        "movement_dynamics": 0.9256554085975788,
-        "compensation_context": 0.0
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.933761198329765,
-        "movement_dynamics": 1.0941140545323917,
-        "compensation_context": 0.3912358596570271
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.3966349849485745,
-        "muscle_activation": 1.5434860096720144,
-        "movement_dynamics": 0.49404023328264773,
-        "compensation_context": 0.395240233442087
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.7908446217714706,
-        "movement_dynamics": 0.5487611071093763,
-        "compensation_context": 0.0
+        "movement_capacity": 0.15290936942947805,
+        "muscle_activation": 1.9309638778456706,
+        "movement_dynamics": 1.051267783229863,
+        "compensation_context": 0.10478987871339433
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.479258764171551,
-        "movement_dynamics": 0.6461216731545016,
-        "compensation_context": 0.27014377248083177
+        "movement_capacity": 0.4063191269876295,
+        "muscle_activation": 0.566124775222597,
+        "movement_dynamics": 0.5721523928500062,
+        "compensation_context": 0.10324928257805492
+      },
+      "seated_row": {
+        "movement_capacity": 0.24567538280502077,
+        "muscle_activation": 1.4970222762174275,
+        "movement_dynamics": 0.6286173669709803,
+        "compensation_context": 0.0
+      },
+      "arm_curl": {
+        "movement_capacity": 2.8205402308399856,
+        "muscle_activation": 0.8494152425915042,
+        "movement_dynamics": 0.4776154736534838,
+        "compensation_context": 0.24008541571998449
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.44436426138185314,
+        "muscle_activation": 1.5140759149065492,
+        "movement_dynamics": 0.5274174913990597,
+        "compensation_context": 0.35459997314696734
       }
     }
   },
@@ -1703,35 +1703,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.6487195788889657,
-        "movement_dynamics": 0.4362474830918562,
-        "compensation_context": 0.0
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.315208342346982,
-        "movement_dynamics": 0.3797156773116204,
-        "compensation_context": 0.1991813858008218
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.3362423426232994,
-        "movement_dynamics": 0.8743966803518519,
-        "compensation_context": 0.5357601499458527
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.7130796870018727,
-        "movement_dynamics": 3.0131244649127007,
-        "compensation_context": 1.02530043455068
+        "movement_capacity": 0.19264382365478588,
+        "muscle_activation": 1.1709985031386911,
+        "movement_dynamics": 0.644959386206479,
+        "compensation_context": 0.8509755705136252
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.1091266770109354,
-        "movement_dynamics": 0.49239407948083896,
-        "compensation_context": 0.0
+        "movement_capacity": 0.12649057239097494,
+        "muscle_activation": 0.8700643290055594,
+        "movement_dynamics": 0.9059575611091617,
+        "compensation_context": 0.39079324489189754
+      },
+      "seated_row": {
+        "movement_capacity": 0.10473794892851739,
+        "muscle_activation": 1.8064557275742055,
+        "movement_dynamics": 1.1341671438150152,
+        "compensation_context": 0.8071106721987681
+      },
+      "arm_curl": {
+        "movement_capacity": 0.04190514076967857,
+        "muscle_activation": 0.8729906128438542,
+        "movement_dynamics": 0.6135507848806994,
+        "compensation_context": 0.0898215620346688
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.1266476177579483,
+        "muscle_activation": 1.963362349884458,
+        "movement_dynamics": 1.2474049572269932,
+        "compensation_context": 0.25923024665660904
       }
     }
   },
@@ -1740,35 +1740,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 1.8473952219187395,
-        "muscle_activation": 0.729391985480897,
-        "movement_dynamics": 0.6690420774071094,
-        "compensation_context": 0.0
-      },
       "chest_press": {
         "movement_capacity": 0.0,
-        "muscle_activation": 1.290942106389052,
-        "movement_dynamics": 0.4566134791997475,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.6926742056219801,
-        "muscle_activation": 0.6601801693773433,
-        "movement_dynamics": 1.8241142383117346,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.5617520255673683,
-        "movement_dynamics": 2.8270214429305405,
-        "compensation_context": 0.0
+        "muscle_activation": 0.8208365116705165,
+        "movement_dynamics": 2.1218613708585448,
+        "compensation_context": 0.29274476165153696
       },
       "shoulder_press": {
-        "movement_capacity": 5.0,
-        "muscle_activation": 0.30685621596292983,
-        "movement_dynamics": 0.7674608230065023,
-        "compensation_context": 0.20330316150146238
+        "movement_capacity": 3.8957980813673663,
+        "muscle_activation": 0.6803496880956738,
+        "movement_dynamics": 0.39641627409137237,
+        "compensation_context": 1.131935763044402
+      },
+      "seated_row": {
+        "movement_capacity": 0.615067199165523,
+        "muscle_activation": 0.44386048018590374,
+        "movement_dynamics": 1.4485817538508607,
+        "compensation_context": 0.13480604960802084
+      },
+      "arm_curl": {
+        "movement_capacity": 2.372141298649404,
+        "muscle_activation": 0.7401968542943695,
+        "movement_dynamics": 1.9718104836036763,
+        "compensation_context": 0.47939523378765375
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 1.3633832520016547,
+        "muscle_activation": 0.6715100708804216,
+        "movement_dynamics": 2.1489123242121746,
+        "compensation_context": 0.10916811003934326
       }
     }
   },
@@ -1777,35 +1777,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.5559214762050295,
-        "movement_dynamics": 1.716513168102813,
-        "compensation_context": 0.0
-      },
       "chest_press": {
-        "movement_capacity": 0.9520123926403135,
-        "muscle_activation": 0.5113778837131513,
-        "movement_dynamics": 0.3681889372495142,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 1.5501374413040954,
-        "muscle_activation": 0.3478225133651488,
-        "movement_dynamics": 1.3676919021590652,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.9432217032692038,
-        "movement_dynamics": 1.0684276224457727,
-        "compensation_context": 0.0
+        "movement_capacity": 0.7753121165345245,
+        "muscle_activation": 0.3769886498661328,
+        "movement_dynamics": 0.4887637627617848,
+        "compensation_context": 0.2740966776165837
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.0690539762324187,
-        "movement_dynamics": 0.42932262085390677,
-        "compensation_context": 0.0
+        "movement_capacity": 0.08292974923199259,
+        "muscle_activation": 0.637150119560487,
+        "movement_dynamics": 0.6425088316590847,
+        "compensation_context": 0.13158645847381967
+      },
+      "seated_row": {
+        "movement_capacity": 0.8149884200634814,
+        "muscle_activation": 1.2166538138080871,
+        "movement_dynamics": 1.4686422211202554,
+        "compensation_context": 0.1571251267833263
+      },
+      "arm_curl": {
+        "movement_capacity": 0.41918399578386956,
+        "muscle_activation": 1.0572903586236313,
+        "movement_dynamics": 1.5616898210420689,
+        "compensation_context": 0.05531234634975849
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 1.309795747333839,
+        "muscle_activation": 0.38868049359381507,
+        "movement_dynamics": 1.0970650523309784,
+        "compensation_context": 0.237780535862154
       }
     }
   },
@@ -1814,35 +1814,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 1.0160602155691005,
-        "muscle_activation": 0.5078200341636784,
-        "movement_dynamics": 0.7705532463154159,
-        "compensation_context": 0.0
-      },
       "chest_press": {
-        "movement_capacity": 0.8232520777757615,
-        "muscle_activation": 0.6301594547714149,
-        "movement_dynamics": 0.5800841856306,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.8423093080645043,
-        "muscle_activation": 0.4087042182430015,
-        "movement_dynamics": 0.7535443505603785,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.6897823029565694,
-        "movement_dynamics": 1.2293314273471054,
-        "compensation_context": 0.0
+        "movement_capacity": 0.8296477885463518,
+        "muscle_activation": 0.9063189940544001,
+        "movement_dynamics": 0.6204488399397667,
+        "compensation_context": 0.13700400167414356
       },
       "shoulder_press": {
-        "movement_capacity": 0.7885379860895273,
-        "muscle_activation": 0.5666482087742155,
-        "movement_dynamics": 0.5103866695326204,
-        "compensation_context": 0.0
+        "movement_capacity": 0.9319223176931373,
+        "muscle_activation": 0.7647406279376981,
+        "movement_dynamics": 1.418869755750258,
+        "compensation_context": 0.2123195685959618
+      },
+      "seated_row": {
+        "movement_capacity": 0.9439417781703783,
+        "muscle_activation": 0.28240727931070125,
+        "movement_dynamics": 1.2891456302256865,
+        "compensation_context": 0.3026177799300251
+      },
+      "arm_curl": {
+        "movement_capacity": 1.1182168003962452,
+        "muscle_activation": 0.5525784771735327,
+        "movement_dynamics": 1.6925879602733924,
+        "compensation_context": 0.01749756613348105
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.6571342716161166,
+        "muscle_activation": 0.374757815139816,
+        "movement_dynamics": 0.7162952391267234,
+        "compensation_context": 0.1799858091147401
       }
     }
   },
@@ -1851,35 +1851,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.9583089390562392,
-        "movement_dynamics": 1.1460543515208008,
-        "compensation_context": 1.0618047827246138
-      },
       "chest_press": {
         "movement_capacity": 0.0,
-        "muscle_activation": 0.3009706297197498,
-        "movement_dynamics": 2.0663153707749213,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 1.2895649808309098,
-        "muscle_activation": 0.34549443836027366,
-        "movement_dynamics": 0.9153268906628245,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.15195889615316271,
-        "muscle_activation": 1.4160425954811742,
-        "movement_dynamics": 0.6113661219493218,
-        "compensation_context": 0.0
+        "muscle_activation": 0.5452575422991283,
+        "movement_dynamics": 2.0269342281686957,
+        "compensation_context": 1.0260836221939553
       },
       "shoulder_press": {
-        "movement_capacity": 1.7483563640522672,
-        "muscle_activation": 0.3765100646415189,
-        "movement_dynamics": 1.682792015020357,
-        "compensation_context": 0.0
+        "movement_capacity": 2.1509570169309553,
+        "muscle_activation": 0.49243082582366793,
+        "movement_dynamics": 1.5403270005858585,
+        "compensation_context": 0.6290955994666813
+      },
+      "seated_row": {
+        "movement_capacity": 0.3423027904898449,
+        "muscle_activation": 1.2916867025245897,
+        "movement_dynamics": 0.49851286439233755,
+        "compensation_context": 0.07165558591850016
+      },
+      "arm_curl": {
+        "movement_capacity": 0.30981656196195856,
+        "muscle_activation": 0.3589063232232299,
+        "movement_dynamics": 0.5997356498652671,
+        "compensation_context": 0.4974498868906764
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 1.7555491264771814,
+        "muscle_activation": 0.5018486064032543,
+        "movement_dynamics": 0.7593331308511561,
+        "compensation_context": 0.5105935604350816
       }
     }
   },
@@ -1888,35 +1888,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.9122437886512118,
-        "movement_dynamics": 0.5678689788864171,
-        "compensation_context": 0.0
-      },
       "chest_press": {
-        "movement_capacity": 0.46078175299408264,
-        "muscle_activation": 0.49642573721059524,
-        "movement_dynamics": 0.5052648798340843,
-        "compensation_context": 0.0
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.553597624011583,
-        "movement_dynamics": 0.3057647227322673,
-        "compensation_context": 0.0
-      },
-      "seated_row": {
-        "movement_capacity": 0.7584680919942635,
-        "muscle_activation": 0.7673880156923545,
-        "movement_dynamics": 0.4690910626237422,
-        "compensation_context": 0.0
+        "movement_capacity": 0.4919896127137111,
+        "muscle_activation": 0.9584792078654296,
+        "movement_dynamics": 0.6351272574174683,
+        "compensation_context": 0.33242170201161836
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.8643324099946137,
-        "movement_dynamics": 0.4274421053850443,
-        "compensation_context": 0.0
+        "movement_capacity": 0.043108037095011764,
+        "muscle_activation": 1.6121532164572723,
+        "movement_dynamics": 0.38485196649724746,
+        "compensation_context": 0.7017630674468909
+      },
+      "seated_row": {
+        "movement_capacity": 0.7399164193557759,
+        "muscle_activation": 0.874129945200367,
+        "movement_dynamics": 0.6293081687389486,
+        "compensation_context": 0.13480900888660602
+      },
+      "arm_curl": {
+        "movement_capacity": 0.04322499877350581,
+        "muscle_activation": 1.0496191089291866,
+        "movement_dynamics": 1.080105064743011,
+        "compensation_context": 0.15503738806837167
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.06346126830712412,
+        "muscle_activation": 0.8717890255330579,
+        "movement_dynamics": 0.5428108095835376,
+        "compensation_context": 0.5461700963750858
       }
     }
   },
@@ -1925,35 +1925,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.9121302703659817,
-        "movement_dynamics": 0.843740916516993,
-        "compensation_context": 0.396267490738929
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.4917069714744395,
-        "movement_dynamics": 0.47766005740050577,
-        "compensation_context": 0.35589005877267327
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.7303821603582883,
-        "muscle_activation": 0.8974155595807778,
-        "movement_dynamics": 0.4950304154924873,
-        "compensation_context": 0.5385681980560724
-      },
-      "seated_row": {
-        "movement_capacity": 0.03274736469627565,
-        "muscle_activation": 0.41833498402741714,
-        "movement_dynamics": 0.9381070774317423,
-        "compensation_context": 1.4414521266033258
+        "movement_capacity": 0.05057977195205907,
+        "muscle_activation": 0.44882600444583,
+        "movement_dynamics": 1.4114601066889816,
+        "compensation_context": 0.6452472213822256
       },
       "shoulder_press": {
-        "movement_capacity": 0.601748973387027,
-        "muscle_activation": 0.48917027179122674,
-        "movement_dynamics": 0.9707374399024418,
-        "compensation_context": 0.030241195701100596
+        "movement_capacity": 0.7710082191391152,
+        "muscle_activation": 0.9145294668957382,
+        "movement_dynamics": 0.7695774990428985,
+        "compensation_context": 0.7673824965325979
+      },
+      "seated_row": {
+        "movement_capacity": 0.029139159156099263,
+        "muscle_activation": 0.3796917626864853,
+        "movement_dynamics": 1.8802383403630127,
+        "compensation_context": 1.1993358310700741
+      },
+      "arm_curl": {
+        "movement_capacity": 0.38539338614757557,
+        "muscle_activation": 0.932812629644818,
+        "movement_dynamics": 1.1605728682157261,
+        "compensation_context": 0.3647331776958685
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.6094766910252529,
+        "muscle_activation": 0.5737057793600151,
+        "movement_dynamics": 1.3418901433704276,
+        "compensation_context": 0.4421399873652409
       }
     }
   },
@@ -1962,35 +1962,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.7171930666683324,
-        "movement_dynamics": 0.39645452566111916,
-        "compensation_context": 2.1916202346952365
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.7813082195779701,
-        "movement_dynamics": 0.4432915810034833,
-        "compensation_context": 1.837185176142324
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.07851393415318422,
-        "muscle_activation": 0.8387322390413607,
-        "movement_dynamics": 3.901134495746313,
-        "compensation_context": 1.450570037838928
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.0260206736593664,
-        "movement_dynamics": 0.5016179422023186,
-        "compensation_context": 1.1696420633596007
+        "movement_capacity": 0.032612518254279924,
+        "muscle_activation": 0.8925036001866169,
+        "movement_dynamics": 0.5898352818404828,
+        "compensation_context": 0.9596999799451652
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.0982173912374005,
-        "movement_dynamics": 0.7441358922436301,
-        "compensation_context": 1.2992897459461867
+        "movement_capacity": 0.771130417229217,
+        "muscle_activation": 0.9502917212123843,
+        "movement_dynamics": 0.8895819627980119,
+        "compensation_context": 0.439021830253315
+      },
+      "seated_row": {
+        "movement_capacity": 0.44904344755096004,
+        "muscle_activation": 0.8924240825699545,
+        "movement_dynamics": 0.27772085876981706,
+        "compensation_context": 1.4758656411707378
+      },
+      "arm_curl": {
+        "movement_capacity": 0.20470400234987207,
+        "muscle_activation": 0.7520407604498289,
+        "movement_dynamics": 0.7709644694162809,
+        "compensation_context": 0.7590845116431872
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.2366209254861796,
+        "muscle_activation": 0.6614147793453427,
+        "movement_dynamics": 1.8965584168349023,
+        "compensation_context": 1.451081977140328
       }
     }
   },
@@ -1999,35 +1999,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.009376164767162026,
-        "muscle_activation": 1.3193102495112754,
-        "movement_dynamics": 2.012791582660945,
-        "compensation_context": 0.10513136829443509
-      },
       "chest_press": {
-        "movement_capacity": 0.07446678940329246,
-        "muscle_activation": 1.9347570575888584,
-        "movement_dynamics": 0.5039773218736487,
-        "compensation_context": 1.34852503654241
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.27547055485783284,
-        "muscle_activation": 1.6442879253511768,
-        "movement_dynamics": 0.5946330132626436,
-        "compensation_context": 0.184480875037473
-      },
-      "seated_row": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 3.3298639510355077,
-        "movement_dynamics": 1.8231116436249237,
-        "compensation_context": 0.35413005484174526
+        "movement_capacity": 0.1722394132749126,
+        "muscle_activation": 1.9180885397994063,
+        "movement_dynamics": 0.42502448038649987,
+        "compensation_context": 0.5000580369518584
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 2.815587881252787,
-        "movement_dynamics": 0.7928947540732819,
-        "compensation_context": 3.8526466328036024
+        "movement_capacity": 0.10652799136847678,
+        "muscle_activation": 1.8933944244897205,
+        "movement_dynamics": 1.0150788921890406,
+        "compensation_context": 1.6182224269307621
+      },
+      "seated_row": {
+        "movement_capacity": 0.009549779836837117,
+        "muscle_activation": 3.357229707903533,
+        "movement_dynamics": 3.4256598385561223,
+        "compensation_context": 0.19048958115206938
+      },
+      "arm_curl": {
+        "movement_capacity": 0.2769160972725299,
+        "muscle_activation": 1.7759329784209303,
+        "movement_dynamics": 1.8057182912772587,
+        "compensation_context": 0.36723933029744527
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.32577243157132973,
+        "muscle_activation": 2.3875471913090993,
+        "movement_dynamics": 0.46255819147682475,
+        "compensation_context": 1.9683496700840686
       }
     }
   },
@@ -2036,35 +2036,35 @@
     "institution": "한동대",
     "initial_group": "control",
     "exercises": {
-      "arm_curl": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.5778153309231062,
-        "movement_dynamics": 0.8539819848600219,
-        "compensation_context": 3.793379187115216
-      },
       "chest_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.9778175928332078,
-        "movement_dynamics": 1.5526329024608208,
-        "compensation_context": 0.3200154971335676
-      },
-      "overhead_triceps_extension": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 0.8310804053439675,
-        "movement_dynamics": 1.6844396208580243,
-        "compensation_context": 1.5835516831766103
-      },
-      "seated_row": {
-        "movement_capacity": 0.26393643224484864,
-        "muscle_activation": 1.0328713589225738,
-        "movement_dynamics": 0.6054690417814912,
-        "compensation_context": 1.1461969120004911
+        "movement_capacity": 0.18839784718206531,
+        "muscle_activation": 1.4832716248181792,
+        "movement_dynamics": 2.3278551395263363,
+        "compensation_context": 0.497628107287497
       },
       "shoulder_press": {
-        "movement_capacity": 0.0,
-        "muscle_activation": 1.0704737863261633,
-        "movement_dynamics": 0.23899830519986137,
-        "compensation_context": 0.0
+        "movement_capacity": 0.12787692005821427,
+        "muscle_activation": 1.4783466848799625,
+        "movement_dynamics": 1.0420810840807442,
+        "compensation_context": 0.22637460433282394
+      },
+      "seated_row": {
+        "movement_capacity": 0.4959681486802563,
+        "muscle_activation": 2.1010198043635233,
+        "movement_dynamics": 0.5867080502372984,
+        "compensation_context": 1.2035453146346742
+      },
+      "arm_curl": {
+        "movement_capacity": 0.040145380628027416,
+        "muscle_activation": 2.7894117565602574,
+        "movement_dynamics": 1.3666727880786318,
+        "compensation_context": 2.4745577880512863
+      },
+      "overhead_triceps_extension": {
+        "movement_capacity": 0.0011318109044708663,
+        "muscle_activation": 2.0490716253671017,
+        "movement_dynamics": 2.457024062224934,
+        "compensation_context": 0.7827515596452684
       }
     }
   }

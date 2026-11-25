@@ -1,5 +1,5 @@
 {
-  "method": "per_exercise_l2_logistic",
+  "method": "per_exercise_l2_logistic_mean_domains",
   "C": 1.0,
   "domains": [
     "movement_capacity",
@@ -13,6 +13,7 @@
   },
   "label": "institution group, patient=1 control=0",
   "calibration_used": false,
+  "domain_aggregation": "mean",
   "exercises": {
     "chest_press": {
       "n": 56,
@@ -20,201 +21,249 @@
       "n_control": 28,
       "model": {
         "mean": [
-          0.24980447922410987,
-          1.5117411462507668,
-          0.7625767237062023,
-          1.0637812844446355
+          0.31099417119651446,
+          1.5065579171136723,
+          0.9810417180221421,
+          0.6134091545068114
         ],
         "scale": [
-          0.34994684879195004,
-          1.0901399767275775,
-          0.45451578879692744,
-          1.3301217521317927
+          0.2785870848600764,
+          0.879333688151383,
+          0.5830612113762965,
+          0.4999630463509629
         ],
         "coef": [
-          -0.11829918342178382,
-          1.1895269327211082,
-          -0.49141226709337094,
-          1.1361663688529273
+          -0.11846859679941538,
+          1.631541885290735,
+          -0.7414225695382844,
+          0.9544275277712877
         ],
-        "intercept": 0.16186727191980496
+        "intercept": 0.16165266903208161
       },
       "loso": {
-        "accuracy": 0.75,
-        "sensitivity": 0.7142857142857143,
-        "specificity": 0.7857142857142857,
-        "auc": 0.8443877551020408,
-        "tp": 20,
-        "tn": 22,
-        "fp": 6,
-        "fn": 8
+        "accuracy": 0.7678571428571429,
+        "sensitivity": 0.7857142857142857,
+        "specificity": 0.75,
+        "auc": 0.8647959183673469,
+        "tp": 22,
+        "tn": 21,
+        "fp": 7,
+        "fn": 6
       },
       "reference": {
         "left.shoulder_rom_deg": {
-          "center": 54.54561032748664,
-          "scale": 19.88677315038444,
+          "center": 63.92080759780728,
+          "scale": 21.717553712040942,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.elbow_rom_deg": {
-          "center": 90.45315318300679,
-          "scale": 56.371446113552274,
+          "center": 99.40482456926361,
+          "scale": 60.328709328980686,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_value_deg": {
-          "center": 105.50254552260506,
-          "scale": 67.33140775765128,
+          "center": 107.04190078585583,
+          "scale": 67.89479464832476,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_excursion_deg": {
-          "center": 42.814991333953174,
-          "scale": 45.41814937316996,
+          "center": 42.70293612447318,
+          "scale": 46.92973604633418,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.reach_p95_shoulder_width": {
-          "center": 0.777765770380862,
-          "scale": 0.2513386824310088,
+          "center": 0.784799467724713,
+          "scale": 0.24293038339398057,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
+        "left.emg_active_fraction": {
+          "center": 0.5928518055355365,
+          "scale": 0.05691506150239748,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.emg_rms_adc": {
+          "center": 2315.422285494865,
+          "scale": 1909.8427977044119,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.emg_waveform_length_per_s": {
+          "center": 395569.89118034666,
+          "scale": 269352.49082892924,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_angular_speed_p95_deg_s": {
+          "center": 85.28489579721017,
+          "scale": 36.4306420980302,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_rms": {
+          "center": 0.5890057750112097,
+          "scale": 0.22566702860777824,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_p95": {
+          "center": 1.0640483434836385,
+          "scale": 0.38864034699343597,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_iqr": {
+          "center": 0.47810755904541047,
+          "scale": 0.17781364962437415,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "left.imu_acceleration_dynamic_skewness": {
+          "center": 0.46676438579257884,
+          "scale": 1.2448162577480386,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
         "left.skeleton_trunk_sway_rom_deg": {
-          "center": 2.335466197118007,
-          "scale": 0.7224652359088175,
+          "center": 359.44379079834573,
+          "scale": 0.5191906565474176,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_scapular_tilt_rom_deg": {
-          "center": 4.893984386370558,
-          "scale": 1.0093143756859109,
+          "center": 359.2010102199778,
+          "scale": 0.5650196575481586,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.138662075086159,
-          "scale": 0.07572679565288301,
+          "center": 0.14698288378827695,
+          "scale": 0.0687037629726145,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.imu_chest_roll_rom_deg": {
-          "center": 10.267068068591959,
-          "scale": 6.863710748986599,
+          "center": 9.84100000000001,
+          "scale": 6.5204748000000095,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.imu_chest_pitch_rom_deg": {
-          "center": 3.3928294358381352,
-          "scale": 1.841764945507402,
+          "center": 2.93,
+          "scale": 2.3918044499999995,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.shoulder_rom_deg": {
-          "center": 53.04456133926645,
-          "scale": 22.062746709470844,
+          "center": 55.501589592059375,
+          "scale": 24.41326657447982,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.elbow_rom_deg": {
-          "center": 96.5968326670871,
-          "scale": 45.972735601612875,
+          "center": 100.74082090046329,
+          "scale": 45.603772949047126,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_value_deg": {
-          "center": 117.39922345309158,
-          "scale": 59.674736439987726,
+          "center": 122.85718218119642,
+          "scale": 52.65179923656081,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_excursion_deg": {
-          "center": 33.70861852884825,
-          "scale": 41.91128896263006,
+          "center": 39.44384829632476,
+          "scale": 36.67223502095349,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.reach_p95_shoulder_width": {
-          "center": 0.7769078008663314,
-          "scale": 0.28066244683515335,
+          "center": 0.7836813761697154,
+          "scale": 0.28197830367632293,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.emg_active_fraction": {
-          "center": 0.5319363604767584,
-          "scale": 0.1427861835042431,
+          "center": 0.6201267895769378,
+          "scale": 0.014890766009491305,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.emg_rms_adc": {
-          "center": 636.2810618944454,
-          "scale": 269.68175140144456,
+          "center": 651.519890340309,
+          "scale": 273.01171465902246,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.emg_waveform_length_per_s": {
-          "center": 232295.02268415503,
-          "scale": 101519.55668711275,
+          "center": 255016.28343940404,
+          "scale": 115816.56318183136,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_angular_speed_p95_deg_s": {
-          "center": 80.98880051829667,
-          "scale": 35.42167878652604,
+          "center": 85.22723502514012,
+          "scale": 39.00525207078914,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_rms": {
-          "center": 1.5246457249839147,
-          "scale": 0.6260997993273968,
+          "center": 0.5768422400776403,
+          "scale": 0.15304724087739743,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_p95": {
-          "center": 3.1442155330300112,
-          "scale": 1.1854143532199637,
+          "center": 0.9773600840860338,
+          "scale": 0.3022616790829067,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_iqr": {
-          "center": 1.1343884254662644,
-          "scale": 0.3503237976618451,
+          "center": 0.5066111540077878,
+          "scale": 0.17261148058336506,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_skewness": {
-          "center": 1.1834100324808237,
-          "scale": 0.6177260870603951,
+          "center": 0.4531474099423711,
+          "scale": 0.6597313568048339,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.skeleton_trunk_sway_rom_deg": {
-          "center": 2.335466197118007,
-          "scale": 0.7224652359088175,
+          "center": 359.44379079834573,
+          "scale": 0.5191906565474176,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_scapular_tilt_rom_deg": {
-          "center": 4.893984386370558,
-          "scale": 1.0093143756859109,
+          "center": 359.2010102199778,
+          "scale": 0.5650196575481586,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.138662075086159,
-          "scale": 0.07572679565288301,
+          "center": 0.14698288378827695,
+          "scale": 0.0687037629726145,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.imu_chest_roll_rom_deg": {
-          "center": 10.267068068591959,
-          "scale": 6.863710748986599,
+          "center": 9.84100000000001,
+          "scale": 6.5204748000000095,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.imu_chest_pitch_rom_deg": {
-          "center": 3.3928294358381352,
-          "scale": 1.841764945507402,
+          "center": 2.93,
+          "scale": 2.3918044499999995,
           "direction": "high_bad",
           "scale_method": "MAD"
         }
@@ -226,249 +275,249 @@
       "n_control": 28,
       "model": {
         "mean": [
-          0.7577177959095016,
-          1.4655738114215218,
-          1.1310559239288074,
-          0.6086172294424702
+          1.0173187752381092,
+          1.2368458405704605,
+          1.2888136544793816,
+          0.45403567662128325
         ],
         "scale": [
-          1.0962026318393536,
-          1.0903855804810179,
-          0.8478366164816677,
-          0.8759000765894005
+          1.0626950561189674,
+          0.7624618643296293,
+          0.6951934963615065,
+          0.4578553429412323
         ],
         "coef": [
-          0.6579872954533521,
-          0.9139943474739909,
-          0.5814058424015917,
-          0.3554480727505724
+          1.2254004815533193,
+          1.0501870843001837,
+          0.48215272538260834,
+          -0.35105980597350284
         ],
-        "intercept": 0.04464214830461765
+        "intercept": 0.0372638723538524
       },
       "loso": {
-        "accuracy": 0.7142857142857143,
-        "sensitivity": 0.7142857142857143,
-        "specificity": 0.7142857142857143,
-        "auc": 0.7576530612244898,
-        "tp": 20,
-        "tn": 20,
-        "fp": 8,
-        "fn": 8
+        "accuracy": 0.7857142857142857,
+        "sensitivity": 0.8214285714285714,
+        "specificity": 0.75,
+        "auc": 0.7844387755102041,
+        "tp": 23,
+        "tn": 21,
+        "fp": 7,
+        "fn": 5
       },
       "reference": {
         "left.shoulder_rom_deg": {
-          "center": 132.07791241042787,
-          "scale": 24.286041277641704,
+          "center": 132.18127547819302,
+          "scale": 23.275635089577715,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.elbow_rom_deg": {
-          "center": 117.30175637755559,
-          "scale": 13.20408465905776,
+          "center": 120.57149377143784,
+          "scale": 15.300975475056404,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_value_deg": {
-          "center": 172.69717089657456,
-          "scale": 6.62952063257874,
+          "center": 173.59774621769037,
+          "scale": 5.727137129859598,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_excursion_deg": {
-          "center": 122.11353712657561,
-          "scale": 24.574361349812744,
+          "center": 121.8510692211907,
+          "scale": 23.480132870356748,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.reach_p95_shoulder_width": {
-          "center": 1.4233428411189721,
-          "scale": 0.1240257605521554,
+          "center": 1.4317254266518944,
+          "scale": 0.1045415519030303,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.emg_active_fraction": {
-          "center": 0.413913695482023,
-          "scale": 0.15919394463997183,
+          "center": 0.5787177758866558,
+          "scale": 0.10829072264529437,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.emg_rms_adc": {
-          "center": 1838.1600297374775,
-          "scale": 1764.91575702809,
+          "center": 1859.3020475557983,
+          "scale": 1764.8931094525606,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.emg_waveform_length_per_s": {
-          "center": 395865.5810632635,
-          "scale": 256923.19574411787,
+          "center": 354572.650633908,
+          "scale": 312692.9730175838,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_angular_speed_p95_deg_s": {
-          "center": 66.04452654279295,
-          "scale": 22.01247241364411,
+          "center": 67.63530695841541,
+          "scale": 21.08889062059562,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_rms": {
-          "center": 1.5359949679275422,
-          "scale": 0.43408512967264895,
+          "center": 0.7739414579623581,
+          "scale": 0.15957720711659965,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_p95": {
-          "center": 2.52080095631555,
-          "scale": 0.5287522371745149,
+          "center": 1.2840159984483996,
+          "scale": 0.30161707968932544,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_iqr": {
-          "center": 0.8616760683030937,
-          "scale": 0.3424599572513701,
+          "center": 0.629298463326168,
+          "scale": 0.15739139945797156,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_skewness": {
-          "center": 1.4190626570156786,
-          "scale": 0.7716736540772682,
+          "center": 0.7540501289928658,
+          "scale": 0.7501369040224274,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.skeleton_trunk_sway_rom_deg": {
-          "center": 2.196201878524583,
-          "scale": 0.6419121380422512,
+          "center": 359.6454082242569,
+          "scale": 0.22056451068716632,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_scapular_tilt_rom_deg": {
-          "center": 4.3315368167423625,
-          "scale": 1.1042625412963278,
+          "center": 359.43483100927983,
+          "scale": 0.2847666181348818,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.13329052401451374,
-          "scale": 0.06785413137452154,
+          "center": 0.1429928398631809,
+          "scale": 0.06644051166475995,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.imu_chest_roll_rom_deg": {
-          "center": 9.65524743567742,
-          "scale": 5.17927994735104,
+          "center": 9.592249999999996,
+          "scale": 5.285468999999996,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.imu_chest_pitch_rom_deg": {
-          "center": 3.663915205573846,
-          "scale": 2.1251300366712815,
+          "center": 3.6159999999999988,
+          "scale": 2.045988,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.shoulder_rom_deg": {
-          "center": 135.90337081191785,
-          "scale": 18.008870836609415,
+          "center": 136.70867860129346,
+          "scale": 19.915121739055618,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.elbow_rom_deg": {
-          "center": 112.88779730351561,
-          "scale": 13.601751528966341,
+          "center": 114.90249644654033,
+          "scale": 14.517249984665316,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_value_deg": {
-          "center": 172.3871697780238,
-          "scale": 4.94655983214322,
+          "center": 172.9099891753951,
+          "scale": 4.648594504648645,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_excursion_deg": {
-          "center": 125.42448508498049,
-          "scale": 27.013567041495403,
+          "center": 125.34000179169848,
+          "scale": 26.191173220621728,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.reach_p95_shoulder_width": {
-          "center": 1.3843746132937333,
-          "scale": 0.12653080508305883,
+          "center": 1.3960914112635616,
+          "scale": 0.10423046707538153,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.emg_active_fraction": {
-          "center": 0.531521944341941,
-          "scale": 0.14017588048340204,
+          "center": 0.6236304374128924,
+          "scale": 0.022190842295993635,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.emg_rms_adc": {
-          "center": 675.5627270844474,
-          "scale": 363.54160770857516,
+          "center": 791.5244220048971,
+          "scale": 429.7580240154738,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.emg_waveform_length_per_s": {
-          "center": 249780.16446678538,
-          "scale": 126399.64211212168,
+          "center": 284443.9253766624,
+          "scale": 160605.3374333177,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_angular_speed_p95_deg_s": {
-          "center": 66.54270086393633,
-          "scale": 21.75000755880014,
+          "center": 72.43718313178286,
+          "scale": 25.026066898574626,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_rms": {
-          "center": 1.3822988268380323,
-          "scale": 0.4100253657973753,
+          "center": 0.7415114757816239,
+          "scale": 0.14973298961172918,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_p95": {
-          "center": 2.4360455123829654,
-          "scale": 0.7233552940497311,
+          "center": 1.0982273078817477,
+          "scale": 0.36091557943087726,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_iqr": {
-          "center": 0.8773802217395812,
-          "scale": 0.29148356683538523,
+          "center": 0.7013256662911118,
+          "scale": 0.15398125394474457,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_skewness": {
-          "center": 1.3145489010284683,
-          "scale": 0.8546015271826167,
+          "center": 0.3208956640900283,
+          "scale": 0.5277802649397336,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.skeleton_trunk_sway_rom_deg": {
-          "center": 2.196201878524583,
-          "scale": 0.6419121380422512,
+          "center": 359.6454082242569,
+          "scale": 0.22056451068716632,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_scapular_tilt_rom_deg": {
-          "center": 4.3315368167423625,
-          "scale": 1.1042625412963278,
+          "center": 359.43483100927983,
+          "scale": 0.2847666181348818,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.13329052401451374,
-          "scale": 0.06785413137452154,
+          "center": 0.1429928398631809,
+          "scale": 0.06644051166475995,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.imu_chest_roll_rom_deg": {
-          "center": 9.65524743567742,
-          "scale": 5.17927994735104,
+          "center": 9.592249999999996,
+          "scale": 5.285468999999996,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.imu_chest_pitch_rom_deg": {
-          "center": 3.663915205573846,
-          "scale": 2.1251300366712815,
+          "center": 3.6159999999999988,
+          "scale": 2.045988,
           "direction": "high_bad",
           "scale_method": "MAD"
         }
@@ -480,201 +529,249 @@
       "n_control": 28,
       "model": {
         "mean": [
-          0.1358233008895531,
-          1.501767061476967,
-          1.5552582725281272,
-          0.5835246347812675
+          0.5878429404891131,
+          1.304369841803608,
+          1.3091178199508957,
+          0.5063680422177481
         ],
         "scale": [
-          0.21170685192949212,
-          1.1435720175074013,
-          1.2348907860984621,
-          0.8760293112741389
+          0.3447308311860106,
+          0.839895883234566,
+          0.7423876786595055,
+          0.4682266843703649
         ],
         "coef": [
-          -0.10996928388987248,
-          1.205322814820439,
-          1.0129840054417445,
-          0.8476998090371315
+          1.3848002174969467,
+          0.6767565574664298,
+          0.6548433751167899,
+          0.435627613007994
         ],
-        "intercept": 0.19146052648355125
+        "intercept": 0.09075622312577715
       },
       "loso": {
-        "accuracy": 0.8392857142857143,
-        "sensitivity": 0.7857142857142857,
-        "specificity": 0.8928571428571429,
-        "auc": 0.8686224489795918,
-        "tp": 22,
-        "tn": 25,
-        "fp": 3,
-        "fn": 6
+        "accuracy": 0.8035714285714286,
+        "sensitivity": 0.8571428571428571,
+        "specificity": 0.75,
+        "auc": 0.8354591836734694,
+        "tp": 24,
+        "tn": 21,
+        "fp": 7,
+        "fn": 4
       },
       "reference": {
         "left.shoulder_rom_deg": {
-          "center": 19.699928434726143,
-          "scale": 9.843289915403503,
+          "center": 20.83547328192201,
+          "scale": 9.678658669431275,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.elbow_rom_deg": {
-          "center": 38.85384819512535,
-          "scale": 25.258757110387098,
+          "center": 41.73157978551005,
+          "scale": 25.469250167326898,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_value_deg": {
-          "center": 45.57703275948964,
-          "scale": 31.703635255542125,
+          "center": 47.29562136725609,
+          "scale": 31.72722930288549,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_excursion_deg": {
-          "center": 22.685913344248917,
-          "scale": 21.98756129563802,
+          "center": 24.715648825022086,
+          "scale": 21.443705204450502,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.reach_p95_shoulder_width": {
-          "center": 1.402258864426149,
-          "scale": 0.10548661713416037,
+          "center": 1.4180336887565845,
+          "scale": 0.09127707811844998,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.emg_active_fraction": {
-          "center": 0.40287713365660616,
-          "scale": 0.15832614509203932,
+          "center": 0.5886338316136605,
+          "scale": 0.08690371138016285,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.emg_rms_adc": {
-          "center": 2209.4174122917248,
-          "scale": 2333.1068737488945,
+          "center": 2726.1851164794625,
+          "scale": 1566.5505738207255,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.emg_waveform_length_per_s": {
-          "center": 366278.71787683544,
-          "scale": 249790.3786878474,
+          "center": 371922.548182225,
+          "scale": 208148.10504127372,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_angular_speed_p95_deg_s": {
-          "center": 60.7808755746603,
-          "scale": 27.08062290654655,
+          "center": 62.251076830208206,
+          "scale": 26.15611885535777,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_rms": {
-          "center": 1.3392672296829808,
-          "scale": 0.45901642323523095,
+          "center": 0.6965402196239817,
+          "scale": 0.14552045657578577,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_p95": {
-          "center": 2.451275967834019,
-          "scale": 0.7683335497864022,
+          "center": 1.1610286327900532,
+          "scale": 0.27015461506333877,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_iqr": {
-          "center": 1.0009815507553954,
-          "scale": 0.28746092423250197,
+          "center": 0.5440279382794975,
+          "scale": 0.14462471562496781,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_skewness": {
-          "center": 0.9869907811650123,
-          "scale": 0.35372324647467107,
+          "center": 0.11925113166232729,
+          "scale": 0.4831205143687944,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.skeleton_trunk_sway_rom_deg": {
-          "center": 2.6374779699809636,
-          "scale": 0.8059461693302665,
+          "center": 314.6949488890779,
+          "scale": 66.90696837384004,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_scapular_tilt_rom_deg": {
-          "center": 4.386143809882279,
-          "scale": 1.3604871685524806,
+          "center": 359.0507900435698,
+          "scale": 0.9304512482475281,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.1447477088739155,
-          "scale": 0.05749199395833551,
+          "center": 0.14849349990325922,
+          "scale": 0.056443860037596424,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.imu_chest_roll_rom_deg": {
-          "center": 12.030709903749736,
-          "scale": 6.924437350794061,
+          "center": 12.36,
+          "scale": 6.412245000000004,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.imu_chest_pitch_rom_deg": {
-          "center": 3.243834409499609,
-          "scale": 2.09804619825054,
+          "center": 4.295,
+          "scale": 2.8043378999999766,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.shoulder_rom_deg": {
-          "center": 16.601286596705528,
-          "scale": 5.020837220726512,
+          "center": 17.48710107748097,
+          "scale": 5.5029228926897975,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.elbow_rom_deg": {
-          "center": 35.95580976834782,
-          "scale": 19.824879483097465,
+          "center": 39.68825818293038,
+          "scale": 19.418298502949586,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_value_deg": {
-          "center": 39.19367347909703,
-          "scale": 15.205683658036723,
+          "center": 41.88524396246606,
+          "scale": 18.499942879124117,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_excursion_deg": {
-          "center": 22.66445476929684,
-          "scale": 16.429686834221947,
+          "center": 26.410763171890395,
+          "scale": 17.194431640087746,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.reach_p95_shoulder_width": {
-          "center": 1.4215115375611203,
-          "scale": 0.07278401016667485,
+          "center": 1.4271752235392936,
+          "scale": 0.07605094810626262,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
+        "right.emg_active_fraction": {
+          "center": 0.5961257309941521,
+          "scale": 0.04083711076489583,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.emg_rms_adc": {
+          "center": 818.6136339528628,
+          "scale": 438.7007640890456,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.emg_waveform_length_per_s": {
+          "center": 317693.4395018701,
+          "scale": 144498.57702735713,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_angular_speed_p95_deg_s": {
+          "center": 64.93967142634133,
+          "scale": 31.10582084063856,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_rms": {
+          "center": 0.6793729316647861,
+          "scale": 0.16660210596874928,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_p95": {
+          "center": 0.990297691300967,
+          "scale": 0.2479416287384103,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_iqr": {
+          "center": 0.5291626874934874,
+          "scale": 0.15258531630417776,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
+        "right.imu_acceleration_dynamic_skewness": {
+          "center": 0.1504724269407901,
+          "scale": 0.7845539754163148,
+          "direction": "two_sided",
+          "scale_method": "MAD"
+        },
         "right.skeleton_trunk_sway_rom_deg": {
-          "center": 2.6374779699809636,
-          "scale": 0.8059461693302665,
+          "center": 314.6949488890779,
+          "scale": 66.90696837384004,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_scapular_tilt_rom_deg": {
-          "center": 4.386143809882279,
-          "scale": 1.3604871685524806,
+          "center": 359.0507900435698,
+          "scale": 0.9304512482475281,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.1447477088739155,
-          "scale": 0.05749199395833551,
+          "center": 0.14849349990325922,
+          "scale": 0.056443860037596424,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.imu_chest_roll_rom_deg": {
-          "center": 12.030709903749736,
-          "scale": 6.924437350794061,
+          "center": 12.36,
+          "scale": 6.412245000000004,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.imu_chest_pitch_rom_deg": {
-          "center": 3.243834409499609,
-          "scale": 2.09804619825054,
+          "center": 4.295,
+          "scale": 2.8043378999999766,
           "direction": "high_bad",
           "scale_method": "MAD"
         }
@@ -686,225 +783,249 @@
       "n_control": 28,
       "model": {
         "mean": [
-          0.8042743597193868,
-          1.2471895909101103,
-          1.390482949721545,
-          1.1498679514876202
+          0.8973270595283809,
+          1.209286119612734,
+          1.49635274867408,
+          0.7536971513626304
         ],
         "scale": [
-          1.0343296931276895,
-          1.1565364156656333,
-          1.2480410502557973,
-          1.3263840176346406
+          0.7935704286356984,
+          0.8661482343811163,
+          0.8829842901878807,
+          0.58565720169318
         ],
         "coef": [
-          0.9667147108324861,
-          1.0428206069490173,
-          0.626379510656821,
-          1.1653261398699888
+          1.0144320215803029,
+          0.6689102658789792,
+          0.8438326336266642,
+          0.5567299670780892
         ],
-        "intercept": 0.1482385190726248
+        "intercept": 0.05553947063590539
       },
       "loso": {
-        "accuracy": 0.8363636363636363,
-        "sensitivity": 0.7777777777777778,
-        "specificity": 0.8928571428571429,
-        "auc": 0.873015873015873,
-        "tp": 21,
-        "tn": 25,
-        "fp": 3,
-        "fn": 6
+        "accuracy": 0.7636363636363637,
+        "sensitivity": 0.7037037037037037,
+        "specificity": 0.8214285714285714,
+        "auc": 0.83994708994709,
+        "tp": 19,
+        "tn": 23,
+        "fp": 5,
+        "fn": 8
       },
       "reference": {
         "left.shoulder_rom_deg": {
-          "center": 9.69885687124264,
-          "scale": 4.169975422541333,
+          "center": 11.786012731776129,
+          "scale": 5.965775444920793,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.elbow_rom_deg": {
-          "center": 163.25095037476297,
-          "scale": 11.303323767612795,
+          "center": 164.60767540121748,
+          "scale": 11.745788619459331,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_value_deg": {
-          "center": 165.86390582819246,
-          "scale": 10.350002037409105,
+          "center": 167.61355210369817,
+          "scale": 8.670129773754558,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_excursion_deg": {
-          "center": 151.4942101461802,
-          "scale": 18.69094917830635,
+          "center": 155.09042518017134,
+          "scale": 16.34054624239584,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.reach_p95_shoulder_width": {
-          "center": 1.2833788585058181,
-          "scale": 0.1865570654504705,
+          "center": 1.294808238578793,
+          "scale": 0.18519320027530062,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.emg_active_fraction": {
-          "center": 0.5208071388539933,
-          "scale": 0.08714611264718944,
+          "center": 0.5943688585524046,
+          "scale": 0.05162446451841237,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.emg_rms_adc": {
-          "center": 2312.5505725815315,
-          "scale": 2336.6745789543997,
+          "center": 2313.5404049651493,
+          "scale": 2196.8594082015816,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.emg_waveform_length_per_s": {
-          "center": 437439.12854840263,
-          "scale": 465795.64934926794,
+          "center": 447186.13725032564,
+          "scale": 453133.7227052255,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_angular_speed_p95_deg_s": {
-          "center": 102.0922625956772,
-          "scale": 17.864230283335004,
+          "center": 99.33648078493519,
+          "scale": 18.2725157733643,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_rms": {
-          "center": 2.312555699166772,
-          "scale": 0.6853934892737958,
+          "center": 0.4833386031148754,
+          "scale": 0.12704213453579136,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_p95": {
-          "center": 3.634388805442492,
-          "scale": 1.0439359508513444,
+          "center": 0.6513776051466642,
+          "scale": 0.18716590964749263,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_iqr": {
-          "center": 1.2955591538857103,
-          "scale": 0.40662584854777023,
+          "center": 0.5370355397380586,
+          "scale": 0.11862761517246194,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_skewness": {
-          "center": 0.4489971682141207,
-          "scale": 0.45279946529735443,
+          "center": 0.4895298576847568,
+          "scale": 0.3760000101839779,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.skeleton_trunk_sway_rom_deg": {
-          "center": 1.9141844730088247,
-          "scale": 0.5024534112932463,
+          "center": 359.5612348473362,
+          "scale": 0.39523026036691317,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_scapular_tilt_rom_deg": {
-          "center": 4.115998395563619,
-          "scale": 1.2327000858235364,
+          "center": 359.3344368794736,
+          "scale": 0.49577233781765606,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.089668547371024,
-          "scale": 0.04856162616676281,
+          "center": 0.09761350377101063,
+          "scale": 0.04695996785099299,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.imu_chest_roll_rom_deg": {
+          "center": 5.469999999999999,
+          "scale": 3.0541560000000034,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "left.imu_chest_pitch_rom_deg": {
+          "center": 1.6269999999999991,
+          "scale": 1.2498318000000015,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.shoulder_rom_deg": {
-          "center": 12.341626481915567,
-          "scale": 4.280857181764991,
+          "center": 14.080114383325547,
+          "scale": 4.513479585128203,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.elbow_rom_deg": {
-          "center": 155.19309954608693,
-          "scale": 11.374590600439232,
+          "center": 157.21613082837922,
+          "scale": 11.755663867201912,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_value_deg": {
-          "center": 160.101062116121,
-          "scale": 8.901523097976206,
+          "center": 161.6000953018735,
+          "scale": 8.758995986570355,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_excursion_deg": {
-          "center": 138.2829935300516,
-          "scale": 26.753707768164176,
+          "center": 142.20936026653112,
+          "scale": 27.849994268481044,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.reach_p95_shoulder_width": {
-          "center": 1.2397521171794867,
-          "scale": 0.18916236257872956,
+          "center": 1.2645041957325938,
+          "scale": 0.20126566895264544,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.emg_active_fraction": {
-          "center": 0.5072280711384967,
-          "scale": 0.14654141956364153,
+          "center": 0.5832874952744269,
+          "scale": 0.0478477235636627,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.emg_rms_adc": {
-          "center": 1147.2705081097874,
-          "scale": 595.2032653506953,
+          "center": 1147.4147033511372,
+          "scale": 595.7132817122842,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.emg_waveform_length_per_s": {
-          "center": 388035.6523872183,
-          "scale": 138596.94640746954,
+          "center": 415010.05161402916,
+          "scale": 172481.49219477538,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_angular_speed_p95_deg_s": {
-          "center": 106.77138204764296,
-          "scale": 21.86317160553352,
+          "center": 103.61585703865063,
+          "scale": 20.654582810099928,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_rms": {
-          "center": 2.459428576219681,
-          "scale": 0.8772295168038127,
+          "center": 0.6674114602902594,
+          "scale": 0.0989220594856516,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_p95": {
-          "center": 3.896615574572445,
-          "scale": 1.1053641950100321,
+          "center": 0.5673444552926632,
+          "scale": 0.28660890628100316,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_iqr": {
-          "center": 1.3972857454469383,
-          "scale": 0.47333294712413393,
+          "center": 0.8451993419660659,
+          "scale": 0.13565489975561615,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_skewness": {
-          "center": 0.48309299760473845,
-          "scale": 0.520526575726497,
+          "center": 0.24296071901448416,
+          "scale": 0.4003420367564222,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.skeleton_trunk_sway_rom_deg": {
-          "center": 1.9141844730088247,
-          "scale": 0.5024534112932463,
+          "center": 359.5612348473362,
+          "scale": 0.39523026036691317,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_scapular_tilt_rom_deg": {
-          "center": 4.115998395563619,
-          "scale": 1.2327000858235364,
+          "center": 359.3344368794736,
+          "scale": 0.49577233781765606,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.089668547371024,
-          "scale": 0.04856162616676281,
+          "center": 0.09761350377101063,
+          "scale": 0.04695996785099299,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.imu_chest_roll_rom_deg": {
+          "center": 5.469999999999999,
+          "scale": 3.0541560000000034,
+          "direction": "high_bad",
+          "scale_method": "MAD"
+        },
+        "right.imu_chest_pitch_rom_deg": {
+          "center": 1.6269999999999991,
+          "scale": 1.2498318000000015,
           "direction": "high_bad",
           "scale_method": "MAD"
         }
@@ -916,436 +1037,253 @@
       "n_control": 28,
       "model": {
         "mean": [
-          0.6282025699884733,
-          1.6482821563045356,
-          1.1244287057378843,
-          0.8728728905832946
+          0.7754314715508617,
+          1.4437111353190313,
+          1.168490487836618,
+          0.7218016670793573
         ],
         "scale": [
-          0.6851215969858836,
-          1.3902908628058928,
-          0.8223795258063549,
-          1.2389402182927138
+          0.6648844638851501,
+          0.9643245821957772,
+          0.5878345576949332,
+          0.7089232758028623
         ],
         "coef": [
-          1.091183992403593,
-          1.4679791912341469,
-          0.0593978263342372,
-          1.0396081670294761
+          1.3437517450454768,
+          1.212820893475558,
+          0.1256247022356719,
+          0.44840384787937815
         ],
-        "intercept": 0.3882541998734843
+        "intercept": 0.18113126800786516
       },
       "loso": {
-        "accuracy": 0.7678571428571429,
+        "accuracy": 0.7321428571428571,
         "sensitivity": 0.7142857142857143,
-        "specificity": 0.8214285714285714,
-        "auc": 0.8839285714285714,
+        "specificity": 0.75,
+        "auc": 0.8494897959183674,
         "tp": 20,
-        "tn": 23,
-        "fp": 5,
+        "tn": 21,
+        "fp": 7,
         "fn": 8
       },
       "reference": {
         "left.shoulder_rom_deg": {
-          "center": 16.624685774651837,
-          "scale": 10.016874058118319,
+          "center": 20.33485718498602,
+          "scale": 12.983287738236541,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.elbow_rom_deg": {
-          "center": 115.84632871849954,
-          "scale": 18.4645772618195,
+          "center": 118.3752283966278,
+          "scale": 19.6610744564908,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_value_deg": {
-          "center": 152.9384689050057,
-          "scale": 7.1623008886896145,
+          "center": 153.31644956942512,
+          "scale": 7.856099487612496,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.task_endpoint_excursion_deg": {
-          "center": 95.27515357991616,
-          "scale": 26.048551046208676,
+          "center": 95.76707044471254,
+          "scale": 26.725209586737883,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.reach_p95_shoulder_width": {
-          "center": 1.5146553292861662,
-          "scale": 0.16812747247620966,
+          "center": 1.5225716065391732,
+          "scale": 0.16846496053738624,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "left.emg_active_fraction": {
-          "center": 0.4255786306701982,
-          "scale": 0.10635439885147811,
+          "center": 0.5727678996650707,
+          "scale": 0.09081891608761003,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.emg_rms_adc": {
-          "center": 3224.831573506539,
-          "scale": 2250.4217313912914,
+          "center": 3003.939513316788,
+          "scale": 1701.5205855593567,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.emg_waveform_length_per_s": {
-          "center": 495840.2141839722,
-          "scale": 330899.1853147874,
+          "center": 451806.9880713164,
+          "scale": 319753.7871544099,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_angular_speed_p95_deg_s": {
-          "center": 96.00426570015253,
-          "scale": 23.651614455756594,
+          "center": 97.29302845408247,
+          "scale": 20.827949842523033,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_rms": {
-          "center": 2.2285621151799737,
-          "scale": 0.37213454723673967,
+          "center": 0.7808939525888766,
+          "scale": 0.20341401743789292,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_p95": {
-          "center": 3.904851702301844,
-          "scale": 1.2357597359924866,
+          "center": 1.2150862208228315,
+          "scale": 0.32258586120649346,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_iqr": {
-          "center": 1.3768854364268568,
-          "scale": 0.3260497378834758,
+          "center": 0.6268986526571059,
+          "scale": 0.20764845956179767,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.imu_acceleration_dynamic_skewness": {
-          "center": 1.2468200141238155,
-          "scale": 0.9569242254894103,
+          "center": 0.5422452111562677,
+          "scale": 0.576570080992272,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "left.skeleton_trunk_sway_rom_deg": {
-          "center": 2.0973417781906067,
-          "scale": 0.572511923073265,
+          "center": 359.6503976064215,
+          "scale": 0.21624369177327316,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_scapular_tilt_rom_deg": {
-          "center": 4.337407582901062,
-          "scale": 1.3586607315285968,
+          "center": 359.3724473188163,
+          "scale": 0.3765431973399091,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.11074382106241751,
-          "scale": 0.04496640250898082,
+          "center": 0.13044187182218914,
+          "scale": 0.045112902292947246,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.imu_chest_roll_rom_deg": {
-          "center": 5.342112132694005,
-          "scale": 3.165821477469996,
+          "center": 6.698499999999995,
+          "scale": 2.9107144499999977,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "left.imu_chest_pitch_rom_deg": {
-          "center": 3.656615623516616,
-          "scale": 2.4200012993558833,
+          "center": 2.8202499999999993,
+          "scale": 1.6204817999999992,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.shoulder_rom_deg": {
-          "center": 23.568110264696557,
-          "scale": 16.576679362890193,
+          "center": 24.713113648605642,
+          "scale": 15.555296201289922,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.elbow_rom_deg": {
-          "center": 109.15235560695824,
-          "scale": 17.60136881237642,
+          "center": 113.0014107846792,
+          "scale": 18.785182572295344,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_value_deg": {
-          "center": 149.16956869191446,
-          "scale": 7.694339208231329,
+          "center": 149.93746434981472,
+          "scale": 8.151854765982105,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.task_endpoint_excursion_deg": {
-          "center": 96.22822532179013,
-          "scale": 29.203067062675732,
+          "center": 98.19226311073919,
+          "scale": 28.470718901957593,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.reach_p95_shoulder_width": {
-          "center": 1.4879201920531897,
-          "scale": 0.19498943356285756,
-          "direction": "low_bad",
-          "scale_method": "MAD"
-        },
-        "right.skeleton_trunk_sway_rom_deg": {
-          "center": 2.0973417781906067,
-          "scale": 0.572511923073265,
-          "direction": "high_bad",
-          "scale_method": "MAD"
-        },
-        "right.skeleton_scapular_tilt_rom_deg": {
-          "center": 4.337407582901062,
-          "scale": 1.3586607315285968,
-          "direction": "high_bad",
-          "scale_method": "MAD"
-        },
-        "right.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.11074382106241751,
-          "scale": 0.04496640250898082,
-          "direction": "high_bad",
-          "scale_method": "MAD"
-        },
-        "right.imu_chest_roll_rom_deg": {
-          "center": 5.342112132694005,
-          "scale": 3.165821477469996,
-          "direction": "high_bad",
-          "scale_method": "MAD"
-        },
-        "right.imu_chest_pitch_rom_deg": {
-          "center": 3.656615623516616,
-          "scale": 2.4200012993558833,
-          "direction": "high_bad",
-          "scale_method": "MAD"
-        }
-      }
-    },
-    "flexibility": {
-      "n": 55,
-      "n_patient": 27,
-      "n_control": 28,
-      "model": {
-        "mean": [
-          0.7950824727800849,
-          1.4363991652386021,
-          1.1536503507688705,
-          0.34553409995295964
-        ],
-        "scale": [
-          0.9739573426241082,
-          0.9915673535216583,
-          0.8565496990125188,
-          0.516481915837942
-        ],
-        "coef": [
-          1.8014467969669599,
-          1.3198940384483961,
-          0.5517956842930689,
-          0.14296785821123198
-        ],
-        "intercept": 0.3689740612970068
-      },
-      "loso": {
-        "accuracy": 0.7636363636363637,
-        "sensitivity": 0.7407407407407407,
-        "specificity": 0.7857142857142857,
-        "auc": 0.8822751322751323,
-        "tp": 20,
-        "tn": 22,
-        "fp": 6,
-        "fn": 7
-      },
-      "reference": {
-        "left.shoulder_rom_deg": {
-          "center": 150.6659663307131,
-          "scale": 10.671138599145117,
-          "direction": "low_bad",
-          "scale_method": "MAD"
-        },
-        "left.elbow_rom_deg": {
-          "center": 136.37410975539532,
-          "scale": 11.169461701590809,
-          "direction": "low_bad",
-          "scale_method": "MAD"
-        },
-        "left.reach_p95_shoulder_width": {
-          "center": 1.4425734760029698,
-          "scale": 0.0924454325791854,
-          "direction": "low_bad",
-          "scale_method": "MAD"
-        },
-        "left.emg_active_fraction": {
-          "center": 0.24950239803315832,
-          "scale": 0.06624295979173685,
-          "direction": "two_sided",
-          "scale_method": "MAD"
-        },
-        "left.emg_rms_adc": {
-          "center": 2332.5996162810807,
-          "scale": 1392.92071855999,
-          "direction": "two_sided",
-          "scale_method": "MAD"
-        },
-        "left.emg_waveform_length_per_s": {
-          "center": 312918.5909013748,
-          "scale": 128653.23652853516,
-          "direction": "two_sided",
-          "scale_method": "MAD"
-        },
-        "left.imu_angular_speed_p95_deg_s": {
-          "center": 108.86480589502972,
-          "scale": 11.381451434358956,
-          "direction": "two_sided",
-          "scale_method": "MAD"
-        },
-        "left.imu_acceleration_dynamic_rms": {
-          "center": 1.7727793488871035,
-          "scale": 0.20272512232036802,
-          "direction": "two_sided",
-          "scale_method": "MAD"
-        },
-        "left.imu_acceleration_dynamic_p95": {
-          "center": 3.8075861250769174,
-          "scale": 0.4107890659800155,
-          "direction": "two_sided",
-          "scale_method": "MAD"
-        },
-        "left.imu_acceleration_dynamic_iqr": {
-          "center": 1.582845837176691,
-          "scale": 0.3065352537140321,
-          "direction": "two_sided",
-          "scale_method": "MAD"
-        },
-        "left.imu_acceleration_dynamic_skewness": {
-          "center": 1.449408359584877,
-          "scale": 0.34591476228169254,
-          "direction": "two_sided",
-          "scale_method": "MAD"
-        },
-        "left.skeleton_trunk_sway_rom_deg": {
-          "center": 7.49299842238936,
-          "scale": 1.7740362110861427,
-          "direction": "high_bad",
-          "scale_method": "MAD"
-        },
-        "left.skeleton_scapular_tilt_rom_deg": {
-          "center": 14.280958868247566,
-          "scale": 2.6323696545061517,
-          "direction": "high_bad",
-          "scale_method": "MAD"
-        },
-        "left.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.38980244243789985,
-          "scale": 0.06218428188320748,
-          "direction": "high_bad",
-          "scale_method": "MAD"
-        },
-        "left.imu_chest_roll_rom_deg": {
-          "center": 28.96743510896071,
-          "scale": 10.91999947811786,
-          "direction": "high_bad",
-          "scale_method": "MAD"
-        },
-        "left.imu_chest_pitch_rom_deg": {
-          "center": 22.798837129682024,
-          "scale": 7.515492983237007,
-          "direction": "high_bad",
-          "scale_method": "MAD"
-        },
-        "right.shoulder_rom_deg": {
-          "center": 148.32476566251117,
-          "scale": 10.184674915809428,
-          "direction": "low_bad",
-          "scale_method": "MAD"
-        },
-        "right.elbow_rom_deg": {
-          "center": 135.59379395110773,
-          "scale": 13.749983694062925,
-          "direction": "low_bad",
-          "scale_method": "MAD"
-        },
-        "right.reach_p95_shoulder_width": {
-          "center": 1.4688527747899534,
-          "scale": 0.10131608282159475,
+          "center": 1.491786020104692,
+          "scale": 0.19347715416632388,
           "direction": "low_bad",
           "scale_method": "MAD"
         },
         "right.emg_active_fraction": {
-          "center": 0.3892056430369373,
-          "scale": 0.043388299349389536,
+          "center": 0.607458698933882,
+          "scale": 0.023084267956386625,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.emg_rms_adc": {
-          "center": 819.0197776515892,
-          "scale": 441.8373285037724,
+          "center": 894.5159205380508,
+          "scale": 601.294118792858,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.emg_waveform_length_per_s": {
-          "center": 241298.65415656831,
-          "scale": 94997.37888838357,
+          "center": 354554.88070443005,
+          "scale": 173342.73346389705,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_angular_speed_p95_deg_s": {
-          "center": 114.69845502487277,
-          "scale": 15.779697010502598,
+          "center": 102.58874905760266,
+          "scale": 29.741313167319184,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_rms": {
-          "center": 1.8085647618759642,
-          "scale": 0.24484126137069429,
+          "center": 0.8000384810437302,
+          "scale": 0.18026006868361355,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_p95": {
-          "center": 4.202753105433381,
-          "scale": 0.6537542544954383,
+          "center": 0.9878978503565626,
+          "scale": 0.3583585381286295,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_iqr": {
-          "center": 1.6018065428566044,
-          "scale": 0.3197744547681732,
+          "center": 0.7071295414566148,
+          "scale": 0.22386960011451115,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.imu_acceleration_dynamic_skewness": {
-          "center": 1.6209519083002752,
-          "scale": 0.24633630698001255,
+          "center": 0.47889565653304655,
+          "scale": 0.844857147979931,
           "direction": "two_sided",
           "scale_method": "MAD"
         },
         "right.skeleton_trunk_sway_rom_deg": {
-          "center": 7.49299842238936,
-          "scale": 1.7740362110861427,
+          "center": 359.6503976064215,
+          "scale": 0.21624369177327316,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_scapular_tilt_rom_deg": {
-          "center": 14.280958868247566,
-          "scale": 2.6323696545061517,
+          "center": 359.3724473188163,
+          "scale": 0.3765431973399091,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.skeleton_centerline_rom_shoulder_width": {
-          "center": 0.38980244243789985,
-          "scale": 0.06218428188320748,
+          "center": 0.13044187182218914,
+          "scale": 0.045112902292947246,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.imu_chest_roll_rom_deg": {
-          "center": 28.96743510896071,
-          "scale": 10.91999947811786,
+          "center": 6.698499999999995,
+          "scale": 2.9107144499999977,
           "direction": "high_bad",
           "scale_method": "MAD"
         },
         "right.imu_chest_pitch_rom_deg": {
-          "center": 22.798837129682024,
-          "scale": 7.515492983237007,
+          "center": 2.8202499999999993,
+          "scale": 1.6204817999999992,
           "direction": "high_bad",
           "scale_method": "MAD"
         }
-      },
-      "capacity_note": "shoulder_rom, elbow_rom, reach_p95 only"
+      }
     }
   }
 }
